@@ -3,9 +3,9 @@
 #include "scripts\taw_vd\GUI.h"
 
 
-onLoadName = "Warlords Redux 2.0"; 
-dev = "Jezuro + WSV";
-author = "Jezuro + WSV";
+onLoadName = "Warlords Redux Miller Edition"; 
+dev = "Jezuro + Korbelz";
+author = "Jezuro + Korbelz";
 
 respawn = 3;
 respawnDelay = 20;
@@ -95,15 +95,7 @@ allowFunctionsLog = 1;
 		};
 
 
-		class CfgCommunicationMenu
-		{
-
-			#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
-
-		};
-
-		#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
-		#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
+		
 
 /*******************************END OF CUSTOM CONTENT HERE****************************/
 
