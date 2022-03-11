@@ -48,8 +48,7 @@ allowFunctionsLog = 1;
 		class CfgFunctions
 		{
 
-			//GOM_fnc_aircraftLoadout V1.35 made by Grumpy Old Man 17-5-2017
-			#include "scripts\GOM\functions\GOM_fnc_functions.hpp"
+			
 			
 					
 		};
