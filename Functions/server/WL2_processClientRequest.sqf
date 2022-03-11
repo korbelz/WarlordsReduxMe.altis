@@ -115,8 +115,9 @@ if !(isNull _sender) then {
 						_asset = createVehicle [_className, _spawnPos, [], 0, "CAN_COLLIDE"];
 						_asset setDir _dir;
 					} else {
-						_asset = createVehicle [_className, _targetPosFinal, [], 0, "CAN_COLLIDE"];; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
-						_asset setDir _dir;
+						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
+						_asset setVelocity [0, 0, 0]; 
+						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
 						
 					};
 				} else {

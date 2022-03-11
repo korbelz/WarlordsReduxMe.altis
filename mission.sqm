@@ -23,7 +23,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="warlordsredux";
+sourceName="warlordsreduxME";
 addons[]=
 {
 	"A3_Modules_F",
@@ -5704,7 +5704,7 @@ class Mission
 					};
 					id=252;
 					type="I_crew_F";
-					atlOffset=-0.0020008087;
+					atlOffset=2.0980835e-005;
 				};
 				class Item1
 				{
@@ -5721,7 +5721,7 @@ class Mission
 					};
 					id=253;
 					type="I_crew_F";
-					atlOffset=-0.0020008087;
+					atlOffset=2.0980835e-005;
 				};
 				class Item2
 				{
@@ -5738,7 +5738,7 @@ class Mission
 					};
 					id=254;
 					type="I_crew_F";
-					atlOffset=-0.0020008087;
+					atlOffset=2.0980835e-005;
 				};
 				class Item3
 				{
@@ -7739,6 +7739,7 @@ class Mission
 					};
 					id=283;
 					type="I_crew_F";
+					atlOffset=1.335144e-005;
 				};
 				class Item1
 				{
@@ -7755,6 +7756,7 @@ class Mission
 					};
 					id=284;
 					type="I_crew_F";
+					atlOffset=1.335144e-005;
 				};
 				class Item2
 				{
@@ -7771,6 +7773,7 @@ class Mission
 					};
 					id=285;
 					type="I_crew_F";
+					atlOffset=1.335144e-005;
 				};
 				class Item3
 				{
@@ -11585,6 +11588,7 @@ class Mission
 					};
 					id=359;
 					type="I_crew_F";
+					atlOffset=4.7683716e-007;
 				};
 				class Item2
 				{
@@ -11601,6 +11605,7 @@ class Mission
 					};
 					id=360;
 					type="I_crew_F";
+					atlOffset=4.7683716e-007;
 				};
 			};
 			class Attributes
@@ -11973,6 +11978,7 @@ class Mission
 				};
 			};
 			id=361;
+			atlOffset=-2.3841858e-007;
 		};
 		class Item228
 		{
@@ -11991,6 +11997,7 @@ class Mission
 			};
 			id=362;
 			type="I_LT_01_cannon_F";
+			atlOffset=-2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
