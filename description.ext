@@ -30,34 +30,16 @@ ReviveForceRespawnDelay = 3;            //time needed to perform force respawn (
 ReviveBleedOutDelay = 180;              //unconscious state duration (in secs)
 //end of revive section 
 
-//earplug script stuff
-class RscTitles
-{
-	#include "scripts\GF_Earplugs\GF_Earplugs_HPP.hpp"	
-};
-//end of earplug script info
+
  
 
-//Vehicle unflip Mod 
+class CfgFunctions
+	{	
 
-    //author = "KiloSwiss";
-
-allowFunctionsLog = 1;
-
-
-		class CfgFunctions
-		{
-
-			
+		// this is where custom scripts go	
 			
 					
-		};
-
-
-
-		
-
-/*******************************END OF CUSTOM CONTENT HERE****************************/
+	};
 
 class Header
 {
