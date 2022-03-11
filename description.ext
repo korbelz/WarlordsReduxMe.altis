@@ -1,6 +1,5 @@
 #include "Functions\warlords_constants.inc"
-// required for view distance script
-#include "scripts\taw_vd\GUI.h"
+
 
 
 onLoadName = "Warlords Redux Miller Edition"; 
