@@ -1,0 +1,180 @@
+#include "Functions\warlords_constants.inc"
+// required for view distance script
+#include "scripts\taw_vd\GUI.h"
+
+
+onLoadName = "Warlords Redux 2.0"; 
+dev = "Jezuro + WSV";
+author = "Jezuro + WSV";
+
+respawn = 3;
+respawnDelay = 20;
+respawnOnStart = -1;
+
+disabledAI = 1;
+
+
+/*******************************START CUSTOM CONTENT HERE****************************/
+
+enableDebugConsole = 1;
+
+//revive settings below
+ReviveMode = 0;                         //0: disabled, 1: enabled, 2: controlled by player attributes
+ReviveUnconsciousStateMode = 0;         //0: basic, 1: advanced, 2: realistic
+ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required
+ReviveRequiredItems = 2;                //0: none, 1: medkit, 2: medkit or first aid kit
+ReviveRequiredItemsFakConsumed = 1;     //0: first aid kit is not consumed upon revive, 1: first aid kit is consumed
+ReviveDelay = 15;                        //time needed to revive someone (in secs)
+ReviveMedicSpeedMultiplier = 2;         //speed multiplier for revive performed by medic
+ReviveForceRespawnDelay = 3;            //time needed to perform force respawn (in secs)
+ReviveBleedOutDelay = 180;              //unconscious state duration (in secs)
+//end of revive section 
+
+//earplug script stuff
+class RscTitles
+{
+	#include "scripts\GF_Earplugs\GF_Earplugs_HPP.hpp"	
+};
+//end of earplug script info
+ 
+
+//Vehicle unflip Mod 
+
+    //author = "KiloSwiss";
+
+allowFunctionsLog = 1;
+
+
+		class CfgFunctions
+		{
+
+			//GOM_fnc_aircraftLoadout V1.35 made by Grumpy Old Man 17-5-2017
+			#include "scripts\GOM\functions\GOM_fnc_functions.hpp"
+			//Distance MOD
+			#include "scripts\taw_vd\CfgFunctions.hpp"
+			//Unflip Mod
+			class KS
+				{	
+					class normalFunctions
+					{
+						file = "scripts\VUnflip\functions";	// Folder where all functions are.
+						class unflipVehicle {};
+						//Not needed: class limitVehicleSpeed {}; 
+					};
+				};		
+	
+			class KSLOOP
+				{
+					class spawnThese //Seriously "spawn" these, do not "call" them!
+					{
+						file = "scripts\VUnflip\functions\loops";
+						class unflipVehicleAddAction {};
+					};
+					
+				};		
+		};
+//Advanced Sling Load Mod
+
+		class CfgRemoteExec
+		{
+			class Functions
+			{
+				class ASL_Pickup_Ropes { allowedTargets=0; };
+				class ASL_Deploy_Ropes_Index { allowedTargets=0; };
+				class ASL_Rope_Set_Mass { allowedTargets=0; };
+				class ASL_Extend_Ropes { allowedTargets=0; };
+				class ASL_Shorten_Ropes { allowedTargets=0; };
+				class ASL_Release_Cargo { allowedTargets=0; };
+				class ASL_Retract_Ropes { allowedTargets=0; };
+				class ASL_Deploy_Ropes { allowedTargets=0; };
+				class ASL_Attach_Ropes { allowedTargets=0; };
+				class ASL_Drop_Ropes { allowedTargets=0; };
+				class ASL_Hint { allowedTargets=1; };
+				class ASL_Hide_Object_Global { allowedTargets=2; };
+			};
+		};
+
+
+		class CfgCommunicationMenu
+		{
+
+			#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
+
+		};
+
+		#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
+		#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
+
+/*******************************END OF CUSTOM CONTENT HERE****************************/
+
+class Header
+{
+	gameType = Warlords;
+	minPlayers = 1;
+	maxPlayers = 72;
+};
+
+onPauseScript[] = {BIS_fnc_WL2_onPause};
+
+//Disabled until needed #include "multiplayerSecurity.inc" 
+#include "requisitions.inc"
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1500; //1800
+
+wreckManagerMode = 1;
+wreckLimit = 32; //50
+wreckRemovalMinTime = 120; //60
+wreckRemovalMaxTime = 240; //120
+
+minPlayerDistance = WL_ASSET_REMOVAL_SAFEZONE;
+
+class CfgDebriefing
+{
+	class BIS_WLVictoryGUER
+	{
+		title = $STR_A3_endgame_debriefing_victory;
+		subtitle = $STR_A3_WL_game_over_victory;
+		picture = "n_installation";
+		pictureBackground = "\A3\Map_Altis\data\ui_Altis_ca.paa";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class BIS_WLDefeatGUER
+	{
+		title = $STR_A3_endgame_debriefing_defeat;
+		subtitle = $STR_A3_WL_game_over_loss;
+		picture = "n_installation";
+		pictureBackground = "\A3\Map_Altis\data\ui_Altis_ca.paa";
+		pictureColor[] = {0,0.5,0,1};
+	};
+};
+
+class Params
+{
+	class BIS_WL_savingEnabled
+	{
+		title = $STR_A3_WL_param_saving;
+		values[] = {1, 0};
+		texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
+		default = 0;
+		isBool = 1;
+	};
+	
+	class BIS_WL_zoneRestrictionSetting
+	{
+		title = $STR_A3_mdl_supp_zonerest_name;
+		values[] = {0, 1};
+		texts[] = {$STR_A3_to_zoneprotection7, $STR_A3_to_zoneprotection9};
+		default = 0;
+	};
+	
+	class BIS_WL_fogOfWar
+	{
+		title = $STR_A3_WL_param_fog_of_war;
+		values[] = {0, 1, 2};
+		texts[] = {$STR_DISP_OPT_DISABLED, $STR_A3_WL_param_fog_of_war_value1, $STR_A3_WL_param_fog_of_war_value2};
+		default = 1;
+	};
+};
