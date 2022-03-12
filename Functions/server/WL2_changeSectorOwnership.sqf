@@ -18,6 +18,7 @@ if !(_owner in _previousOwners) then {
 		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F","B_Radar_System_01_F","O_SAM_System_04_F","O_Radar_System_02_F"])}); //better way to filter the ones u dont want to blow up.
 	};
 	//AI buddy count system
+	/*
 	_players = count BIS_WL_allWarlords;
     	if (_players >= 32) then 
 		{
@@ -39,7 +40,7 @@ if !(_owner in _previousOwners) then {
 					publicVariable "BIS_WL_maxSubordinates"
 				}
 			} 
-		};
+		};*/
 	_previousOwners pushBack _owner;
 	if (time > 0 && count _previousOwners == 1) then {
 		{
