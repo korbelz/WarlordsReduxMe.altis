@@ -20,3 +20,4 @@
  - Removed adjustable AI buddy count
  - Lowered AI buddy count to 2
  - Upped AI skill?
+ - Lowered cost of tanks 
