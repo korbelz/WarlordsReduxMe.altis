@@ -7,3 +7,9 @@
  - Removed Sling load script
  - Removed GOM script
  - Testing github bot
+
+ 1.0.0002
+ - updated welcome screen
+ - Removed old markers from map
+ - removed edessa as a base to stop exploding cars
+ - Fixed view distance
