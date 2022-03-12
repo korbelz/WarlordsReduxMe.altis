@@ -138,8 +138,8 @@ class ScenarioData
 {
 	author="Jezuro";
 	overviewText="Warlords Redux introduces a lot of new features like Fog of War and random base locations.";
-	overViewPicture="wl_logo_ca.paa";
-	wreckRemovalMaxTime=3600;
+	overViewPicture="reduxME_welcome.jpg";
+	wreckRemovalMaxTime=240;
 };
 class Mission
 {
