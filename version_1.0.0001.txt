@@ -13,3 +13,8 @@
  - Removed old markers from map
  - removed edessa as a base to stop exploding cars
  - Fixed view distance
+ - New welcome screen
+ - No longer able to switch teams
+ - restored .57 Repair/rearm
+ - Full Requisition list
+ 
