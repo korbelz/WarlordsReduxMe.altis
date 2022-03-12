@@ -17,4 +17,6 @@
  - No longer able to switch teams
  - restored .57 Repair/rearm
  - Full Requisition list
- 
+ - Removed adjustable AI buddy count
+ - Lowered AI buddy count to 2
+ - Upped AI skill?
