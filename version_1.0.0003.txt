@@ -23,4 +23,4 @@
  - Lowered cost of tanks 
 
  1.0.0003
- - 
+ - Fixed bug in garbage collector 
