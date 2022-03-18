@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={2606.1196,77.670547,22108.551};
-		dir[]={-0.60727066,-0.23541577,-0.75887573};
-		up[]={-0.14709637,0.97188371,-0.18381831};
-		aside[]={-0.78081775,-1.0497752e-007,0.62483233};
+		dir[]={-0.60724336,-0.23540509,-0.75884122};
+		up[]={-0.14708157,0.97189736,-0.18380035};
+		aside[]={-0.78078336,-1.4901161e-008,0.62480193};
 	};
 };
 binarizationWanted=0;
@@ -137,7 +137,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Warlords 2 (Redux)";
+		briefingName="Warlords Redux Miller Edition";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -15008,7 +15008,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3646.6895,10.215762,13116.778};
-				angles[]={-0,0,0.0093286335};
+				angles[]={0,0,0.0093286335};
 			};
 			side="Empty";
 			flags=4;

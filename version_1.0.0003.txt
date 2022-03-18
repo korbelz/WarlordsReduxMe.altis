@@ -25,3 +25,4 @@
  1.0.0003
  - Fixed bug in garbage collector 
  - added Helipads to Kavala
+ - Fixed mission name 
