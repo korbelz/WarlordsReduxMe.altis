@@ -21,3 +21,6 @@
  - Lowered AI buddy count to 2
  - Upped AI skill?
  - Lowered cost of tanks 
+
+ 1.0.0003
+ - 
