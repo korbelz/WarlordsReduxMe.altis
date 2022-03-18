@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=547;
+		nextID=550;
 	};
 	class MarkerIDProvider
 	{
@@ -157,7 +157,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=314;
+		items=317;
 		class Item0
 		{
 			dataType="Logic";
@@ -14984,6 +14984,57 @@ class Mission
 			id=546;
 			type="Land_RampConcrete_F";
 			atlOffset=2.3841858e-007;
+		};
+		class Item314
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3728.0012,18.188417,13013.316};
+				angles[]={0.02399601,0,0.015998369};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=547;
+			type="Land_HelipadEmpty_F";
+			atlOffset=-7.6293945e-006;
+		};
+		class Item315
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3646.6895,10.215762,13116.778};
+				angles[]={-0,0,0.0093286335};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=548;
+			type="Land_HelipadEmpty_F";
+			atlOffset=-7.6293945e-006;
+		};
+		class Item316
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3650.3853,10.297675,13155.314};
+				angles[]={6.2645216,0,0.013332055};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=549;
+			type="Land_HelipadEmpty_F";
+			atlOffset=-7.6293945e-006;
 		};
 	};
 	class Connections
