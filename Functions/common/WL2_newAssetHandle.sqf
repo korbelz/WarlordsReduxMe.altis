@@ -117,9 +117,12 @@ if (isPlayer _owner) then {
 										{
 											_asset removeMagazineTurret [_x, _turret];
 											_asset addMagazineTurret [_x, _turret];
+											//_asset setVehicleAmmoDef 1;
 										} forEach _mags;
+										_asset setVehicleAmmo 1; //This lines lets helis re-arm
 									} forEach allTurrets _asset;
 									_asset selectWeapon _curWeapon;
+									_asset setVehicleAmmo 1; //this line lets aircraft re-arm
 									_asset setVariable ["BIS_WL_nextRearm", WL_SYNCED_TIME + WL_MAINTENANCE_COOLDOWN_REARM];
 									playSound3D ["A3\Sounds_F\sfx\UI\vehicles\Vehicle_Rearm.wss", _asset, FALSE, getPosASL _asset, 2, 1, 75];
 									[toUpper localize "STR_A3_WL_popup_asset_rearmed"] spawn BIS_fnc_WL2_smoothText;

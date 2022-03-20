@@ -26,3 +26,6 @@
  - Fixed bug in garbage collector 
  - added Helipads to Kavala
  - Fixed mission name 
+
+ 1.0.0004
+ - Fixed Heli/jet re-arm bug
