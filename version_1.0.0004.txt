@@ -30,3 +30,4 @@
  1.0.0004
  - Fixed Heli/jet re-arm bug
  - Improved repair/rearm tooltip
+ - Removed onplayerrespawn script for perf 
