@@ -35,3 +35,5 @@
  - Changed Edessa to a circle zone and bigger for better spawning
  - Changed Zaros to a circle zone and bigger for better spawning
  - Vics no longer spawn on roads and clip buildings
+ - Vastly increased number of safe spawn locations per town
+ - Increase size of a few problem towns to work with new spawning system: Ghost hotel, Oreo, Aberra, Gat. 
