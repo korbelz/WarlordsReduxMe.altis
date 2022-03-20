@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={2606.1196,77.670547,22108.551};
-		dir[]={-0.60724354,-0.23540504,-0.7588411};
-		up[]={-0.14708157,0.9718973,-0.18380028};
-		aside[]={-0.78078312,-7.4505806e-009,0.62480211};
+		dir[]={-0.60724354,-0.23540501,-0.7588411};
+		up[]={-0.14708154,0.9718973,-0.18380027};
+		aside[]={-0.78078312,7.4505806e-009,0.62480211};
 	};
 };
 binarizationWanted=0;
@@ -1005,12 +1005,12 @@ class Mission
 		class Item71
 		{
 			dataType="Trigger";
-			position[]={4594.1973,298.89655,21411.617};
-			angle=2.2371621;
+			position[]={4594.1968,298.89661,21411.617};
+			angle=2.2371628;
 			class Attributes
 			{
-				sizeA=150;
-				sizeB=150;
+				sizeA=200;
+				sizeB=200;
 			};
 			id=74;
 			type="EmptyDetector";
@@ -1019,7 +1019,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7201.52,0.00047239661,11048.064};
-			angle=3.3264754;
+			angle=3.3264749;
 			class Attributes
 			{
 				sizeA=300;
@@ -1046,7 +1046,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9004.0938,27.304951,12038.383};
-			angle=3.3965852;
+			angle=3.3965847;
 			class Attributes
 			{
 				sizeA=300;
@@ -1208,11 +1208,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9434.5488,120.95928,20237.021};
-			angle=2.1149371;
+			angle=2.1149375;
 			class Attributes
 			{
-				sizeA=150;
-				sizeB=150;
+				sizeA=250;
+				sizeB=250;
 			};
 			id=89;
 			type="EmptyDetector";
@@ -1235,15 +1235,16 @@ class Mission
 		class Item88
 		{
 			dataType="Trigger";
-			position[]={10325.004,127.24612,19070.691};
-			angle=2.1149371;
+			position[]={10325.004,127.24597,19070.689};
+			angle=2.1149375;
 			class Attributes
 			{
-				sizeA=175;
-				sizeB=175;
+				sizeA=225;
+				sizeB=225;
 			};
 			id=91;
 			type="EmptyDetector";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item89
 		{
@@ -1763,11 +1764,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={21837.727,27.973866,20997.352};
-			angle=3.0318923;
+			angle=3.0318987;
 			class Attributes
 			{
-				sizeA=200;
-				sizeB=150;
+				sizeA=300;
+				sizeB=250;
 			};
 			id=134;
 			type="EmptyDetectorAreaR50";
