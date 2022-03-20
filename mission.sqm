@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={2606.1196,77.670547,22108.551};
-		dir[]={-0.60724354,-0.23540506,-0.7588411};
-		up[]={-0.14708157,0.9718973,-0.18380029};
-		aside[]={-0.78078318,7.4505806e-009,0.62480211};
+		dir[]={-0.60724354,-0.23540504,-0.7588411};
+		up[]={-0.14708157,0.9718973,-0.18380028};
+		aside[]={-0.78078312,-7.4505806e-009,0.62480211};
 	};
 };
 binarizationWanted=0;
@@ -1018,17 +1018,16 @@ class Mission
 		class Item72
 		{
 			dataType="Trigger";
-			position[]={7201.52,0,11048.064};
-			angle=3.3264744;
+			position[]={7201.52,0.00047239661,11048.064};
+			angle=3.3264754;
 			class Attributes
 			{
-				sizeA=200;
-				sizeB=100;
-				isRectangle=1;
+				sizeA=300;
+				sizeB=200;
 			};
 			id=75;
 			type="EmptyDetector";
-			atlOffset=0.47952759;
+			atlOffset=0.47999999;
 		};
 		class Item73
 		{
@@ -1046,17 +1045,16 @@ class Mission
 		class Item74
 		{
 			dataType="Trigger";
-			position[]={9004.0938,27.30484,12038.383};
-			angle=3.3965821;
+			position[]={9004.0938,27.304951,12038.383};
+			angle=3.3965852;
 			class Attributes
 			{
-				sizeA=200;
-				sizeB=150;
-				isRectangle=1;
+				sizeA=300;
+				sizeB=250;
 			};
 			id=77;
 			type="EmptyDetector";
-			atlOffset=2.6702881e-005;
+			atlOffset=0.0001373291;
 		};
 		class Item75
 		{

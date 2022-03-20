@@ -32,3 +32,6 @@
  - Improved repair/rearm tooltip
  - Removed onplayerrespawn script for perf 
  - ?fix for CP transfer bug? 
+ - Changed Edessa to a circle zone and bigger for better spawning
+ - Changed Zaros to a circle zone and bigger for better spawning
+ - Vics no longer spawn on roads and clip buildings
