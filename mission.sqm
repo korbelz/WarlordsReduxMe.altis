@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={2606.1196,77.670547,22108.551};
-		dir[]={-0.60724354,-0.23540501,-0.7588411};
-		up[]={-0.14708154,0.9718973,-0.18380027};
-		aside[]={-0.78078312,7.4505806e-009,0.62480211};
+		dir[]={-0.60724354,-0.235405,-0.7588411};
+		up[]={-0.14708154,0.9718973,-0.18380025};
+		aside[]={-0.78078312,0,0.62480211};
 	};
 };
 binarizationWanted=0;
@@ -904,8 +904,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={20704.395,17.070446,15698.111};
-				angles[]={6.2711902,0,6.272521};
+				position[]={20646.211,16.584248,15649.828};
+				angles[]={0.0053265258,0,0};
 			};
 			id=64;
 			type="Logic";
@@ -943,8 +943,8 @@ class Mission
 			angle=2.5586877;
 			class Attributes
 			{
-				sizeA=200;
-				sizeB=200;
+				sizeA=225;
+				sizeB=225;
 			};
 			id=67;
 			type="EmptyDetector";
@@ -978,26 +978,27 @@ class Mission
 		class Item69
 		{
 			dataType="Trigger";
-			position[]={4219.3398,18.060715,15043.731};
-			angle=1.5847698;
+			position[]={4219.3398,18.060713,15043.731};
+			angle=1.5847764;
 			class Attributes
 			{
-				sizeA=75;
-				sizeB=100;
+				sizeA=100;
+				sizeB=125;
 				isRectangle=1;
 			};
 			id=71;
 			type="EmptyDetector";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item70
 		{
 			dataType="Trigger";
-			position[]={4891.7202,74.32621,16184.359};
+			position[]={4891.7202,74.32621,16184.36};
 			angle=3.1327438;
 			class Attributes
 			{
-				sizeA=175;
-				sizeB=125;
+				sizeA=225;
+				sizeB=175;
 			};
 			id=73;
 			type="EmptyDetector";
@@ -1006,11 +1007,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4594.1968,298.89661,21411.617};
-			angle=2.2371626;
+			angle=2.2371628;
 			class Attributes
 			{
-				sizeA=200;
-				sizeB=200;
+				sizeA=275;
+				sizeB=275;
 			};
 			id=74;
 			type="EmptyDetector";
@@ -1019,7 +1020,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7109.0718,3.9044406,11098.631};
-			angle=3.3264747;
+			angle=3.3264744;
 			class Attributes
 			{
 				sizeA=300;
@@ -1045,7 +1046,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9004.0938,27.304951,12038.383};
-			angle=3.3965845;
+			angle=3.3965843;
 			class Attributes
 			{
 				sizeA=300;
@@ -1207,11 +1208,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9434.5488,120.95928,20237.021};
-			angle=2.1149373;
+			angle=2.1149375;
 			class Attributes
 			{
-				sizeA=250;
-				sizeB=250;
+				sizeA=275;
+				sizeB=275;
 			};
 			id=89;
 			type="EmptyDetector";
@@ -1235,7 +1236,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={10325.004,127.24597,19070.689};
-			angle=2.1149373;
+			angle=2.1149371;
 			class Attributes
 			{
 				sizeA=225;
@@ -1670,12 +1671,12 @@ class Mission
 		class Item121
 		{
 			dataType="Trigger";
-			position[]={20704.643,17.071478,15698.416};
-			angle=4.0707002;
+			position[]={20641.316,16.618372,15666.947};
+			angle=4.0707006;
 			class Attributes
 			{
-				sizeA=125;
-				sizeB=200;
+				sizeA=150;
+				sizeB=250;
 				isRectangle=1;
 			};
 			id=126;
