@@ -45,3 +45,4 @@
  - Moved the following towns for better spawning: Edessa, Negades, power plant(25m), neri(25m), abdera(25m), oreo(65m), Solar(25m SW)
  - Fixed almost all zone naming issues
  - Removed 2 zones for CP balance
+ - Added new sector links: kalithea -> Agios Petros, Pygros -> Faronaki

@@ -967,7 +967,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4219.3398,18.060713,15043.731};
-			angle=1.5847763;
+			angle=1.5847762;
 			class Attributes
 			{
 				sizeA=100;
@@ -995,7 +995,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4594.1968,298.89661,21411.617};
-			angle=2.2371626;
+			angle=2.2371624;
 			class Attributes
 			{
 				sizeA=275;
@@ -1183,7 +1183,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9434.5488,120.95928,20237.021};
-			angle=2.1149373;
+			angle=2.1149371;
 			class Attributes
 			{
 				sizeA=275;
@@ -14989,11 +14989,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=132;
+			nextID=134;
 		};
 		class Links
 		{
-			items=132;
+			items=134;
 			class Item0
 			{
 				linkID=0;
@@ -16309,6 +16309,26 @@ class Mission
 				linkID=131;
 				item0=32;
 				item1=31;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item132
+			{
+				linkID=132;
+				item0=63;
+				item1=42;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item133
+			{
+				linkID=133;
+				item0=209;
+				item1=38;
 				class CustomData
 				{
 					type="Sync";
