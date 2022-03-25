@@ -46,3 +46,5 @@
  - Fixed almost all zone naming issues
  - Removed 2 zones for CP balance
  - Added new sector links: kalithea -> Agios Petros, Pygros -> Faronaki
+ - Possible fix for server lock up at low FPS, should safely run scripts at 20ish FPS now.
+ - 
