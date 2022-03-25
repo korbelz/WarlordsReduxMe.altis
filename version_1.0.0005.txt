@@ -49,3 +49,4 @@
  - Possible fix for server lock up at low FPS, should safely run scripts at 20ish FPS now.
  - Fix for sector selection bug(sync time)
  - Fix for Order funds transfer bug(sync time)
+ - Improved AI buddy update UI rate
