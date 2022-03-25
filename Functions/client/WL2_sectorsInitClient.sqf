@@ -94,7 +94,7 @@ _i = 0;
 	_name = _sector getVariable ["BIS_WL_name", ""];
 	
 	if (_name == "") then {
-		_nearLocations = nearestLocations [_sector, ["NameLocal", "NameVillage", "NameCity", "NameCityCapital"], 300, _sector];
+		_nearLocations = nearestLocations [_sector, ["NameLocal", "NameVillage", "NameCity", "NameCityCapital"], 1000, _sector];
 		if (count _nearLocations > 0) then {
 			_location = _nearLocations # 0;
 			_name = text _location;

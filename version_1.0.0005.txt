@@ -40,3 +40,6 @@
 
  1.0.0005
  - Adjusted max view distance
+ - Adjusted CP transfer cost
+ - Adjusted repair/re-arm timers for .57
+ - Moved the following towns for better spawning: Edessa, 
