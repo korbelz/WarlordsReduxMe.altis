@@ -37,3 +37,6 @@
  - Vics no longer spawn on roads and clip buildings
  - Vastly increased number of safe spawn locations per town
  - Increase size of a few problem towns to work with new spawning system: Ghost hotel, Oreo, Aberra, Gat. 
+
+ 1.0.0005
+ - Adjusted max view distance
