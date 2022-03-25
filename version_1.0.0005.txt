@@ -50,3 +50,4 @@
  - Fix for sector selection bug(sync time)
  - Fix for Order funds transfer bug(sync time)
  - Improved AI buddy update UI rate
+ - Fixed for change sector ownership bug(sync time)
