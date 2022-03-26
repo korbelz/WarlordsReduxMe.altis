@@ -59,3 +59,5 @@
 - Above changes might both be related to teleport glitch...so maybe fixed?
 - Fixed bug in sector voting(sync time)
 - Fixed for minor update sector array bug
+- Added Official Arma Discord link
+- Removed UCAVs, need more testing
