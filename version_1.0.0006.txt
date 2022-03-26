@@ -53,7 +53,7 @@
  - Improved AI buddy update UI rate
  - Fixed for change sector ownership bug(sync time)
 
- 1.0.0005
+ 1.0.0006
 - Fixed divide by zero error in respawn handle script(maybe?)
 - Fixed error in the new warlords script that still allowed team switching
 - Above changes might both be related to teleport glitch...so maybe fixed?
