@@ -57,3 +57,5 @@
 - Fixed divide by zero error in respawn handle script(maybe?)
 - Fixed error in the new warlords script that still allowed team switching
 - Above changes might both be related to teleport glitch...so maybe fixed?
+- Fixed bug in sector voting(sync time)
+- Fixed for minor update sector array bug
