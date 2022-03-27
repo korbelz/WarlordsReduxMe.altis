@@ -61,3 +61,6 @@
 - Fixed for minor update sector array bug
 - Added Official Arma Discord link
 - Removed UCAVs, need more testing
+
+1.0.0007
+- Slowed down and simplified zone kill code for debugging/logging

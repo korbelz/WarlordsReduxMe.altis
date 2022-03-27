@@ -3,7 +3,7 @@
 _trespassersOld = [];
 
 while {TRUE} do {
-	sleep (if (count _trespassersOld == 0) then {WL_TIMEOUT_STANDARD} else {WL_TIMEOUT_SHORT});
+	sleep (if (count _trespassersOld == 0) then {WL_TIMEOUT_LONG} else {WL_TIMEOUT_LONG});
 	
 	_trespassers = [];
 	_forgivenTrespassers = [];
@@ -42,10 +42,10 @@ while {TRUE} do {
 	
 	{
 		if (isPlayer _x) then {
-			_timeout = WL_ZONE_RESTRICTION_KILL_TIMEOUT_VEHICLES;
-			if (vehicle player == player) then {_timeout = WL_ZONE_RESTRICTION_KILL_TIMEOUT_INFANTRY} else {
-				if ((vehicle player) isKindOf "Air") then {_timeout = WL_ZONE_RESTRICTION_KILL_TIMEOUT_AIRCRAFT};
-			};
+			_timeout = 1;
+			if (vehicle player == player) then {_timeout = 1} else {
+				if ((vehicle player) isKindOf "Air") then {_timeout = 1};
+			}; //above code block simplifed for debugging
 			_x setVariable ["BIS_WL_zoneRestrictionKillTime", WL_SYNCED_TIME + _timeout, TRUE];
 			[_x, WL_SYNCED_TIME + _timeout] spawn {
 				params ["_player", "_timeout"];
