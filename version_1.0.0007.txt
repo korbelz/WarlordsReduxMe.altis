@@ -65,3 +65,5 @@
 1.0.0007
 - Slowed down and simplified zone kill code for debugging/logging
 - Edessa re-added as a base and made little smaller
+- Kavala re-added as heli and airport
+- Fix for Helis landing damaged
