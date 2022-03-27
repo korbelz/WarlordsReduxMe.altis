@@ -188,7 +188,7 @@ class Mission
 				position[]={3552.104,8.5744362,12993.334};
 				angles[]={6.2645278,0,0.078504913};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=2;
 			type="Logic";
 			atlOffset=-9.5367432e-007;
@@ -967,7 +967,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4219.3398,18.060713,15043.731};
-			angle=1.584776;
+			angle=1.5847757;
 			class Attributes
 			{
 				sizeA=100;
@@ -1008,7 +1008,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7109.0718,3.9039803,11098.631};
-			angle=3.3264754;
+			angle=3.3264744;
 			class Attributes
 			{
 				sizeA=250;

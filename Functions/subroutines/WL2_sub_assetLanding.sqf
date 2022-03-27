@@ -26,8 +26,14 @@ _wpGetOut setWaypointStatements ["TRUE", "deleteVehicle this"];
 	if (!isNull _assetPilot) then {
 		if (vehicle _assetPilot == _asset) then {
 			_asset deleteVehicleCrew _assetPilot;
+			
 		} else {
 			deleteVehicle _assetPilot;
+			
 		};
 	};
+	// this code block waits for the hei to 'bounce' then repair and refuels it.
+	sleep 4;
+	_asset setDamage 0;
+	_asset setFuel 1;
 };
