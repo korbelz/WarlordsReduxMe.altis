@@ -67,3 +67,7 @@
 - Edessa re-added as a base and made little smaller
 - Kavala re-added as heli and airport
 - Fix for Helis landing damaged
+
+1.0.0008
+- reduced default(min) spawn height of vic by 125 meters
+- Added 125 meters(mean) 75 meters of randomness to vic spawn height

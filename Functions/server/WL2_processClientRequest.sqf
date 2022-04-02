@@ -199,7 +199,7 @@ if !(isNull _sender) then {
 					}; 
 				} else {
 							
-					_parachute setPos ((position _parachute) vectorAdd [0, 0, 30 + random 20]);
+					_parachute setPos ((position _parachute) vectorAdd [0, 0, -125 + random 125]);
 					_asset = createVehicle [_className, _targetPosFinal, [], 0, "NONE"];
 					_asset setVariable ["BIS_WL_deployPos", _targetPosFinal];
 					_bBox = boundingBoxReal _asset;
