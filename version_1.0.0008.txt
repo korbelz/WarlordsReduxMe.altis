@@ -71,3 +71,7 @@
 1.0.0008
 - reduced default(min) spawn height of vic by 125 meters
 - Added 125 meters(mean) 75 meters of randomness to vic spawn height
+- Added toggles for vic spawning heights
+- Kavala Carrier clean up and improvements
+- Carriers easier to land on
+- ZoneRestriction mode from 0 to 1 for testing
