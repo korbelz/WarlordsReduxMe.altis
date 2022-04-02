@@ -36,7 +36,7 @@ switch (_locality) do {
 		BIS_WL_scanCooldown = (BIS_WL_initModule getVariable ["BIS_WL_scanCooldown", 90]) max WL_SCAN_DURATION;
 		BIS_WL_lastLoadoutCost = BIS_WL_initModule getVariable ["BIS_WL_lastLoadoutCost", 100];
 		BIS_WL_savedLoadoutCost = BIS_WL_initModule getVariable ["BIS_WL_savedLoadoutCost", 500];
-		BIS_WL_zoneRestrictionSetting = BIS_WL_initModule getVariable ["BIS_WL_zoneRestrictionSetting", 0];
+		BIS_WL_zoneRestrictionSetting = BIS_WL_initModule getVariable ["BIS_WL_zoneRestrictionSetting", 1]; //default 0
 		BIS_WL_savingEnabled = BIS_WL_initModule getVariable ["BIS_WL_savingEnabled", FALSE];
 		BIS_WL_blacklistedBackpacks = [];
 		{
