@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=572;
+		nextID=577;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3430.771,24.742598,12790.635};
-		dir[]={-0.83956379,-0.30776882,0.44793513};
-		up[]={-0.27162603,0.95134568,0.14491932};
-		aside[]={0.47078151,-1.9332365e-006,0.88240927};
+		pos[]={2393.8257,53.201767,21581.059};
+		dir[]={0.38523105,-0.53724772,0.75038016};
+		up[]={0.24537542,0.8434087,0.47795498};
+		aside[]={0.88966101,3.4458208e-007,-0.45674092};
 	};
 };
 binarizationWanted=0;
@@ -157,7 +157,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=331;
+		items=335;
 		class Item0
 		{
 			dataType="Logic";
@@ -14371,7 +14371,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3397.4783,19.407066,12804.771};
-				angles[]={0,1.6091504,-0};
+				angles[]={0,1.6091504,0};
 			};
 			side="Empty";
 			class Attributes
@@ -14983,7 +14983,7 @@ class Mission
 			};
 			id=551;
 			type="Land_RampConcrete_F";
-			atlOffset=9.8999996;
+			atlOffset=9.8999987;
 		};
 		class Item313
 		{
@@ -15096,7 +15096,7 @@ class Mission
 			};
 			id=558;
 			type="Land_RampConcrete_F";
-			atlOffset=-0.29999971;
+			atlOffset=-0.29999948;
 		};
 		class Item320
 		{
@@ -15272,7 +15272,75 @@ class Mission
 			};
 			id=570;
 			type="Land_RampConcrete_F";
-			atlOffset=14.000011;
+			atlOffset=14.00001;
+		};
+		class Item331
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2958.5803,18.927443,12755.501};
+				angles[]={0,3.065793,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=572;
+			type="Land_Pier_F";
+			atlOffset=38.533607;
+		};
+		class Item332
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2957.583,18.766783,12768.789};
+				angles[]={0,3.065793,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=573;
+			type="Land_Pier_F";
+			atlOffset=39.700001;
+		};
+		class Item333
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2427.6316,13.771223,21650.773};
+				angles[]={0,5.2359877,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=575;
+			type="Land_Pier_F";
+			atlOffset=63.304192;
+		};
+		class Item334
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2440.6345,13.880877,21642.799};
+				angles[]={0,5.2359877,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=576;
+			type="Land_Pier_F";
+			atlOffset=61.794228;
 		};
 	};
 	class Connections
