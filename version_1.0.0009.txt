@@ -75,3 +75,6 @@
 - Kavala Carrier clean up and improvements
 - Carriers easier to land on
 - ZoneRestriction mode from 0 to 1 for testing
+
+1.0.0009
+- CP transfer removed for testing
