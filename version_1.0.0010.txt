@@ -78,3 +78,7 @@
 
 1.0.0009
 - CP transfer removed for testing
+
+1.0.0010
+- CP transfer restored
+- CP transfer cancel bug fixed 
