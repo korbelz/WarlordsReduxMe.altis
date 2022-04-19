@@ -82,3 +82,6 @@
 1.0.0010
 - CP transfer restored
 - CP transfer cancel bug fixed 
+
+57.0.010
+- Renamed V file to 57.x.xxx
