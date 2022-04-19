@@ -88,3 +88,4 @@
 - Fix for chat not working after failing to change teams
 - Fixed welcome popping up early bug
 - Improved performance of welcome screen script
+- Added bunch of documenation to Github page/wiki
