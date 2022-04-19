@@ -26,8 +26,8 @@ if !(missionNamespace getVariable _teamCheckOKVarID) exitWith {
 	player removeItem "ItemMap";
 	player removeItem "ItemRadio";
 	[player] joinSilent BIS_WL_wrongTeamGroup;
-	enableRadio FALSE;
-	enableSentences FALSE;
+	enableRadio TRUE;
+	enableSentences TRUE;
 	0 fadeSpeech 0;
 	0 fadeRadio 0;
 	{_x enableChannel [FALSE, FALSE]} forEach [0,1,2,3,4,5];
