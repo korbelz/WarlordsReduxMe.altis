@@ -83,10 +83,11 @@
 - CP transfer restored
 - CP transfer cancel bug fixed 
 
-57.0.010
+57.0.011
 - Renamed V file to 57.x.xxx
 - Fix for chat not working after failing to change teams
 - Fixed welcome popping up early bug
 - Improved performance of welcome screen script
 - Added bunch of documenation to Github page/wiki
 - Improved performance of re-arm script
+- Random mission start times, heavily weighted toward daytime
