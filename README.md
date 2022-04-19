@@ -16,3 +16,9 @@ Offical Arma 3 discord:  https://discord.gg/arma
 
 Github page: you are already here :)
 
+## Live stream playlist 
+
+I stream all the dev work I do on redux for a detailed breakdown of all the bugs that get fixed. 
+
+Youtube playlist: https://www.youtube.com/playlist?list=PLCaYbxUNEJMG7QT9pqOZkOoAUjOmgN1V6
+
