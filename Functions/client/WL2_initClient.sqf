@@ -64,6 +64,8 @@ if !(missionNamespace getVariable _teamCheckOKVarID) exitWith {
 	while {!_confirmReposition} do {
 		waitUntil {player distance _pos > 2}; 
 		uiSleep 1;
+		enableRadio TRUE;
+		enableSentences TRUE;
 		if (player distance _pos > 2) then {
 			_confirmReposition = TRUE;
 		};
