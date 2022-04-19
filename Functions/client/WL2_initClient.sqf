@@ -26,8 +26,8 @@ if !(missionNamespace getVariable _teamCheckOKVarID) exitWith {
 	player removeItem "ItemMap";
 	player removeItem "ItemRadio";
 	[player] joinSilent BIS_WL_wrongTeamGroup;
-	enableRadio TRUE;
-	enableSentences TRUE;
+	enableRadio FALSE;
+	enableSentences FALSE;
 	0 fadeSpeech 0;
 	0 fadeRadio 0;
 	{_x enableChannel [FALSE, FALSE]} forEach [0,1,2,3,4,5];
@@ -66,7 +66,7 @@ if !(missionNamespace getVariable _teamCheckOKVarID) exitWith {
 		uiSleep 1;
 		enableRadio TRUE;
 		enableSentences TRUE;
-		{_x enableChannel [TRUE, TRUE]} forEach [0,1,2,3,4,5];
+		{_x enableChannel [TRUE, TRUE]} forEach [1,2,3,4,5];
 		if (player distance _pos > 2) then {
 			_confirmReposition = TRUE;
 		};
@@ -224,8 +224,6 @@ waitUntil {WL_PLAYER_FUNDS != -1};
 	sleep 5;
 	while {!BIS_WL_purchaseMenuDiscovered} do {
 		[format [toUpper localize "STR_A3_WL_tip_menu", (actionKeysNamesArray "Gear") # 0], 5] spawn BIS_fnc_WL2_smoothText;
-		enableRadio TRUE;
-		enableSentences TRUE;
 		sleep 30;
 	};
 };
