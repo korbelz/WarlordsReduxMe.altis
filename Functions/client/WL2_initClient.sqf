@@ -202,6 +202,7 @@ call BIS_fnc_WL2_targetResetHandle;
 player call BIS_fnc_WL2_sub_assetAssemblyHandle;
 "init" spawn BIS_fnc_WL2_hintHandle;
 [] spawn BIS_fnc_WL2_music;
+[] spawn BIS_fnc_WL2_welcome;
 
 (format ["BIS_WL_%1_friendlyKillPenaltyEnd", getPlayerUID player]) addPublicVariableEventHandler BIS_fnc_WL2_friendlyFireHandleClient;
 
@@ -215,6 +216,7 @@ waitUntil {WL_PLAYER_FUNDS != -1};
 	waitUntil {sleep WL_TIMEOUT_SHORT; WL_SYNCED_TIME > _t || visibleMap};
 	if !(visibleMap) then {
 		[toUpper localize "STR_A3_WL_tip_voting", 5] spawn BIS_fnc_WL2_smoothText;
+		
 	};
 };
 
