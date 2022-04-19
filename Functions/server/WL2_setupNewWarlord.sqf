@@ -23,6 +23,8 @@ if (isPlayer _warlord) then {
 		_playerSideArr = BIS_WL_playerIDArr # (BIS_WL_competingSides find side group _warlord);
 		_playerSideArr pushBackUnique getPlayerUID _warlord;
 		_var = format ["BIS_WL_%1", getPlayerUID _warlord];
+		enableRadio TRUE;
+		enableSentences TRUE;
 		
 		if (isMultiplayer) then {
 			_var addPublicVariableEventHandler BIS_fnc_WL2_processClientRequest;
