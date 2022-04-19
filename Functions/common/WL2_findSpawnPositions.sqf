@@ -24,7 +24,7 @@ switch (typeName _center) do {
 			_axisB = (triggerArea _center) # 1;
 		} else {
 			if (_center isKindOf "Man") then {
-				_area append [280, 280, 0, FALSE]; //default values 100, 100, 0, false
+				_area append [200, 200, 0, FALSE]; //default values 100, 100, 0, false
 				_axisA = _area # 1;
 				_axisB = _area # 2;
 			} else {

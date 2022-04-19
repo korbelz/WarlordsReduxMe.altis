@@ -88,7 +88,7 @@
 - Fix for chat not working after failing to change teams
 - Fixed welcome popping up early bug
 - Improved performance of welcome screen script
-- Added bunch of documenation to Github page/wiki
+- Added bunch of documentation to GitHub page/wiki
 - Improved performance of re-arm script
 - Random mission start times, heavily weighted toward daytime
 - Defenders can now spawn anywhere in a zone, get REKT spawn campers :)
