@@ -91,3 +91,4 @@
 - Added bunch of documenation to Github page/wiki
 - Improved performance of re-arm script
 - Random mission start times, heavily weighted toward daytime
+- Defenders can now spawn anywhere in a zone, get REKT spawn campers :)
