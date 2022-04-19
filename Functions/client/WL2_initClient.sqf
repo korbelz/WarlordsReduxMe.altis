@@ -23,11 +23,11 @@ if !(missionNamespace getVariable _teamCheckOKVarID) exitWith {
 	sleep 0.1;
 	// This section controls the "you can't switch teams" display
 	["client_init"] call BIS_fnc_endLoadingScreen;
-	player removeItem "ItemMap";
-	player removeItem "ItemRadio";
+	//player removeItem "ItemMap";
+	//player removeItem "ItemRadio";
 	[player] joinSilent BIS_WL_wrongTeamGroup;
-	enableRadio TRUE;
-	enableSentences TRUE;
+	//enableRadio TRUE;
+	//enableSentences TRUE;
 	0 fadeSpeech 0;
 	0 fadeRadio 0;
 	{_x enableChannel [FALSE, FALSE]} forEach [0,1,2,3,4,5];
