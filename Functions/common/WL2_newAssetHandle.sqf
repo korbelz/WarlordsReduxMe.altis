@@ -117,9 +117,9 @@ if (isPlayer _owner) then {
 										{
 											_asset removeMagazineTurret [_x, _turret];
 											_asset addMagazineTurret [_x, _turret];
-											//_asset setVehicleAmmoDef 1;
+											//_asset setVehicleAmmoDef 1; //OG .57 code
 										} forEach _mags;
-										_asset setVehicleAmmo 1; //This lines lets helis re-arm
+										
 									} forEach allTurrets _asset;
 									_asset selectWeapon _curWeapon;
 									_asset setVehicleAmmo 1; //this line lets aircraft re-arm
