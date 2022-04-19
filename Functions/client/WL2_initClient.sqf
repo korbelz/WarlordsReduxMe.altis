@@ -25,9 +25,9 @@ if !(missionNamespace getVariable _teamCheckOKVarID) exitWith {
 	["client_init"] call BIS_fnc_endLoadingScreen;
 	player removeItem "ItemMap";
 	player removeItem "ItemRadio";
-	//[player] joinSilent BIS_WL_wrongTeamGroup;
-	//enableRadio TRUE;
-	//enableSentences TRUE;
+	[player] joinSilent BIS_WL_wrongTeamGroup;
+	enableRadio TRUE;
+	enableSentences TRUE;
 	0 fadeSpeech 0;
 	0 fadeRadio 0;
 	{_x enableChannel [FALSE, FALSE]} forEach [0,1,2,3,4,5];
@@ -66,6 +66,7 @@ if !(missionNamespace getVariable _teamCheckOKVarID) exitWith {
 		uiSleep 1;
 		enableRadio TRUE;
 		enableSentences TRUE;
+		{_x enableChannel [TRUE, TRUE]} forEach [0,1,2,3,4,5];
 		if (player distance _pos > 2) then {
 			_confirmReposition = TRUE;
 		};
