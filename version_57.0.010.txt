@@ -85,3 +85,4 @@
 
 57.0.010
 - Renamed V file to 57.x.xxx
+- Fix for chat not working after failing to change teams
