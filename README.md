@@ -1,5 +1,5 @@
 # WarlordsReduxMe.altis
- bare metal redux mission with perf improvements
+ bare metal redux mission with performance improvements and many bug fixes.
 
  # Warlords Redux Miller Edition(ME) 
 Warlords Redux bare metal with perf improvements. 
