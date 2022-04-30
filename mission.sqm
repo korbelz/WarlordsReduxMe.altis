@@ -23,7 +23,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="warlordsreduxME";
+sourceName="WarlordsReduxMe";
 addons[]=
 {
 	"A3_Modules_F",
