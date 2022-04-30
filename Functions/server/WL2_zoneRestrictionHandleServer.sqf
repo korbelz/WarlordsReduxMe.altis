@@ -49,7 +49,7 @@ while {TRUE} do {
 			_x setVariable ["BIS_WL_zoneRestrictionKillTime", WL_SYNCED_TIME + _timeout, TRUE];
 			[_x, WL_SYNCED_TIME + _timeout] spawn {
 				params ["_player", "_timeout"];
-				waitUntil {WL_SYNCED_TIME >= _timeout || (_player getVariable "BIS_WL_zoneRestrictionKillTime") == -1};
+				waitUntil {sleep 5; WL_SYNCED_TIME >= _timeout || (_player getVariable "BIS_WL_zoneRestrictionKillTime") == -1};
 				if (WL_SYNCED_TIME >= _timeout) then {
 					(vehicle _player) setDamage 1;
 					_player setDamage 1;

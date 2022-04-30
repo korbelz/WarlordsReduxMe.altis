@@ -95,3 +95,4 @@
 
 57.0.012
 - Removed static AT/AA until fix for flipping is found
+- Slowed down kill zone checks to every 5 seconds for debugging
