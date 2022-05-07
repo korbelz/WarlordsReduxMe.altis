@@ -99,3 +99,4 @@
 
 57.0.013
 - Minor improvements to spawning code
+- Green zones now spawn a random number of vehicles (0 - 4), before it was 1. 

@@ -9,20 +9,28 @@ private _connectedToBase = count (WL_BASES arrayIntersect (_sector getVariable "
 // Orginal if (_side == BIS_WL_localSide)
 if (_side == BIS_WL_localSide) then {
 	if (count (_sector getVariable "BIS_WL_vehiclesToSpawn") == 0 && !_connectedToBase) then {
-		private _roads = ((_sector nearRoads 400) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+		private _roads = ((_sector nearRoads 200) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+		private _myArray = [];
+		//_text = format ["items in myArray: %1", count _myArray];
+		//[_text] remoteExec ["systemChat"]; 
+		private _randomsize = random 4;
+		_myArray resize _randomsize; 
+		//_text = format ["items in myArray: %1", count _myArray];
+		//[_text] remoteExec ["systemChat"]; 
+		
 		if (count _roads > 0) then {
-			private _road = selectRandom _roads;
-			_vehicleArray = [position _road, _road getDir selectRandom (roadsConnectedTo _road), selectRandomWeighted (BIS_WL_factionVehicleClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
-			_vehicleArray params ["_vehicle", "_crew", "_group"];
-			
-			_vehicle setVariable ["BIS_WL_parentSector", _sector];
-			[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
-			
 			{
-				_x setVariable ["BIS_WL_parentSector", _sector];
-				[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
-			} forEach _crew;
+				_road = selectRandom _roads;
+				_vehicleArray = [position _road, _road getDir selectRandom (roadsConnectedTo _road), selectRandomWeighted (BIS_WL_factionVehicleClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
 			
+						
 			[_group, 0] setWaypointPosition [position _vehicle, 0];
 			_group deleteGroupWhenEmpty TRUE;
 			
@@ -31,6 +39,7 @@ if (_side == BIS_WL_localSide) then {
 			
 			_wp = _group addWaypoint [position _road, 0];
 			_wp setWaypointType "CYCLE";
+			}forEach _myArray;
 		};
 	} else {
 		{
