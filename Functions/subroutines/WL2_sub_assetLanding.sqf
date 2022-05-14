@@ -3,7 +3,7 @@
 
 params ["_asset", "_sender"];
 
-"pilot assign start" remoteExec ["systemChat"];
+//"pilot assign start" remoteExec ["systemChat"];
 
 _assetPilotGrp = createGroup side group _sender;
 
@@ -40,8 +40,5 @@ _wpGetOut setWaypointStatements ["TRUE", "deleteVehicle this"];
 	sleep 6;
 	_asset setDamage 0;
 	_asset setFuel 1;
-	if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
-		createVehicleCrew _asset;
-	};
-	"end pilot assign" remoteExec ["systemChat"];
+	//"end pilot assign" remoteExec ["systemChat"];
 };

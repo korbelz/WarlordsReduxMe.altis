@@ -124,9 +124,9 @@ if !(isNull _sender) then {
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
 							createVehicleCrew _asset;
 						};
-						_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
-						[_text] remoteExec ["systemChat"];
-						"Heli spawn code running" remoteExec ["systemChat"];
+						//_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
+						//[_text] remoteExec ["systemChat"];
+						//"Heli spawn code running" remoteExec ["systemChat"];
 					};
 				} else {
 					if (_isStatic) then {
