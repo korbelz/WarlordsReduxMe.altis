@@ -4,6 +4,7 @@
 params ["_asset", "_sender"];
 
 "pilot assign start" remoteExec ["systemChat"];
+
 _assetPilotGrp = createGroup side group _sender;
 
 _assetPilot = _assetPilotGrp createUnit [typeOf _sender, [100, 100, 0], [], 0, "NONE"];
@@ -17,7 +18,7 @@ _assetPilot allowFleeing 0;
 
 _assetPilotGrp deleteGroupWhenEmpty TRUE;
 
-createVehicleCrew _asset;
+//createVehicleCrew _asset;
 
 _wpGetOut = _assetPilotGrp addWaypoint [position _asset, 0];
 _wpGetOut setWaypointType "GETOUT";
@@ -39,5 +40,8 @@ _wpGetOut setWaypointStatements ["TRUE", "deleteVehicle this"];
 	sleep 6;
 	_asset setDamage 0;
 	_asset setFuel 1;
+	if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
+		createVehicleCrew _asset;
+	};
 	"end pilot assign" remoteExec ["systemChat"];
 };

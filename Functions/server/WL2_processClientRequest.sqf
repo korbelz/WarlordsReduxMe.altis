@@ -114,14 +114,16 @@ if !(isNull _sender) then {
 						};
 						_asset = createVehicle [_className, _spawnPos, [], 0, "CAN_COLLIDE"];
 						_asset setDir _dir;
-						createVehicleCrew _asset;
+						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
+							createVehicleCrew _asset;
+						};
 					} else {
-						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
-						_asset setVelocity [0, 0, 0];
-						//createVehicleCrew _asset;
-						//(effectiveCommander _asset) setSkill 1;
-						//(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE; 
-						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
+						_asset = createVehicle [_className, _targetPosFinal, [], 0, "CAN_COLLIDE"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
+						//_asset setVelocity [0, 0, 0];
+						//[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
+						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
+							createVehicleCrew _asset;
+						};
 						_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
 						[_text] remoteExec ["systemChat"];
 						"Heli spawn code running" remoteExec ["systemChat"];
