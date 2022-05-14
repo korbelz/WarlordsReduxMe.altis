@@ -61,9 +61,9 @@ _setOwner = {
 			};
 		};
 		_i = 0;
-		while {!(_asset setOwner (owner _sender)) && (owner _asset) != (owner _sender) && _i < 50} do {
+		while {!(_asset setGroupOwner (owner _sender)) && (owner _asset) != (owner _sender) && _i < 50} do {
 			_i = _i + 1;
-			_asset setOwner (owner _sender);
+			_asset setGroupOwner (owner _sender);
 			sleep WL_TIMEOUT_SHORT;
 		};
 	};
@@ -116,9 +116,14 @@ if !(isNull _sender) then {
 						_asset setDir _dir;
 					} else {
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
-						_asset setVelocity [0, 0, 0]; 
+						_asset setVelocity [0, 0, 0];
+						createVehicleCrew _asset;
+						(effectiveCommander _asset) setSkill 1;
+						(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE; 
 						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
-						
+						_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
+						[_text] remoteExec ["systemChat"];
+						"Heli spawn code running" remoteExec ["systemChat"];
 					};
 				} else {
 					if (_isStatic) then {
@@ -144,7 +149,7 @@ if !(isNull _sender) then {
 			missionNamespace setVariable [_assetVar, _asset];
 			(owner _sender) publicVariableClient _assetVar;
 			
-			[_asset, _sender, _isStatic] spawn _setOwner;
+			[_asset, _sender, _isStatic] spawn _setGroupOwner;
 		};
 		case "requestAssetArray": {
 			_params params ["_assetVar", "_infoArray", "_targetPos"];
@@ -253,7 +258,7 @@ if !(isNull _sender) then {
 				};
 				_assets pushBack _asset;
 				
-				[_asset, _sender] spawn _setOwner;
+				[_asset, _sender] spawn _setGroupOwner;
 				
 			} forEach _classNames;
 			
