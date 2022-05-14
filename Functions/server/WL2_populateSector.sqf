@@ -13,7 +13,7 @@ if (_side == BIS_WL_localSide) then {
 		private _myArray = [];
 		//_text = format ["items in myArray: %1", count _myArray];
 		//[_text] remoteExec ["systemChat"]; 
-		private _randomsize = random 4;
+		private _randomsize = random RD_VIC_RANDOM_AI_SPAWNS;
 		_myArray resize _randomsize; 
 		//_text = format ["items in myArray: %1", count _myArray];
 		//[_text] remoteExec ["systemChat"]; 
