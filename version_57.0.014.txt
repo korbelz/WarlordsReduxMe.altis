@@ -103,3 +103,4 @@
 
 57.0.014
 - Added quick toggle for number of AI vics that randomly spawn per zone
+- Removed one uncompiled script and moved welcome script to common folder
