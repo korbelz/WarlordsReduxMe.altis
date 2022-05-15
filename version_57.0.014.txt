@@ -105,3 +105,6 @@
 - Added quick toggle for number of AI vics that randomly spawn per zone
 - Removed one uncompiled script and moved welcome script to common folder
 - Added Sexy Tractors 
+- Fixed wing UCAVs working
+- Rotary Wing UCAVs working, but had to make helis spawn on ground
+- Added Xi'an to bluefor because its OP
