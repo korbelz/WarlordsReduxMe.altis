@@ -115,3 +115,4 @@
 - Restored Blackfish at helipad only zones
 - added Gryphon
 - added Rhino MGS to opfor
+- added V-44 X Blackfish(Vic) to opfor

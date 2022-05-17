@@ -173,6 +173,7 @@ class CfgWLRequisitionPresets
 				class O_Heli_Attack_02_dynamicLoadout_F		{cost = 12000;	requirements[]={"H"};	};	// "Mi-48 Kajman"
 				class O_T_VTOL_02_infantry_dynamicLoadout_F	{cost = 16000;	requirements[]={"H"};	};	// "Y-32 Xi'an (Infantry Transport)"
 				class O_T_VTOL_02_vehicle_F					{cost = 16000;	requirements[]={"H"};	};	// "Y-32 Xi'an (vehicle Transport)"
+				class B_T_VTOL_01_vehicle_F					{cost = 4500;	requirements[]={"H"};	};	// "V-44 X Blackfish(Vic)";
 				class O_Plane_CAS_02_dynamicLoadout_F		{cost = 14000;	requirements[]={"A"};	};	// "To-199 Neophron (CAS)"
 				class O_Plane_Fighter_02_F					{cost = 23000;	requirements[]={"A"};	};	// "To-201 Shikra"
 				class O_Plane_Fighter_02_Stealth_F			{cost = 26000;	requirements[]={"A"};	};	// "To-201 Shikra Stealth"
