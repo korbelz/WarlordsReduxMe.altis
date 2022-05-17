@@ -69,6 +69,7 @@ class CfgWLRequisitionPresets
 				class B_Plane_Fighter_01_Stealth_F			{cost = 23000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II Stealth";
 				class O_T_VTOL_02_infantry_dynamicLoadout_F	{cost = 16000;	requirements[]={"H"};	};	// "Y-32 Xi'an (Infantry Transport)"
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={};	};	// "Phalax";
+				class I_Plane_Fighter_04_F					{cost = 16000;	requirements[]={"A"};	};	// "A-149 Gryphon";
 				
 			};
 			class Naval
@@ -175,6 +176,7 @@ class CfgWLRequisitionPresets
 				class O_Plane_Fighter_02_F					{cost = 23000;	requirements[]={"A"};	};	// "To-201 Shikra"
 				class O_Plane_Fighter_02_Stealth_F			{cost = 26000;	requirements[]={"A"};	};	// "To-201 Shikra Stealth"
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={};	};	// "Phalax";
+				class I_Plane_Fighter_04_F					{cost = 16000;	requirements[]={"A"};	};	// "A-149 Gryphon";
 				
 			};
 			class Naval
