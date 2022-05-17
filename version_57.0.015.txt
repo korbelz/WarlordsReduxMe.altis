@@ -122,4 +122,5 @@
 - added T-140K Angara to bluefor
 - added AFV-4 Gorgon to both sides
 - added AWC 302 Nyx (AA) to both sides
+- Increased Killzone timer from 1 to 6 seconds to 3 to 8 seconds
 

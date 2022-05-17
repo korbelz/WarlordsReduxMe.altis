@@ -42,9 +42,9 @@ while {TRUE} do {
 	
 	{
 		if (isPlayer _x) then {
-			_timeout = 1;
-			if (vehicle player == player) then {_timeout = 1} else {
-				if ((vehicle player) isKindOf "Air") then {_timeout = 1};
+			_timeout = 3;
+			if (vehicle player == player) then {_timeout = 3} else {
+				if ((vehicle player) isKindOf "Air") then {_timeout = 3};
 			}; //above code block simplifed for debugging
 			_x setVariable ["BIS_WL_zoneRestrictionKillTime", WL_SYNCED_TIME + _timeout, TRUE];
 			[_x, WL_SYNCED_TIME + _timeout] spawn {
