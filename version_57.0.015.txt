@@ -120,3 +120,6 @@
 - added To-201 Shikra to bluefor
 - added M2A1 Slammer UP opfor
 - added T-140K Angara to bluefor
+- added AFV-4 Gorgon to both sides
+- added AWC 302 Nyx (AA) to both sides
+

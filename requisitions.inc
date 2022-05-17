@@ -41,7 +41,8 @@ class CfgWLRequisitionPresets
 				class B_Truck_01_ammo_F						{cost = 3000;	requirements[]={};	};	// "HEMTT Ammo"
 				class B_MRAP_01_hmg_F						{cost = 1000;	requirements[]={};	};	// "Hunter HMG"
 				class B_MRAP_01_gmg_F						{cost = 1200;	requirements[]={};	};	// "Hunter GMG"
-				
+				class I_APC_Wheeled_03_cannon_F				{cost = 3500;	requirements[]={};	};	// "AFV-4 Gorgon"
+				class I_LT_01_AA_F							{cost = 3500;	requirements[]={};	};	// "AWC 302 Nyx (AA)"
 				class B_APC_Wheeled_01_cannon_F				{cost = 3000;	requirements[]={};	};	// "AMV-7 Marshall"
 				class B_APC_Tracked_01_rcws_F				{cost = 3000;	requirements[]={};	};	// "IFV-6c Panther"
 				class B_APC_Tracked_01_AA_F					{cost = 3000;	requirements[]={};	};	// "IFV-6a Cheetah"
@@ -156,6 +157,8 @@ class CfgWLRequisitionPresets
 				class O_APC_Wheeled_02_rcws_v2_F			{cost = 2000;	requirements[]={};	};	// "MSE-3 Marid"
 				class O_APC_Tracked_02_cannon_F				{cost = 3000;	requirements[]={};	};	// "BTR-K Kamysh"
 				class O_APC_Tracked_02_AA_F					{cost = 3000;	requirements[]={};	};	// "ZSU-39 Tigris"
+				class I_APC_Wheeled_03_cannon_F				{cost = 3500;	requirements[]={};	};	// "AFV-4 Gorgon"
+				class I_LT_01_AA_F							{cost = 3500;	requirements[]={};	};	// "AWC 302 Nyx (AA)"
 				class O_MBT_02_cannon_F						{cost = 8000;	requirements[]={};	};	// "T-100 Varsuk"
 				class O_MBT_04_cannon_F						{cost = 10000;	requirements[]={};	};	// "T-140 Angara"
 				class O_MBT_04_command_F					{cost = 11000;	requirements[]={};	};	// "T-140K Angara"
