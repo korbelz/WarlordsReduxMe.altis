@@ -158,6 +158,7 @@ class CfgWLRequisitionPresets
 				class O_MBT_02_cannon_F						{cost = 8000;	requirements[]={};	};	// "T-100 Varsuk"
 				class O_MBT_04_cannon_F						{cost = 10000;	requirements[]={};	};	// "T-140 Angara"
 				class O_MBT_04_command_F					{cost = 11000;	requirements[]={};	};	// "T-140K Angara"
+				class B_MBT_01_TUSK_F						{cost = 6500;	requirements[]={};	};	// "M2A1 Slammer UP"
 				class O_MBT_02_arty_F						{cost = 20000;	requirements[]={};	};	// "2S9 Sochor"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
 				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={};	};	// "Rhino MGS UP"
