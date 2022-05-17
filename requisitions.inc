@@ -61,9 +61,9 @@ class CfgWLRequisitionPresets
 				class B_Heli_Transport_01_F					{cost = 1000;	requirements[]={"H"};	};	// "UH-80 Ghost Hawk"
 				class B_Heli_Transport_03_F					{cost = 1500;	requirements[]={"H"};	};	// "CH-67 Huron"
 				class B_Heli_Attack_01_dynamicLoadout_F		{cost = 10000;	requirements[]={"H"};	};	// "AH-99 Blackfoot"
-				class B_T_VTOL_01_infantry_F				{cost = 2500;	requirements[]={"A"};	};	// "V-44 X Blackfish(Inf)";
-				class B_T_VTOL_01_vehicle_F					{cost = 4500;	requirements[]={"A"};	};	// "V-44 X Blackfish(Vic)";
-				class B_T_VTOL_01_armed_F					{cost = 6500;	requirements[]={"A"};	};	// "V-44 X Blackfish (Armed)"
+				class B_T_VTOL_01_infantry_F				{cost = 2500;	requirements[]={"H"};	};	// "V-44 X Blackfish(Inf)";
+				class B_T_VTOL_01_vehicle_F					{cost = 4500;	requirements[]={"H"};	};	// "V-44 X Blackfish(Vic)";
+				class B_T_VTOL_01_armed_F					{cost = 6500;	requirements[]={"H"};	};	// "V-44 X Blackfish (Armed)"
 				class B_Plane_CAS_01_dynamicLoadout_F		{cost = 12000;	requirements[]={"A"};	};	// "A-164 Wipeout (CAS)"
 				class B_Plane_Fighter_01_F					{cost = 20000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II";
 				class B_Plane_Fighter_01_Stealth_F			{cost = 23000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II Stealth";
@@ -104,7 +104,7 @@ class CfgWLRequisitionPresets
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"A"};	};	// "UCAV";
 				class B_UAV_02_F							{cost = 8000;	requirements[]={"A"};	};	// "greyhawk AT";
 				class B_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"};	};	// "greyhawk LGB";
-				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"};	};	// "Firescout";
+				//class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"};	};	// "Firescout";
 				class B_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter";
 				class B_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL-6 Pelican";
 				class B_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL-6 Pelican medical";

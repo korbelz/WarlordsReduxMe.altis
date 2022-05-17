@@ -108,3 +108,8 @@
 - Fixed wing UCAVs working
 - Rotary Wing UCAVs working, but had to make helis spawn on ground
 - Added Xi'an to bluefor because its OP
+
+57.0.015
+- Removed MQ-12 falcon
+- Restore Heli default spawn code
+- Restored Blackfish at helipad only zones
