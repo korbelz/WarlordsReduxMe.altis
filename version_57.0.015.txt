@@ -119,4 +119,4 @@
 - added F/A-181 Black Wasp II to opfor
 - added To-201 Shikra to bluefor
 - added M2A1 Slammer UP opfor
-- 
+- added T-140K Angara to bluefor
