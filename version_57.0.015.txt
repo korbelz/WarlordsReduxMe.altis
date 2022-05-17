@@ -123,4 +123,6 @@
 - added AFV-4 Gorgon to both sides
 - added AWC 302 Nyx (AA) to both sides
 - Increased Killzone timer from 1 to 6 seconds to 3 to 8 seconds
+- Disabled active and passive radar sensors for fixed wing jets
+  - Datalinks still work of off board radar data
 

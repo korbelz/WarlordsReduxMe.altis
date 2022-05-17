@@ -114,6 +114,8 @@ if !(isNull _sender) then {
 						};
 						_asset = createVehicle [_className, _spawnPos, [], 0, "CAN_COLLIDE"];
 						_asset setDir _dir;
+						_asset enableVehicleSensor ["ActiveRadarSensorComponent", false];
+						_asset enableVehicleSensor ["PassiveRadarSensorComponent", false];
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
 							createVehicleCrew _asset;
 						};
