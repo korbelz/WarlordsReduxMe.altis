@@ -116,3 +116,4 @@
 - added Gryphon
 - added Rhino MGS to opfor
 - added V-44 X Blackfish(Vic) to opfor
+- added F/A-181 Black Wasp II to opfor

@@ -177,6 +177,7 @@ class CfgWLRequisitionPresets
 				class O_Plane_CAS_02_dynamicLoadout_F		{cost = 14000;	requirements[]={"A"};	};	// "To-199 Neophron (CAS)"
 				class O_Plane_Fighter_02_F					{cost = 23000;	requirements[]={"A"};	};	// "To-201 Shikra"
 				class O_Plane_Fighter_02_Stealth_F			{cost = 26000;	requirements[]={"A"};	};	// "To-201 Shikra Stealth"
+				class B_Plane_Fighter_01_F					{cost = 20000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II";
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={};	};	// "Phalax";
 				class I_Plane_Fighter_04_F					{cost = 16000;	requirements[]={"A"};	};	// "A-149 Gryphon";
 				
