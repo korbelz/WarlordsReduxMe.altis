@@ -125,4 +125,5 @@
 - Increased Killzone timer from 1 to 6 seconds to 3 to 8 seconds
 - Disabled active and passive radar sensors for fixed wing jets
   - Datalinks still work of off board radar data
+- All Fixed wing jets had price greatly reduced to match reduced OP factor
 
