@@ -127,6 +127,6 @@
   - Datalinks still work of off board radar data
 - All Fixed wing jets had price greatly reduced to match reduced OP factor
 - Prototype anti-AFK system
-- 
+- Started documentation for team balancing system
 
 
