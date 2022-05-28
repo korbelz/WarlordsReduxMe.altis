@@ -131,3 +131,4 @@
 
 57.0.016
 - adjusted Mortar pricing
+- Tighten Friendly fire threshold to limit abuse
