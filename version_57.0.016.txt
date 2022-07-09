@@ -135,6 +135,8 @@
 - More prototype work on team balance system
 
 57.0.017
-- Added team balance system
+- Added team balance system(Ukraine model)
 - Added Multiple AI aircraft spawning per zone
 - Added toogle for AI aircraft per zone 
+- Added ski jump ramps to NW Airfield
+- Added ski jump ramps to both runways at SE Airfield
