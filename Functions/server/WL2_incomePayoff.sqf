@@ -17,6 +17,8 @@ sleep WL_SECTOR_PAYOFF_PERIOD;
 			[_bluecount] remoteExec ["systemChat", 0];
 		_redcount =  format ["# OF red balls on the server : %1 ", _rednum];
 			[_redcount] remoteExec ["systemChat", 0];
+		_bothpay =  format ["both got paid"];
+			[_bothpay] remoteExec ["systemChat", 0];
 		{
 			_side = _x;
 			//_sidepay = WEST; 
