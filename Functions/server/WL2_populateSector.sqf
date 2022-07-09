@@ -77,8 +77,8 @@ if (_side == BIS_WL_localSide) then {
 		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random RD_AIR_RANDOM_AI_SPAWNS;
 		_airArray resize _randomsize; 
-		_text = format ["items in airArray: %1", count _airArray];
-		[_text] remoteExec ["systemChat"];
+		//_text = format ["items in airArray: %1", count _airArray];
+		//[_text] remoteExec ["systemChat"];
 		
 		//private _neighbors = (_sector getVariable "BIS_WL_connectedSectors") select {(_x getVariable "BIS_WL_owner") == _side};
 		//_randomx = random 500;
