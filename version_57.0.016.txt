@@ -133,3 +133,6 @@
 - adjusted Mortar pricing
 - Tighten Friendly fire threshold to limit abuse
 - More prototype work on team balance system
+
+57.0.017
+- Added team balance system
