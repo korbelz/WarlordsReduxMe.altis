@@ -136,3 +136,4 @@
 
 57.0.017
 - Added team balance system
+- Added Multiple AI aircraft spawning per zone

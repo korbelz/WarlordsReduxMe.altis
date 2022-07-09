@@ -67,6 +67,7 @@
 #define RD_VIC_MIN_HEIGHT -125  //default is roughly 135 AGL, -125 = roughly 10 meters. 0 = roughly 135 AGL
 #define RD_VIC_RANDOM_HEIGHT 125  //Bell curve model, 125 = avg of 75 height + Min Height value. Game deafults to roughly 135 AGL
 #define RD_VIC_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
+#define RD_AIR_RANDOM_AI_SPAWNS 20  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)
 #define WL_TARGET_FRIENDLY (missionNamespace getVariable format ["BIS_WL_currentTarget_%1", BIS_WL_playerSide])

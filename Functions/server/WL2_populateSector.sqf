@@ -31,15 +31,15 @@ if (_side == BIS_WL_localSide) then {
 				} forEach _crew;
 			
 						
-			[_group, 0] setWaypointPosition [position _vehicle, 0];
-			_group deleteGroupWhenEmpty TRUE;
+				[_group, 0] setWaypointPosition [position _vehicle, 0];
+				_group deleteGroupWhenEmpty TRUE;
 			
-			_wp = _group addWaypoint [position _road, 200];
-			_wp setWaypointType "SAD";
+				_wp = _group addWaypoint [position _road, 200];
+				_wp setWaypointType "SAD";
 			
-			_wp = _group addWaypoint [position _road, 0];
-			_wp setWaypointType "CYCLE";
-			}forEach _myArray;
+				_wp = _group addWaypoint [position _road, 0];
+				_wp setWaypointType "CYCLE";
+			} forEach _myArray;
 		};
 	} else {
 		{
@@ -72,33 +72,50 @@ if (_side == BIS_WL_localSide) then {
 		} forEach (_sector getVariable "BIS_WL_vehiclesToSpawn");
 	}; //below is heli/jet spawn code, molos AF never gets one because its not connected to any friendly towns when attacked 
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
-		private _neighbors = (_sector getVariable "BIS_WL_connectedSectors") select {(_x getVariable "BIS_WL_owner") == _side};
+		private _airArray = [];
+		//_text = format ["items in myArray: %1", count _myArray];
+		//[_text] remoteExec ["systemChat"]; 
+		private _randomsize = random RD_AIR_RANDOM_AI_SPAWNS;
+		_airArray resize _randomsize; 
+		_text = format ["items in airArray: %1", count _airArray];
+		[_text] remoteExec ["systemChat"];
 		
-		if (count _neighbors > 0) then {
-			_vehicleArray = [position selectRandom _neighbors, 0, selectRandomWeighted (BIS_WL_factionAircraftClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
-			_vehicleArray params ["_vehicle", "_crew", "_group"];
-			
-			_vehicle setVariable ["BIS_WL_parentSector", _sector];
-			[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
-			
+		//private _neighbors = (_sector getVariable "BIS_WL_connectedSectors") select {(_x getVariable "BIS_WL_owner") == _side};
+		//_randomx = random 500;
+		//_randomy = random 500;
+		//_randomz = random [200, 400, 600];
+
+		if (count _airArray > 0) then {
 			{
-				_x setVariable ["BIS_WL_parentSector", _sector];
-				[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
-			} forEach _crew;
+				_randomx = random 500;
+				_randomy = random 500;
+				_randomz = random [200, 400, 600];
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionAircraftClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+				
+			
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+			
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
 			
 			
 
-			[_group, 0] setWaypointPosition [position _vehicle, 300];
-			_group deleteGroupWhenEmpty TRUE;
+				[_group, 0] setWaypointPosition [position _vehicle, 300];
+				_group deleteGroupWhenEmpty TRUE;
 			
-			_wp1 = _group addWaypoint [position _sector vectorAdd [0, 0, 300], 400];
-			_wp1 setWaypointType "SAD";
+				_wp1 = _group addWaypoint [position _sector vectorAdd [0, 0, 300], 400];
+				_wp1 setWaypointType "SAD";
 			
-			_wp2 = _group addWaypoint [position _sector vectorAdd [0, 0, 300], 400];
-			_wp2 setWaypointType "SAD";
+				_wp2 = _group addWaypoint [position _sector vectorAdd [0, 0, 300], 400];
+				_wp2 setWaypointType "SAD";
 			
-			_wp3 = _group addWaypoint [waypointPosition _wp1 vectorAdd [0, 0, 300], 400];
-			_wp3 setWaypointType "CYCLE";
+				_wp3 = _group addWaypoint [waypointPosition _wp1 vectorAdd [0, 0, 300], 400];
+				_wp3 setWaypointType "CYCLE";
+			} forEach _airArray;
 		};
 	};
 };
