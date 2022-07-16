@@ -12,13 +12,13 @@ loopnum = ["once"];
 while {TRUE} do {
 sleep WL_SECTOR_PAYOFF_PERIOD;
 	if (((_bluenum - _rednum) < RD_TEAM_BALANCE_SPLIT) and ((_rednum - _bluenum) < RD_TEAM_BALANCE_SPLIT) ) then {
-		
+		/*
 		_bluecount =  format ["# OF blue balls on the server : %1 ", _bluenum];
 			[_bluecount] remoteExec ["systemChat", 0];
 		_redcount =  format ["# OF red balls on the server : %1 ", _rednum];
 			[_redcount] remoteExec ["systemChat", 0];
 		_bothpay =  format ["both got paid"];
-			[_bothpay] remoteExec ["systemChat", 0];
+			[_bothpay] remoteExec ["systemChat", 0];*/
 		{
 			_side = _x;
 			//_sidepay = WEST; 
@@ -30,13 +30,13 @@ sleep WL_SECTOR_PAYOFF_PERIOD;
 		
 	};
 	if ((_bluenum < _rednum) and ((_bluenum - _rednum) > RD_TEAM_BALANCE_SPLIT)) then {
-		
+		/*
 		_bluecount =  format ["# OF blue balls is more than red : %1 ", _bluenum];
 			[_bluecount] remoteExec ["systemChat", 0];
 		_redcount =  format ["# OF red balls less then blue : %1 ", _rednum];
 			[_redcount] remoteExec ["systemChat", 0];
 		_bluepay =  format ["blue got paid"];
-			[_bluepay] remoteExec ["systemChat", 0];
+			[_bluepay] remoteExec ["systemChat", 0];*/
 		{
 			_side = WEST;
 			//_sidepay = WEST; 
@@ -47,13 +47,13 @@ sleep WL_SECTOR_PAYOFF_PERIOD;
 		}forEach loopnum;
 	};	
 	if ((_rednum < _bluenum) and ((_rednum - _bluenum) > RD_TEAM_BALANCE_SPLIT)) then {
-			
+			/*
 			_bluecount =  format ["# OF blue balls less than red : %1 ", _bluenum];
 				[_bluecount] remoteExec ["systemChat", 0];
 			_redcount =  format ["# OF red balls more than blue : %1 ", _rednum];
 				[_redcount] remoteExec ["systemChat", 0];
 			_redpay =  format ["red got paid"];
-				[_redpay] remoteExec ["systemChat", 0];
+				[_redpay] remoteExec ["systemChat", 0];*/
 			{
 				_side = EAST;
 				//_sidepay = EAST; 
