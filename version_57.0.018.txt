@@ -141,4 +141,5 @@
 - Added ski jump ramps to NW Airfield
 - Added ski jump ramps to both runways at SE Airfield
 
-57.0.018S
+57.0.018
+- Fix AI vics exploding on spawn in

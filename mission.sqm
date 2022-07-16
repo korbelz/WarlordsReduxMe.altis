@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={21183.629,27.306334,7605.7729};
-		dir[]={0.11840918,-0.29624116,0.9477697};
-		up[]={0.036726531,0.95510685,0.29396757};
-		aside[]={0.99231231,9.0396497e-008,-0.12397328};
+		dir[]={0.11840662,-0.29623419,0.94774753};
+		up[]={0.036724456,0.95511532,0.29394904};
+		aside[]={0.99228591,0,-0.12397102};
 	};
 };
 binarizationWanted=0;
@@ -1049,11 +1049,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={12293.5,123.98866,8890.8457};
-			angle=2.2371621;
+			angle=2.2371626;
 			class Attributes
 			{
-				sizeA=150;
-				sizeB=150;
+				sizeA=250;
+				sizeB=250;
 			};
 			id=78;
 			type="EmptyDetector";
@@ -1266,8 +1266,8 @@ class Mission
 			position[]={14281.4,4.795608,13014.252};
 			class Attributes
 			{
-				sizeA=75;
-				sizeB=75;
+				sizeA=175;
+				sizeB=175;
 				isRectangle=1;
 			};
 			id=96;
@@ -1744,16 +1744,16 @@ class Mission
 		class Item126
 		{
 			dataType="Trigger";
-			position[]={23579.945,95.578461,21087.006};
-			angle=1.9266133;
+			position[]={23579.945,95.57885,21087.006};
+			angle=1.9266163;
 			class Attributes
 			{
-				sizeA=150;
-				sizeB=200;
+				sizeA=200;
+				sizeB=250;
 			};
 			id=136;
 			type="EmptyDetectorAreaR50";
-			atlOffset=0.52561951;
+			atlOffset=0.52600861;
 		};
 		class Item127
 		{
