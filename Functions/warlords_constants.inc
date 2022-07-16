@@ -17,7 +17,7 @@
 #define WL_BASE_ICON_SIZE 1.5
 #define WL_ANNOUNCER_PAUSE 0.5
 #define WL_SECTOR_CAPTURE_REWARD_MULTIPLIER 30 //default value 10
-#define WL_SECTOR_PAYOFF_PERIOD 5 
+#define WL_SECTOR_PAYOFF_PERIOD 70 
 #define WL_SPAWN_GRID_SIZE 40 //default value 40
 #define WL_PLAYER_ICON_RANGE 75
 #define WL_BASE_DANGER_SPAWN_RANGE 200
@@ -68,6 +68,7 @@
 #define RD_VIC_RANDOM_HEIGHT 125  //Bell curve model, 125 = avg of 75 height + Min Height value. Game deafults to roughly 135 AGL
 #define RD_VIC_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
 #define RD_AIR_RANDOM_AI_SPAWNS 4  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
+#define RD_TEAM_BALANCE_SPLIT 3  //Number of player split between teams before CP cutoff; default 3
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)
 #define WL_TARGET_FRIENDLY (missionNamespace getVariable format ["BIS_WL_currentTarget_%1", BIS_WL_playerSide])

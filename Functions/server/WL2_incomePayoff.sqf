@@ -11,7 +11,7 @@ loopnum = ["once"];
 
 while {TRUE} do {
 sleep WL_SECTOR_PAYOFF_PERIOD;
-	if (((_bluenum - _rednum) < 0) and ((_rednum - _bluenum) < 0) ) then {
+	if (((_bluenum - _rednum) < RD_TEAM_BALANCE_SPLIT) and ((_rednum - _bluenum) < RD_TEAM_BALANCE_SPLIT) ) then {
 		
 		_bluecount =  format ["# OF blue balls on the server : %1 ", _bluenum];
 			[_bluecount] remoteExec ["systemChat", 0];
@@ -29,7 +29,7 @@ sleep WL_SECTOR_PAYOFF_PERIOD;
 		}forEach BIS_WL_competingSides;
 		
 	};
-	if ((_bluenum > _rednum) and ((_bluenum - _rednum) > 0)) then {
+	if ((_bluenum < _rednum) and ((_bluenum - _rednum) > RD_TEAM_BALANCE_SPLIT)) then {
 		
 		_bluecount =  format ["# OF blue balls is more than red : %1 ", _bluenum];
 			[_bluecount] remoteExec ["systemChat", 0];
@@ -46,7 +46,7 @@ sleep WL_SECTOR_PAYOFF_PERIOD;
 		} forEach (BIS_WL_allWarlords select {side group _x == _side});
 		}forEach loopnum;
 	};	
-	if ((_rednum > _bluenum) and ((_rednum - _bluenum) > 0)) then {
+	if ((_rednum < _bluenum) and ((_rednum - _bluenum) > RD_TEAM_BALANCE_SPLIT)) then {
 			
 			_bluecount =  format ["# OF blue balls less than red : %1 ", _bluenum];
 				[_bluecount] remoteExec ["systemChat", 0];

@@ -144,4 +144,5 @@
 57.0.018
 - Fix AI vics exploding on spawn in
 - Cleaned up AI aircraft waypoint code
-- Added team numbers split range before economic sanctions 
+- Added team numbers split range before economic sanctions start 
+- Added adjustable toggle to team balance range
