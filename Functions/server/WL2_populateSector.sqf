@@ -89,7 +89,8 @@ if (_side == BIS_WL_localSide) then {
 			{
 				_randomx = random 500;
 				_randomy = random 500;
-				_randomz = random [200, 400, 600];
+				_randomz = random [200, 400, 800];
+							
 				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionAircraftClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
 				_vehicleArray params ["_vehicle", "_crew", "_group"];
 				
@@ -107,13 +108,13 @@ if (_side == BIS_WL_localSide) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 300];
 				_group deleteGroupWhenEmpty TRUE;
 			
-				_wp1 = _group addWaypoint [position _sector vectorAdd [0, 0, 300], 400];
+				_wp1 = _group addWaypoint [position _sector, 400];
 				_wp1 setWaypointType "SAD";
 			
-				_wp2 = _group addWaypoint [position _sector vectorAdd [0, 0, 300], 400];
+				_wp2 = _group addWaypoint [position _sector, 400];
 				_wp2 setWaypointType "SAD";
 			
-				_wp3 = _group addWaypoint [waypointPosition _wp1 vectorAdd [0, 0, 300], 400];
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 400];
 				_wp3 setWaypointType "CYCLE";
 			} forEach _airArray;
 		};

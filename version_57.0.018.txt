@@ -143,3 +143,4 @@
 
 57.0.018
 - Fix AI vics exploding on spawn in
+- Cleaned up AI aircraft waypoint code
