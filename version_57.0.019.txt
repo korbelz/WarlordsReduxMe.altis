@@ -156,3 +156,4 @@
 - Updated sector services
 - Updated mission back end to handle 50 v 50
 - Added assault divers to all teams...no reason at all :)
+- Added Info about team balance system to welcome screen
