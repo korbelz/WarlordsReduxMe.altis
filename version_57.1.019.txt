@@ -162,3 +162,4 @@
 - Improvements to bomos sector
 - Improvements to Kavala pier sector
 - Added new sector link near salt flats
+- Added adjustment for sector value

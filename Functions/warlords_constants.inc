@@ -16,7 +16,7 @@
 #define WL_MAP_PULSE_ICON_SIZE 1.5
 #define WL_BASE_ICON_SIZE 1.5
 #define WL_ANNOUNCER_PAUSE 0.5
-#define WL_SECTOR_CAPTURE_REWARD_MULTIPLIER 30 //default value 10
+#define WL_SECTOR_CAPTURE_REWARD_MULTIPLIER 30 //default value 10; this reward only works for green sectors
 #define WL_SECTOR_PAYOFF_PERIOD 70 
 #define WL_SPAWN_GRID_SIZE 40 //default value 40
 #define WL_PLAYER_ICON_RANGE 75
@@ -60,7 +60,7 @@
 #define WL_GARRISON_GROUP_SIZE_MAX 5
 #define WL_ASSET_IRRELEVANT_RANGE 1000
 #define WL_TARGET_RESET_VOTING_TIME 60
-#define RD_KILL_REWARD_MOD 4444  //Original value 10,000
+#define RD_KILL_REWARD_MOD 4444  //Original value 10,000; lower value equals higher kill rewards
 #define RD_GARRISON_SIZE_MOD 3  //Original value 2; adjust this to increase total INF spawning in an AI sector. 
 #define RD_MINECOUNT_DELETE_THRESHOLD 400 //Original value 400; Total # of mines allowed on server anymore will be delete when any sector is capped
 #define RD_UAVCOUNT_DELETE_THRESHOLD 24 //Original value 50;
@@ -69,6 +69,8 @@
 #define RD_VIC_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
 #define RD_AIR_RANDOM_AI_SPAWNS 4  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
 #define RD_TEAM_BALANCE_SPLIT 3  //Number of player split between teams before CP cutoff; default 3
+#define RD_BASE_VALUE_ADJUSTMENT 10000  //default 10,000; Lower number equals more CP value for a sector; see also WL_SECTOR_CAPTURE_REWARD_MULTIPLIER
+
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)
 #define WL_TARGET_FRIENDLY (missionNamespace getVariable format ["BIS_WL_currentTarget_%1", BIS_WL_playerSide])
