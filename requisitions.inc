@@ -209,6 +209,13 @@ class CfgWLRequisitionPresets
 				class Box_East_WpsSpecial_F					{cost = 500;	requirements[]={};	};	// "Special Weapons [CSAT]"
 				class O_supplyCrate_F						{cost = 500;	requirements[]={};	};	// "Supply Box [CSAT]"
 				class Box_East_AmmoVeh_F					{cost = 500;	requirements[]={};	};	// "Vehicle Ammo [CSAT]"
+				class Land_Pod_Heli_Transport_04_ammo_F					{cost = 500;	requirements[]={};	};	// "Taru Ammo Pod"
+				class Land_Pod_Heli_Transport_04_box_F					{cost = 500;	requirements[]={};	};	// "Taru Cargo Pod"
+				class Land_Pod_Heli_Transport_04_fuel_F					{cost = 500;	requirements[]={};	};	// "Taru Fuel Pod"
+				class Land_Pod_Heli_Transport_04_repair_F					{cost = 500;	requirements[]={};	};	// "Taru Repair Pod"
+				class Land_Pod_Heli_Transport_04_bench_F					{cost = 500;	requirements[]={};	};	// "Taru Bench Pod"
+				class Land_Pod_Heli_Transport_04_medevac_F					{cost = 500;	requirements[]={};	};	// "Taru Medical Pod"
+
 			};
 			class Defences
 			{
