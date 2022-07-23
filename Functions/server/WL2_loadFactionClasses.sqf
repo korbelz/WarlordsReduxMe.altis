@@ -46,6 +46,7 @@ BIS_WL_factionUnitClasses = [
 		"B_soldier_exp_F",		5, //APERS, default 10
 		"B_officer_F",			5, //officer, default 10
 		"B_spotter_F",			5, //spotter, default 10
+		"B_diver_F",			5, //spotter, default 10
 		"B_sniper_F",			5 //sniper, default 10
 	],
 	[
@@ -70,6 +71,7 @@ BIS_WL_factionUnitClasses = [
 		"O_soldier_repair_F",	5, //Repair, default 15
 		"O_soldier_exp_F",		5, //APERS, default 10
 		"O_spotter_F",			5, //spotter, default 10
+		"O_diver_F",			5, //spotter, default 10
 		"O_sniper_F",			5 //sniper, default 10
 	],
 	[
@@ -93,6 +95,7 @@ BIS_WL_factionUnitClasses = [
 		"I_Soldier_exp_F",		5, //APERS, default 10
 		"I_officer_F",			5, //officer, default 10
 		"I_Spotter_F",			5, //spotter, default 10
+		"O_diver_F",			5, //spotter, default 10
 		"I_Sniper_F",			5 //sniper, default 10
 	]
 ];
