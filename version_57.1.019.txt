@@ -157,3 +157,8 @@
 - Updated mission back end to handle 50 v 50
 - Added assault divers to all teams...no reason at all :)
 - Added Info about team balance system to welcome screen
+
+57.1.020
+- Improvements to bomos sector
+- Improvements to Kavala pier sector
+- Added new sector link near salt flats
