@@ -143,7 +143,7 @@ class CfgWLRequisitionPresets
 				class O_Soldier_AA_F						{cost = 300;	requirements[]={};	};	// "Missile Specialist (AA)"
 				class O_Sharpshooter_F						{cost = 300;	requirements[]={};	};	// "Sharpshooter"
 				class O_sniper_F							{cost = 300;	requirements[]={};	};	// "Sniper"
-				class B_diver_F							{cost = 300;	requirements[]={};	};	// "diver"
+				class O_diver_F							{cost = 300;	requirements[]={};	};	// "diver"
 				class O_soldier_HAT_F						{cost = 350;	requirements[]={};	};	// "Rifleman (Heavy AT)"
 			};
 			class Vehicles
