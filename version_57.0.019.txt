@@ -148,8 +148,9 @@
 - Added adjustable toggle to team balance range
 
 57.0.019
-- improved map
+- Improved map...no spoilers :) 
 - Added Huron slingload items
 - Added Taru Pods 
 - Added Indy UCAVs
 - Added Indy UGVs
+- Updated sector services
