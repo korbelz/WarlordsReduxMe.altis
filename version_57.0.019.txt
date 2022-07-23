@@ -146,3 +146,7 @@
 - Cleaned up AI aircraft waypoint code
 - Added team numbers split range before economic sanctions start 
 - Added adjustable toggle to team balance range
+
+57.0.019
+- improved map
+- Added Huron slingload items

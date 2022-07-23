@@ -91,6 +91,11 @@ class CfgWLRequisitionPresets
 				class Box_NATO_WpsSpecial_F					{cost = 500;	requirements[]={};	};	// "Special Weapons [NATO]"
 				class B_supplyCrate_F						{cost = 500;	requirements[]={};	};	// "Supply Box [NATO]"
 				class Box_NATO_AmmoVeh_F					{cost = 500;	requirements[]={};	};	// "Vehicle Ammo [NATO]"
+				class B_Slingload_01_Ammo_F					{cost = 500;	requirements[]={};	};	// "Huron Ammo Container"
+				class B_Slingload_01_Cargo_F					{cost = 500;	requirements[]={};	};	// "Huron Cargo Container"
+				class B_Slingload_01_Fuel_F					{cost = 500;	requirements[]={};	};	// "Huron Fuel Container"
+				class B_Slingload_01_Medevac_F					{cost = 500;	requirements[]={};	};	// "Huron Medical Container"
+				class B_Slingload_01_Repair_F					{cost = 500;	requirements[]={};	};	// "Huron Repair Container"
 			};
 			class Defences
 			{
