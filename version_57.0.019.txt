@@ -151,4 +151,5 @@
 - improved map
 - Added Huron slingload items
 - Added Taru Pods 
-- 
+- Added Indy UCAVs
+- Added Indy UGVs
