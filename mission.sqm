@@ -14658,9 +14658,10 @@ class Mission
 				position[]={13593.765,15.469748,12199.801};
 				angles[]={0.0053232545,0,0.022654373};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=511;
 			type="Logic";
+			atlOffset=9.5367432e-007;
 		};
 		class Item291
 		{
@@ -16423,7 +16424,7 @@ class Mission
 			{
 				position[]={15619.461,23.555588,4506.79};
 			};
-			init="this setVariable [""BIS_WL_services"", [""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"",""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=694;
 			type="Logic";
 			atlOffset=195.869;
