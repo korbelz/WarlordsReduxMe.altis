@@ -11,6 +11,9 @@ Offical Arma 3 Website: https://arma3.com/
 
 Offical Arma 3 discord:  https://discord.gg/arma
 
+Link to Warlords Maverick
+https://github.com/korbelz/WarlordsReduxMav.altis
+
 
 ## Want to get involed  
 
