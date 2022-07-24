@@ -16,6 +16,14 @@ Offical Arma 3 discord:  https://discord.gg/arma
 
 Github page: you are already here :)
 
+## How to adjust the mission values/settings
+
+Requisition.inc file is the file to adjust what players can buy and the cost of each item
+
+Warlords_constants.inc is the main adjustment file that has the mission specific settings 
+
+WL2_loadfactioncclasses file is the file to adjust the AI spawn tables for enemy towns
+
 ## Live stream playlist 
 
 I stream all the dev work I do on redux for a detailed breakdown of all the bugs that get fixed. 
