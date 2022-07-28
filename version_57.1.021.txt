@@ -163,3 +163,6 @@
 - Improvements to Kavala pier sector
 - Added new sector link near salt flats
 - Added adjustment for sector value
+
+57.1.021
+- Improved randomness of starting sectors

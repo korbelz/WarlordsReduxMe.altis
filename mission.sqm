@@ -204,7 +204,7 @@ class Mission
 				position[]={3552.104,8.5744362,12993.334};
 				angles[]={6.2645278,0,0.078504913};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]];";
 			id=2;
 			type="Logic";
 			atlOffset=-9.5367432e-007;
@@ -217,7 +217,7 @@ class Mission
 				position[]={3825.5271,16.502842,13693.865};
 				angles[]={6.251193,0,0.01733112};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W""]];";
 			id=3;
 			type="Logic";
 		};
@@ -289,7 +289,6 @@ class Mission
 				position[]={10672.049,16.682983,12295.274};
 				angles[]={0.062709682,0,0.020315632};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=10;
 			type="Logic";
 			atlOffset=0.00041770935;
@@ -340,7 +339,6 @@ class Mission
 				position[]={11006.454,26.126286,13402.525};
 				angles[]={0.0093375118,0,6.2418733};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=14;
 			type="Logic";
 		};
@@ -398,7 +396,6 @@ class Mission
 				position[]={4591.9141,299.15622,21412.381};
 				angles[]={0.030665435,0,6.1598082};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=19;
 			type="Logic";
 		};
@@ -422,7 +419,6 @@ class Mission
 				position[]={9433.498,120.47212,20237.236};
 				angles[]={5.8958092,0,0.50028116};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=21;
 			type="Logic";
 			atlOffset=7.6293945e-006;
@@ -432,11 +428,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={10326.67,127.16042,19068.893};
+				position[]={10326.67,127.16041,19068.893};
 			};
 			id=22;
 			type="Logic";
-			atlOffset=7.6293945e-006;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item22
 		{
@@ -480,7 +476,7 @@ class Mission
 				position[]={15152.537,17.892778,17272.613};
 				angles[]={0.0053232545,0,0.0013439035};
 			};
-			init="this setVariable [""BIS_WL_services"", [""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""H""]]; ";
 			id=26;
 			type="Logic";
 		};
@@ -537,7 +533,6 @@ class Mission
 				position[]={16247.463,14.306445,17095.254};
 				angles[]={6.2152915,0,0.11679743};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=31;
 			type="Logic";
 		};
@@ -549,7 +544,7 @@ class Mission
 				position[]={15388.95,4.2736301,16053.537};
 				angles[]={6.2805324,0,6.2791882};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W""]]; ";
 			id=32;
 			type="Logic";
 			atlOffset=-4.7683716e-007;
@@ -575,7 +570,6 @@ class Mission
 				position[]={20796.314,36.943661,6731.4282};
 				angles[]={0.10890854,0,6.2299004};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=34;
 			type="Logic";
 			atlOffset=-3.8146973e-006;
@@ -588,7 +582,6 @@ class Mission
 				position[]={21679.631,15.001963,7580.2642};
 				angles[]={0.0066671576,0,0.0079936078};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=35;
 			type="Logic";
 		};
@@ -600,7 +593,6 @@ class Mission
 				position[]={20419.414,35.69397,8847.7607};
 				angles[]={6.2805324,0,6.2605309};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=36;
 			type="Logic";
 			atlOffset=3.8146973e-006;
@@ -624,7 +616,7 @@ class Mission
 				position[]={16749.688,20.367319,12678.455};
 				angles[]={0.010663962,0,0.029321531};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W""]]; ";
 			id=38;
 			type="Logic";
 		};
@@ -679,7 +671,6 @@ class Mission
 				position[]={20976.17,41.166363,16972.529};
 				angles[]={0.029321531,0,6.2551899};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=43;
 			type="Logic";
 		};
@@ -691,7 +682,6 @@ class Mission
 				position[]={21380.605,19.885954,16355.863};
 				angles[]={6.2578607,0,0.0066671576};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=44;
 			type="Logic";
 		};
@@ -703,7 +693,7 @@ class Mission
 				position[]={20957.363,15.561685,19267.66};
 				angles[]={6.1506276,0,0.071872659};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W""]];";
 			id=45;
 			type="Logic";
 		};
@@ -715,7 +705,6 @@ class Mission
 				position[]={23221.617,13.93457,19972.199};
 				angles[]={6.2631841,0,6.2711778};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=46;
 			type="Logic";
 		};
@@ -793,7 +782,6 @@ class Mission
 				position[]={26990.121,20.18708,23216.311};
 				angles[]={0.033318337,0,0.0066671576};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=53;
 			type="Logic";
 		};
@@ -887,7 +875,7 @@ class Mission
 				position[]={12738.562,67.257988,16532.025};
 				angles[]={6.028821,0,0.15344934};
 			};
-			init="this setVariable [""BIS_WL_services"", [""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""H""]]; ";
 			id=62;
 			type="Logic";
 		};
@@ -1173,7 +1161,7 @@ class Mission
 		class Item82
 		{
 			dataType="Trigger";
-			position[]={6184.5059,43,16226.74};
+			position[]={6177.416,43,16224.543};
 			angle=3.1415927;
 			class Attributes
 			{
@@ -4164,12 +4152,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14999.512,5.8212991,11157.252};
-				angles[]={0,0,6.2805333};
+				position[]={14999.512,5.8212986,11157.252};
+				angles[]={0,0,6.2805324};
 			};
 			init="this setVariable [""BIS_WL_services"", [""W""]];";
 			id=209;
 			type="Logic";
+			atlOffset=-4.7683716e-007;
 		};
 		class Item166
 		{
@@ -14646,9 +14635,10 @@ class Mission
 				position[]={13593.765,15.469748,12199.801};
 				angles[]={0.0053232545,0,0.022654373};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W""]]; ";
 			id=511;
 			type="Logic";
+			atlOffset=9.5367432e-007;
 		};
 		class Item291
 		{
@@ -14685,7 +14675,6 @@ class Mission
 				position[]={23870.736,23.199215,23747.406};
 				angles[]={0.0053232545,0,0.022654373};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=515;
 			type="Logic";
 		};
@@ -15819,7 +15808,7 @@ class Mission
 				position[]={2711.3799,4.1292453,22077.99};
 				angles[]={6.2791882,0,0.055937801};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; ";
 			id=649;
 			type="Logic";
 			atlOffset=-4.7683716e-007;
@@ -15861,7 +15850,7 @@ class Mission
 				position[]={3363.043,1.9447364,12619.016};
 				angles[]={0.021327924,0,0.055937801};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; ";
 			id=657;
 			type="Logic";
 		};
@@ -16353,7 +16342,7 @@ class Mission
 			{
 				position[]={18744.988,3.7263947,22392.117};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"",""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"",""H""]]; ";
 			id=692;
 			type="Logic";
 			atlOffset=3.4426179;
@@ -16379,7 +16368,7 @@ class Mission
 			{
 				position[]={15619.461,23.555588,4506.79};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"",""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"",""H""]]; ";
 			id=694;
 			type="Logic";
 			atlOffset=195.869;
@@ -18658,7 +18647,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3731.5522,38.363064,12975.877};
-				angles[]={-0,0,6.2826972};
+				angles[]={0,0,6.2826972};
 			};
 			side="Empty";
 			class Attributes
