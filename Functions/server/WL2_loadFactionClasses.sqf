@@ -95,7 +95,7 @@ BIS_WL_factionUnitClasses = [
 		"I_Soldier_exp_F",		5, //APERS, default 10
 		"I_officer_F",			5, //officer, default 10
 		"I_Spotter_F",			5, //spotter, default 10
-		"O_diver_F",			5, //spotter, default 10
+		"I_diver_F",			5, //spotter, default 10
 		"I_Sniper_F",			5 //sniper, default 10
 	]
 ];
@@ -132,7 +132,7 @@ BIS_WL_factionVehicleClasses = [
 	],
 	[
 		
-		"I_LT_01_AA_F",				1, //Nyx AA, default 50
+		"I_LT_01_AA_F",				100, //Nyx AA, default 50
 		"I_APC_Wheeled_03_cannon_F",		60, //Gorgan, default 50
 		"I_APC_tracked_03_cannon_F",		25, //Mora, default 50
 		"I_LT_01_AT_F",				80, //Nyx AT, default 50
@@ -140,7 +140,7 @@ BIS_WL_factionVehicleClasses = [
 		"I_MRAP_03_gmg_F",			25, //strider GMG, default 100
 		"I_MRAP_03_hmg_F",			25, //strider HMG, default 100
 		"I_MBT_03_cannon_F",			60, //Kuma, default 25
-		"I_E_Truck_02_MRL_F",			100, //MLRS, default 25
+		"I_E_Truck_02_MRL_F",			25, //MLRS, default 25
 		"I_UGV_01_rcws_F",			25 //Stomper RCWS, default 25
 	]
 ];
