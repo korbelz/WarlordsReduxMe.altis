@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=788;
+		nextID=800;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={21404.1,1154.3933,9942.1875};
-		dir[]={0.27617952,-0.43767247,0.85566795};
-		up[]={0.13443613,0.8991344,0.41651419};
-		aside[]={0.9516573,0,-0.30716151};
+		pos[]={21787.84,476.97354,10423.102};
+		dir[]={-0.84857714,-0.31236786,0.42701662};
+		up[]={-0.27903059,0.94996119,0.14041233};
+		aside[]={0.4495095,7.4505806e-009,0.8932755};
 	};
 };
 binarizationWanted=0;
@@ -173,7 +173,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=457;
+		items=451;
 		class Item0
 		{
 			dataType="Logic";
@@ -18749,103 +18749,16 @@ class Mission
 			type="Land_HelipadEmpty_F";
 			atlOffset=0.00016188622;
 		};
-		class Item451
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={21770.906,470.31363,10440.088};
-				angles[]={0,6.2657323,0};
-			};
-			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
-			id=777;
-			type="Logic";
-			atlOffset=500;
-		};
-		class Item452
-		{
-			dataType="Trigger";
-			position[]={21759.625,473.00351,10440.559};
-			angle=2.1149371;
-			class Attributes
-			{
-				sizeA=100;
-				sizeB=100;
-			};
-			id=778;
-			type="EmptyDetector";
-			atlOffset=500;
-		};
-		class Item453
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={21767.328,468.91708,10441.723};
-				angles[]={0,5.2359877,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=779;
-			type="Land_Pier_F";
-			atlOffset=500;
-		};
-		class Item454
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2388.042,429.66913,18469.713};
-				angles[]={0,5.2359877,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=785;
-			type="Land_Pier_F";
-			atlOffset=500;
-		};
-		class Item455
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={2385.9729,431.77637,18468.625};
-			};
-			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
-			id=786;
-			type="Logic";
-			atlOffset=500;
-		};
-		class Item456
-		{
-			dataType="Trigger";
-			position[]={2382.1631,431.50735,18468.416};
-			angle=2.1149371;
-			class Attributes
-			{
-				sizeA=100;
-				sizeB=100;
-			};
-			id=787;
-			type="EmptyDetector";
-			atlOffset=500;
-		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=145;
+			nextID=143;
 		};
 		class Links
 		{
-			items=145;
+			items=143;
 			class Item0
 			{
 				linkID=0;
@@ -20271,26 +20184,6 @@ class Mission
 				linkID=142;
 				item0=46;
 				item1=49;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item143
-			{
-				linkID=143;
-				item0=777;
-				item1=36;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item144
-			{
-				linkID=144;
-				item0=786;
-				item1=5;
 				class CustomData
 				{
 					type="Sync";

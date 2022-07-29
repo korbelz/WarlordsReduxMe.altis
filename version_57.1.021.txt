@@ -173,3 +173,4 @@
 - Tighten radius of AI spawns to work better in new sectors
 - Fixed type in Indy spawn table
 - adjusted cost of radar, UGVs and mortars
+- Added toggle for fixed wing active radar usage
