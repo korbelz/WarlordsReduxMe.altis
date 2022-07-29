@@ -168,3 +168,6 @@
 - Improved randomness of starting sectors
 - Added HIMARS(MLRS) to Bluefor & OPFOR 
 - Added MLRS to Indy(if indy learned to use their UAVs to target these humanity is doomed)
+- Adjusted re-arm timer
+- Fixed bug in random start time code
+- Tighten radius of AI spawns to work better in new sectors

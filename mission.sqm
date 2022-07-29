@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={22076.955,597.81958,20190.615};
-		dir[]={0.94835812,-0.22623175,0.22284989};
-		up[]={0.22031735,0.97402066,0.051772967};
-		aside[]={0.22878373,1.5557598e-006,-0.97360146};
+		dir[]={0.94825095,-0.22620621,0.22282526};
+		up[]={0.2202082,0.97407949,0.051745743};
+		aside[]={0.22875471,0,-0.97348422};
 	};
 };
 binarizationWanted=0;
@@ -166,7 +166,7 @@ class Mission
 		year=2035;
 		month=6;
 		day=24;
-		hour=6;
+		hour=0;
 		minute=0;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
@@ -14638,7 +14638,6 @@ class Mission
 			init="this setVariable [""BIS_WL_services"", [""W""]]; ";
 			id=511;
 			type="Logic";
-			atlOffset=9.5367432e-007;
 		};
 		class Item291
 		{
