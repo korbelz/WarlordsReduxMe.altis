@@ -174,3 +174,6 @@
 - Fixed type in Indy spawn table
 - adjusted cost of radar, UGVs and mortars
 - Added toggle for fixed wing active radar usage
+- Rewrote AI buddy # system to be network and server traffic safe
+- Added back in adjustable AI buddy # system
+- Added debugging code for UAV and mine removal systems

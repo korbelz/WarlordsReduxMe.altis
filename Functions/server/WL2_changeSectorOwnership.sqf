@@ -8,16 +8,28 @@ private _previousOwners = _sector getVariable "BIS_WL_previousOwners";
 
 if !(_owner in _previousOwners) then {
 	//Mine removal code
+
 	_minecount = count allMines;
+
+	//_minetext = format ["items that are mines: %1", count allMines];
+	//[_minetext] remoteExec ["systemChat"]; 
+
 	if (_minecount > RD_MINECOUNT_DELETE_THRESHOLD) then {
 		{ deleteVehicle _x } forEach allMines;
 	};
+
+	
 	//UAV removal code
+	
 	_uavcount = count allUnitsUAV;
+	
+	//_uavtext = format ["items that are UAVs: %1", count allUnitsUAV];
+	//[_uavtext] remoteExec ["systemChat"]; 
+
 	if (_uavcount > RD_UAVCOUNT_DELETE_THRESHOLD) then {
 		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F","B_Radar_System_01_F","O_SAM_System_04_F","O_Radar_System_02_F"])}); //better way to filter the ones u dont want to blow up.
 	};
-
+	
 	//AI buddy count system
 	
 	_players = count BIS_WL_allWarlords;
