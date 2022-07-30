@@ -68,6 +68,7 @@
 #define RD_VIC_RANDOM_HEIGHT 125  //Bell curve model, 125 = avg of 75 height + Min Height value. Game deafults to roughly 135 AGL
 #define RD_VIC_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
 #define RD_AIR_RANDOM_AI_SPAWNS 4  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
+#define RD_NAVY_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
 #define RD_TEAM_BALANCE_SPLIT 3  //Number of player split between teams before CP cutoff; default 3
 #define RD_BASE_VALUE_ADJUSTMENT 10000  //default 10,000; Lower number equals more CP value for a sector; see also WL_SECTOR_CAPTURE_REWARD_MULTIPLIER
 #define RD_AIR_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink

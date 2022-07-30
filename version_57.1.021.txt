@@ -178,3 +178,6 @@
 - Added back in adjustable AI buddy # system
 - Added debugging code for UAV and mine removal systems
 - Fixed a re-arm exploit...RIP Arty/mortar abuse 2022 
+- Added naval sector labels
+- Indy now has a navy! 
+- 

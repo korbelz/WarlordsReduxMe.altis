@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={21787.84,476.97354,10423.102};
-		dir[]={-0.84857714,-0.31236786,0.42701662};
-		up[]={-0.27903059,0.94996119,0.14041233};
-		aside[]={0.4495095,7.4505806e-009,0.8932755};
+		dir[]={-0.84857714,-0.31236783,0.42701662};
+		up[]={-0.27903056,0.94996125,0.14041232};
+		aside[]={0.44950953,0,0.89327556};
 	};
 };
 binarizationWanted=0;
@@ -16341,7 +16341,7 @@ class Mission
 			{
 				position[]={18744.988,3.7263947,22392.117};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"",""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""S"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=692;
 			type="Logic";
 			atlOffset=3.4426179;
@@ -16367,7 +16367,7 @@ class Mission
 			{
 				position[]={15619.461,23.555588,4506.79};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"",""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""S"", ""H""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=694;
 			type="Logic";
 			atlOffset=195.869;
