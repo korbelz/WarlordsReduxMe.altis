@@ -94,8 +94,8 @@ if (_side == BIS_WL_localSide) then {
             {
                 private _newGrp = createGroup _side;
 
-				_randomx = random 400;
-                _randomy = random 400;
+				_randomx = random [60, 200, 400];
+                _randomy = random [60, 200, 400];
                 _randomz = 0;
                 _newUnit = _newGrp createUnit ["I_diver_F", position _sector vectorAdd [_randomx, _randomy, _randomz], [], 5, "NONE"];
 				_newUnit setVariable ["BIS_WL_parentSector", _sector];
@@ -108,13 +108,13 @@ if (_side == BIS_WL_localSide) then {
                 [_newGrp, 0] setWaypointPosition [position _sector vectorAdd [_randomx, _randomy, _randomz], 10];
                 _newGrp deleteGroupWhenEmpty TRUE;
 
-                _wp = _newGrp addWaypoint [position _sector, 50];
+                _wp = _newGrp addWaypoint [position _sector, 80];
                 _wp setWaypointType "SAD";
 
-				_wp2 = _newGrp addWaypoint [position _sector, 40];
+				_wp2 = _newGrp addWaypoint [position _sector, 80];
 				_wp2 setWaypointType "SAD";
 
-                _wp =_newGrp addWaypoint [position _sector, 50];
+                _wp =_newGrp addWaypoint [position _sector, 80];
                 _wp setWaypointType "CYCLE";
             } forEach _diverArray;
 		};
