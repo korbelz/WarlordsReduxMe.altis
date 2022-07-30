@@ -17,30 +17,21 @@ if !(_owner in _previousOwners) then {
 	if (_uavcount > RD_UAVCOUNT_DELETE_THRESHOLD) then {
 		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F","B_Radar_System_01_F","O_SAM_System_04_F","O_Radar_System_02_F"])}); //better way to filter the ones u dont want to blow up.
 	};
+
 	//AI buddy count system
-	/*
+	
 	_players = count BIS_WL_allWarlords;
-    	if (_players >= 32) then 
+    	if (_players >= 60 and BIS_WL_maxSubordinates != 1 ) then 
+		{
+        	BIS_WL_maxSubordinates = 1;
+			publicVariable "BIS_WL_maxSubordinates"
+        };
+		//this if restores AI buddy count back to default after player count has gone above 60 then lowered below 60
+		if (_players < 60 and BIS_WL_maxSubordinates == 1 ) then 
 		{
         	BIS_WL_maxSubordinates = 2;
 			publicVariable "BIS_WL_maxSubordinates"
-        }
-		Else 
-		{
-			if (_players >= 20) then
-			{
-				BIS_WL_maxSubordinates = 4;
-				publicVariable "BIS_WL_maxSubordinates"
-			}
-			Else 
-			{
-				if (_players >= 12) then
-				{
-					BIS_WL_maxSubordinates = 8;
-					publicVariable "BIS_WL_maxSubordinates"
-				}
-			} 
-		};*/
+        };
 	_previousOwners pushBack _owner;
 	if (WL_SYNCED_TIME > 0 && count _previousOwners == 1) then {
 		{
