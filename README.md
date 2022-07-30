@@ -1,8 +1,8 @@
 # WarlordsReduxMe.altis
- bare metal redux mission with performance improvements and many bug fixes.
+ Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% Vannila, no extra script, add-ons or mods needed. 
 
  # Warlords Redux Miller Edition(ME) 
-Warlords Redux bare metal with perf improvements. 
+Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% Vannila, no extra script, add-ons or mods needed. 
 
 Original Warlords Redux by Bohemia Interactive and Jezuro can be found here:
 https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=Warlords+redux
