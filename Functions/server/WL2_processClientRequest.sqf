@@ -222,6 +222,7 @@ if !(isNull _sender) then {
 					_assetDummy hideObject TRUE;
 					_assetDummy enableSimulation TRUE;
 					
+
 					[_parachute, _asset, _assetDummy] spawn {
 						params ["_parachute", "_asset", "_assetDummy"];
 						
@@ -266,6 +267,7 @@ if !(isNull _sender) then {
 				_assets pushBack _asset;
 				
 				[_asset, _sender] spawn _setGroupOwner;
+				
 				
 			} forEach _classNames;
 			
