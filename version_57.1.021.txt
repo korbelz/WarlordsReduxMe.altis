@@ -179,5 +179,5 @@
 - Added debugging code for UAV and mine removal systems
 - Fixed a re-arm exploit...RIP Arty/mortar abuse 2022 
 - Added naval sector labels
-- Indy now has a navy! 
-- 
+- Indy now has a navy! HAL9000 voice singing: "I'm on boat and its going fast..."
+- Get your SDARs ready, Indy started training Navy Divers 
