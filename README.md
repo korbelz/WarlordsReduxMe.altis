@@ -1,5 +1,7 @@
 ![This is an image](https://github.com/korbelz/WarlordsReduxMe.altis/blob/main/Redux_ME_thumbnail.png)
 
+https://img.shields.io/github/issues/korbelz/WarlordsReduxMe.altis
+
 # WarlordsReduxMe.altis
  Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% Vannila, no extra script, add-ons or mods needed. 
 
