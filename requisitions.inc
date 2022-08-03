@@ -122,7 +122,7 @@ class CfgWLRequisitionPresets
 				class B_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL-6 Pelican";
 				class B_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL-6 Pelican medical";
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={};	};	// "Phalax"; 
-				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={};	};	// "HIMARS"
+				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={};	};	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 24000;	requirements[]={};	};	// "mk 41 VLS"
 
 			};
@@ -222,8 +222,7 @@ class CfgWLRequisitionPresets
 				class Land_Pod_Heli_Transport_04_repair_F					{cost = 500;	requirements[]={};	};	// "Taru Repair Pod"
 				class Land_Pod_Heli_Transport_04_bench_F					{cost = 500;	requirements[]={};	};	// "Taru Bench Pod"
 				class Land_Pod_Heli_Transport_04_medevac_F					{cost = 500;	requirements[]={};	};	// "Taru Medical Pod"
-				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={};	};	// "HIMARS"
-				class B_Ship_MRLS_01_F						{cost = 24000;	requirements[]={};	};	// "mk 41 VLS"
+				
 				
 
 			};
@@ -247,7 +246,7 @@ class CfgWLRequisitionPresets
 				class O_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL_6 Pelican"
 				class O_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL_6 Pelican Medical"
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={};	};	// "Phalax"; 
-				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={};	};	// "HIMARS"
+				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={};	};	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 24000;	requirements[]={};	};	// "mk 41 VLS"
 
 			};
