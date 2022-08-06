@@ -37,7 +37,7 @@ BIS_WL_initModule setVariable ["BIS_WL_wreckRemovalTimeout", 30];
 BIS_WL_initModule setVariable ["BIS_WL_corpseRemovalTimeout", 600];
 BIS_WL_initModule setVariable ["BIS_WL_savedLoadoutCost", 500];
 BIS_WL_initModule setVariable ["BIS_WL_timeMultiplier", 6];
-BIS_WL_initModule setVariable ["BIS_WL_zoneRestrictionSetting", 1]; //default value 0
+BIS_WL_initModule setVariable ["BIS_WL_zoneRestrictionSetting", 0]; //default value 0
 BIS_WL_initModule setVariable ["BIS_WL_savingEnabled", FALSE];
 
 {
