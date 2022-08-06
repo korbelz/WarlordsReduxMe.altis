@@ -190,4 +190,5 @@
 - Re-added static AA and AT
 - Fix for player getting hurt/killed when spawning in a static item or UAVs
 - Carrier compatible aircraft can now be spawned via the "Defense" Menu
-- Naval weapons can only spawn in naval zones. 
+- Naval weapons can only spawn in naval zones 
+- WIP Carrier compatible aircraft spawn on carrier using default spawn code(no exploits!)

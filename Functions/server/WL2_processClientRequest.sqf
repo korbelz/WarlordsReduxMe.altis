@@ -135,10 +135,10 @@ if !(isNull _sender) then {
 					};
 				} else {
 					if (_isStatic) then {
-						_asset = createVehicle [_className, _targetPos, [], 0, "NONE"];
-						_targetPos set [2, (_targetPos # 2) max 0];
+						_asset = createVehicle [_className, _targetPosFinal, [], 0, "NONE"];
+						//_targetPos set [2, (_targetPos # 2) max 0];
 						_asset setDir direction _sender;
-						_asset setPos _targetPos;
+						_asset setPos _targetPosFinal;
 						if (_disable) then {
 							_asset enableSimulationGlobal FALSE;
 							_asset hideObjectGlobal TRUE;
