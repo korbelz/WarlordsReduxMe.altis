@@ -189,3 +189,5 @@
 - Improved static item spawn code
 - Re-added static AA and AT
 - Fix for player getting hurt/killed when spawning in a static item or UAVs
+- Carrier compatible aircraft can now be spawned via the "Defense" Menu
+- 
