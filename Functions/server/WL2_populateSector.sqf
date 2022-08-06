@@ -34,10 +34,13 @@ if (_side == BIS_WL_localSide) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
 			
-				_wp = _group addWaypoint [position _road, 200];
+				_wp = _group addWaypoint [position _sector, 600];
 				_wp setWaypointType "SAD";
+
+				_wp2 = _group addWaypoint [position _sector, 800];
+				_wp2 setWaypointType "SAD";
 			
-				_wp = _group addWaypoint [position _road, 0];
+				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "CYCLE";
 			} forEach _myArray;
 		};
@@ -70,13 +73,13 @@ if (_side == BIS_WL_localSide) then {
                 [_group, 0] setWaypointPosition [position _vehicle, 500];
                 _group deleteGroupWhenEmpty TRUE;
 
-                _wp = _group addWaypoint [position _sector, 500];
+                _wp = _group addWaypoint [position _sector, 2000];
                 _wp setWaypointType "SAD";
 
-				_wp2 = _group addWaypoint [position _sector, 400];
+				_wp2 = _group addWaypoint [position _sector, 2000];
 				_wp2 setWaypointType "SAD";
 
-                _wp = _group addWaypoint [position _sector, 500];
+                _wp = _group addWaypoint [position _sector, 0];
                 _wp setWaypointType "CYCLE";
             } forEach _navyArray;
 		};

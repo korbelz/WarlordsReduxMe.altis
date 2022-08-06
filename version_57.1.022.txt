@@ -182,3 +182,6 @@
 - Indy now has a navy! HAL9000 voice singing: "I'm on boat and its going fast..."
 - Get your SDARs ready, Indy started training Navy Divers 
 - Improved spawning and pathfinding for AI divers 
+
+57.1.022
+- Indy can now conduct limited counter attacks on player towns
