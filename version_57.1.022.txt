@@ -188,3 +188,4 @@
 - Fixed extreme FPS drop when map was open
 - Improved static item spawn code
 - Re-added static AA and AT
+- Fix for player getting hurt/killed when spawning in a static item or UAVs
