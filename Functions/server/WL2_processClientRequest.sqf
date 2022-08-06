@@ -109,6 +109,7 @@ if !(isNull _sender) then {
 								_spawnPos = _pos;
 							}
 						};
+						//"Air spawn code running" remoteExec ["systemChat"];
 						if (count _spawnPos == 0) then {
 							_spawnPos = _targetPosFinal;
 						};
@@ -134,7 +135,7 @@ if !(isNull _sender) then {
 					};
 				} else {
 					if (_isStatic) then {
-						_asset = createVehicle [_className, _targetPos, [], 0, "CAN_COLLIDE"];
+						_asset = createVehicle [_className, _targetPos, [], 0, "NONE"];
 						_targetPos set [2, (_targetPos # 2) max 0];
 						_asset setDir direction _sender;
 						_asset setPos _targetPos;
@@ -148,6 +149,7 @@ if !(isNull _sender) then {
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
 							};
 						};
+						"isStatic spawn code running" remoteExec ["systemChat"];
 					};
 				};
 			};
@@ -221,7 +223,7 @@ if !(isNull _sender) then {
 					_assetDummy setPos _targetPosFinal;
 					_assetDummy hideObject TRUE;
 					_assetDummy enableSimulation TRUE;
-					
+					"Vic spawn code running" remoteExec ["systemChat"];
 
 					[_parachute, _asset, _assetDummy] spawn {
 						params ["_parachute", "_asset", "_assetDummy"];
