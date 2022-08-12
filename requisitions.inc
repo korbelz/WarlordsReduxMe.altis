@@ -56,8 +56,9 @@ class CfgWLRequisitionPresets
 				class B_MBT_01_arty_F						{cost = 20000;	requirements[]={};	};	// "M4 Scorcher" 
 				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={};	};	// "Zamak MRL"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
-				class B_UAV_05_F							{cost = 8000;	requirements[]={}; offset[]={0, 6, 3};};	// "UCAV";
-				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
+				class B_UAV_05_F							{cost = 8000;	requirements[]={"C"}; offset[]={0, 6, 3};};	// "UCAV";
+				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"C"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
+				class B_Plane_Fighter_01_Stealth_F			{cost = 20000;	requirements[]={"S"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II Stealth";
 				 
 				 
 			};
@@ -125,13 +126,10 @@ class CfgWLRequisitionPresets
 				class B_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL-6 Pelican medical";
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "Ship gun"
-				class B_Ship_MRLS_01_F						{cost = 24000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "mk 41 VLS"
-				class B_SAM_System_01_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Mk49 Spartan"; 
-				class B_SAM_System_02_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Mk21 Centurion"; 
-				//class B_UAV_05_F							{cost = 8000;	requirements[]={"S"}; offset[]={0, 6, 3};};	// "UCAV";
-				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"S"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
-				class B_Plane_Fighter_01_Stealth_F			{cost = 20000;	requirements[]={"S"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II Stealth";
-
+				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "mk 41 VLS"
+				class B_SAM_System_01_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk49 Spartan"; 
+				class B_SAM_System_02_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk21 Centurion"; 
+				
 			};
 		};
 		class EAST
@@ -186,8 +184,8 @@ class CfgWLRequisitionPresets
 				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={};	};	// "Zamak MRL"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
 				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={};	};	// "Rhino MGS UP"
-				class B_UAV_05_F							{cost = 8000;	requirements[]={}; offset[]={0, 6, 3};};	// "UCAV";
-				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
+				class B_UAV_05_F							{cost = 8000;	requirements[]={"C"}; offset[]={0, 6, 3};};	// "UCAV";
+				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"C"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
 				
 
 			};
@@ -256,11 +254,10 @@ class CfgWLRequisitionPresets
 				class O_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL_6 Pelican Medical"
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Ship gun"
-				class B_Ship_MRLS_01_F						{cost = 24000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "mk 41 VLS"
-				class B_SAM_System_01_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Mk49 Spartan"; 
-				class B_SAM_System_02_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Mk21 Centurion"; 
-				class B_UAV_05_F							{cost = 8000;	requirements[]={}; offset[]={0, 6, 3};};	// "UCAV";
-				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"S"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
+				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "mk 41 VLS"
+				class B_SAM_System_01_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk49 Spartan"; 
+				class B_SAM_System_02_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk21 Centurion"; 
+				
 
 			};
 		};

@@ -197,3 +197,8 @@
 - Updated naval assests
 - M5 MLRS replaced with Zamak MLR for both teams
 - Carrier Air assests now parachute on top of the carrier for safer spawning
+- fixed offset values for MK 49 and MK 21
+- Added new carrier sector to back end
+- Carrier air assests can only spawn in carrier zones
+- adjusted naval sectors size position for better naval assest spawning
+- Set example price for VLS to 38k
