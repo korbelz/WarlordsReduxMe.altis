@@ -17,7 +17,7 @@
 #define WL_BASE_ICON_SIZE 1.5
 #define WL_ANNOUNCER_PAUSE 0.5
 #define WL_SECTOR_CAPTURE_REWARD_MULTIPLIER 30 //default value 10; this reward only works for green sectors
-#define WL_SECTOR_PAYOFF_PERIOD 70 
+#define WL_SECTOR_PAYOFF_PERIOD 70 //time in seconds 
 #define WL_SPAWN_GRID_SIZE 40 //default value 40
 #define WL_PLAYER_ICON_RANGE 75
 #define WL_BASE_DANGER_SPAWN_RANGE 200
@@ -50,7 +50,7 @@
 #define WL_FRIENDLY_FIRE_PENALTY_MAX 600
 #define WL_MAINTENANCE_RADIUS 50
 #define WL_MAINTENANCE_COOLDOWN_REPAIR 900  //300
-#define WL_MAINTENANCE_COOLDOWN_REARM 1080   // 300
+#define WL_MAINTENANCE_COOLDOWN_REARM 1080   // 300; standard setting 1080
 #define WL_MAINTENANCE_COOLDOWN_REARM_Helicopter 600 //not in .57 
 #define WL_MAINTENANCE_COOLDOWN_REARM_Jets 1200  //not in .57
 #define WL_MAINTENANCE_COOLDOWN_REARM_Artillery 1800 //not in .57

@@ -54,8 +54,10 @@ class CfgWLRequisitionPresets
 				class B_AFV_Wheeled_01_cannon_F				{cost = 10000;	requirements[]={};	};	// "Rhino MGS"
 				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={};	};	// "Rhino MGS UP" 
 				class B_MBT_01_arty_F						{cost = 20000;	requirements[]={};	};	// "M4 Scorcher" 
-				class B_MBT_01_mlrs_F						{cost = 24000;	requirements[]={};	};	// "M4 Scorcher"
+				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={};	};	// "Zamak MRL"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
+				class B_UAV_05_F							{cost = 8000;	requirements[]={}; offset[]={0, 6, 3};};	// "UCAV";
+				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
 				 
 				 
 			};
@@ -98,6 +100,7 @@ class CfgWLRequisitionPresets
 				class B_Slingload_01_Fuel_F					{cost = 500;	requirements[]={};	};	// "Huron Fuel Container"
 				class B_Slingload_01_Medevac_F					{cost = 500;	requirements[]={};	};	// "Huron Medical Container"
 				class B_Slingload_01_Repair_F					{cost = 500;	requirements[]={};	};	// "Huron Repair Container"
+				
 				
 			};
 			class Defences
@@ -180,9 +183,11 @@ class CfgWLRequisitionPresets
 				class O_MBT_04_command_F					{cost = 11000;	requirements[]={};	};	// "T-140K Angara"
 				class B_MBT_01_TUSK_F						{cost = 6500;	requirements[]={};	};	// "M2A1 Slammer UP"
 				class O_MBT_02_arty_F						{cost = 20000;	requirements[]={};	};	// "2S9 Sochor"
-				class B_MBT_01_mlrs_F						{cost = 24000;	requirements[]={};	};	// "M4 Scorcher"
+				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={};	};	// "Zamak MRL"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
 				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={};	};	// "Rhino MGS UP"
+				class B_UAV_05_F							{cost = 8000;	requirements[]={}; offset[]={0, 6, 3};};	// "UCAV";
+				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
 				
 
 			};

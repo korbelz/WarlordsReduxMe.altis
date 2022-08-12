@@ -195,4 +195,5 @@
 
 57.1.023
 - Updated naval assests
-- 
+- M5 MLRS replaced with Zamak MLR for both teams
+- Carrier Air assests now parachute on top of the carrier for safer spawning
