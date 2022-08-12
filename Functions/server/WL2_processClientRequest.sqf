@@ -109,7 +109,7 @@ if !(isNull _sender) then {
 								_spawnPos = _pos;
 							}
 						};
-						//"Air spawn code running" remoteExec ["systemChat"];
+						"Air spawn code running" remoteExec ["systemChat"];
 						if (count _spawnPos == 0) then {
 							_spawnPos = _targetPosFinal;
 						};
@@ -119,6 +119,10 @@ if !(isNull _sender) then {
 							_asset enableVehicleSensor ["ActiveRadarSensorComponent", false];
 							_asset enableVehicleSensor ["PassiveRadarSensorComponent", false];
 						};
+						if (RD_JET_IR_ACTIVE == 1) then {
+							_asset disableTIEquipment true;
+						}; 
+
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
 							createVehicleCrew _asset;
 						};
@@ -126,12 +130,15 @@ if !(isNull _sender) then {
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
 						_asset setVelocity [0, 0, 0];
 						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
+						if (RD_HELI_IR_ACTIVE == 1) then {
+							_asset disableTIEquipment true;
+						};
 						/*if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
 							createVehicleCrew _asset;
 						};*/
 						//_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
 						//[_text] remoteExec ["systemChat"];
-						//"Heli spawn code running" remoteExec ["systemChat"];
+						"Heli spawn code running" remoteExec ["systemChat"];
 					};
 				} else {
 					if (_isStatic) then {
@@ -223,6 +230,9 @@ if !(isNull _sender) then {
 					_assetDummy setPos _targetPosFinal;
 					_assetDummy hideObject TRUE;
 					_assetDummy enableSimulation TRUE;
+					if (RD_TANK_IR_ACTIVE == 1) then {
+						_asset disableTIEquipment true;
+					};
 					"Vic spawn code running" remoteExec ["systemChat"];
 
 					[_parachute, _asset, _assetDummy] spawn {
