@@ -192,3 +192,7 @@
 - Carrier compatible aircraft can now be spawned via the "Defense" Menu
 - Naval weapons can only spawn in naval zones 
 - WIP Carrier compatible aircraft spawn on carrier using default spawn code(no exploits!)
+
+57.1.023
+- Updated naval assests
+- 
