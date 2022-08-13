@@ -192,7 +192,7 @@ class Mission
 				position[]={4131.7949,51.669838,11741.281};
 				angles[]={6.2565165,0,0.043964844};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W""]];";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""F""]];";
 			id=1;
 			type="Logic";
 		};
@@ -782,6 +782,7 @@ class Mission
 				position[]={26990.121,20.18708,23216.311};
 				angles[]={0.033318337,0,0.0066671576};
 			};
+			init="this setVariable [""BIS_WL_services"", [""F""]];";
 			id=53;
 			type="Logic";
 		};
@@ -1694,7 +1695,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23121.859,3.1900001,18679.176};
-			angle=2.5747085;
+			angle=2.5747082;
 			class Attributes
 			{
 				sizeA=225;

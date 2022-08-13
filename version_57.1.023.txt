@@ -220,3 +220,5 @@
 - Fixed wing and Rotory wing UCAVs are now spawned via the aircraft menu
 - Fixed wing Carrier aircraft/UCAVs no longer sometimes spawn damaged(yay!)
 - Indy boats less likely to ram static naval objects at full speed
+- added "fire support" bases to back end
+- Long range fire support weapons can now only be spawned at a fire support base(currently Neri and Molos)

@@ -52,10 +52,10 @@ class CfgWLRequisitionPresets
 				class B_MBT_01_cannon_F						{cost = 6000;	requirements[]={};	};	// "M2A1 Slammer"
 				class B_MBT_01_TUSK_F						{cost = 6500;	requirements[]={};	};	// "M2A1 Slammer UP"
 				class O_MBT_04_command_F					{cost = 11000;	requirements[]={};	};	// "T-140K Angara"
-				class B_AFV_Wheeled_01_cannon_F				{cost = 10000;	requirements[]={};	};	// "Rhino MGS"
-				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={};	};	// "Rhino MGS UP" 
-				class B_MBT_01_arty_F						{cost = 20000;	requirements[]={};	};	// "M4 Scorcher" 
-				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={};	};	// "Zamak MRL"
+				class B_AFV_Wheeled_01_cannon_F				{cost = 10000;	requirements[]={"F"};	};	// "Rhino MGS"
+				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={"F"};	};	// "Rhino MGS UP" 
+				class B_MBT_01_arty_F						{cost = 20000;	requirements[]={"F"};	};	// "M4 Scorcher" 
+				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={"F"};	};	// "Zamak MRL"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"C"}; offset[]={0, 6, 3};};	// "UCAV";
 				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"C"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
@@ -119,7 +119,7 @@ class CfgWLRequisitionPresets
 				class B_static_AT_F							{cost = 600;	requirements[]={};	};	// "Static Titan Launcher (AT) [NATO]"
 				class B_SAM_System_03_F						{cost = 10000;	requirements[]={};	offset[]={0, 5.3, 0};};	// "MIM-145 Defender"
 				class B_Radar_System_01_F					{cost = 5000;	requirements[]={};	offset[]={0, 5.3, 0};};	// "AN/MPQ-105 Radar"
-				class B_Mortar_01_F							{cost = 11000;	requirements[]={}; offset[]={0, 3, 0};};	// "Mortar"
+				class B_Mortar_01_F							{cost = 11000;	requirements[]={"F"}; offset[]={0, 3, 0};};	// "Mortar"
 				class B_UGV_01_rcws_F						{cost = 8500;	requirements[]={}; offset[]={0, 4, 0};};	// "UGAS" 
 				//class B_UGV_02_Demining_F					{cost = 4500;	requirements[]={};	};	// "UGAS demining"
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"A","S"}; offset[]={0, 6, 0};};	// "UCAV";
@@ -183,10 +183,10 @@ class CfgWLRequisitionPresets
 				class O_MBT_04_cannon_F						{cost = 10000;	requirements[]={};	};	// "T-140 Angara"
 				class O_MBT_04_command_F					{cost = 11000;	requirements[]={};	};	// "T-140K Angara"
 				class B_MBT_01_TUSK_F						{cost = 6500;	requirements[]={};	};	// "M2A1 Slammer UP"
-				class O_MBT_02_arty_F						{cost = 20000;	requirements[]={};	};	// "2S9 Sochor"
-				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={};	};	// "Zamak MRL"
+				class O_MBT_02_arty_F						{cost = 20000;	requirements[]={"F"};	};	// "2S9 Sochor"
+				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={"F"};	};	// "Zamak MRL"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
-				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={};	};	// "Rhino MGS UP"
+				class B_AFV_Wheeled_01_up_cannon_F			{cost = 12000;	requirements[]={"F"};	};	// "Rhino MGS UP"
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"C"}; offset[]={0, 6, 3};};	// "UCAV";
 				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"C"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
 				
@@ -249,7 +249,7 @@ class CfgWLRequisitionPresets
 				class O_static_AT_F							{cost = 600;	requirements[]={};	};	// "Static Titan Launcher (AT) [CSAT]"
 				class O_SAM_System_04_F						{cost = 10000;	requirements[]={};	offset[]={0, 5.3, 0};};	// "S-750 Rhea"
 				class O_Radar_System_02_F					{cost = 5000;	requirements[]={};	offset[]={0, 5.3, 0};};	// "R-750 Cronus Radar"
-				class O_Mortar_01_F							{cost = 11000;	requirements[]={}; offset[]={0, 3, 0};	};	// "Mortar"
+				class O_Mortar_01_F							{cost = 11000;	requirements[]={"F"}; offset[]={0, 3, 0};	};	// "Mortar"
 				class O_UGV_01_rcws_F						{cost = 8500;	requirements[]={}; offset[]={0, 4, 0}; };	// "UGAV rcws"
 				class O_UGV_02_Demining_F					{cost = 4500;	requirements[]={};	};	// "UGAV demining"
 				class O_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter"
