@@ -79,7 +79,7 @@ if (_side == BIS_WL_localSide) then {
 					_wp2 = _group addWaypoint [position _sector, 2000];
 					_wp2 setWaypointType "SAD";
 
-                	_wp = _group addWaypoint [position _sector, 0];
+                	_wp = _group addWaypoint [position _sector, 500];
                 	_wp setWaypointType "CYCLE";
             	} forEach _navyArray;
 			};
