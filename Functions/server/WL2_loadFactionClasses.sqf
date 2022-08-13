@@ -170,3 +170,20 @@ BIS_WL_factionAircraftClasses = [
 		
 	]
 ];
+
+BIS_WL_factionBoatClasses = [
+	[
+		"B_Boat_Armed_01_minigun_F",	100 //Speedboat Minigun, default 100
+		
+		
+	],
+	[
+		"O_Boat_Armed_01_minigun_F",	100 //Speedboat Minigun, default 100
+		
+	],
+	[
+		"I_Boat_Armed_01_minigun_F",	100, //Speedboat Minigun, default 100
+		"I_SDV_01_F", 1 //SDV. default 5
+				
+	]
+];

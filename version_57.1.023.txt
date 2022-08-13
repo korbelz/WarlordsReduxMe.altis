@@ -209,3 +209,4 @@
 - Added Explosive Specialist, they can deactivate mines
 - Added on/off toggle for Indy boats spawning at naval zones
 - Added on/off toggle for Indy Divers spawning at naval zones
+- Added spawn class for naval boats to improve mod compatibility

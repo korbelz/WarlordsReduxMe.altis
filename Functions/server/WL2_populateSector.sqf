@@ -60,7 +60,7 @@ if (_side == BIS_WL_localSide) then {
                 	_randomy = random 600;
                 	_randomz = 0;
                 	//_road = selectRandom _roads;
-                	_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "I_Boat_Armed_01_minigun_F" , _side] call BIS_fnc_spawnVehicle;
+                	_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionBoatClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
                 	_vehicleArray params ["_vehicle", "_crew", "_group"];
                 	_vehicle setVariable ["BIS_WL_parentSector", _sector];
                 	[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
