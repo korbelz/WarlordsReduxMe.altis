@@ -32,6 +32,8 @@ Warlords_constants.inc is the main adjustment file that has the mission specific
 
 WL2_loadfactioncclasses file is the file to adjust the AI spawn tables for enemy towns
 
+In-depth editing info can be found here on the wiki: https://github.com/korbelz/WarlordsReduxMe.altis/wiki/How-to-make-edits-to-the-mission
+
 ## Live stream playlist 
 
 I stream all the dev work I do on redux for a detailed breakdown of all the bugs that get fixed. 
