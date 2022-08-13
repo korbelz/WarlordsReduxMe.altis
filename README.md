@@ -20,9 +20,10 @@ Link to Warlords Maverick
 https://github.com/korbelz/WarlordsReduxMav.altis
 
 
-## Want to get involed  
+## Want to play the mission yourself  
 
-Github page: you are already here :)
+Direction for downloading and playing the mission can be found here on the wiki: 
+https://github.com/korbelz/WarlordsReduxMe.altis/wiki/How-to-download-and-run-the-mission
 
 ## How to adjust the mission values/settings
 
