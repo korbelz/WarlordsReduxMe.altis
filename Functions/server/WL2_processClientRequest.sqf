@@ -255,6 +255,11 @@ if !(isNull _sender) then {
 							_itemConfig = configFile >> "CfgVehicles" >> typeOf _asset;
 							_dropSoundClassArr = getArray (_itemConfig >> "soundBuildingCrash");
 							_dropSoundArr = [];
+							// this code block waits for the vic to 'land' then repair and refuels it.
+							sleep 2;
+							_asset setDamage 0;
+							_asset setFuel 1;
+							"vic repair code running" remoteExec ["systemChat"];
 							
 							{
 								if (_forEachIndex % 2 == 0) then {

@@ -218,3 +218,4 @@
 - MQ-12 Falcon re-added
 - Added warning message about unlocked UAVs/UCAVs before flying
 - Fixed wing and Rotory wing UCAVs are now spawned via the aircraft menu
+- Fixed wing Carrier aircraft/UCAVs no longer sometimes spawn damaged(yay!)

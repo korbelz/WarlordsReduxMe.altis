@@ -59,7 +59,7 @@ class CfgWLRequisitionPresets
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"C"}; offset[]={0, 6, 3};};	// "UCAV";
 				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"C"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
-				class B_Plane_Fighter_01_Stealth_F			{cost = 20000;	requirements[]={"S"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II Stealth";
+				class B_Plane_Fighter_01_Stealth_F			{cost = 20000;	requirements[]={"C"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II Stealth";
 				 
 				 
 			};
