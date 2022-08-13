@@ -205,3 +205,4 @@
 - Added On/off toggle for Jet IR
 - Added On/off toggle for Heli IR
 - Added On/off toggle for Tank IR
+- Airfields refactors, no more running 500 meters outside of zone for a plane!
