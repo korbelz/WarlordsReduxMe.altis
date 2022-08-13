@@ -10,12 +10,12 @@ private _connectedToBase = count (WL_BASES arrayIntersect (_sector getVariable "
 if (_side == BIS_WL_localSide) then {
 	if (count (_sector getVariable "BIS_WL_vehiclesToSpawn") == 0 && !_connectedToBase) then {
 		private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
-		private _myArray = [];
-		//_text = format ["items in myArray: %1", count _myArray];
+		private _tankArray = [];
+		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random RD_VIC_RANDOM_AI_SPAWNS;
-		_myArray resize _randomsize; 
-		//_text = format ["items in myArray: %1", count _myArray];
+		_tankArray resize _randomsize; 
+		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
 		
 		if (count _roads > 0) then {
@@ -42,7 +42,7 @@ if (_side == BIS_WL_localSide) then {
 			
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "CYCLE";
-			} forEach _myArray;
+			} forEach _tankArray;
 		};
 		
 		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
@@ -53,37 +53,37 @@ if (_side == BIS_WL_localSide) then {
         _navyArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
+		if(RD_INDY_BOATS_ACTIVE == 1) then {
+		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
+            	{
+                	_randomx = random 600;
+                	_randomy = random 600;
+                	_randomz = 0;
+                	//_road = selectRandom _roads;
+                	_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "I_Boat_Armed_01_minigun_F" , _side] call BIS_fnc_spawnVehicle;
+                	_vehicleArray params ["_vehicle", "_crew", "_group"];
+                	_vehicle setVariable ["BIS_WL_parentSector", _sector];
+                	[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+                	{
+                    	_x setVariable ["BIS_WL_parentSector", _sector];
+                    	[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+                	} forEach _crew;
 
-		 if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
-            {
-                _randomx = random 600;
-                _randomy = random 600;
-                _randomz = 0;
-                //_road = selectRandom _roads;
-                _vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "I_Boat_Armed_01_minigun_F" , _side] call BIS_fnc_spawnVehicle;
-                _vehicleArray params ["_vehicle", "_crew", "_group"];
-                _vehicle setVariable ["BIS_WL_parentSector", _sector];
-                [objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
-                {
-                    _x setVariable ["BIS_WL_parentSector", _sector];
-                    [objNull, _x] call BIS_fnc_WL2_newAssetHandle;
-                } forEach _crew;
 
+                	[_group, 0] setWaypointPosition [position _vehicle, 500];
+                	_group deleteGroupWhenEmpty TRUE;
 
-                [_group, 0] setWaypointPosition [position _vehicle, 500];
-                _group deleteGroupWhenEmpty TRUE;
+                	_wp = _group addWaypoint [position _sector, 2000];
+                	_wp setWaypointType "SAD";
 
-                _wp = _group addWaypoint [position _sector, 2000];
-                _wp setWaypointType "SAD";
+					_wp2 = _group addWaypoint [position _sector, 2000];
+					_wp2 setWaypointType "SAD";
 
-				_wp2 = _group addWaypoint [position _sector, 2000];
-				_wp2 setWaypointType "SAD";
-
-                _wp = _group addWaypoint [position _sector, 0];
-                _wp setWaypointType "CYCLE";
-            } forEach _navyArray;
+                	_wp = _group addWaypoint [position _sector, 0];
+                	_wp setWaypointType "CYCLE";
+            	} forEach _navyArray;
+			};
 		};
-
 		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
         private _diverArray = [];
         //_text = format ["items in myArray: %1", count _myArray];

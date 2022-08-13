@@ -76,6 +76,7 @@
 #define RD_JET_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
 #define RD_HELI_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
 #define RD_TANK_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
+#define RD_INDY_BOATS_ACTIVE 1  //default 1; 1 = INDY boats will spawn; 2 = Indy boats will not spawn
 
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)

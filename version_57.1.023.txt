@@ -207,4 +207,5 @@
 - Added On/off toggle for Tank IR
 - Airfields refactors, no more running 500 meters outside of zone for a plane!
 - Added Explosive Specialist, they can deactivate mines
+- Added on/off toggle for Indy boats spawning at naval zones
 - 
