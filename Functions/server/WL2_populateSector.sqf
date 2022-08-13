@@ -94,6 +94,7 @@ if (_side == BIS_WL_localSide) then {
         _diverArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
+		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
 		if(RD_INDY_DIVERS_ACTIVE == 1) then {
 			if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
@@ -103,7 +104,7 @@ if (_side == BIS_WL_localSide) then {
 					_randomx = random [60, 200, 400];
                 	_randomy = random [60, 200, 400];
                 	_randomz = 0;
-                	_newUnit = _newGrp createUnit ["I_diver_F", position _sector vectorAdd [_randomx, _randomy, _randomz], [], 5, "NONE"];
+                	_newUnit = _newGrp createUnit [selectRandomWeighted _diversPool, position _sector vectorAdd [_randomx, _randomy, _randomz], [], 5, "NONE"];
 					_newUnit setVariable ["BIS_WL_parentSector", _sector];
 					[objNull, _newUnit] call BIS_fnc_WL2_newAssetHandle;
 					uiSleep WL_TIMEOUT_MIN;

@@ -187,3 +187,20 @@ BIS_WL_factionBoatClasses = [
 				
 	]
 ];
+
+BIS_WL_factionDiverClasses = [
+	[
+		"B_diver_F",	100 //Assault Diver, default 100
+		
+		
+	],
+	[
+		"O_diver_F",	100 //Assault Diver, default 100
+		
+	],
+	[
+		"I_diver_F",	100 //Assault Diver, default 100
+		//"I_SDV_01_F", 1 //SDV. default 5
+				
+	]
+];

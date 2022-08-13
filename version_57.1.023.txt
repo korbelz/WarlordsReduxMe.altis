@@ -210,3 +210,4 @@
 - Added on/off toggle for Indy boats spawning at naval zones
 - Added on/off toggle for Indy Divers spawning at naval zones
 - Added spawn class for naval boats to improve mod compatibility
+- Added spawn class for naval Divers to improve mod compatibility
