@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={11508.28,58.16827,11681.888};
-		dir[]={0.49785322,-0.52574748,0.68974978};
-		up[]={0.30770591,0.85063338,0.42630899};
-		aside[]={0.81085807,-1.8262654e-008,-0.5852679};
+		dir[]={0.49784747,-0.52574146,0.68974197};
+		up[]={0.307695,0.85064441,0.42629558};
+		aside[]={0.81084645,1.4901161e-008,-0.5852592};
 	};
 };
 binarizationWanted=0;
@@ -204,7 +204,7 @@ class Mission
 				position[]={3552.104,8.5744362,12993.334};
 				angles[]={6.2645278,0,0.078504913};
 			};
-			init="this setVariable [""BIS_WL_services"", [""W"", ""A"", ""H""]];";
+			init="this setVariable [""BIS_WL_services"", [""W"", ""H""]];";
 			id=2;
 			type="Logic";
 			atlOffset=-9.5367432e-007;
@@ -1066,7 +1066,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={11515.182,22.933805,11724.463};
-			angle=2.1149373;
+			angle=2.1149371;
 			class Attributes
 			{
 				sizeA=300;
@@ -1399,7 +1399,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14324.31,22.385044,16178.745};
-			angle=0.81538284;
+			angle=0.81538278;
 			class Attributes
 			{
 				sizeA=300;
@@ -1694,7 +1694,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23121.859,3.1900001,18679.176};
-			angle=2.5747094;
+			angle=2.5747089;
 			class Attributes
 			{
 				sizeA=225;
@@ -1820,7 +1820,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={26942.27,20.43795,24745.133};
-			angle=3.8582072;
+			angle=3.8582067;
 			class Attributes
 			{
 				sizeA=150;

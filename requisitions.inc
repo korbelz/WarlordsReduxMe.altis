@@ -121,7 +121,7 @@ class CfgWLRequisitionPresets
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"A","S"}; offset[]={0, 6, 0};};	// "UCAV";
 				class B_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk AT";
 				class B_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk LGB";
-				//class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
+				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class B_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter";
 				class B_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL-6 Pelican";
 				class B_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL-6 Pelican medical";
