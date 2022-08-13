@@ -135,6 +135,7 @@ if !(isNull _sender) then {
 						};
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
 							createVehicleCrew _asset;
+							"You must unlock UAV via the I menu to fly it" remoteExec ["systemChat"];
 						};
 						//_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
 						//[_text] remoteExec ["systemChat"];

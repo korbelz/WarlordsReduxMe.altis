@@ -213,5 +213,6 @@
 - Added spawn class for naval Divers to improve mod compatibility
 - Removed Kavala as an Airfield
 - Rotory wing UAVs/UCAVs now spawn in properly
-  - *note* they must be unlocked before you can fly them with terminal
+  - *note* they must be unlocked via the I menu before you can fly them with terminal
 - MQ-12 Falcon re-added
+- Added warning message about unlocked UAVs/UCAVs before flying
