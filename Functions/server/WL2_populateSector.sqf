@@ -84,6 +84,8 @@ if (_side == BIS_WL_localSide) then {
             	} forEach _navyArray;
 			};
 		};
+
+		
 		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
         private _diverArray = [];
         //_text = format ["items in myArray: %1", count _myArray];
@@ -93,35 +95,36 @@ if (_side == BIS_WL_localSide) then {
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
 
-		if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
-            {
-                private _newGrp = createGroup _side;
+		if(RD_INDY_DIVERS_ACTIVE == 1) then {
+			if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
+            	{
+                	private _newGrp = createGroup _side;
 
-				_randomx = random [60, 200, 400];
-                _randomy = random [60, 200, 400];
-                _randomz = 0;
-                _newUnit = _newGrp createUnit ["I_diver_F", position _sector vectorAdd [_randomx, _randomy, _randomz], [], 5, "NONE"];
-				_newUnit setVariable ["BIS_WL_parentSector", _sector];
-				[objNull, _newUnit] call BIS_fnc_WL2_newAssetHandle;
-				uiSleep WL_TIMEOUT_MIN;
+					_randomx = random [60, 200, 400];
+                	_randomy = random [60, 200, 400];
+                	_randomz = 0;
+                	_newUnit = _newGrp createUnit ["I_diver_F", position _sector vectorAdd [_randomx, _randomy, _randomz], [], 5, "NONE"];
+					_newUnit setVariable ["BIS_WL_parentSector", _sector];
+					[objNull, _newUnit] call BIS_fnc_WL2_newAssetHandle;
+					uiSleep WL_TIMEOUT_MIN;
 
-				_newGrp setBehaviour "SAFE";
-				_newGrp setSpeedMode "LIMITED";
+					_newGrp setBehaviour "SAFE";
+					_newGrp setSpeedMode "LIMITED";
 
-                [_newGrp, 0] setWaypointPosition [position _sector vectorAdd [_randomx, _randomy, _randomz], 10];
-                _newGrp deleteGroupWhenEmpty TRUE;
+                	[_newGrp, 0] setWaypointPosition [position _sector vectorAdd [_randomx, _randomy, _randomz], 10];
+                	_newGrp deleteGroupWhenEmpty TRUE;
 
-                _wp = _newGrp addWaypoint [position _sector, 80];
-                _wp setWaypointType "SAD";
+                	_wp = _newGrp addWaypoint [position _sector, 80];
+                	_wp setWaypointType "SAD";
 
-				_wp2 = _newGrp addWaypoint [position _sector, 80];
-				_wp2 setWaypointType "SAD";
+					_wp2 = _newGrp addWaypoint [position _sector, 80];
+					_wp2 setWaypointType "SAD";
 
-                _wp =_newGrp addWaypoint [position _sector, 80];
-                _wp setWaypointType "CYCLE";
-            } forEach _diverArray;
+               		_wp =_newGrp addWaypoint [position _sector, 80];
+               		_wp setWaypointType "CYCLE";
+            	} forEach _diverArray;
+			};
 		};
-
 
 
 

@@ -196,7 +196,7 @@
 57.1.023
 - Updated naval assests
 - M5 MLRS replaced with Zamak MLR for both teams
-- Carrier Air assests now parachute on top of the carrier for safer spawning
+- Carrier Air assests now parachute on top of the carrier for safer spawning(finally a working solution!)
 - fixed offset values for MK 49 and MK 21
 - Added new carrier sector to back end
 - Carrier air assests can only spawn in carrier zones
@@ -205,7 +205,7 @@
 - Added On/off toggle for Jet IR
 - Added On/off toggle for Heli IR
 - Added On/off toggle for Tank IR
-- Airfields refactors, no more running 500 meters outside of zone for a plane!
+- Airfields refactors, no more running 500 meters outside of zone for a plane
 - Added Explosive Specialist, they can deactivate mines
 - Added on/off toggle for Indy boats spawning at naval zones
-- 
+- Added on/off toggle for Indy Divers spawning at naval zones
