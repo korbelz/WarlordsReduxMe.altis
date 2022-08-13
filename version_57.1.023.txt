@@ -214,5 +214,7 @@
 - Removed Kavala as an Airfield
 - Rotory wing UAVs/UCAVs now spawn in properly
   - *note* they must be unlocked via the I menu before you can fly them with terminal
+  - *note* they spawn already hovering in the sector you called them in at
 - MQ-12 Falcon re-added
 - Added warning message about unlocked UAVs/UCAVs before flying
+- Fixed wing and Rotory wing UCAVs are now spawned via the aircraft menu
