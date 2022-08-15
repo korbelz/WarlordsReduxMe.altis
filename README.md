@@ -20,9 +20,10 @@ Link to Warlords Maverick
 https://github.com/korbelz/WarlordsReduxMav.altis
 
 
-## Want to get involed  
+## Want to play the mission yourself  
 
-Github page: you are already here :)
+Direction for downloading and playing the mission can be found here on the wiki: 
+https://github.com/korbelz/WarlordsReduxMe.altis/wiki/How-to-download-and-run-the-mission
 
 ## How to adjust the mission values/settings
 
@@ -31,6 +32,8 @@ Requisition.inc file is the file to adjust what players can buy and the cost of 
 Warlords_constants.inc is the main adjustment file that has the mission specific settings 
 
 WL2_loadfactioncclasses file is the file to adjust the AI spawn tables for enemy towns
+
+In-depth editing info can be found here on the wiki: https://github.com/korbelz/WarlordsReduxMe.altis/wiki/How-to-make-edits-to-the-mission
 
 ## Live stream playlist 
 
