@@ -109,7 +109,7 @@ if !(isNull _sender) then {
 								_spawnPos = _pos;
 							}
 						};
-						"Air spawn code running" remoteExec ["systemChat"];
+						//"Air spawn code running" remoteExec ["systemChat"];
 						if (count _spawnPos == 0) then {
 							_spawnPos = _targetPosFinal;
 						};
@@ -139,7 +139,7 @@ if !(isNull _sender) then {
 						};
 						//_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
 						//[_text] remoteExec ["systemChat"];
-						"Heli spawn code running" remoteExec ["systemChat"];
+						//"Heli spawn code running" remoteExec ["systemChat"];
 					};
 				} else {
 					if (_isStatic) then {
@@ -157,7 +157,7 @@ if !(isNull _sender) then {
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
 							};
 						};
-						"isStatic spawn code running" remoteExec ["systemChat"];
+						//"isStatic spawn code running" remoteExec ["systemChat"];
 					};
 				};
 			};
@@ -234,7 +234,7 @@ if !(isNull _sender) then {
 					if (RD_TANK_IR_ACTIVE == 1) then {
 						_asset disableTIEquipment true;
 					};
-					"Vic spawn code running" remoteExec ["systemChat"];
+					//"Vic spawn code running" remoteExec ["systemChat"];
 
 					[_parachute, _asset, _assetDummy] spawn {
 						params ["_parachute", "_asset", "_assetDummy"];
