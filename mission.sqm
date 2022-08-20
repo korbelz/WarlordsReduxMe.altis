@@ -557,7 +557,7 @@ class Mission
 				position[]={16667.688,18.274412,16126.132};
 				angles[]={0,0,6.2826962};
 			};
-			init="this setVariable [""BIS_WL_canBeBase"", FALSE]";
+			init="this setVariable [""BIS_WL_services"", [""M""]]; this setVariable [""BIS_WL_canBeBase"", FALSE]";
 			id=33;
 			type="Logic";
 			atlOffset=0.0004234314;
