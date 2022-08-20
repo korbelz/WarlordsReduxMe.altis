@@ -233,3 +233,4 @@
 - Added AWC 303 Nyx (Recon) to Bluefor and OPFOR
 - Added AWC 303 Nyx (Recon) to Indy spawn table
 - Deceased spawn weight for Nyx recon, MLRS and UGVs at Indy towns
+- Minor edits to requisiton example list
