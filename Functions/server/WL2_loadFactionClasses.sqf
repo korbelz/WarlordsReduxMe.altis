@@ -103,32 +103,32 @@ BIS_WL_factionUnitClasses = [
 BIS_WL_factionVehicleClasses = [
 	[
 		"B_APC_Wheeled_01_cannon_F",		50, //Marshall, default 50
-		"B_AFV_Wheeled_01_up_cannon_F",		50, //Rhino UP?, default 50
-		"B_AFV_Wheeled_01_cannon_F",		50, //Rhino? defualt 50
+		"B_AFV_Wheeled_01_up_cannon_F",		15, //Rhino UP?, default 50
+		"B_AFV_Wheeled_01_cannon_F",		15, //Rhino? defualt 50
 		"B_APC_Tracked_01_CRV_F",		10, //Bobcat, default 50
-		"B_APC_Tracked_01_rcws_F",		10, //Panther, default 50
+		"B_APC_Tracked_01_rcws_F",		15, //Panther, default 50
 		"B_LSV_01_armed_F",			25, //Prowler HMG, default 75
 		"B_LSV_01_AT_F",			25, //Prowler AT, Default 75
 		"B_MRAP_01_hmg_F",			51, //Hunter hmg, default 100
-		"B_MRAP_01_gmg_F",			50, //Hunter GMG, default 100
+		"B_MRAP_01_gmg_F",			51, //Hunter GMG, default 100
 		"B_APC_Tracked_01_AA_F",		51, //Cheetah, default 50
 		"B_MBT_01_cannon_F",			25, //Slammer, default 25
-		"B_MBT_01_TUSK_F",			25 //slammer up, default 25
+		"B_MBT_01_TUSK_F",			25, //slammer up, default 25
+		"B_UGV_01_rcws_F",			20 //UGAV rcws, default 25
 	],
 	[
 			
-		"O_APC_Wheeled_02_rcws_v2_F",
-		"O_MRAP_02_gmg_F",			50, //Ifrit GMG, default 100
+		"O_APC_Wheeled_02_rcws_v2_F", 25, //MSE-3 Marid, default 100
+		"O_MRAP_02_gmg_F",			51, //Ifrit GMG, default 100
 		"O_MRAP_02_hmg_F",			51, //Ifrit HMG, default 100
 		"O_LSV_02_AT_F",			25, //Qilin AT, default 75
-		
 		"O_LSV_02_armed_F",			25, //Qilin minigun, default 75
 		"O_MBT_02_cannon_F",			25, //T-100, default 25
 		"O_APC_Tracked_02_cannon_F",		50, //Kamysh 30mm, default 50
-		
 		"O_MBT_04_cannon_F",			15, //T-140, default 15
 		"O_MBT_04_command_F",			15, //T-140, default 15
-		"O_APC_Tracked_02_AA_F",		51 //Tigris, default 50
+		"O_APC_Tracked_02_AA_F",		51, //Tigris, default 50
+		"O_UGV_01_rcws_F",			20 //UGAV rcws, default 25
 	],
 	[
 		
@@ -148,17 +148,23 @@ BIS_WL_factionVehicleClasses = [
 
 BIS_WL_factionAircraftClasses = [
 	[
-		"B_Plane_CAS_01_F",	100 //Wipeout, default 100
-		//"B_Heli_Attack_01_F", 70, //blackfoot, deault 50
-		//"B_Plane_Fighter_01_F", 50  // F/A-181 Black Wasp II 
-		//"B_Heli_Light_01_dynamicLoadout_F",	100, //AH9, default 100
-		
+		"B_Plane_CAS_01_F",	100, //Wipeout, default 100
+		"B_Heli_Attack_01_F", 70, //blackfoot, deault 50
+		"B_Plane_Fighter_01_F", 50,  // F/A-181 Black Wasp II 
+		"B_Heli_Light_01_dynamicLoadout_F",	25, //AH9, default 100
+		"B_T_UAV_03_F", 15, //MQ-12 Falcon. default 5
+		"B_UAV_05_F", 15, //UCAV. default 5
+		"B_UAV_02_CAS_F", 10, //greyhawk LGB. default 5
+		"class B_UAV_02_F", 10 //greyhawk AT. default 5
 	],
 	[
-		"O_Plane_CAS_02_F",	100 //Neophron, default 100
-		//"O_Heli_Attack_02_F", 70, //Kajmen, defualt 50
-		//"O_Plane_Fighter_02_F", 50 //To-201 Shikra
-		//"O_Heli_Light_02_dynamicLoadout_F",	100 //Orca, default 100
+		"O_Plane_CAS_02_F",	100, //Neophron, default 100
+		"O_Heli_Attack_02_F", 70, //Kajmen, defualt 50
+		"O_Plane_Fighter_02_F", 50, //To-201 Shikra
+		"O_Heli_Light_02_dynamicLoadout_F",	25, //Orca, default 100
+		"O_UAV_02_F", 10, //K40 AT. default 5
+		"O_UAV_02_CAS_F", 10, //K40 LGB. default 5
+		"O_T_UAV_04_CAS_F", 10 //KH-3A CAS. default 5
 	],
 	[
 		"I_Plane_Fighter_03_CAS_F",	100, //Indy A-10, default 100
