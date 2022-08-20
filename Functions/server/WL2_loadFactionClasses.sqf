@@ -140,8 +140,9 @@ BIS_WL_factionVehicleClasses = [
 		"I_MRAP_03_gmg_F",			25, //strider GMG, default 100
 		"I_MRAP_03_hmg_F",			25, //strider HMG, default 100
 		"I_MBT_03_cannon_F",			60, //Kuma, default 25
-		"I_E_Truck_02_MRL_F",			25, //MLRS, default 25
-		"I_UGV_01_rcws_F",			25 //Stomper RCWS, default 25
+		"I_E_Truck_02_MRL_F",			15, //MLRS, default 25
+		"I_LT_01_scout_F",			15, //AWC 303 Nyx (Recon), default 25
+		"I_UGV_01_rcws_F",			15 //Stomper RCWS, default 25
 	]
 ];
 

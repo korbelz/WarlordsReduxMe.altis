@@ -230,3 +230,6 @@
 - Added Mortar sector to the back end
 - Anthrika is currently set as the Mortar base for testing
 - Possible fix for Scalar NaN bug
+- Added AWC 303 Nyx (Recon) to Bluefor and OPFOR
+- Added AWC 303 Nyx (Recon) to Indy spawn table
+- Deceased spawn weight for Nyx recon, MLRS and UGVs at Indy towns
