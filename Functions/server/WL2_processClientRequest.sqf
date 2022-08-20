@@ -23,7 +23,7 @@ _processTargetPos = {
 	private _targetPosFinal = [];
 	
 	if !(surfaceIsWater _targetPos) then {
-		_nearSectorArr = _targetPos nearObjects ["Logic", 10]; //fix this shit next week!, make it big enough to see sector from carrier deck
+		_nearSectorArr = _targetPos nearObjects ["Logic", 50]; 
 		
 		if (count _nearSectorArr == 0) then {
 			_targetPosFinalArr = [_sender, nil, FALSE, _sender] call BIS_fnc_WL2_findSpawnPositions;

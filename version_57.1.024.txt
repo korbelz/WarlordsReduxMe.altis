@@ -229,3 +229,4 @@
 - Moved Northeast fire base from Molos to Polemistia
 - Added Mortar sector to the back end
 - Anthrika is currently set as the Mortar base for testing
+- Possible fix for Scalar NaN bug
