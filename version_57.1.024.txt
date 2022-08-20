@@ -233,4 +233,5 @@
 - Added AWC 303 Nyx (Recon) to Bluefor and OPFOR
 - Added AWC 303 Nyx (Recon) to Indy spawn table
 - Deceased spawn weight for Nyx recon, MLRS and UGVs at Indy towns
-- Minor edits to requisiton example list
+- Minor edits to requisiton example list tl;dr bluefor has more types of SAMs, OPFOR has less types that work but cheaper ones
+- AI controlled Vics, planes, helis, etc can now spawn to defend OPFOR and Bluefor towns
