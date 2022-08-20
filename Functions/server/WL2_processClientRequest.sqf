@@ -259,7 +259,7 @@ if !(isNull _sender) then {
 							sleep 2;
 							_asset setDamage 0;
 							_asset setFuel 1;
-							"vic repair code running" remoteExec ["systemChat"];
+							//"vic repair code running" remoteExec ["systemChat"];
 							
 							{
 								if (_forEachIndex % 2 == 0) then {

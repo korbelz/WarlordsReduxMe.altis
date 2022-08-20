@@ -222,3 +222,8 @@
 - Indy boats less likely to ram static naval objects at full speed
 - added "fire support" bases to back end
 - Long range fire support weapons can now only be spawned at a fire support base(currently Neri and Molos)
+
+57.1.024
+- Added two new "off map" sectors as fire support bases 
+- Moved Southwest fire base from Neri to Cape Drakontas
+- Moved Northeast fire base from Molos to Polemistia
