@@ -242,4 +242,6 @@
 - Added sector link between Ghost hotel and Georgios Base
 - Improvements to Vic spawning code
 - Server Performance improvements vs static objects 
+- AI Shirkas no longer crash while landing at Selakano airfield(thanks marii)
+- 
  
