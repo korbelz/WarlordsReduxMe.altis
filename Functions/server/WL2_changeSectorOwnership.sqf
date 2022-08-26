@@ -11,23 +11,29 @@ if !(_owner in _previousOwners) then {
 
 	_minecount = count allMines;
 
+	sleep WL_TIMEOUT_SHORT; 
 	//_minetext = format ["items that are mines: %1", count allMines];
 	//[_minetext] remoteExec ["systemChat"]; 
 
 	if (_minecount > RD_MINECOUNT_DELETE_THRESHOLD) then {
 		{ deleteVehicle _x } forEach allMines;
+		sleep WL_TIMEOUT_SHORT;
 	};
 
 	
 	//UAV removal code
 	
 	_uavcount = count allUnitsUAV;
+
+	sleep WL_TIMEOUT_SHORT;
 	
 	//_uavtext = format ["items that are UAVs: %1", count allUnitsUAV];
 	//[_uavtext] remoteExec ["systemChat"]; 
 
 	if (_uavcount > RD_UAVCOUNT_DELETE_THRESHOLD) then {
-		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F","B_Radar_System_01_F","O_SAM_System_04_F","O_Radar_System_02_F"])}); //better way to filter the ones u dont want to blow up.
+		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F","B_Radar_System_01_F","O_SAM_System_04_F","O_Radar_System_02_F"])});
+		//better way to filter the ones u dont want to blow up.
+		sleep WL_TIMEOUT_SHORT;
 	};
 	
 	//AI buddy count system
