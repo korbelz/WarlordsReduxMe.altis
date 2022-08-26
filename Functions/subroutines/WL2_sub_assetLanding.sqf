@@ -20,6 +20,9 @@ _assetPilotGrp deleteGroupWhenEmpty TRUE;
 
 //createVehicleCrew _asset;
 
+//_wphover = _assetPilotGrp addWaypoint [position _asset, 0];
+//_wphover setWaypointType "MOVE";
+
 _wpGetOut = _assetPilotGrp addWaypoint [position _asset, 0];
 _wpGetOut setWaypointType "GETOUT";
 _wpGetOut setWaypointStatements ["TRUE", "deleteVehicle this"];
