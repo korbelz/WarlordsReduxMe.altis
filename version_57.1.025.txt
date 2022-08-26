@@ -240,4 +240,5 @@
 57.1.025
 - Fix for suicidal heli pilots in patch 2.10
 - Added sector link between Ghost hotel and Georgios Base
+- Improvements to Vic spawning code. 
  
