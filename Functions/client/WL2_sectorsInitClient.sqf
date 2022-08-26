@@ -1,9 +1,41 @@
 #include "..\warlords_constants.inc"
 
 //Create locations in order to re-name sectors 
-_location = createLocation ["NameCity", [18803.1,22363.6,0], 30, 30]; 
-_location setText "Player town";
 
+_location_one = createLocation ["NameCity", [2949.7,11008,0], 30, 30]; 
+_location_one setText "Fire Base West"; //Fire Base West
+_location_two = createLocation ["NameCity", [8275.26,10904,0], 30, 30]; 
+_location_two setText "Korbville"; //Sector #58
+_location_three = createLocation ["NameCity", [12291.3,8906.51,0], 30, 30]; 
+_location_three setText "Southern Base"; //Southern Base
+_location_four = createLocation ["NameCity", [12748.1,16551.3,0], 30, 30]; 
+_location_four setText "Lakka Hill"; //Lakka Hill
+_location_five = createLocation ["NameCity", [14293.3,16178.3,0], 30, 30]; 
+_location_five setText "Altis main airbase"; //Altis main airbase
+_location_six = createLocation ["NameCity", [15152.6,17281.1,0], 30, 30]; 
+_location_six setText "Altis airbase north ramp"; //Altis airbase north ramp
+_location_seven = createLocation ["NameCity", [18732.9,22386.4,0], 30, 30]; 
+_location_seven setText "Nuke Town"; //Sector #72(north naval base)
+_location_eight = createLocation ["NameCity", [6173.99,16233.8,0], 30, 30]; 
+_location_eight setText "Kore factory"; //Kore factory
+_location = createLocation ["NameCity", [9209.92,21571.7,0], 30, 30]; 
+_location setText "Ammolofi Airbase"; //Ammolofi Airbase
+_location = createLocation ["NameCity", [15619.2,4537.46,0], 30, 30]; 
+_location setText "USS Deathstar"; //Sector #73(south naval base)
+_location = createLocation ["NameCity", [28036.1,23234.6,0], 30, 30]; 
+_location setText "Fire base East"; //Northeast Fire base
+_location = createLocation ["NameCity", [23573.5,21100.6,0], 30, 30]; 
+_location setText "Nidasos base"; //Nidasos base
+_location = createLocation ["NameCity", [21836.5,21020.8,0], 30, 30]; 
+_location setText "Ghost hotel"; //Ghost hotel 
+_location = createLocation ["NameCity", [23140.8,18678.6,0], 30, 30]; 
+_location setText "Salt Flats"; //Salt Flats 
+_location = createLocation ["NameCity", [20977.1,19248.7,0], 30, 30]; 
+_location setText "Georgios Base"; //Georgios Base 
+_location = createLocation ["NameCity", [17424.7,13169.4,0], 30, 30]; 
+_location setText "Pygros Military"; //Pygros Military
+_location = createLocation ["NameCity", [20968.2,7349.95,0], 30, 30]; 
+_location setText "Selakano Airbase"; //Selakano Airbase
 
 
 BIS_WL_sectorLinks = [];
