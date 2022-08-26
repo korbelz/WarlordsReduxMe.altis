@@ -1,5 +1,11 @@
 #include "..\warlords_constants.inc"
 
+//Create locations in order to re-name sectors 
+_location = createLocation ["NameCity", [18803.1,22363.6,0], 30, 30]; 
+_location setText "Player town";
+
+
+
 BIS_WL_sectorLinks = [];
 _i = 0;
 

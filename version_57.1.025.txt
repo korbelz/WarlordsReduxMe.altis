@@ -244,5 +244,6 @@
 - Server Performance improvements vs static objects 
 - AI Shirkas no longer crash while landing at Selakano airfield(thanks marii)
 - Improvements to Mine removal and UAV removal code
+- Sectors can now be Renamed
 
  
