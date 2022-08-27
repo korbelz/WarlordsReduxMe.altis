@@ -255,5 +255,5 @@
   and Carrier Capable UCAV Sentinel
 - Rebalance example AA unit prices bases on OPFOR now having working stuff
 - added toggle for heli radar systems
-
+Hotfix: reverted some changes that might have been hurting FPS
  

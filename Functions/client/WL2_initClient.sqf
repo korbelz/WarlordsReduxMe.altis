@@ -7,7 +7,7 @@ waitUntil {!isNull player && isPlayer player};
 "client" call BIS_fnc_WL2_varsInit;
 
 
-//this whole if statement stops side switching
+//this whole if statement stops side switching. Line 11 to 56 comment out
 
 private _teamCheckOKVarID = format ["BIS_WL_teamCheckOK_%1", getPlayerUID player];
 
