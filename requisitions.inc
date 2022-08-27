@@ -123,11 +123,11 @@ class CfgWLRequisitionPresets
 				class B_Mortar_01_F							{cost = 11000;	requirements[]={"M"}; offset[]={0, 3, 0};};	// "Mortar"
 				class B_UGV_01_rcws_F						{cost = 8500;	requirements[]={}; offset[]={0, 4, 0};};	// "UGAS" 
 				//class B_UGV_02_Demining_F					{cost = 4500;	requirements[]={};	};	// "UGAS demining"
-				class B_UAV_05_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "UCAV";
+				//class B_UAV_05_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "UCAV";
 				class B_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter";
 				class B_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL-6 Pelican";
 				class B_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL-6 Pelican medical";
-				class B_AAA_System_01_F						{cost = 10000;	requirements[]={};	offset[]={0, 6, 0.8};};	// "Phalax"; 
+				class B_AAA_System_01_F						{cost = 10000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "mk 41 VLS"
 				class B_SAM_System_01_F						{cost = 10000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk49 Spartan"; 
@@ -179,7 +179,7 @@ class CfgWLRequisitionPresets
 				class O_APC_Tracked_02_cannon_F				{cost = 3000;	requirements[]={};	};	// "BTR-K Kamysh"
 				class O_APC_Tracked_02_AA_F					{cost = 3000;	requirements[]={};	};	// "ZSU-39 Tigris"
 				class I_APC_Wheeled_03_cannon_F				{cost = 3500;	requirements[]={};	};	// "AFV-4 Gorgon"
-				class I_LT_01_AA_F							{cost = 2500;	requirements[]={};	};	// "AWC 302 Nyx (AA)"
+				class I_LT_01_AA_F							{cost = 3500;	requirements[]={};	};	// "AWC 302 Nyx (AA)"
 				class O_MBT_02_cannon_F						{cost = 8000;	requirements[]={};	};	// "T-100 Varsuk"
 				class O_MBT_04_cannon_F						{cost = 10000;	requirements[]={};	};	// "T-140 Angara"
 				class O_MBT_04_command_F					{cost = 11000;	requirements[]={};	};	// "T-140K Angara"
@@ -251,7 +251,7 @@ class CfgWLRequisitionPresets
 				//class O_GMG_01_high_F						{cost = 750;	requirements[]={};	};	// "Mk32 GMG 20 mm (Raised)"
 				class O_static_AA_F							{cost = 800;	requirements[]={};	};	// "Static Titan Launcher (AA) [CSAT]"
 				class O_static_AT_F							{cost = 800;	requirements[]={};	};	// "Static Titan Launcher (AT) [CSAT]"
-				class O_SAM_System_04_F						{cost = 8000;	requirements[]={};	offset[]={0, 5.3, 0};};	// "S-750 Rhea"
+				class O_SAM_System_04_F						{cost = 10000;	requirements[]={};	offset[]={0, 5.3, 0};};	// "S-750 Rhea"
 				class O_Radar_System_02_F					{cost = 5000;	requirements[]={};	offset[]={0, 5.3, 0};};	// "R-750 Cronus Radar"
 				class O_Mortar_01_F							{cost = 11000;	requirements[]={"M"}; offset[]={0, 3, 0};	};	// "Mortar"
 				class O_UGV_01_rcws_F						{cost = 8500;	requirements[]={}; offset[]={0, 4, 0}; };	// "UGAV rcws"
@@ -259,7 +259,7 @@ class CfgWLRequisitionPresets
 				class O_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter"
 				class O_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL_6 Pelican"
 				class O_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL_6 Pelican Medical"
-				class B_AAA_System_01_F						{cost = 18000;	requirements[]={}; offset[]={0, 6, 0.8}; };	// "Phalax"; 
+				class B_AAA_System_01_F						{cost = 18000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "mk 41 VLS"
 				class B_SAM_System_01_F						{cost = 18000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk49 Spartan"; 
