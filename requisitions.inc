@@ -127,7 +127,7 @@ class CfgWLRequisitionPresets
 				class B_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter";
 				class B_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL-6 Pelican";
 				class B_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL-6 Pelican medical";
-				class B_AAA_System_01_F						{cost = 10000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "Phalax"; 
+				class B_AAA_System_01_F						{cost = 10000;	requirements[]={};	offset[]={0, 6, 0.8};};	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "mk 41 VLS"
 				class B_SAM_System_01_F						{cost = 10000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk49 Spartan"; 
@@ -210,9 +210,11 @@ class CfgWLRequisitionPresets
 				class O_Plane_Fighter_02_Stealth_F			{cost = 23000;	requirements[]={"A"};	};	// "To-201 Shikra Stealth"
 				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II";
 				class I_Plane_Fighter_04_F					{cost = 13000;	requirements[]={"A"};	};	// "A-149 Gryphon";
+				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class O_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 AT"
 				class O_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 LGB"
 				class O_T_UAV_04_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "KH-3A CAS"
+				class B_UAV_05_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "UCAV";
 				
 			};
 			class Naval
@@ -257,7 +259,7 @@ class CfgWLRequisitionPresets
 				class O_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter"
 				class O_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL_6 Pelican"
 				class O_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL_6 Pelican Medical"
-				class B_AAA_System_01_F						{cost = 18000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Phalax"; 
+				class B_AAA_System_01_F						{cost = 18000;	requirements[]={}; offset[]={0, 6, 0.8}; };	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "mk 41 VLS"
 				class B_SAM_System_01_F						{cost = 18000;	requirements[]={"S"}; offset[]={0, 4, 0.8}; };	// "Mk49 Spartan"; 

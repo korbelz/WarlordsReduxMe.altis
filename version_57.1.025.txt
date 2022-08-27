@@ -248,4 +248,9 @@
 - Sectors names are now alinged with default warlords map when possible 
   - new sector names: Nuke Town, USS Deathstar, Fire Base West and East, Korbville
 - Added on/off toggle to custom sector naming system 
+- Fixed wing and Rotary Wing UCAVs can now work cross faction 
+- Static defence UAVs can now work cross faction
+  - Following items now work for OPFOR: Phalax CIWS, Mk 45 Hammer, 
+  mk 41 VLS, Mk49 Spartan, Mk21 Centurion, MQ-12 Falcon, 
+  and Carrier Capable UCAV Sentinel
  

@@ -123,8 +123,17 @@ if !(isNull _sender) then {
 							_asset disableTIEquipment true;
 						}; 
 
-						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
+						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 							createVehicleCrew _asset;
+							
+							//"Bluefor air crew spawn code running" remoteExec ["systemChat"];
+						};
+						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
+							createVehicleCrew _asset;
+							_assetUavGrp = createGroup EAST;
+							[driver _asset, gunner _asset] joinSilent _assetUavGrp;
+																	
+							//"OPFOR air crew spawn code running" remoteExec ["systemChat"];
 						};
 					} else {
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
@@ -133,9 +142,17 @@ if !(isNull _sender) then {
 						if (RD_HELI_IR_ACTIVE == 1) then {
 							_asset disableTIEquipment true;
 						};
-						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
+						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 							createVehicleCrew _asset;
 							"You must unlock UAV via the I menu to fly it" remoteExec ["systemChat"];
+							//"Blufor heli crew spawn code running" remoteExec ["systemChat"];
+						};
+						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
+								createVehicleCrew _asset;
+								_assetUavGrp = createGroup EAST;
+								[driver _asset, gunner _asset] joinSilent _assetUavGrp;
+								"You must unlock UAV via the I menu to fly it" remoteExec ["systemChat"];			
+								//"OPFOR heli crew spawn code running" remoteExec ["systemChat"];
 						};
 						//_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
 						//[_text] remoteExec ["systemChat"];
@@ -151,17 +168,21 @@ if !(isNull _sender) then {
 							_asset enableSimulationGlobal FALSE;
 							_asset hideObjectGlobal TRUE;
 						} else {
-							if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1) then {
+							if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 								createVehicleCrew _asset;
 								(effectiveCommander _asset) setSkill 1;
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
+								//"Blufor static crew spawn code running" remoteExec ["systemChat"];
 							};
-							//if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
-							//	_assetUavGrp = createGroup side group _sender;
-							//	[driver _asset, gunner _asset] joinSilent _assetUavGrp;
-							//	(effectiveCommander _asset) setSkill 1;
-							//	(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
-							//};
+							if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
+								createVehicleCrew _asset;
+								_assetUavGrp = createGroup EAST;
+								[driver _asset, gunner _asset] joinSilent _assetUavGrp;
+										
+								(effectiveCommander _asset) setSkill 1;
+								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
+								//"OPFOR static crew spawn code running" remoteExec ["systemChat"];
+							};
 						};
 						//"isStatic spawn code running" remoteExec ["systemChat"];
 					};
