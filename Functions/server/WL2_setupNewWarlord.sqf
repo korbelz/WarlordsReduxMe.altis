@@ -38,13 +38,11 @@ if (isPlayer _warlord) then {
 		_varFormat = format ["BIS_WL_%1_repositionDone", getPlayerUID _warlord];
 		waitUntil {!(missionNamespace getVariable [_varFormat, TRUE])};
 	} else {
-		if (RD_DISABLE_TEAM_SWITCHING == 1) then {
-			_warlord setVariable ["BIS_WL_ignore", TRUE, TRUE];   //think this code block is server side blocking team switching
-			_warlord enableSimulationGlobal FALSE;
-			_warlord hideObjectGlobal TRUE;
-			BIS_WL_allWarlords = BIS_WL_allWarlords - [_warlord];
-		}; 
-	};   
+		_warlord setVariable ["BIS_WL_ignore", TRUE, TRUE];   //think this code block is server side blocking team switching
+		_warlord enableSimulationGlobal FALSE;
+		_warlord hideObjectGlobal TRUE;
+		BIS_WL_allWarlords = BIS_WL_allWarlords - [_warlord];
+	};    
 };
 
 if !(_boundToAnotherTeam) then {
