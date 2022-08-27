@@ -256,5 +256,7 @@
 - Rebalance example AA unit prices bases on OPFOR now having working stuff
 - added toggle for heli radar systems
 - added toggle to disable/enable team switching
+- Mission/Server performance optimizations
+- AI unit are more aggressive on spawn in
 
  
