@@ -245,7 +245,7 @@
 - AI Shirkas no longer crash while landing at Selakano airfield(thanks marii)
 - Improvements to Mine removal and UAV removal code
 - Sectors can now be Renamed
-- Sectors names are now alinged with default warlords map when possible 
+- Sectors names are now aligned with default warlords map when possible 
   - new sector names: Nuke Town, USS Deathstar, Fire Base West and East, Korbville
 - Added on/off toggle to custom sector naming system 
 - Fixed wing and Rotary Wing UCAVs can now work cross faction 
