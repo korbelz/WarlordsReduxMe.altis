@@ -74,6 +74,7 @@
 #define RD_BASE_VALUE_ADJUSTMENT 10000  //default 10,000; Lower number equals more CP value for a sector; see also WL_SECTOR_CAPTURE_REWARD_MULTIPLIER
 #define RD_AIR_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink
 #define RD_JET_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
+#define RD_HELI_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink
 #define RD_HELI_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
 #define RD_TANK_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
 #define RD_INDY_BOATS_ACTIVE 1  //default 1; 1 = INDY boats will spawn; 2 = Indy boats will not spawn

@@ -142,6 +142,10 @@ if !(isNull _sender) then {
 						if (RD_HELI_IR_ACTIVE == 1) then {
 							_asset disableTIEquipment true;
 						};
+						if (RD_HELI_RADAR_ACTIVE == 1) then {
+							_asset enableVehicleSensor ["ActiveRadarSensorComponent", false];
+							_asset enableVehicleSensor ["PassiveRadarSensorComponent", false];
+						};
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 							createVehicleCrew _asset;
 							"You must unlock UAV via the I menu to fly it" remoteExec ["systemChat"];

@@ -254,5 +254,6 @@
   mk 41 VLS, Mk49 Spartan, Mk21 Centurion, MQ-12 Falcon, 
   and Carrier Capable UCAV Sentinel
 - Rebalance example AA unit prices bases on OPFOR now having working stuff
+- added toggle for heli radar systems
 
  
