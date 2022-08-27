@@ -2,22 +2,22 @@
 
 //Create locations in order to re-name sectors 
 
-_location_one = createLocation ["NameCity", [2949.7,11008,0], 30, 30]; 
-_location_one setText "Fire Base West"; //Fire Base West
-_location_two = createLocation ["NameCity", [8275.26,10904,0], 30, 30]; 
-_location_two setText "Korbville"; //Sector #58
-_location_three = createLocation ["NameCity", [12291.3,8906.51,0], 30, 30]; 
-_location_three setText "Southern Base"; //Southern Base
-_location_four = createLocation ["NameCity", [12748.1,16551.3,0], 30, 30]; 
-_location_four setText "Lakka Hill"; //Lakka Hill
-_location_five = createLocation ["NameCity", [14293.3,16178.3,0], 30, 30]; 
-_location_five setText "Altis main airbase"; //Altis main airbase
-_location_six = createLocation ["NameCity", [15152.6,17281.1,0], 30, 30]; 
-_location_six setText "Altis airbase north ramp"; //Altis airbase north ramp
-_location_seven = createLocation ["NameCity", [18732.9,22386.4,0], 30, 30]; 
-_location_seven setText "Nuke Town"; //Sector #72(north naval base)
-_location_eight = createLocation ["NameCity", [6173.99,16233.8,0], 30, 30]; 
-_location_eight setText "Kore factory"; //Kore factory
+_location = createLocation ["NameCity", [2949.7,11008,0], 30, 30]; 
+_location setText "Fire Base West"; //Fire Base West
+_location = createLocation ["NameCity", [8275.26,10904,0], 30, 30]; 
+_location setText "Korbville"; //Sector #58
+_location = createLocation ["NameCity", [12291.3,8906.51,0], 30, 30]; 
+_location setText "Southern Base"; //Southern Base
+_location = createLocation ["NameCity", [12748.1,16551.3,0], 30, 30]; 
+_location setText "Lakka Hill"; //Lakka Hill
+_location = createLocation ["NameCity", [14293.3,16178.3,0], 30, 30]; 
+_location setText "Altis main airbase"; //Altis main airbase
+_location = createLocation ["NameCity", [15152.6,17281.1,0], 30, 30]; 
+_location setText "Altis airbase north ramp"; //Altis airbase north ramp
+_location = createLocation ["NameCity", [18732.9,22386.4,0], 30, 30]; 
+_location setText "Nuke Town"; //Sector #72(north naval base)
+_location = createLocation ["NameCity", [6173.99,16233.8,0], 30, 30]; 
+_location setText "Kore factory"; //Kore factory
 _location = createLocation ["NameCity", [9209.92,21571.7,0], 30, 30]; 
 _location setText "Ammolofi Airbase"; //Ammolofi Airbase
 _location = createLocation ["NameCity", [15619.2,4537.46,0], 30, 30]; 

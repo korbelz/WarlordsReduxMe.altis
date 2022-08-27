@@ -156,6 +156,12 @@ if !(isNull _sender) then {
 								(effectiveCommander _asset) setSkill 1;
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
 							};
+							//if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
+							//	_assetUavGrp = createGroup side group _sender;
+							//	[driver _asset, gunner _asset] joinSilent _assetUavGrp;
+							//	(effectiveCommander _asset) setSkill 1;
+							//	(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
+							//};
 						};
 						//"isStatic spawn code running" remoteExec ["systemChat"];
 					};
