@@ -268,3 +268,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Fixed offset for some naval weapons
 - Adjusted the model display offsets when buying defense items
 - Airfield vehicle defenders are now random(and more aggressive)
+- Removed static vehicles from the map(old airfield spawn tables)
