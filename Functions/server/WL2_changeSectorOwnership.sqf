@@ -31,7 +31,7 @@ if !(_owner in _previousOwners) then {
 	//[_uavtext] remoteExec ["systemChat"]; 
 
 	if (_uavcount > RD_UAVCOUNT_DELETE_THRESHOLD) then {
-		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F","B_Radar_System_01_F","O_SAM_System_04_F","O_Radar_System_02_F"])});
+		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F", "B_Radar_System_01_F", "O_SAM_System_04_F", "O_Radar_System_02_F", "B_SAM_System_02_F", "B_SAM_System_01_F", "B_Ship_MRLS_01_F", "B_Ship_Gun_01_F", "B_AAA_System_01_F" ])});
 		//better way to filter the ones u dont want to blow up.
 		//sleep WL_TIMEOUT_SHORT;
 	};
