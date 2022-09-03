@@ -265,3 +265,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Fix for rare chance of vehicles spawning under the map 
 - Reduced randomness of parachute starting height by 50%
 - Removed Naval Weapons(CIWS, VLS, etc) from UAV kill code
+- Fixed offset for some naval weapons
