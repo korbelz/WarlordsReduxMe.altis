@@ -5,7 +5,7 @@ params ["_class", "_cost", "_offset"];
 //[player, -_cost] call BIS_fnc_WL2_fundsControl;
 
 if (count _offset != 3) then {
-	_offset = [0, 1.5, 0];
+	_offset = [0, 3, 0.3];
 };
 
 BIS_WL_currentSelection = WL_ID_SELECTION_DEPLOYING_DEFENCE;
