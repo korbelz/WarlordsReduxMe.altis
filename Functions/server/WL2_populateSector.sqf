@@ -109,7 +109,7 @@ if (_side == BIS_WL_localSide) then {
 					[objNull, _newUnit] call BIS_fnc_WL2_newAssetHandle;
 					uiSleep WL_TIMEOUT_MIN;
 
-					_newGrp setBehaviour "SAFE";
+					_newGrp setBehaviour "COMBAT";
 					_newGrp setSpeedMode "LIMITED";
 
                 	[_newGrp, 0] setWaypointPosition [position _sector vectorAdd [_randomx, _randomy, _randomz], 10];
@@ -313,7 +313,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 					[objNull, _newUnit] call BIS_fnc_WL2_newAssetHandle;
 					uiSleep WL_TIMEOUT_MIN;
 
-					_newGrp setBehaviour "SAFE";
+					_newGrp setBehaviour "COMBAT";
 					_newGrp setSpeedMode "LIMITED";
 
                 	[_newGrp, 0] setWaypointPosition [position _sector vectorAdd [_randomx, _randomy, _randomz], 10];
@@ -517,7 +517,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 					[objNull, _newUnit] call BIS_fnc_WL2_newAssetHandle;
 					uiSleep WL_TIMEOUT_MIN;
 
-					_newGrp setBehaviour "SAFE";
+					_newGrp setBehaviour "COMBAT";
 					_newGrp setSpeedMode "LIMITED";
 
                 	[_newGrp, 0] setWaypointPosition [position _sector vectorAdd [_randomx, _randomy, _randomz], 10];
@@ -636,7 +636,7 @@ while {_i < _garrisonSize} do {
 		uiSleep WL_TIMEOUT_MIN;
 	};
 	
-	_newGrp setBehaviour "SAFE";
+	_newGrp setBehaviour "COMBAT";
 	_newGrp setSpeedMode "LIMITED";
 	[_newGrp, 0] setWaypointPosition [_pos, 0];
 	_newGrp deleteGroupWhenEmpty TRUE;

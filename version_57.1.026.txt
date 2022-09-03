@@ -260,4 +260,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 57.1.026
 - Improved mission performance
 - Improved network and server performace
- 
+- re-added AI unit are more aggressive on spawn in
+-
