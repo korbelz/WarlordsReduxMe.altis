@@ -261,4 +261,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Improved mission performance
 - Improved network and server performace
 - re-added AI unit are more aggressive on spawn in
--
+- re-added On/Off toggle for team switching system
