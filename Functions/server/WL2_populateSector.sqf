@@ -8,8 +8,8 @@ private _connectedToBase = count (WL_BASES arrayIntersect (_sector getVariable "
 //adjusting nearroads value below should change spawn slots for non-hard coded towns.
 // Orginal if (_side == BIS_WL_localSide)
 if (_side == BIS_WL_localSide) then {
-	if (count (_sector getVariable "BIS_WL_vehiclesToSpawn") == 0 && !_connectedToBase) then {
-		private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+	if (!_connectedToBase) then {
+		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
