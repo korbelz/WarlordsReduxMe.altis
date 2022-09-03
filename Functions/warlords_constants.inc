@@ -64,8 +64,8 @@
 #define RD_GARRISON_SIZE_MOD 3  //Original value 2; adjust this to increase total INF spawning in an AI sector. 
 #define RD_MINECOUNT_DELETE_THRESHOLD 200 //Original value 400; Total # of mines allowed on server anymore will be delete when any sector is capped
 #define RD_UAVCOUNT_DELETE_THRESHOLD 24 //Original value 50;
-#define RD_VIC_MIN_HEIGHT -125  //default is roughly 135 AGL, -125 = roughly 10 meters. 0 = roughly 135 AGL
-#define RD_VIC_RANDOM_HEIGHT 125  //Bell curve model, 125 = avg of 75 height + Min Height value. Game deafults to roughly 135 AGL
+#define RD_VIC_MIN_HEIGHT -85  //default is roughly 100 AGL, -90 = roughly 10 meters AGL. 0 = roughly 100 AGL
+#define RD_VIC_RANDOM_HEIGHT 70  //Bell curve model, 125 = avg of 75 height + Min Height value. Game deafults to roughly 135 AGL
 #define RD_VIC_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
 #define RD_AIR_RANDOM_AI_SPAWNS 4  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
 #define RD_NAVY_RANDOM_AI_SPAWNS 4  //Random number of AI Navy that can spawn in a zone 0 to <value given>; default 4
