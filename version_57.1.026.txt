@@ -259,7 +259,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 
 57.1.026
 - Improved mission performance
-- Improved network and server performace
+- Improved network and server performance
 - re-added AI unit are more aggressive on spawn in
 - re-added On/Off toggle for team switching system
 - Fix for rare chance of vehicles spawning under the map 
@@ -269,3 +269,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Adjusted the model display offsets when buying defense items
 - Airfield vehicle defenders are now random(and more aggressive)
 - Removed static vehicles from the map(old airfield spawn tables)
+- AI controlled tanks and aircraft working for Bluefor and OPFOR sectors(Tested to work from earlier patch)

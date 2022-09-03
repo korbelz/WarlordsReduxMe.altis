@@ -80,6 +80,7 @@ class CfgWLRequisitionPresets
 				class O_Plane_Fighter_02_F					{cost = 20000;	requirements[]={"A"};	};	// "To-201 Shikra"
 				class O_T_VTOL_02_infantry_dynamicLoadout_F	{cost = 16000;	requirements[]={"H"};	};	// "Y-32 Xi'an (Infantry Transport)"
 				class I_Plane_Fighter_04_F					{cost = 13000;	requirements[]={"A"};	};	// "A-149 Gryphon";
+				class I_C_Plane_Civil_01_F					{cost = 13000;	requirements[]={"A"};	};	// "Caesar BTT";
 				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class B_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk AT";
 				class B_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk LGB";
@@ -210,6 +211,7 @@ class CfgWLRequisitionPresets
 				class O_Plane_Fighter_02_Stealth_F			{cost = 23000;	requirements[]={"A"};	};	// "To-201 Shikra Stealth"
 				class B_Plane_Fighter_01_F					{cost = 17000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II";
 				class I_Plane_Fighter_04_F					{cost = 13000;	requirements[]={"A"};	};	// "A-149 Gryphon";
+				class I_C_Plane_Civil_01_F					{cost = 13000;	requirements[]={"A"};	};	// "Caesar BTT";
 				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class O_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 AT"
 				class O_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 LGB"
