@@ -275,4 +275,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 57.1.027
 - Helis: A fix to the fix that fixed the fix in patch 2.10
 - Helis: updated the heli landing protection code
-- fix for a divide by zero error in mission
+- Fix for a divide by zero error in mission
+- Fix for welcome screen popping up during loading

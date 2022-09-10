@@ -204,7 +204,7 @@ call BIS_fnc_WL2_targetResetHandle;
 player call BIS_fnc_WL2_sub_assetAssemblyHandle;
 "init" spawn BIS_fnc_WL2_hintHandle;
 [] spawn BIS_fnc_WL2_music;
-[] spawn BIS_fnc_WL2_welcome;
+
 
 (format ["BIS_WL_%1_friendlyKillPenaltyEnd", getPlayerUID player]) addPublicVariableEventHandler BIS_fnc_WL2_friendlyFireHandleClient;
 
@@ -226,6 +226,7 @@ waitUntil {WL_PLAYER_FUNDS != -1};
 	_t = WL_SYNCED_TIME + 10;
 	waitUntil {sleep WL_TIMEOUT_STANDARD; WL_SYNCED_TIME > _t && !isNull WL_TARGET_FRIENDLY};
 	sleep 5;
+	[] spawn BIS_fnc_WL2_welcome;
 	while {!BIS_WL_purchaseMenuDiscovered} do {
 		[format [toUpper localize "STR_A3_WL_tip_menu", (actionKeysNamesArray "Gear") # 0], 5] spawn BIS_fnc_WL2_smoothText;
 		sleep 30;
