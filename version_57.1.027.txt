@@ -273,4 +273,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - [Redacted] Easter Egg
 
 57.1.027
-- 
+- Helis: A fix to the fix that fixed the fix in patch 2.10.
