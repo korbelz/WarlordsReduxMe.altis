@@ -277,3 +277,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Helis: updated the heli landing protection code
 - Fix for a divide by zero error in mission
 - Fix for welcome screen popping up during loading
+- Lowered spawn chance of T-140s for OPFOR

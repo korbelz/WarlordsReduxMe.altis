@@ -125,8 +125,8 @@ BIS_WL_factionVehicleClasses = [
 		"O_LSV_02_armed_F",			25, //Qilin minigun, default 75
 		"O_MBT_02_cannon_F",			25, //T-100, default 25
 		"O_APC_Tracked_02_cannon_F",		50, //Kamysh 30mm, default 50
-		"O_MBT_04_cannon_F",			15, //T-140, default 15
-		"O_MBT_04_command_F",			15, //T-140, default 15
+		"O_MBT_04_cannon_F",			10, //T-140, default 15
+		"O_MBT_04_command_F",			10, //T-140, default 15
 		"O_APC_Tracked_02_AA_F",		51, //Tigris, default 50
 		"O_UGV_01_rcws_F",			20 //UGAV rcws, default 25
 	],
