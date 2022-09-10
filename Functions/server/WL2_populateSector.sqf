@@ -214,7 +214,7 @@ if(RD_EAST_WEST_TANKAIR_DEFENDERS == 1)then{
 BIS_WL_sidesArrayWest = BIS_WL_sidesArray # 0;
 if (_side == BIS_WL_sidesArrayWest) then {
 	if (!_connectedToBase) then {
-		private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
@@ -418,7 +418,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 BIS_WL_sidesArrayEast = BIS_WL_sidesArray # 1;
 if (_side == BIS_WL_sidesArrayEast) then {
 	if (!_connectedToBase) then {
-		private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 

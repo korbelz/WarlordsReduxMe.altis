@@ -280,3 +280,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Lowered spawn chance of T-140s for OPFOR
 - Indy vics will no longer spawn to defend Bluefor/OPFOR airfields
 - Added On/Off toggle to the AI bluefor/OPFOR tank/jet defenders system
+- Fixed terrian around ammolofi airfield, can safely takeoff in both directions now
+- Fix for AI Bluefor/OPFOR tanks exploding on spawn in
