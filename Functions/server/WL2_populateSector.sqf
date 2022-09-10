@@ -209,6 +209,7 @@ if (_side == BIS_WL_localSide) then {
 	};
 };
 
+if(RD_EAST_WEST_TANKAIR_DEFENDERS == 1)then{
 //West sector spawning code
 BIS_WL_sidesArrayWest = BIS_WL_sidesArray # 0;
 if (_side == BIS_WL_sidesArrayWest) then {
@@ -615,6 +616,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			} forEach _airArray;
 		};
 	};
+};
 };
 if (count _spawnPosArr == 0) exitWith {};
 //adjust RD_GARRISON_SIZE_MOD in warlords_constants for more AI INF per town(I think)

@@ -279,3 +279,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Fix for welcome screen popping up during loading
 - Lowered spawn chance of T-140s for OPFOR
 - Indy vics will no longer spawn to defend Bluefor/OPFOR airfields
+- Added On/Off toggle to the AI bluefor/OPFOR tank/jet defenders system

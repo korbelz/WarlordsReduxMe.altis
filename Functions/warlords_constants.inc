@@ -81,6 +81,7 @@
 #define RD_INDY_DIVERS_ACTIVE 1  //default 1; 1 = INDY Divers will spawn; 2 = Indy Divers will not spawn
 #define RD_CUSTOM_SECTOR_NAMES 1  //default 1; 1 = Sectors will have custom names; 2 = Sectors will have no custom names
 #define RD_DISABLE_TEAM_SWITCHING 1  //default 1; 1 = Team switching disabled; 2 = Team switching enabled
+#define RD_EAST_WEST_TANKAIR_DEFENDERS 1  //default 1; 1 = Tanks and aircraft will spawn at Bluefor/OPFOR zones; 2 = Tanks and aircraft will NOT spawn at Bluefor/OPFOR zones
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)
 #define WL_TARGET_FRIENDLY (missionNamespace getVariable format ["BIS_WL_currentTarget_%1", BIS_WL_playerSide])
