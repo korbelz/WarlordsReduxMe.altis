@@ -137,7 +137,7 @@ if !(isNull _sender) then {
 						};
 					} else {
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
-						_asset setVelocity [0, 0, 100];
+						_asset setVelocity [0, 0, 0];
 						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
 						if (RD_HELI_IR_ACTIVE == 1) then {
 							_asset disableTIEquipment true;

@@ -270,3 +270,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Airfield vehicle defenders are now random(and more aggressive)
 - Removed static vehicles from the map(old airfield spawn tables)
 - AI controlled tanks and aircraft working for Bluefor and OPFOR sectors(Tested to work from earlier patch)
+- [Redacted] Easter Egg
+
+57.1.027
+- 
