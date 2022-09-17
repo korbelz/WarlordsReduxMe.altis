@@ -288,3 +288,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Many minor CP edits(more backcap rewards, etc)
 - Fixed some cross faction UCAV/CIWS pricing errors
 - Fixed a minor spawning issue for AI vics at salt flats
+- Removed delay on welcome menu now that it loads at right time
