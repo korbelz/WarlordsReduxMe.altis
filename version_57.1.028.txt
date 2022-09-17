@@ -283,3 +283,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Fixed terrian around ammolofi airfield, can safely takeoff in both directions now
 - Fix for rare case of AI Bluefor/OPFOR tanks exploding on spawn in
 - Mission performance and network optimizations 
+
+57.1.028
+- Many minor CP edits(more backcap rewards, etc)
+- Fixed some cross faction UCAV/CIWS pricing errors
