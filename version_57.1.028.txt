@@ -287,3 +287,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 57.1.028
 - Many minor CP edits(more backcap rewards, etc)
 - Fixed some cross faction UCAV/CIWS pricing errors
+- Fixed a minor spawning issue for AI vics at salt flats
