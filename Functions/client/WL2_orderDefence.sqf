@@ -33,7 +33,7 @@ detach _asset;
 _offset_tweaked = [_offset select 0, _offset select 1, (_offset select 2) - _h];
 _asset attachTo [player, _offset_tweaked];
 
-["assembly", TRUE] call BIS_fnc_WL2_hintHandle;
+"assembly" call BIS_fnc_WL2_hintHandle;
 
 BIS_WL_spacePressed = FALSE;
 BIS_WL_backspacePressed = FALSE;
@@ -79,7 +79,7 @@ missionNamespace setVariable [_ownedVehiclesVarID, WL_PLAYER_VEHS - [_asset]];
 publicVariable _ownedVehiclesVarID;
 _asset call BIS_fnc_WL2_sub_deleteAsset;
 
-["assembly", TRUE] call BIS_fnc_WL2_hintHandle;
+["assembly", FALSE] call BIS_fnc_WL2_hintHandle;
 
 if (BIS_WL_spacePressed) then {
 	playSound "assemble_target";
