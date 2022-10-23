@@ -1,6 +1,6 @@
 #include "Functions\warlords_constants.inc"
 
-
+// See bottom of this file for License info
 
 onLoadName = "Warlords Redux Miller Edition"; 
 dev = "Jezuro + Korbelz";
@@ -111,3 +111,8 @@ class Params
 		default = 1;
 	};
 };
+
+/*
+License info coming soon 
+
+*/ 
