@@ -36,7 +36,7 @@ WL2_loadfactioncclasses file is the file to adjust the AI spawn tables for enemy
 
 In-depth editing info can be found here on the wiki: https://github.com/korbelz/WarlordsReduxMe.altis/wiki/How-to-make-edits-to-the-mission
 
-##License info
+## License info
 
 coming soon!
 
