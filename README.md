@@ -16,6 +16,8 @@ Offical Arma 3 Website: https://arma3.com/
 
 Offical Arma 3 discord:  https://discord.gg/arma
 
+Feature List: https://github.com/korbelz/WarlordsReduxMe.altis/wiki/Feature-List
+
 Link to Warlords Maverick
 https://github.com/korbelz/WarlordsReduxMav.altis
 
