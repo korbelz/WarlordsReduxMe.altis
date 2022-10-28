@@ -262,6 +262,21 @@ if !(isNull _sender) then {
 					_assetDummy setPos _targetPosFinal;
 					_assetDummy hideObject TRUE;
 					_assetDummy enableSimulation TRUE;
+					if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
+								createVehicleCrew _asset;
+								(effectiveCommander _asset) setSkill 1;
+								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
+								//"Blufor static crew spawn code running" remoteExec ["systemChat"];
+							};
+							if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
+								createVehicleCrew _asset;
+								_assetUavGrp = createGroup EAST;
+								[driver _asset, gunner _asset] joinSilent _assetUavGrp;
+										
+								(effectiveCommander _asset) setSkill 1;
+								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
+								//"OPFOR static crew spawn code running" remoteExec ["systemChat"];
+							};
 					if (RD_TANK_IR_ACTIVE == 1) then {
 						_asset disableTIEquipment true;
 					};
