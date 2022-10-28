@@ -1,4 +1,10 @@
 #include "..\warlords_constants.inc"
+// Knock, Knock
+// Who's there?
+// Jeb 
+// Jeb who? 
+// JEBAITED! :)
+
 
 params ["_locality"];
 
