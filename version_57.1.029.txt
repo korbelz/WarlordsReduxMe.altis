@@ -293,3 +293,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 57.1.029
 - Cross faction naval items and UCAVs now work on dedicated servers
 - Fix for non network object spam in rpt file
+- Dynamic AI buddy system is now configurable via the constants(config) file.

@@ -39,13 +39,13 @@ if !(_owner in _previousOwners) then {
 	//AI buddy count system
 	
 	_players = count BIS_WL_allWarlords;
-    	if (_players >= 60 and BIS_WL_maxSubordinates != 1 ) then 
+    	if (_players >= RD_HIGH_LOW_PLAYER_COUNT and BIS_WL_maxSubordinates != RD_LOW_AI_BUDDY_COUNT ) then 
 		{
-        	BIS_WL_maxSubordinates = 1;
+        	BIS_WL_maxSubordinates = RD_LOW_AI_BUDDY_COUNT;
 			publicVariable "BIS_WL_maxSubordinates"
         };
 		//this if restores AI buddy count back to default after player count has gone above 60 then lowered below 60
-		if (_players < 60 and BIS_WL_maxSubordinates == 1 ) then 
+		if (_players < RD_HIGH_LOW_PLAYER_COUNT and BIS_WL_maxSubordinates == RD_LOW_AI_BUDDY_COUNT ) then 
 		{
         	BIS_WL_maxSubordinates = 2;
 			publicVariable "BIS_WL_maxSubordinates"
