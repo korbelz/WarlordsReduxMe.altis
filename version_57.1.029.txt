@@ -295,3 +295,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Fix for non network object spam in rpt file
 - Dynamic AI buddy system is now configurable via the constants(config) file.
 - AAF playable side
+
+57.1.030
+- Added VFR altitudes vs IFR altitudes rules(transistion altitude)
+- Anti-accesss/Area Denial zones around each sector no longer effect aircraft flying at IFR altitudes
