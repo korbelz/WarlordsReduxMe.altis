@@ -297,5 +297,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AAF playable side
 
 57.1.030
-- Added VFR altitudes vs IFR altitudes rules(transistion altitude)
+- Added VFR altitudes vs IFR altitudes(transistion altitude)
 - Anti-accesss/Area Denial zones around each sector no longer effect aircraft flying at IFR altitudes
+- Added configurable transistion altitude. Default 4000 meters.

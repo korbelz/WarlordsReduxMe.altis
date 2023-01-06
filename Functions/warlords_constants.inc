@@ -85,6 +85,7 @@
 #define RD_HIGH_LOW_PLAYER_COUNT 60  //default 60; This is the number of players at which the dynamic AI buddy system swaps from high AI count to low AI count.
 #define RD_LOW_AI_BUDDY_COUNT 1  //default 1; number of friendly AI player can have during high player count
 #define RD_HIGH_AI_BUDDY_COUNT 2  //default 2; number of friendly AI player can have during low player count
+#define RD_TRANSITION_ALT 4000  //default 4000; AGL altitude. Aircraft above this height will not be effected by zone restrictions around sectors
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)
 #define WL_TARGET_FRIENDLY (missionNamespace getVariable format ["BIS_WL_currentTarget_%1", BIS_WL_playerSide])
