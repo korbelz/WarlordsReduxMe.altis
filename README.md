@@ -4,10 +4,10 @@
 
 
 # WarlordsReduxMe.altis
- Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% Vannila, no extra script, add-ons or mods needed. 
+ Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% vanilla, no extra script, add-ons or mods needed. 
 
  # Warlords Redux Miller Edition(ME) 
-Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% Vannila, no extra script, add-ons or mods needed. 
+Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% vanilla, no extra script, add-ons or mods needed. 
 
 Original Warlords Redux by Bohemia Interactive and Jezuro can be found here:
 https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=Warlords+redux
@@ -15,6 +15,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=War
 Offical Arma 3 Website: https://arma3.com/
 
 Offical Arma 3 discord:  https://discord.gg/arma
+
+Feature List: https://github.com/korbelz/WarlordsReduxMe.altis/wiki/Feature-List
 
 Link to Warlords Maverick
 https://github.com/korbelz/WarlordsReduxMav.altis
