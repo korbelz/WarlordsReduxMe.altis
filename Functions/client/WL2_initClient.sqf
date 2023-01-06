@@ -148,6 +148,15 @@ player addEventHandler ["GetInMan", {detach BIS_WL_enemiesCheckTrigger; BIS_WL_e
 player addEventHandler ["GetOutMan", {detach BIS_WL_enemiesCheckTrigger; BIS_WL_enemiesCheckTrigger attachTo [player, [0, 0, 0]]}];
 
 player addEventHandler ["Fired", BIS_fnc_WL2_sub_restrictMines];
+
+//UAV terminal code by MrThomasM
+player addEventHandler ["Killed", {
+	_connectedUAV = getConnectedUAV player;
+	if (_connectedUAV != objNull) exitWith {
+		player connectTerminalToUAV objNull;
+	};
+}];
+
 player addEventHandler ["Killed", {
 	BIS_WL_loadoutApplied = FALSE;
 	["RequestMenu_close"] call BIS_fnc_WL2_setupUI;
