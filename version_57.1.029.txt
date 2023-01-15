@@ -301,3 +301,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Anti-accesss/Area Denial zones around each sector no longer effect aircraft flying at IFR altitudes.
 - Added configurable transition altitude. Default 4000 meters.
 - After death players can reconnect to their UAV.(fix by MrThomasM)
+
+57.1.031
+- added hooks for a system that can modify CP cap rewards based on balance
+- added hooks for a system that compares sector ownership and modifies passive CP and sector cap rewards

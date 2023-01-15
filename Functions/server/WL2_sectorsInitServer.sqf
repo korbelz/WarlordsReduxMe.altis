@@ -9,6 +9,13 @@ private _tiers = [];
 private _checkedAgainst = [];
 private _distance = 0;
 private _sectorsToCheckNext = (synchronizedObjects (missionNamespace getVariable _firstBase)) select {_x in BIS_WL_allSectors};
+
+//these varibles are used to adjust cap times down at line 155
+//leaving this code here for later use
+//private _bluenum = playersNumber west;
+//private _rednum = playersNumber east;
+//private _timemodifier = (_bluenum + _rednum) * 10
+
 while {count _sectorsToCheckNext > 0} do {
 	private _sectorsToCheckNow = _sectorsToCheckNext;
 	_sectorsToCheckNext = [];

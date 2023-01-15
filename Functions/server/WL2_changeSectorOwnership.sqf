@@ -5,6 +5,12 @@ params ["_sector", "_owner"];
 _sector setVariable ["BIS_WL_owner", _owner, TRUE];
 
 private _previousOwners = _sector getVariable "BIS_WL_previousOwners";
+//player numbers added for use in writing CP cap reward system based on team balance 
+//add logic to function down at line 60
+private _bluenum = playersNumber west;
+private _rednum = playersNumber east;
+//following varibles might be able to be used to sector sector control ratios and mod CP cap rewards based on that 
+//count (BIS_WL_sectorsArray # 0) and count (BIS_WL_sectorsArrayEnemy # 0)
 
 if !(_owner in _previousOwners) then {
 	//Mine removal code

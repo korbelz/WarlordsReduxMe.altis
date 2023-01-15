@@ -1,11 +1,14 @@
 #include "..\warlords_constants.inc"
 
-_bluenum = playersNumber west;
-_rednum = playersNumber east;
+private _bluenum = playersNumber west;
+private _rednum = playersNumber east;
 //_bluecount =  format ["# OF blue balls on the server : %1 ", _bluenum];
 //	[_bluecount] remoteExec ["systemChat", 0];
 //_redcount =  format ["# OF red balls on the server : %1 ", _rednum];
 //	[_redcount] remoteExec ["systemChat", 0];
+
+//following varibles might be able to be used to sector sector control ratios and mod CP cap rewards based on that 
+//count (BIS_WL_sectorsArray # 0) and count (BIS_WL_sectorsArrayEnemy # 0)
 
 loopnum = ["once"];
 
