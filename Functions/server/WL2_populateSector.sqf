@@ -13,7 +13,7 @@ if (_side == BIS_WL_localSide) then {
 		private _tankArray = [];
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
-		private _randomsize = random RD_VIC_RANDOM_AI_SPAWNS;
+		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
 		_tankArray resize _randomsize; 
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
@@ -49,11 +49,11 @@ if (_side == BIS_WL_localSide) then {
         private _navyArray = [];
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-        private _randomsize = random RD_NAVY_RANDOM_AI_SPAWNS;
+        private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
         _navyArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-		if(RD_INDY_BOATS_ACTIVE == 1) then {
+		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	_randomx = random 600;
@@ -90,13 +90,13 @@ if (_side == BIS_WL_localSide) then {
         private _diverArray = [];
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-        private _randomsize = random RD_DIVER_RANDOM_AI_SPAWNS;
+        private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
         _diverArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
 		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
-		if(RD_INDY_DIVERS_ACTIVE == 1) then {
+		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
 			if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	private _newGrp = createGroup _side;
@@ -163,7 +163,7 @@ if (_side == BIS_WL_localSide) then {
 		private _airArray = [];
 		//_text = format ["items in myArray: %1", count _myArray];
 		//[_text] remoteExec ["systemChat"]; 
-		private _randomsize = random RD_AIR_RANDOM_AI_SPAWNS;
+		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
 		_airArray resize _randomsize; 
 		//_text = format ["items in airArray: %1", count _airArray];
 		//[_text] remoteExec ["systemChat"];
@@ -209,7 +209,7 @@ if (_side == BIS_WL_localSide) then {
 	};
 };
 
-if(RD_EAST_WEST_TANKAIR_DEFENDERS == 1)then{
+if(KORB_EAST_WEST_TANKAIR_DEFENDERS == 1)then{
 //West sector spawning code
 BIS_WL_sidesArrayWest = BIS_WL_sidesArray # 0;
 if (_side == BIS_WL_sidesArrayWest) then {
@@ -218,7 +218,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 		private _tankArray = [];
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
-		private _randomsize = random RD_VIC_RANDOM_AI_SPAWNS;
+		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
 		_tankArray resize _randomsize; 
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
@@ -254,11 +254,11 @@ if (_side == BIS_WL_sidesArrayWest) then {
         private _navyArray = [];
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-        private _randomsize = random RD_NAVY_RANDOM_AI_SPAWNS;
+        private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
         _navyArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-		if(RD_INDY_BOATS_ACTIVE == 1) then {
+		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	_randomx = random 600;
@@ -295,13 +295,13 @@ if (_side == BIS_WL_sidesArrayWest) then {
         private _diverArray = [];
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-        private _randomsize = random RD_DIVER_RANDOM_AI_SPAWNS;
+        private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
         _diverArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
 		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
-		if(RD_INDY_DIVERS_ACTIVE == 1) then {
+		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
 			if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	private _newGrp = createGroup _side;
@@ -368,7 +368,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 		private _airArray = [];
 		//_text = format ["items in myArray: %1", count _myArray];
 		//[_text] remoteExec ["systemChat"]; 
-		private _randomsize = random RD_AIR_RANDOM_AI_SPAWNS;
+		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
 		_airArray resize _randomsize; 
 		//_text = format ["items in airArray: %1", count _airArray];
 		//[_text] remoteExec ["systemChat"];
@@ -422,7 +422,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 		private _tankArray = [];
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
-		private _randomsize = random RD_VIC_RANDOM_AI_SPAWNS;
+		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
 		_tankArray resize _randomsize; 
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
@@ -458,11 +458,11 @@ if (_side == BIS_WL_sidesArrayEast) then {
         private _navyArray = [];
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-        private _randomsize = random RD_NAVY_RANDOM_AI_SPAWNS;
+        private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
         _navyArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-		if(RD_INDY_BOATS_ACTIVE == 1) then {
+		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	_randomx = random 600;
@@ -499,13 +499,13 @@ if (_side == BIS_WL_sidesArrayEast) then {
         private _diverArray = [];
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
-        private _randomsize = random RD_DIVER_RANDOM_AI_SPAWNS;
+        private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
         _diverArray resize _randomsize; 
         //_text = format ["items in myArray: %1", count _myArray];
         //[_text] remoteExec ["systemChat"]; 
 		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
-		if(RD_INDY_DIVERS_ACTIVE == 1) then {
+		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
 			if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	private _newGrp = createGroup _side;
@@ -572,7 +572,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 		private _airArray = [];
 		//_text = format ["items in myArray: %1", count _myArray];
 		//[_text] remoteExec ["systemChat"]; 
-		private _randomsize = random RD_AIR_RANDOM_AI_SPAWNS;
+		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
 		_airArray resize _randomsize; 
 		//_text = format ["items in airArray: %1", count _airArray];
 		//[_text] remoteExec ["systemChat"];
@@ -619,9 +619,9 @@ if (_side == BIS_WL_sidesArrayEast) then {
 };
 };
 if (count _spawnPosArr == 0) exitWith {};
-//adjust RD_GARRISON_SIZE_MOD in warlords_constants for more AI INF per town(I think)
+//adjust KORB_GARRISON_SIZE_MOD in warlords_constants for more AI INF per town(I think)
 // Adjust GROUP_SIZE_MIN up to help smaller sectors without turning telos in to 1 FPS hell
-private _garrisonSize = (_sector getVariable "BIS_WL_value") * RD_GARRISON_SIZE_MOD;
+private _garrisonSize = (_sector getVariable "BIS_WL_value") * KORB_GARRISON_SIZE_MOD;
 private _unitsPool = BIS_WL_factionUnitClasses # (BIS_WL_sidesArray find _side);
 
 _i = 0;

@@ -149,7 +149,7 @@ while {_sectorsToGiveSide1 > 0 || _sectorsToGiveSide2 > 0} do {
 	if (_sector in WL_BASES) then {
 		_sector setVariable ["BIS_WL_value", BIS_WL_baseValue];
 	} else {
-		_sector setVariable ["BIS_WL_value", round (_size / RD_BASE_VALUE_ADJUSTMENT)];
+		_sector setVariable ["BIS_WL_value", round (_size / KORB_BASE_VALUE_ADJUSTMENT)];
 	};
 	
 	{

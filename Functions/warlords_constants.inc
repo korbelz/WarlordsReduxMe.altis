@@ -60,32 +60,32 @@
 #define WL_GARRISON_GROUP_SIZE_MAX 5
 #define WL_ASSET_IRRELEVANT_RANGE 1000
 #define WL_TARGET_RESET_VOTING_TIME 60
-#define RD_KILL_REWARD_MOD 4444  //Original value 10,000; lower value equals higher kill rewards
-#define RD_GARRISON_SIZE_MOD 3  //Original value 2; adjust this to increase total INF spawning in an AI sector. 
-#define RD_MINECOUNT_DELETE_THRESHOLD 200 //Original value 400; Total # of mines allowed on server anymore will be delete when any sector is capped
-#define RD_UAVCOUNT_DELETE_THRESHOLD 24 //Original value 50;
-#define RD_VIC_MIN_HEIGHT -85  //default is roughly 100 AGL, -90 = roughly 10 meters AGL. 0 = roughly 100 AGL
-#define RD_VIC_RANDOM_HEIGHT 70  //Bell curve model, 125 = avg of 75 height + Min Height value. Game deafults to roughly 135 AGL
-#define RD_VIC_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
-#define RD_AIR_RANDOM_AI_SPAWNS 4  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
-#define RD_NAVY_RANDOM_AI_SPAWNS 4  //Random number of AI Navy that can spawn in a zone 0 to <value given>; default 4
-#define RD_DIVER_RANDOM_AI_SPAWNS 4  //Random number of AI Divers that can spawn in a zone 0 to <value given>; default 4
-#define RD_TEAM_BALANCE_SPLIT 3  //Number of player split between teams before CP cutoff; default 3
-#define RD_BASE_VALUE_ADJUSTMENT 10000  //default 10,000; Lower number equals more CP value for a sector; see also WL_SECTOR_CAPTURE_REWARD_MULTIPLIER
-#define RD_AIR_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink
-#define RD_JET_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
-#define RD_HELI_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink
-#define RD_HELI_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
-#define RD_TANK_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
-#define RD_INDY_BOATS_ACTIVE 1  //default 1; 1 = INDY boats will spawn; 2 = Indy boats will not spawn
-#define RD_INDY_DIVERS_ACTIVE 1  //default 1; 1 = INDY Divers will spawn; 2 = Indy Divers will not spawn
-#define RD_CUSTOM_SECTOR_NAMES 1  //default 1; 1 = Sectors will have custom names; 2 = Sectors will have no custom names
-#define RD_DISABLE_TEAM_SWITCHING 1  //default 1; 1 = Team switching disabled; 2 = Team switching enabled
-#define RD_EAST_WEST_TANKAIR_DEFENDERS 1  //default 1; 1 = Tanks and aircraft will spawn at Bluefor/OPFOR zones; 2 = Tanks and aircraft will NOT spawn at Bluefor/OPFOR zones
-#define RD_HIGH_LOW_PLAYER_COUNT 60  //default 60; This is the number of players at which the dynamic AI buddy system swaps from high AI count to low AI count.
-#define RD_LOW_AI_BUDDY_COUNT 1  //default 1; number of friendly AI player can have during high player count
-#define RD_HIGH_AI_BUDDY_COUNT 2  //default 2; number of friendly AI player can have during low player count
-#define RD_TRANSITION_ALT 4000  //default 4000; AGL altitude. Aircraft above this height will not be effected by zone restrictions around sectors
+#define KORB_KILL_REWARD_MOD 4444  //Original value 10,000; lower value equals higher kill rewards
+#define KORB_GARRISON_SIZE_MOD 3  //Original value 2; adjust this to increase total INF spawning in an AI sector. 
+#define KORB_MINECOUNT_DELETE_THRESHOLD 200 //Original value 400; Total # of mines allowed on server anymore will be delete when any sector is capped
+#define KORB_UAVCOUNT_DELETE_THRESHOLD 24 //Original value 50;
+#define KORB_VIC_MIN_HEIGHT -85  //default is roughly 100 AGL, -90 = roughly 10 meters AGL. 0 = roughly 100 AGL
+#define KORB_VIC_RANDOM_HEIGHT 70  //Bell curve model, 125 = avg of 75 height + Min Height value. Game deafults to roughly 135 AGL
+#define KORB_VIC_RANDOM_AI_SPAWNS 4  //Random number of AI vics that can spawn in a zone 0 to <value given>; default 4
+#define KORB_AIR_RANDOM_AI_SPAWNS 4  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
+#define KORB_NAVY_RANDOM_AI_SPAWNS 4  //Random number of AI Navy that can spawn in a zone 0 to <value given>; default 4
+#define KORB_DIVER_RANDOM_AI_SPAWNS 4  //Random number of AI Divers that can spawn in a zone 0 to <value given>; default 4
+#define KORB_TEAM_BALANCE_SPLIT 3  //Number of player split between teams before CP cutoff; default 3
+#define KORB_BASE_VALUE_ADJUSTMENT 10000  //default 10,000; Lower number equals more CP value for a sector; see also WL_SECTOR_CAPTURE_REWARD_MULTIPLIER
+#define KORB_AIR_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink
+#define KORB_JET_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
+#define KORB_HELI_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink
+#define KORB_HELI_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
+#define KORB_TANK_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active
+#define KORB_INDY_BOATS_ACTIVE 1  //default 1; 1 = INDY boats will spawn; 2 = Indy boats will not spawn
+#define KORB_INDY_DIVERS_ACTIVE 1  //default 1; 1 = INDY Divers will spawn; 2 = Indy Divers will not spawn
+#define KORB_CUSTOM_SECTOR_NAMES 1  //default 1; 1 = Sectors will have custom names; 2 = Sectors will have no custom names
+#define KORB_DISABLE_TEAM_SWITCHING 1  //default 1; 1 = Team switching disabled; 2 = Team switching enabled
+#define KORB_EAST_WEST_TANKAIR_DEFENDERS 1  //default 1; 1 = Tanks and aircraft will spawn at Bluefor/OPFOR zones; 2 = Tanks and aircraft will NOT spawn at Bluefor/OPFOR zones
+#define KORB_HIGH_LOW_PLAYER_COUNT 60  //default 60; This is the number of players at which the dynamic AI buddy system swaps from high AI count to low AI count.
+#define KORB_LOW_AI_BUDDY_COUNT 1  //default 1; number of friendly AI player can have during high player count
+#define KORB_HIGH_AI_BUDDY_COUNT 2  //default 2; number of friendly AI player can have during low player count
+#define KORB_TRANSITION_ALT 4000  //default 4000; AGL altitude. Aircraft above this height will not be effected by zone restrictions around sectors
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)
 #define WL_TARGET_FRIENDLY (missionNamespace getVariable format ["BIS_WL_currentTarget_%1", BIS_WL_playerSide])

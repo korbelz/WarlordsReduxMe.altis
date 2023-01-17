@@ -9,7 +9,7 @@ waitUntil {!isNull player && isPlayer player};
 
 //this whole if statement stops side switching. Line 11 to 56 comment out
 
-if (RD_DISABLE_TEAM_SWITCHING == 1) then{
+if (KORB_DISABLE_TEAM_SWITCHING == 1) then{
 	private _teamCheckOKVarID = format ["BIS_WL_teamCheckOK_%1", getPlayerUID player];
 
 	waitUntil {!isNil {missionNamespace getVariable _teamCheckOKVarID}};

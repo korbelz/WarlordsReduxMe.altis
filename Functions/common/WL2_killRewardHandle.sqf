@@ -20,8 +20,8 @@ if !(isNull _instigator) then {
 				};
 			}; //"reward ==" block is fix to gorgan CP reward, default reward/value is 10,000
 			if (_killerSide != _unitSide && _unitSide in BIS_WL_sidesArray) then {
-				_reward = round ((getNumber (configFile >> "CfgVehicles" >> typeOf _unit >> "cost")) / RD_KILL_REWARD_MOD);
-				if(_reward == round (40000 / RD_KILL_REWARD_MOD)) then {
+				_reward = round ((getNumber (configFile >> "CfgVehicles" >> typeOf _unit >> "cost")) / KORB_KILL_REWARD_MOD);
+				if(_reward == round (40000 / KORB_KILL_REWARD_MOD)) then {
 					_reward = (_reward * 62);
 				};
 				if (_responsibleLeader == player) then {

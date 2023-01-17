@@ -3,7 +3,7 @@
 //Create locations in order to re-name sectors 
 
 
-if (RD_CUSTOM_SECTOR_NAMES == 1) then {
+if (KORB_CUSTOM_SECTOR_NAMES == 1) then {
 	_location = createLocation ["NameCity", [2949.7,11008,0], 30, 30]; 
 	_location setText "Fire Base West"; //Fire Base West
 	_location = createLocation ["NameCity", [8275.26,10904,0], 30, 30]; 

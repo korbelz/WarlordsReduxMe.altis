@@ -52,7 +52,7 @@ if (_fullRecalc) then {
 				private _zoneRestrictionAxis = ((_sector getVariable "BIS_WL_distanceToNearestSector") / 3) max (_sector getVariable "BIS_WL_maxAxis");
 				if (isServer) then {
 					_zoneRestrictionTrigger = ((_sector getVariable "BIS_WL_zoneRestrictionTrgs") select {(_x getVariable "BIS_WL_handledSide") == _side}) # 0;
-					_zoneRestrictionTrigger setTriggerArea [_zoneRestrictionAxis, _zoneRestrictionAxis, 0, FALSE, RD_TRANSITION_ALT];
+					_zoneRestrictionTrigger setTriggerArea [_zoneRestrictionAxis, _zoneRestrictionAxis, 0, FALSE, KORB_TRANSITION_ALT];
 				};
 				
 				if !(isNil "BIS_WL_playerSide") then {
@@ -91,7 +91,7 @@ if (_fullRecalc) then {
 				
 				if (isServer) then {
 					_zoneRestrictionTrigger = ((_sector getVariable "BIS_WL_zoneRestrictionTrgs") select {(_x getVariable "BIS_WL_handledSide") == _side}) # 0;
-					_zoneRestrictionTrigger setTriggerArea [_zoneRestrictionAxis, _zoneRestrictionAxis, 0, FALSE, RD_TRANSITION_ALT];
+					_zoneRestrictionTrigger setTriggerArea [_zoneRestrictionAxis, _zoneRestrictionAxis, 0, FALSE, KORB_TRANSITION_ALT];
 				};
 				
 				if !(isNil "BIS_WL_playerSide") then {

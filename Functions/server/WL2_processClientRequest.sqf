@@ -115,11 +115,11 @@ if !(isNull _sender) then {
 						};
 						_asset = createVehicle [_className, _spawnPos, [], 0, "CAN_COLLIDE"];
 						_asset setDir _dir;
-						if (RD_AIR_RADAR_ACTIVE == 1) then {
+						if (KORB_AIR_RADAR_ACTIVE == 1) then {
 							_asset enableVehicleSensor ["ActiveRadarSensorComponent", false];
 							_asset enableVehicleSensor ["PassiveRadarSensorComponent", false];
 						};
-						if (RD_JET_IR_ACTIVE == 1) then {
+						if (KORB_JET_IR_ACTIVE == 1) then {
 							_asset disableTIEquipment true;
 						}; 
 
@@ -139,10 +139,10 @@ if !(isNull _sender) then {
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
 						_asset setVelocity [0, 0, 0];
 						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
-						if (RD_HELI_IR_ACTIVE == 1) then {
+						if (KORB_HELI_IR_ACTIVE == 1) then {
 							_asset disableTIEquipment true;
 						};
-						if (RD_HELI_RADAR_ACTIVE == 1) then {
+						if (KORB_HELI_RADAR_ACTIVE == 1) then {
 							_asset enableVehicleSensor ["ActiveRadarSensorComponent", false];
 							_asset enableVehicleSensor ["PassiveRadarSensorComponent", false];
 						};
@@ -252,7 +252,7 @@ if !(isNull _sender) then {
 					}; 
 				} else {
 							
-					_parachute setPos ((position _parachute) vectorAdd [0, 0, RD_VIC_MIN_HEIGHT + random RD_VIC_RANDOM_HEIGHT]);
+					_parachute setPos ((position _parachute) vectorAdd [0, 0, KORB_VIC_MIN_HEIGHT + random KORB_VIC_RANDOM_HEIGHT]);
 					_asset = createVehicle [_className, _targetPosFinal, [], 0, "NONE"];
 					_asset setVariable ["BIS_WL_deployPos", _targetPosFinal];
 					_bBox = boundingBoxReal _asset;
@@ -277,7 +277,7 @@ if !(isNull _sender) then {
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
 								//"OPFOR static crew spawn code running" remoteExec ["systemChat"];
 							};
-					if (RD_TANK_IR_ACTIVE == 1) then {
+					if (KORB_TANK_IR_ACTIVE == 1) then {
 						_asset disableTIEquipment true;
 					};
 					//"Vic spawn code running" remoteExec ["systemChat"];
