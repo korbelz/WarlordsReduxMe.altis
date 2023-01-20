@@ -70,7 +70,7 @@
 #define KORB_AIR_RANDOM_AI_SPAWNS 4  //Random number of AI Air that can spawn in a zone 0 to <value given>; default 4
 #define KORB_NAVY_RANDOM_AI_SPAWNS 4  //Random number of AI Navy that can spawn in a zone 0 to <value given>; default 4
 #define KORB_DIVER_RANDOM_AI_SPAWNS 4  //Random number of AI Divers that can spawn in a zone 0 to <value given>; default 4
-#define KORB_TEAM_BALANCE_SPLIT 3  //Number of player split between teams before CP cutoff; default 3
+#define KORB_TEAM_BALANCE_SPLIT 3  //Number of player split between teams before CP adjustments; default 3
 #define KORB_BASE_VALUE_ADJUSTMENT 10000  //default 10,000; Lower number equals more CP value for a sector; see also WL_SECTOR_CAPTURE_REWARD_MULTIPLIER
 #define KORB_AIR_RADAR_ACTIVE 1  //default 1; 1 = radar off, datalink only; 2 = radar active + datalink
 #define KORB_JET_IR_ACTIVE 1  //default 1; 1 = IR off; 2 = IR active

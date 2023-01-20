@@ -310,3 +310,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Bases are 98% less likely to both be on same half of the map
 - Drones/Helis/Jets flying above you or subs below you can no longer block fast travel(+/- WL_MAX_SEIZING_HEIGHT)
 - Death imminent progress bar now synced properly to actual death
+- Tweaked passive CP payout to pay out a ratio of CP based on team balance
+   example: both teams +100 CP, Bluefor 16 players, OPFOR 7 players.
+   Bluefor passive CP payout = 100 CP
+   OPFOR passive CP payout = 212 CP
