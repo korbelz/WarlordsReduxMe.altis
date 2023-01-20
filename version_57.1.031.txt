@@ -306,3 +306,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - added hooks for a system that can modify CP cap rewards based on balance
 - added hooks for a system that compares sector ownership and modifies passive CP and sector cap rewards
 - Land based zones can no longer be capped underwater(naval zones are still there for your frogman dreams)
+- Bases in the center of altis can no longer be starter bases
+- Bases are 98% less likely to both be on same half of the map
