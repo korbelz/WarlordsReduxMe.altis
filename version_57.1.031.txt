@@ -309,4 +309,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Bases in the center of altis can no longer be starter bases
 - Bases are 98% less likely to both be on same half of the map
 - Drones/Helis/Jets flying above you or subs below you can no longer block fast travel(+/- WL_MAX_SEIZING_HEIGHT)
-- death imminent progress bar now synced properly to actual death
+- Death imminent progress bar now synced properly to actual death
