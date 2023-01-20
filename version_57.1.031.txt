@@ -308,3 +308,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Land based zones can no longer be capped underwater(naval zones are still there for your frogman dreams)
 - Bases in the center of altis can no longer be starter bases
 - Bases are 98% less likely to both be on same half of the map
+- Drones/Helis/Jets flying above you or subs below you can no longer block fast travel(+/- WL_MAX_SEIZING_HEIGHT)
