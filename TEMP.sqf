@@ -19,7 +19,7 @@ BIS_WL_initModule setVariable ["BIS_WL_fundsTransferCost", 4000];  //default 100
 BIS_WL_initModule setVariable ["BIS_WL_targetResetCost", 1200]; //default value 2000; lowered to 1200 for official servers
 BIS_WL_initModule setVariable ["BIS_WL_scanEnabled", TRUE];
 BIS_WL_initModule setVariable ["BIS_WL_fastTravelEnabled", 1];
-BIS_WL_initModule setVariable ["BIS_WL_maxCP", 42000];
+BIS_WL_initModule setVariable ["BIS_WL_maxCP", 38069];
 BIS_WL_initModule setVariable ["BIS_WL_dropCost", 25];
 BIS_WL_initModule setVariable ["BIS_WL_dropCost_far", 1000];
 BIS_WL_initModule setVariable ["BIS_WL_autonomous_limit", 2];
