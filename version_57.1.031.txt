@@ -303,8 +303,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 - After death players can reconnect to their UAV.(fix by MrThomasM)
 
 57.1.031
-- added hooks for a system that can modify CP cap rewards based on balance
-- added hooks for a system that compares sector ownership and modifies passive CP and sector cap rewards
 - Land based zones can no longer be capped underwater(naval zones are still there for your frogman dreams)
 - Bases in the center of altis can no longer be starter bases
 - Bases are 98% less likely to both be on same half of the map
@@ -314,3 +312,4 @@ Hotfix: reverted some changes that might have been hurting FPS
    example: both teams +100 CP, Bluefor 16 players, OPFOR 7 players.
    Bluefor passive CP payout = 100 CP
    OPFOR passive CP payout = 212 CP
+   system only kicks in if team balance numbers are exceeded(example more than 3 uneven)
