@@ -35,7 +35,7 @@ _potentialBases = [];
 _tolerance = 0;
 while {count _potentialBases == 0} do {
 	_potentialBases = _tiers select {(_x # 0) >= (BIS_WL_baseDistanceMin - _tolerance) && (_x # 0) <= BIS_WL_baseDistanceMax};
-	_tolerance = _tolerance + 1;
+	_tolerance = _tolerance + 8;
 };
 _potentialBases = selectRandom _potentialBases;
 _potentialBases = _potentialBases - [_potentialBases # 0];
