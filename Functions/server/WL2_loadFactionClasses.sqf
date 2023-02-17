@@ -109,8 +109,8 @@ BIS_WL_factionVehicleClasses = [
 		"B_APC_Tracked_01_rcws_F",		15, //Panther, default 50
 		"B_LSV_01_armed_F",			25, //Prowler HMG, default 75
 		"B_LSV_01_AT_F",			25, //Prowler AT, Default 75
-		"B_MRAP_01_hmg_F",			51, //Hunter hmg, default 100
-		"B_MRAP_01_gmg_F",			51, //Hunter GMG, default 100
+		"B_MRAP_01_hmg_F",			1, //Hunter hmg, default 100
+		"B_MRAP_01_gmg_F",			1, //Hunter GMG, default 100
 		"B_APC_Tracked_01_AA_F",		51, //Cheetah, default 50
 		"B_MBT_01_cannon_F",			25, //Slammer, default 25
 		"B_MBT_01_TUSK_F",			25, //slammer up, default 25
@@ -119,8 +119,8 @@ BIS_WL_factionVehicleClasses = [
 	[
 			
 		"O_APC_Wheeled_02_rcws_v2_F", 25, //MSE-3 Marid, default 100
-		"O_MRAP_02_gmg_F",			51, //Ifrit GMG, default 100
-		"O_MRAP_02_hmg_F",			51, //Ifrit HMG, default 100
+		"O_MRAP_02_gmg_F",			1, //Ifrit GMG, default 100
+		"O_MRAP_02_hmg_F",			1, //Ifrit HMG, default 100
 		"O_LSV_02_AT_F",			25, //Qilin AT, default 75
 		"O_LSV_02_armed_F",			25, //Qilin minigun, default 75
 		"O_MBT_02_cannon_F",			25, //T-100, default 25
@@ -137,8 +137,8 @@ BIS_WL_factionVehicleClasses = [
 		"I_APC_tracked_03_cannon_F",		25, //Mora, default 50
 		"I_LT_01_AT_F",				80, //Nyx AT, default 50
 		"I_LT_01_cannon_F",			25, //Nyx 20mm, default 50
-		"I_MRAP_03_gmg_F",			25, //strider GMG, default 100
-		"I_MRAP_03_hmg_F",			25, //strider HMG, default 100
+		"I_MRAP_03_gmg_F",			1, //strider GMG, default 100
+		"I_MRAP_03_hmg_F",			1, //strider HMG, default 100
 		"I_MBT_03_cannon_F",			60, //Kuma, default 25
 		"I_E_Truck_02_MRL_F",			15, //MLRS, default 25
 		"I_LT_01_scout_F",			15, //AWC 303 Nyx (Recon), default 25
