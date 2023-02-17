@@ -318,4 +318,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Reconfigured tech tree/map to make unlock of naval weapons(VLS, MK 45, etc) mid to late game.
 - Improvements to base start locations.
 - Lowered HMG/GMG spam for both AI and players
-- 
+- Server networking improvements
