@@ -7,6 +7,15 @@ private _actionArray = _action splitString "|";
 _action = _actionArray # 0;
 private _params = _actionArray - [_action];
 
+//arrays for custom equipment boxes
+//blue boxes 
+private _itemsblueone = [  ["arifle_MXM_F", 1],  ["launch_B_Titan_short_F", 1]];
+private _backpacksblueone = [  ["B_Carryall_Base", 1]];
+
+//red boxes
+private _itemsredone = [  ["arifle_Katiba_F", 1],  ["launch_O_Titan_short_F", 1]];
+private _backpacksredone = [  ["B_Carryall_ocamo", 1]];
+
 if (isMultiplayer) then {
 	_var = (_var splitString "BIS_WL_") # 0;
 
@@ -281,6 +290,32 @@ if !(isNull _sender) then {
 						_asset disableTIEquipment true;
 					};
 					//"Vic spawn code running" remoteExec ["systemChat"];
+
+					//custom box code
+					if (_className == "Box_IND_Wps_F" && side _sender == WEST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsblueone; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksblueone; //add backpacks
+					};
+
+					if (_className == "Box_IND_Wps_F" && side _sender == EAST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsredone; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredone; //add backpacks
+					};
 
 					[_parachute, _asset, _assetDummy] spawn {
 						params ["_parachute", "_asset", "_assetDummy"];

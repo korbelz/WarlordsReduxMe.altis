@@ -319,3 +319,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Improvements to base start locations.
 - Lowered HMG/GMG spam for both AI and players
 - Server networking improvements
+- Added system for creating custom crates
+  - End goal for this system is to have custom crates for most popular loadouts to make gearing up quick/easy
+  - I'll be filling out the crates when I have time, currently its just a test crate. 
