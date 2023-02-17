@@ -6,9 +6,9 @@
 
 private _lineone = parseText "<a href='https://github.com/korbelz/WarlordsReduxMe.altis'>Click HERE: To report bugs, and follow development</a>";
 private _linetwo = parseText "<a href='https://discord.gg/arma'>Official Arma Discord</a>";
-private _linethree = parseText "Unbalanced teams equals no passive CP for stacked team"; 
+private _linethree = parseText "Unbalanced teams equals more passive CP for the team with less players"; //long term goal is to turn this into a real time dashboard
 private _linefour = parseText "<a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2072468574'>Click HERE: Written Warlords FAQ guide on steam</a>"; 
-private _linefive = "Welcome to the fight, hold I to load the Warlords MENU";
+private _linefive = parseText "<a href='https://github.com/korbelz/WarlordsReduxMe.altis/wiki/Feature-List'>Click HERE: Feature List</a>";
 
 //_structuredText = composeText [_lineone, lineBreak, lineBreak, _linetwo, lineBreak, lineBreak, _linethree, lineBreak, lineBreak, _linefour];
 
