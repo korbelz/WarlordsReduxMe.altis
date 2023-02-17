@@ -23,7 +23,7 @@ BIS_WL_initModule setVariable ["BIS_WL_maxCP", 38069];
 BIS_WL_initModule setVariable ["BIS_WL_dropCost", 25];
 BIS_WL_initModule setVariable ["BIS_WL_dropCost_far", 3000];
 BIS_WL_initModule setVariable ["BIS_WL_autonomous_limit", 2];
-BIS_WL_initModule setVariable ["BIS_WL_arsenalEnabled", TRUE];
+BIS_WL_initModule setVariable ["BIS_WL_arsenalEnabled", FALSE];
 BIS_WL_initModule setVariable ["BIS_WL_arsenalCost", 1000];
 BIS_WL_initModule setVariable ["BIS_WL_maxSubordinates", 2]; //default value 8; check WL2_changeSectorOwnership file and make sure it matches this value
 BIS_WL_initModule setVariable ["BIS_WL_assetLimit", 10];
