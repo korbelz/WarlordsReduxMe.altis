@@ -313,3 +313,7 @@ Hotfix: reverted some changes that might have been hurting FPS
    Bluefor passive CP payout = 100 CP
    OPFOR passive CP payout = 212 CP
    system only kicks in if team balance numbers are exceeded(example more than 3 uneven)
+
+57.1.032
+- Reconfigured tech tree/map to make unlock of naval weapons(VLS, MK 45, etc) mid to late game.
+- Improvements to base start locations.
