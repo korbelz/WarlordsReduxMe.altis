@@ -9,10 +9,12 @@ private _params = _actionArray - [_action];
 
 //arrays for custom equipment boxes
 //blue boxes 
+private _blueboxone = "Box_IND_Wps_F"; //get this class ID from requisitions.inc, put it in quotes
 private _itemsblueone = [  ["arifle_MXM_F", 1],  ["launch_B_Titan_short_F", 1]];
 private _backpacksblueone = [  ["B_Carryall_Base", 1]];
 
 //red boxes
+private _redboxone = "Box_IND_Wps_F"; //get this class ID from requisitions.inc
 private _itemsredone = [  ["arifle_Katiba_F", 1],  ["launch_O_Titan_short_F", 1]];
 private _backpacksredone = [  ["B_Carryall_ocamo", 1]];
 
@@ -292,7 +294,7 @@ if !(isNull _sender) then {
 					//"Vic spawn code running" remoteExec ["systemChat"];
 
 					//custom box code
-					if (_className == "Box_IND_Wps_F" && side _sender == WEST) then {
+					if (_className == _blueboxone && side _sender == WEST) then {
 						//clear inventory
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
@@ -305,7 +307,7 @@ if !(isNull _sender) then {
 						{ _asset addBackpackCargoGlobal _x } forEach _backpacksblueone; //add backpacks
 					};
 
-					if (_className == "Box_IND_Wps_F" && side _sender == EAST) then {
+					if (_className == _redboxone && side _sender == EAST) then {
 						//clear inventory
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
