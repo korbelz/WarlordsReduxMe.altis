@@ -32,13 +32,13 @@ class CfgWLRequisitionPresets
 			{
 				//class B_Quadbike_01_F						{cost =  20;	requirements[]={};	};	// "Quad Bike"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
-				class B_LSV_01_unarmed_F					{cost = 500;	requirements[]={};	};	// "Prowler (Unarmed)"
-				class B_MRAP_01_F							{cost = 500;	requirements[]={};	};	// "Hunter"
-				class B_Truck_01_transport_F				{cost = 500;	requirements[]={};	};	// "HEMTT Transport"
-				class B_Truck_01_fuel_F						{cost = 500;	requirements[]={};	};	// "HEMTT Fuel"
-				class B_Truck_01_medical_F					{cost = 500;	requirements[]={};	};	// "HEMTT Medical"
+				//class B_LSV_01_unarmed_F					{cost = 500;	requirements[]={};	};	// "Prowler (Unarmed)"
+				//class B_MRAP_01_F							{cost = 500;	requirements[]={};	};	// "Hunter"
+				class B_Truck_01_transport_F				{cost = 700;	requirements[]={};	};	// "HEMTT Transport"
+				class B_Truck_01_fuel_F						{cost = 700;	requirements[]={};	};	// "HEMTT Fuel"
+				class B_Truck_01_medical_F					{cost = 700;	requirements[]={};	};	// "HEMTT Medical"
 				//class B_LSV_01_armed_F						{cost = 1200;	requirements[]={};	};	// "Prowler (HMG)"
-				//class B_G_Offroad_01_armed_F				{cost = 1200;	requirements[]={};	};	// "Offroad (HMG)"
+				class B_G_Offroad_01_armed_F				{cost = 1200;	requirements[]={};	};	// "Offroad (HMG)"
 				//class B_LSV_01_AT_F							{cost = 1800;	requirements[]={};	};	// "Prowler (AT)"
 				class B_G_Offroad_01_AT_F					{cost = 1500;	requirements[]={};	};	// "Offroad (AT)"
 				class B_Truck_01_Repair_F					{cost = 2000;	requirements[]={};	};	// "HEMTT Repair"
@@ -67,9 +67,9 @@ class CfgWLRequisitionPresets
 				class B_UGV_01_rcws_F						{cost = 6500;	requirements[]={}; offset[]={0, 4, 0};};	// "UGAS" 
 				//class B_UGV_02_Demining_F					{cost = 4500;	requirements[]={};	};	// "UGAS demining"
 				//class B_UAV_05_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "UCAV";
-				class B_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter";
-				class B_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL-6 Pelican";
-				class B_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL-6 Pelican medical";
+				class B_UAV_01_F							{cost = 2000;	requirements[]={};	};	// "AR-2 Darter";
+				class B_UAV_06_F							{cost = 2000;	requirements[]={};	};	// "AL-6 Pelican";
+				class B_UAV_06_medical_F					{cost = 2000;	requirements[]={};	};	// "AL-6 Pelican medical";
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={"S"};	offset[]={0, 3, 0.8};};	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"};	offset[]={0, 6, 0.8};};	// "mk 41 VLS"
@@ -123,7 +123,11 @@ class CfgWLRequisitionPresets
 				class B_Slingload_01_Fuel_F					{cost = 500;	requirements[]={};	};	// "Huron Fuel Container"
 				class B_Slingload_01_Medevac_F					{cost = 500;	requirements[]={};	};	// "Huron Medical Container"
 				class B_Slingload_01_Repair_F					{cost = 500;	requirements[]={};	};	// "Huron Repair Container"
-				class Box_IND_Wps_F							{cost = 69;		requirements[]={};	};	// "Custom box blue one"
+				class O_CargoNet_01_ammo_F							{cost = 969;		requirements[]={};	};	// "Custom box blue one"
+				class I_CargoNet_01_ammo_F							{cost = 970;		requirements[]={};	};	// "Custom box blue two"
+				class B_CargoNet_01_ammo_F							{cost = 971;		requirements[]={};	};	// "Custom box blue three"
+				class CargoNet_01_box_F							{cost = 972;		requirements[]={};	};	// "Custom box blue four"
+				class I_supplyCrate_F							{cost = 973;		requirements[]={};	};	// "Custom box blue five"
 				
 				
 			};
@@ -180,13 +184,13 @@ class CfgWLRequisitionPresets
 			{
 				//class O_Quadbike_01_F						{cost = 20;	requirements[]={};	};	// "Quad Bike"
 				class C_Tractor_01_F						{cost = 200;	requirements[]={};	};	// "Sexy Tractor"
-				class O_LSV_02_unarmed_F					{cost = 500;	requirements[]={};	};	// "Qilin (Unarmed)"
-				class O_MRAP_02_F							{cost = 500;	requirements[]={};	};	// "Ifrit"
-				class O_Truck_03_transport_F				{cost = 500;	requirements[]={};	};	// "Tempest Transport"
-				class O_Truck_03_Fuel_F						{cost = 500;	requirements[]={};	};	// "Tempest Fuel"
-				class O_Truck_03_medical_F					{cost = 500;	requirements[]={};	};	// "Tempest Medical"
+				//class O_LSV_02_unarmed_F					{cost = 500;	requirements[]={};	};	// "Qilin (Unarmed)"
+				//class O_MRAP_02_F							{cost = 500;	requirements[]={};	};	// "Ifrit"
+				class O_Truck_03_transport_F				{cost = 700;	requirements[]={};	};	// "Tempest Transport"
+				class O_Truck_03_Fuel_F						{cost = 700;	requirements[]={};	};	// "Tempest Fuel"
+				class O_Truck_03_medical_F					{cost = 700;	requirements[]={};	};	// "Tempest Medical"
 				//class O_LSV_02_armed_F						{cost = 1200;	requirements[]={};	};	// "Qilin (Minigun)"
-				//class O_G_Offroad_01_armed_F				{cost = 1200;	requirements[]={};	};	// "Offroad (HMG)"
+				class O_G_Offroad_01_armed_F				{cost = 1200;	requirements[]={};	};	// "Offroad (HMG)"
 				//class O_LSV_02_AT_F							{cost = 1800;	requirements[]={};	};	// "Qilin (AT)"
 				class O_G_Offroad_01_AT_F					{cost = 1500;	requirements[]={};	};	// "Offroad (AT)"
 				class O_Truck_03_Repair_F					{cost = 2000;	requirements[]={};	};	// "Tempest Repair"
@@ -214,9 +218,9 @@ class CfgWLRequisitionPresets
 				class O_Mortar_01_F							{cost = 11000;	requirements[]={"M"}; offset[]={0, 3, 0};	};	// "Mortar"
 				class O_UGV_01_rcws_F						{cost = 8500;	requirements[]={}; offset[]={0, 4, 0}; };	// "UGAV rcws"
 				class O_UGV_02_Demining_F					{cost = 4500;	requirements[]={};	};	// "UGAV demining"
-				class O_UAV_01_F							{cost = 500;	requirements[]={};	};	// "AR-2 Darter"
-				class O_UAV_06_F							{cost = 500;	requirements[]={};	};	// "AL_6 Pelican"
-				class O_UAV_06_medical_F					{cost = 500;	requirements[]={};	};	// "AL_6 Pelican Medical"
+				class O_UAV_01_F							{cost = 2000;	requirements[]={};	};	// "AR-2 Darter"
+				class O_UAV_06_F							{cost = 2000;	requirements[]={};	};	// "AL_6 Pelican"
+				class O_UAV_06_medical_F					{cost = 2000;	requirements[]={};	};	// "AL_6 Pelican Medical"
 				class B_AAA_System_01_F						{cost = 8000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Phalax"; 
 				class B_Ship_Gun_01_F						{cost = 24000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "Ship gun"
 				class B_Ship_MRLS_01_F						{cost = 38000;	requirements[]={"S"}; offset[]={0, 6, 0.8}; };	// "mk 41 VLS"
@@ -272,7 +276,11 @@ class CfgWLRequisitionPresets
 				class Land_Pod_Heli_Transport_04_repair_F					{cost = 500;	requirements[]={};	};	// "Taru Repair Pod"
 				class Land_Pod_Heli_Transport_04_bench_F					{cost = 500;	requirements[]={};	};	// "Taru Bench Pod"
 				class Land_Pod_Heli_Transport_04_medevac_F					{cost = 500;	requirements[]={};	};	// "Taru Medical Pod"
-				class Box_IND_Wps_F							{cost = 69;		requirements[]={};	};	// "Custom box red one"
+				class O_CargoNet_01_ammo_F							{cost = 969;		requirements[]={};	};	// "Custom box red one"
+				class I_CargoNet_01_ammo_F							{cost = 970;		requirements[]={};	};	// "Custom box red two"
+				class B_CargoNet_01_ammo_F						{cost = 971;		requirements[]={};	};	// "Custom box red three"
+				class CargoNet_01_box_F							{cost = 972;		requirements[]={};	};	// "Custom box red four"
+				class I_supplyCrate_F							{cost = 973;		requirements[]={};	};	// "Custom box red five"
 				
 				
 

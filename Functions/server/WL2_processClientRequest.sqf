@@ -9,14 +9,56 @@ private _params = _actionArray - [_action];
 
 //arrays for custom equipment boxes
 //blue boxes 
-private _blueboxone = "Box_IND_Wps_F"; //get this class ID from requisitions.inc, put it in quotes
-private _itemsblueone = [  ["arifle_MXM_F", 1],  ["launch_B_Titan_short_F", 1]];
-private _backpacksblueone = [  ["B_Carryall_Base", 1]];
+private _blueboxone = "O_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc, put it in quotes
+private _itemsblueone = [  ["arifle_MXM_khk_F",1], ["muzzle_snds_H_khk_F",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_01_F_khk",1], ["30Rnd_65x39_caseless_khaki_mag",7],
+ ["launch_I_Titan_short_F", 1], ["Titan_AT",3], ["U_B_CTRG_Soldier_F", 1], ["V_PlateCarrierIAGL_oli", 1], ["H_HelmetO_ViperSP_ghex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+private _backpacksblueone = [  ["B_FieldPack_oli", 1]];
+
+private _blueboxtwo = "I_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc, put it in quotes
+private _itemsbluetwo = [  ["arifle_MXM_khk_F",1], ["muzzle_snds_H_khk_F",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_01_F_khk",1], ["30Rnd_65x39_caseless_khaki_mag",7],
+ ["launch_B_Titan_olive_F", 1], ["Titan_AA",3], ["U_B_CTRG_Soldier_F", 1], ["V_PlateCarrierIAGL_oli", 1], ["H_HelmetO_ViperSP_ghex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+private _backpacksbluetwo = [  ["B_FieldPack_oli", 1]];
+
+private _blueboxthree = "B_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc, put it in quotes
+private _itemsbluethree = [  ["arifle_SDAR_F",1], ["20Rnd_556x45_UW_mag",7], ["NVGoggles_OPFOR",1], 
+ ["launch_I_Titan_short_F", 1], ["Titan_AT",2], ["U_B_Wetsuit", 1], ["V_RebreatherB", 1], ["G_Diving", 1], ["H_HelmetSpecB_blk", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+private _backpacksbluethree = [  ["B_FieldPack_blk", 1]];
+
+private _blueboxfour = "CargoNet_01_box_F"; //get this class ID from requisitions.inc, put it in quotes
+private _itemsbluefour = [  ["srifle_LRR_F",1],["optic_LRPS",1], ["7Rnd_408_Mag",13], ["NVGoggles",1],
+  ["U_B_FullGhillie_ard", 1], ["V_PlateCarrierIAGL_oli", 1], ["G_Balaclava_blk", 1], ["H_HelmetSpecB_snakeskin", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+private _backpacksbluefour = [  ["B_FieldPack_cbr", 1]];
+
+private _blueboxfive = "I_supplyCrate_F"; //get this class ID from requisitions.inc, put it in quotes
+private _itemsbluefive = [  ["optic_Nightstalker",1], ["launch_O_Vorona_brown_F", 1],  ["Vorona_HEAT", 3], ["srifle_DMR_02_SOS_F", 1],  ["20Rnd_762x51_Mag", 7], ["MMG_01_hex_ARCO_LP_F", 1],  ["150Rnd_93x64_Mag", 7]
+, ["LMG_Zafir_ARCO_F", 1],  ["150Rnd_762x54_Box", 7], ["srifle_DMR_01_DMS_snds_BI_F", 1],  ["10Rnd_762x54_Mag", 7]];
+private _backpacksbluefive = [  ["B_Carryall_mcamo", 1]];
 
 //red boxes
-private _redboxone = "Box_IND_Wps_F"; //get this class ID from requisitions.inc
-private _itemsredone = [  ["arifle_Katiba_F", 1],  ["launch_O_Titan_short_F", 1]];
-private _backpacksredone = [  ["B_Carryall_ocamo", 1]];
+private _redboxone = "O_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc
+private _itemsredone = [  ["arifle_MXM_Black_F",1], ["muzzle_snds_H",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_02_F_blk",1], ["30Rnd_65x39_caseless_black_mag",7],
+ ["launch_B_Titan_short_F", 1], ["Titan_AT",3], ["U_O_V_Soldier_Viper_hex_F", 1], ["V_TacVest_brn", 1], ["H_HelmetO_ViperSP_hex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+private _backpacksredone = [  ["B_FieldPack_ocamo", 1]];
+
+private _redboxtwo = "I_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc
+private _itemsredtwo = [  ["arifle_MXM_Black_F",1], ["muzzle_snds_H",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_02_F_blk",1], ["30Rnd_65x39_caseless_black_mag",7],
+ ["launch_B_Titan_F", 1], ["Titan_AA",3], ["U_O_V_Soldier_Viper_hex_F", 1], ["V_TacVest_brn", 1], ["H_HelmetO_ViperSP_hex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+private _backpacksredtwo = [  ["B_FieldPack_ocamo", 1]];
+
+private _redboxthree = "B_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc
+private _itemsredthree = [  ["arifle_SDAR_F",1], ["20Rnd_556x45_UW_mag",7], ["NVGoggles_OPFOR",1], 
+ ["launch_I_Titan_short_F", 1], ["Titan_AT",2], ["U_B_Wetsuit", 1], ["G_Diving", 1], ["H_HelmetSpecB_blk", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+private _backpacksredthree = [  ["B_FieldPack_ocamo", 1]];
+
+private _redboxfour = "CargoNet_01_box_F"; //get this class ID from requisitions.inc
+private _itemsredfour = [  ["srifle_LRR_F",1],["optic_LRPS",1], ["7Rnd_408_Mag",13], ["NVGoggles",1],
+  ["U_O_FullGhillie_ard", 1], ["V_PlateCarrierIAGL_dgtl", 1], ["V_RebreatherIR", 1], ["G_Balaclava_blk", 1], ["H_HelmetSpecB_paint1", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+private _backpacksredfour = [  ["B_FieldPack_ocamo", 1]];
+
+private _redboxfive = "I_supplyCrate_F"; //get this class ID from requisitions.inc
+private _itemsredfive = [  ["optic_Nightstalker",1], ["launch_O_Vorona_brown_F", 1],  ["Vorona_HEAT", 3], ["srifle_DMR_02_SOS_F", 1],  ["20Rnd_762x51_Mag", 7], ["MMG_01_hex_ARCO_LP_F", 1],  ["150Rnd_93x64_Mag", 7]
+, ["LMG_Zafir_ARCO_F", 1],  ["150Rnd_762x54_Box", 7], ["srifle_DMR_01_DMS_snds_BI_F", 1],  ["10Rnd_762x54_Mag", 7]];
+private _backpacksredfive = [  ["B_Carryall_ocamo", 1]];
 
 if (isMultiplayer) then {
 	_var = (_var splitString "BIS_WL_") # 0;
@@ -301,12 +343,60 @@ if !(isNull _sender) then {
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
-
 						//create equipment arrays up at top of the script 
 						{ _asset addItemCargoGlobal _x } forEach _itemsblueone; //add items 
 						{ _asset addBackpackCargoGlobal _x } forEach _backpacksblueone; //add backpacks
 					};
 
+					if (_className == _blueboxtwo && side _sender == WEST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluetwo; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluetwo; //add backpacks
+					};
+
+					if (_className == _blueboxthree && side _sender == WEST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluethree; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluethree; //add backpacks
+					};
+
+					if (_className == _blueboxfour && side _sender == WEST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluefour; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluefour; //add backpacks
+					};
+
+					if (_className == _blueboxfive && side _sender == WEST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluefive; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluefive; //add backpacks
+					};
+
+					//Red crates
 					if (_className == _redboxone && side _sender == EAST) then {
 						//clear inventory
 						clearBackpackCargoGlobal _asset;
@@ -319,6 +409,53 @@ if !(isNull _sender) then {
 						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredone; //add backpacks
 					};
 
+						if (_className == _redboxtwo && side _sender == EAST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsredtwo; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredtwo; //add backpacks
+					};
+
+						if (_className == _redboxthree && side _sender == EAST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsredthree; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredthree; //add backpacks
+					};
+
+						if (_className == _redboxfour && side _sender == EAST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsredfour; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredfour; //add backpacks
+					};
+
+						if (_className == _redboxfive && side _sender == EAST) then {
+						//clear inventory
+						clearBackpackCargoGlobal _asset;
+						clearMagazineCargoGlobal _asset;
+						clearWeaponCargoGlobal _asset;
+						clearItemCargoGlobal _asset;
+
+						//create equipment arrays up at top of the script 
+						{ _asset addItemCargoGlobal _x } forEach _itemsredfive; //add items 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredfive; //add backpacks
+					};
 					[_parachute, _asset, _assetDummy] spawn {
 						params ["_parachute", "_asset", "_assetDummy"];
 						
