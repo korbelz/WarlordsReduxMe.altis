@@ -37,6 +37,7 @@ class CfgWLRequisitionPresets
 				class B_Truck_01_transport_F				{cost = 700;	requirements[]={};	};	// "HEMTT Transport"
 				class B_Truck_01_fuel_F						{cost = 700;	requirements[]={};	};	// "HEMTT Fuel"
 				class B_Truck_01_medical_F					{cost = 700;	requirements[]={};	};	// "HEMTT Medical"
+				class I_E_Van_02_medevac_F					{cost = 700;	requirements[]={};	};	// "Ambulance"
 				//class B_LSV_01_armed_F						{cost = 1200;	requirements[]={};	};	// "Prowler (HMG)"
 				class B_G_Offroad_01_armed_F				{cost = 1200;	requirements[]={};	};	// "Offroad (HMG)"
 				//class B_LSV_01_AT_F							{cost = 1800;	requirements[]={};	};	// "Prowler (AT)"
@@ -78,6 +79,8 @@ class CfgWLRequisitionPresets
 			class Aircraft
 			{
 				class B_Heli_Light_01_F						{cost = 1000;	requirements[]={"H"};	};	// "MH-9 Hummingbird"
+				class I_C_Heli_Light_01_civil_F				{cost = 1000;	requirements[]={"H"};	};	// "M-900"
+				//class I_Heli_Transport_02_F				{cost = 1200;	requirements[]={"H"};	};	// "Mohawk"
 				class B_Heli_Light_01_dynamicLoadout_F		{cost = 2500;	requirements[]={"H"};	};	// "AH-9 Pawnee"
 				class B_Heli_Transport_01_F					{cost = 1500;	requirements[]={"H"};	};	// "UH-80 Ghost Hawk"
 				class B_Heli_Transport_03_F					{cost = 1500;	requirements[]={"H"};	};	// "CH-67 Huron"
@@ -91,6 +94,7 @@ class CfgWLRequisitionPresets
 				class O_Plane_Fighter_02_F					{cost = 16000;	requirements[]={"A"};	};	// "To-201 Shikra"
 				class O_T_VTOL_02_infantry_dynamicLoadout_F	{cost = 9000;	requirements[]={"H"};	};	// "Y-32 Xi'an (Infantry Transport)"
 				class I_Plane_Fighter_04_F					{cost = 9000;	requirements[]={"A"};	};	// "A-149 Gryphon";
+				class I_Plane_Fighter_03_CAS_F				{cost = 9000;	requirements[]={"A"};	};	// "A-143 Buzzard";
 				class I_C_Plane_Civil_01_F					{cost = 1000;	requirements[]={"A"};	};	// "Caesar BTT";
 				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class B_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk AT";
@@ -105,6 +109,7 @@ class CfgWLRequisitionPresets
 			class Naval
 			{
 				class B_Boat_Transport_01_F					{cost = 100;	requirements[]={"W"};	};	// "Assault Boat"
+				class I_C_Boat_Transport_02_F				{cost = 300;	requirements[]={"W"};	};	// "RHIB"
 				class B_Boat_Armed_01_minigun_F				{cost = 750;	requirements[]={"W"};	};	// "Speedboat Minigun"
 				class B_SDV_01_F							{cost = 900;	requirements[]={"W"};	};	// "SDV"
 			};
@@ -113,7 +118,7 @@ class CfgWLRequisitionPresets
 				class Box_NATO_Ammo_F						{cost = 200;	requirements[]={};	};	// "Basic Ammo [NATO]"
 				class Box_NATO_Grenades_F					{cost = 200;	requirements[]={};	};	// "Grenades [NATO]"
 				class Box_NATO_Wps_F						{cost = 250;	requirements[]={};	};	// "Basic Weapons [NATO]"
-				class Box_NATO_AmmoOrd_F					{cost = 750;	requirements[]={};	};	// "Explosives [NATO]"
+				class Box_NATO_AmmoOrd_F					{cost = 1500;	requirements[]={};	};	// "Explosives [NATO]"
 				class Box_NATO_WpsLaunch_F					{cost = 300;	requirements[]={};	};	// "Launchers [NATO]"
 				class Box_NATO_WpsSpecial_F					{cost = 500;	requirements[]={};	};	// "Special Weapons [NATO]"
 				class B_supplyCrate_F						{cost = 500;	requirements[]={};	};	// "Supply Box [NATO]"
@@ -189,6 +194,7 @@ class CfgWLRequisitionPresets
 				class O_Truck_03_transport_F				{cost = 700;	requirements[]={};	};	// "Tempest Transport"
 				class O_Truck_03_Fuel_F						{cost = 700;	requirements[]={};	};	// "Tempest Fuel"
 				class O_Truck_03_medical_F					{cost = 700;	requirements[]={};	};	// "Tempest Medical"
+				class I_E_Van_02_medevac_F					{cost = 700;	requirements[]={};	};	// "Ambulance"
 				//class O_LSV_02_armed_F						{cost = 1200;	requirements[]={};	};	// "Qilin (Minigun)"
 				class O_G_Offroad_01_armed_F				{cost = 1200;	requirements[]={};	};	// "Offroad (HMG)"
 				//class O_LSV_02_AT_F							{cost = 1800;	requirements[]={};	};	// "Qilin (AT)"
@@ -228,6 +234,8 @@ class CfgWLRequisitionPresets
 			class Aircraft
 			{
 				class O_Heli_Light_02_unarmed_F				{cost = 1000;	requirements[]={"H"};	};	// "PO-30 Orca (Unarmed)"
+				class I_C_Heli_Light_01_civil_F				{cost = 1000;	requirements[]={"H"};	};	// "M-900"
+				//class I_Heli_Transport_02_F					{cost = 1200;	requirements[]={"H"};	};	// "Mohawk"
 				class O_Heli_Light_02_dynamicLoadout_F		{cost = 2500;	requirements[]={"H"};	};	// "PO-30 Orca"
 				class O_Heli_Transport_04_F					{cost = 1000;	requirements[]={"H"};	};	// "Mi-290 Taru"
 				class O_Heli_Transport_04_covered_F			{cost = 1000;	requirements[]={"H"};	};	// "Mi-290 Taru (Transport)"
@@ -241,6 +249,7 @@ class CfgWLRequisitionPresets
 				class O_Plane_Fighter_02_Stealth_F			{cost = 17000;	requirements[]={"A"};	};	// "To-201 Shikra Stealth"
 				class B_Plane_Fighter_01_F					{cost = 14000;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II";
 				class I_Plane_Fighter_04_F					{cost = 9000;	requirements[]={"A"};	};	// "A-149 Gryphon";
+				class I_Plane_Fighter_03_CAS_F				{cost = 9000;	requirements[]={"A"};	};	// "A-143 Buzzard";
 				class I_C_Plane_Civil_01_F					{cost = 1000;	requirements[]={"A"};	};	// "Caesar BTT";
 				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class O_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 AT"
@@ -256,6 +265,7 @@ class CfgWLRequisitionPresets
 			class Naval
 			{
 				class O_Boat_Transport_01_F					{cost = 100;	requirements[]={"W"};	};	// "Assault Boat"
+				class I_C_Boat_Transport_02_F				{cost = 300;	requirements[]={"W"};	};	// "RHIB"
 				class O_Boat_Armed_01_hmg_F					{cost = 750;	requirements[]={"W"};	};	// "Speedboat HMG"
 				class O_SDV_01_F							{cost = 900;	requirements[]={"W"};	};	// "SDV"
 			};
@@ -264,7 +274,7 @@ class CfgWLRequisitionPresets
 				class Box_East_Ammo_F						{cost = 200;	requirements[]={};	};	// "Basic Ammo [CSAT]"
 				class Box_East_Grenades_F					{cost = 200;	requirements[]={};	};	// "Grenades [CSAT]"
 				class Box_East_Wps_F						{cost = 250;	requirements[]={};	};	// "Basic Weapons [CSAT]"
-				class Box_East_AmmoOrd_F					{cost = 750;	requirements[]={};	};	// "Explosives [CSAT]"
+				class Box_East_AmmoOrd_F					{cost = 1500;	requirements[]={};	};	// "Explosives [CSAT]"
 				class Box_East_WpsLaunch_F					{cost = 300;	requirements[]={};	};	// "Launchers [CSAT]"
 				class Box_East_WpsSpecial_F					{cost = 500;	requirements[]={};	};	// "Special Weapons [CSAT]"
 				class O_supplyCrate_F						{cost = 500;	requirements[]={};	};	// "Supply Box [CSAT]"

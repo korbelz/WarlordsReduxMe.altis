@@ -114,6 +114,7 @@ BIS_WL_factionVehicleClasses = [
 		"B_APC_Tracked_01_AA_F",		51, //Cheetah, default 50
 		"B_MBT_01_cannon_F",			25, //Slammer, default 25
 		"B_MBT_01_TUSK_F",			25, //slammer up, default 25
+		"B_SAM_System_03_F",		5, //MIM-145 Defender, default 10
 		"B_UGV_01_rcws_F",			20 //UGAV rcws, default 25
 	],
 	[
@@ -125,14 +126,15 @@ BIS_WL_factionVehicleClasses = [
 		"O_LSV_02_armed_F",			25, //Qilin minigun, default 75
 		"O_MBT_02_cannon_F",			25, //T-100, default 25
 		"O_APC_Tracked_02_cannon_F",		50, //Kamysh 30mm, default 50
-		"O_MBT_04_cannon_F",			10, //T-140, default 15
-		"O_MBT_04_command_F",			10, //T-140, default 15
+		"O_MBT_04_cannon_F",			15, //T-140, default 15
+		"O_MBT_04_command_F",			15, //T-140, default 15
 		"O_APC_Tracked_02_AA_F",		51, //Tigris, default 50
+		"O_SAM_System_04_F",		5, //S-750 Rhea, default 10
 		"O_UGV_01_rcws_F",			20 //UGAV rcws, default 25
 	],
 	[
 		
-		"I_LT_01_AA_F",				100, //Nyx AA, default 50
+		"I_LT_01_AA_F",				80, //Nyx AA, default 50
 		"I_APC_Wheeled_03_cannon_F",		60, //Gorgan, default 50
 		"I_APC_tracked_03_cannon_F",		25, //Mora, default 50
 		"I_LT_01_AT_F",				80, //Nyx AT, default 50
@@ -140,9 +142,10 @@ BIS_WL_factionVehicleClasses = [
 		"I_MRAP_03_gmg_F",			1, //strider GMG, default 100
 		"I_MRAP_03_hmg_F",			1, //strider HMG, default 100
 		"I_MBT_03_cannon_F",			60, //Kuma, default 25
-		"I_E_Truck_02_MRL_F",			15, //MLRS, default 25
+		"I_E_Truck_02_MRL_F",			10, //MLRS, default 25
 		"I_LT_01_scout_F",			15, //AWC 303 Nyx (Recon), default 25
-		"I_UGV_01_rcws_F",			15 //Stomper RCWS, default 25
+		"I_UGV_01_rcws_F",			15, //Stomper RCWS, default 25
+		"I_E_SAM_System_03_F",			5 //SAM , default 10
 	]
 ];
 
@@ -151,7 +154,8 @@ BIS_WL_factionAircraftClasses = [
 		"B_Plane_CAS_01_F",	100, //Wipeout, default 100
 		"B_Heli_Attack_01_F", 70, //blackfoot, deault 50
 		"B_Plane_Fighter_01_F", 50,  // F/A-181 Black Wasp II 
-		"B_Heli_Light_01_dynamicLoadout_F",	25, //AH9, default 100
+		"B_Heli_Light_01_armed_F",	25, //AH9, default 100
+		"B_T_VTOL_01_armed_F",	15, //V-44 X Blackfish (Armed), default 15
 		"B_T_UAV_03_F", 15, //MQ-12 Falcon. default 5
 		"B_UAV_05_F", 15, //UCAV. default 5
 		"B_UAV_02_CAS_F", 10, //greyhawk LGB. default 5
@@ -161,7 +165,7 @@ BIS_WL_factionAircraftClasses = [
 		"O_Plane_CAS_02_F",	100, //Neophron, default 100
 		"O_Heli_Attack_02_F", 70, //Kajmen, defualt 50
 		"O_Plane_Fighter_02_F", 50, //To-201 Shikra
-		"O_Heli_Light_02_dynamicLoadout_F",	25, //Orca, default 100
+		"O_Heli_Light_02_F",	25, //Orca, default 100
 		"O_UAV_02_F", 10, //K40 AT. default 5
 		"O_UAV_02_CAS_F", 10, //K40 LGB. default 5
 		"O_T_UAV_04_CAS_F", 10 //KH-3A CAS. default 5
@@ -170,6 +174,7 @@ BIS_WL_factionAircraftClasses = [
 		"I_Plane_Fighter_03_CAS_F",	100, //Indy A-10, default 100
 		"I_Heli_light_03_F", 70, //Hellcat with rockets, default 70
 		"I_Plane_Fighter_04_F", 50, //A-149 Gryphon. default 50
+		"I_Plane_Fighter_03_AA_F", 15, //A-143 Buzzard (AA). default 15
 		"I_C_Plane_Civil_01_F", 5, //Caesar BTT. default 5
 		"I_UAV_02_F", 10, //K40 Ababil-3. default 5
 		"I_UAV_02_CAS_F", 10 //K40 Ababil-3 (CAS). default 5
