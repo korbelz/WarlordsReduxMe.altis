@@ -10,23 +10,27 @@ private _params = _actionArray - [_action];
 //arrays for custom equipment boxes
 //blue boxes 
 private _blueboxone = "O_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc, put it in quotes
-private _itemsblueone = [  ["arifle_MXM_khk_F",1], ["muzzle_snds_H_khk_F",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_01_F_khk",1], ["30Rnd_65x39_caseless_khaki_mag",7],
- ["launch_I_Titan_short_F", 1], ["Titan_AT",3], ["U_B_CTRG_Soldier_F", 1], ["V_PlateCarrierIAGL_oli", 1], ["H_HelmetO_ViperSP_ghex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+private _itemsblueone = [  ["arifle_MXM_RCO_pointer_snds_F",1], ["muzzle_snds_H_khk_F",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_01_F_khk",1], ["30Rnd_65x39_caseless_khaki_mag",7],
+ ["launch_I_Titan_short_F", 1], ["Titan_AT",3], ["U_B_CTRG_Soldier_F", 1], ["V_PlateCarrierIAGL_oli", 1], ["H_HelmetO_ViperSP_ghex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1],
+ ["srifle_EBR_ARCO_pointer_snds_F",1],["20Rnd_762x51_Mag",7],["arifle_Katiba_ARCO_pointer_snds_F",1],["30Rnd_65x39_caseless_green",7]];
 private _backpacksblueone = [  ["B_FieldPack_oli", 1]];
 
 private _blueboxtwo = "I_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc, put it in quotes
-private _itemsbluetwo = [  ["arifle_MXM_khk_F",1], ["muzzle_snds_H_khk_F",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_01_F_khk",1], ["30Rnd_65x39_caseless_khaki_mag",7],
- ["launch_B_Titan_olive_F", 1], ["Titan_AA",3], ["U_B_CTRG_Soldier_F", 1], ["V_PlateCarrierIAGL_oli", 1], ["H_HelmetO_ViperSP_ghex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+private _itemsbluetwo = [  ["arifle_MX_SW_Hamr_pointer_F",1], ["muzzle_snds_H_khk_F",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_01_F_khk",1], ["100Rnd_65x39_caseless_mag",7],
+ ["launch_B_Titan_olive_F", 1], ["Titan_AA",3], ["U_B_CTRG_Soldier_F", 1], ["V_PlateCarrierIAGL_oli", 1], ["H_HelmetO_ViperSP_ghex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1],
+ ["LMG_Mk200_MRCO_F",1],["200Rnd_65x39_cased_Box",4],["arifle_SPAR_02_blk_ERCO_Pointer_F",1],["150Rnd_556x45_Drum_Mag_F",5]];
 private _backpacksbluetwo = [  ["B_FieldPack_oli", 1]];
 
 private _blueboxthree = "B_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc, put it in quotes
 private _itemsbluethree = [  ["arifle_SDAR_F",1], ["20Rnd_556x45_UW_mag",7], ["NVGoggles_OPFOR",1], 
- ["launch_I_Titan_short_F", 1], ["Titan_AT",2], ["U_B_Wetsuit", 1], ["V_RebreatherB", 1], ["G_Diving", 1], ["H_HelmetSpecB_blk", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+ ["launch_I_Titan_short_F", 1], ["Titan_AT",2], ["U_B_Wetsuit", 1], ["V_RebreatherB", 1], ["G_Diving", 1], ["H_HelmetSpecB_blk", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1],
+ ["ATMine_Range_Mag",3],["SLAMDirectionalMine_Wire_Mag",3],["APERSTripMine_Wire_Mag",3],["ClaymoreDirectionalMine_Remote_Mag",3], ["SatchelCharge_Remote_Mag",3]];
 private _backpacksbluethree = [  ["B_FieldPack_blk", 1]];
 
 private _blueboxfour = "CargoNet_01_box_F"; //get this class ID from requisitions.inc, put it in quotes
 private _itemsbluefour = [  ["srifle_LRR_F",1],["optic_LRPS",1], ["7Rnd_408_Mag",13], ["NVGoggles",1],
-  ["U_B_FullGhillie_ard", 1], ["V_PlateCarrierIAGL_oli", 1], ["G_Balaclava_blk", 1], ["H_HelmetSpecB_snakeskin", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1]];
+  ["U_B_FullGhillie_ard", 1], ["V_PlateCarrierIAGL_oli", 1], ["G_Balaclava_blk", 1], ["H_HelmetSpecB_snakeskin", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["B_UavTerminal",1],
+  ["srifle_GM6_SOS_F",1],["30Rnd_65x39_caseless_khaki_mag",13],["arifle_SPAR_03_blk_MOS_Pointer_Bipod_F",1],["20Rnd_762x51_Mag",13]];
 private _backpacksbluefour = [  ["B_FieldPack_cbr", 1]];
 
 private _blueboxfive = "I_supplyCrate_F"; //get this class ID from requisitions.inc, put it in quotes
@@ -37,22 +41,26 @@ private _backpacksbluefive = [  ["B_Carryall_mcamo", 1]];
 //red boxes
 private _redboxone = "O_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc
 private _itemsredone = [  ["arifle_MXM_Black_F",1], ["muzzle_snds_H",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_02_F_blk",1], ["30Rnd_65x39_caseless_black_mag",7],
- ["launch_B_Titan_short_F", 1], ["Titan_AT",3], ["U_O_V_Soldier_Viper_hex_F", 1], ["V_TacVest_brn", 1], ["H_HelmetO_ViperSP_hex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+ ["launch_B_Titan_short_F", 1], ["Titan_AT",3], ["U_O_V_Soldier_Viper_hex_F", 1], ["V_TacVest_brn", 1], ["H_HelmetO_ViperSP_hex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1],
+ ["srifle_EBR_ARCO_pointer_snds_F",1],["20Rnd_762x51_Mag",7],["arifle_Katiba_ARCO_pointer_snds_F",1],["30Rnd_65x39_caseless_green",7]];
 private _backpacksredone = [  ["B_FieldPack_ocamo", 1]];
 
 private _redboxtwo = "I_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc
-private _itemsredtwo = [  ["arifle_MXM_Black_F",1], ["muzzle_snds_H",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_02_F_blk",1], ["30Rnd_65x39_caseless_black_mag",7],
- ["launch_B_Titan_F", 1], ["Titan_AA",3], ["U_O_V_Soldier_Viper_hex_F", 1], ["V_TacVest_brn", 1], ["H_HelmetO_ViperSP_hex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+private _itemsredtwo = [  ["arifle_MX_SW_Black_Hamr_pointer_F",1], ["muzzle_snds_H",1], ["acc_pointer_IR",1], ["optic_Nightstalker",1], ["bipod_02_F_blk",1], ["100Rnd_65x39_caseless_black_mag",7],
+ ["launch_B_Titan_F", 1], ["Titan_AA",3], ["U_O_V_Soldier_Viper_hex_F", 1], ["V_TacVest_brn", 1], ["H_HelmetO_ViperSP_hex_F", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1],
+ ["LMG_Mk200_MRCO_F",1],["200Rnd_65x39_cased_Box",4],["arifle_SPAR_02_blk_ERCO_Pointer_F",1],["150Rnd_556x45_Drum_Mag_F",5]];
 private _backpacksredtwo = [  ["B_FieldPack_ocamo", 1]];
 
 private _redboxthree = "B_CargoNet_01_ammo_F"; //get this class ID from requisitions.inc
 private _itemsredthree = [  ["arifle_SDAR_F",1], ["20Rnd_556x45_UW_mag",7], ["NVGoggles_OPFOR",1], 
- ["launch_I_Titan_short_F", 1], ["Titan_AT",2], ["U_B_Wetsuit", 1], ["G_Diving", 1], ["H_HelmetSpecB_blk", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+ ["launch_I_Titan_short_F", 1], ["Titan_AT",2], ["U_B_Wetsuit", 1], ["G_Diving", 1], ["H_HelmetSpecB_blk", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1],
+ ["ATMine_Range_Mag",3],["SLAMDirectionalMine_Wire_Mag",3],["APERSTripMine_Wire_Mag",3],["ClaymoreDirectionalMine_Remote_Mag",3], ["SatchelCharge_Remote_Mag",3]];
 private _backpacksredthree = [  ["B_FieldPack_ocamo", 1]];
 
 private _redboxfour = "CargoNet_01_box_F"; //get this class ID from requisitions.inc
 private _itemsredfour = [  ["srifle_LRR_F",1],["optic_LRPS",1], ["7Rnd_408_Mag",13], ["NVGoggles",1],
-  ["U_O_FullGhillie_ard", 1], ["V_PlateCarrierIAGL_dgtl", 1], ["V_RebreatherIR", 1], ["G_Balaclava_blk", 1], ["H_HelmetSpecB_paint1", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1]];
+  ["U_O_FullGhillie_ard", 1], ["V_PlateCarrierIAGL_dgtl", 1], ["V_RebreatherIR", 1], ["G_Balaclava_blk", 1], ["H_HelmetSpecB_paint1", 1], ["Laserdesignator", 1], ["Laserbatteries",1], ["MineDetector",1], ["FirstAidKit",3], ["O_UavTerminal",1],
+   ["srifle_GM6_SOS_F",1],["30Rnd_65x39_caseless_khaki_mag",13],["arifle_SPAR_03_blk_MOS_Pointer_Bipod_F",1],["20Rnd_762x51_Mag",13]];
 private _backpacksredfour = [  ["B_FieldPack_ocamo", 1]];
 
 private _redboxfive = "I_supplyCrate_F"; //get this class ID from requisitions.inc
