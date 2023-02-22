@@ -11,10 +11,12 @@ if (_side == BIS_WL_localSide) then {
 	if (!_connectedToBase) then {
 		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
+		private _qrfArray = [];
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
 		_tankArray resize _randomsize; 
+		_qrfArray resize 1;
 		//_text = format ["items in myArray: %1", count _tankArray];
 		//[_text] remoteExec ["systemChat"]; 
 		
@@ -34,7 +36,7 @@ if (_side == BIS_WL_localSide) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
 			
-				_wp = _group addWaypoint [position _sector, 600];
+				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "SAD";
 
 				_wp2 = _group addWaypoint [position _sector, 800];
@@ -43,6 +45,38 @@ if (_side == BIS_WL_localSide) then {
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "CYCLE";
 			} forEach _tankArray;
+		};
+
+		if (count _roads > 0) then {
+			{
+				_randomx = random 1000;
+				_randomy = random 1000;
+				_randomz = random [200, 400, 800];
+
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "I_Heli_Transport_02_F", _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
+			
+						
+				[_group, 0] setWaypointPosition [position _vehicle, 0];
+				_group deleteGroupWhenEmpty TRUE;
+			
+				_wp = _group addWaypoint [position _sector, 0];
+				_wp setWaypointType "MOVE";
+				_wp setWaypointBehaviour "CARELESS";
+				_wp setWaypointSpeed "LIMITED";
+
+				//_wp2 = _group addWaypoint [position _sector, 800];
+				//_wp2 setWaypointType "SAD";
+			
+				_wp = _group addWaypoint [position _sector, 600];
+				_wp setWaypointType "CYCLE";
+			} forEach _qrfArray;
 		};
 		
 		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
