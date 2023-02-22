@@ -14,8 +14,8 @@ BIS_WL_initModule setVariable ["BIS_WL_markersAlpha", 50];
 BIS_WL_initModule setVariable ["BIS_WL_requisitionPreset", "['A3ReduxAll']"];
 BIS_WL_initModule setVariable ["BIS_WL_scanCost", 350];
 BIS_WL_initModule setVariable ["BIS_WL_fastTravelCostOwned", 0];
-BIS_WL_initModule setVariable ["BIS_WL_fastTravelCostContested", 50]; //Cost of fast travel to contested sector
-BIS_WL_initModule setVariable ["BIS_WL_fundsTransferCost", 4000];  //default 1000; Increased to 3000 to limits a CP exploit on official servers
+BIS_WL_initModule setVariable ["BIS_WL_fastTravelCostContested", 25]; //Cost of fast travel to contested sector
+BIS_WL_initModule setVariable ["BIS_WL_fundsTransferCost", 4000];  //default 1000; 
 BIS_WL_initModule setVariable ["BIS_WL_targetResetCost", 1200]; //default value 2000; lowered to 1200 for official servers
 BIS_WL_initModule setVariable ["BIS_WL_scanEnabled", TRUE];
 BIS_WL_initModule setVariable ["BIS_WL_fastTravelEnabled", 1];
@@ -26,7 +26,7 @@ BIS_WL_initModule setVariable ["BIS_WL_autonomous_limit", 2];
 BIS_WL_initModule setVariable ["BIS_WL_arsenalEnabled", FALSE];
 BIS_WL_initModule setVariable ["BIS_WL_arsenalCost", 1000];
 BIS_WL_initModule setVariable ["BIS_WL_maxSubordinates", 2]; //default value 8; check WL2_changeSectorOwnership file and make sure it matches this value
-BIS_WL_initModule setVariable ["BIS_WL_assetLimit", 10];
+BIS_WL_initModule setVariable ["BIS_WL_assetLimit", 4]; //default 10; 4 is likely the min number possible here without restricting gameplay. 
 BIS_WL_initModule setVariable ["BIS_WL_targetResetTimeout", 300];
 BIS_WL_initModule setVariable ["BIS_WL_baseValue", 50]; //this changes money from main base ie starter CP/Min, default value 10
 BIS_WL_initModule setVariable ["BIS_WL_baseDistanceMin", 13]; //default value 5; Use _tolerance value in combo with baseDistanceMin to add randomness to base distances

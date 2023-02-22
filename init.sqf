@@ -98,6 +98,7 @@ BIS_fnc_WL2_varsInit = compile preprocessFileLineNumbers "Functions\common\WL2_v
 BIS_fnc_WL2_zoneRestrictionHandleClient = compile preprocessFileLineNumbers "Functions\client\WL2_zoneRestrictionHandleClient.sqf";
 BIS_fnc_WL2_zoneRestrictionHandleServer = compile preprocessFileLineNumbers "Functions\server\WL2_zoneRestrictionHandleServer.sqf";
 BIS_fnc_WL2_welcome = compile preprocessFileLineNumbers "Functions\common\welcome.sqf";
+BIS_fnc_WL2_onPlayerRespawn = compile preprocessFileLineNumbers "onPlayerRespawn.sqf";
 
 endLoadingScreen;
 

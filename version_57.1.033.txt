@@ -323,4 +323,11 @@ Hotfix: reverted some changes that might have been hurting FPS
   - End goal for this system is to have custom crates for most popular loadouts to make gearing up quick/easy
   - I'll be filling out the crates when I have time, currently its just a test crate. 
 - Pushed Arsenal out a 14th floor window to solve various dupes, etc. 
-  
+
+57.1.033
+- Increased the number of guns in prefab loadouts by 3x
+- Fixed bug with AR-2 and AL-6 drones
+- Added RHIB, Ambulance, M-900 and Mohawk
+- Ever seen an AI Blackfish used for sector defense?...its a thing now. 
+- Improvement to asset limits.
+- Reduced fast travel costs. 
