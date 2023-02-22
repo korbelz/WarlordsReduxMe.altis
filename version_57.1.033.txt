@@ -328,6 +328,9 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Increased the number of guns in prefab loadouts by 3x
 - Fixed bug with AR-2 and AL-6 drones
 - Added RHIB, Ambulance, M-900 and Mohawk
-- Ever seen an AI Blackfish used for sector defense?...its a thing now. 
+- Ever seen an AI Blackfish used for sector defense?...its a thing now.
+- Increased roving range for AI aircraft 
 - Improvement to asset limits.
-- Reduced fast travel costs. 
+- Reduced fast travel costs.
+- AI can spawn in SAM sites(still testing functionality)
+- AI can spawn in a heliborne Quick Reaction Force to reinforce a sector under attack(WIP) 

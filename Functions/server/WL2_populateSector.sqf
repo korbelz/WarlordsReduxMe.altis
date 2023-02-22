@@ -230,13 +230,13 @@ if (_side == BIS_WL_localSide) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 300];
 				_group deleteGroupWhenEmpty TRUE;
 			
-				_wp1 = _group addWaypoint [position _sector, 400];
+				_wp1 = _group addWaypoint [position _sector, 800];
 				_wp1 setWaypointType "SAD";
 			
-				_wp2 = _group addWaypoint [position _sector, 400];
+				_wp2 = _group addWaypoint [position _sector, 800];
 				_wp2 setWaypointType "SAD";
 			
-				_wp3 = _group addWaypoint [waypointPosition _wp1, 400];
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
 				_wp3 setWaypointType "CYCLE";
 			} forEach _airArray;
 		};
@@ -435,13 +435,13 @@ if (_side == BIS_WL_sidesArrayWest) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 300];
 				_group deleteGroupWhenEmpty TRUE;
 			
-				_wp1 = _group addWaypoint [position _sector, 400];
+				_wp1 = _group addWaypoint [position _sector, 800];
 				_wp1 setWaypointType "SAD";
 			
-				_wp2 = _group addWaypoint [position _sector, 400];
+				_wp2 = _group addWaypoint [position _sector, 800];
 				_wp2 setWaypointType "SAD";
 			
-				_wp3 = _group addWaypoint [waypointPosition _wp1, 400];
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
 				_wp3 setWaypointType "CYCLE";
 			} forEach _airArray;
 		};
@@ -639,13 +639,13 @@ if (_side == BIS_WL_sidesArrayEast) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 300];
 				_group deleteGroupWhenEmpty TRUE;
 			
-				_wp1 = _group addWaypoint [position _sector, 400];
+				_wp1 = _group addWaypoint [position _sector, 800];
 				_wp1 setWaypointType "SAD";
 			
-				_wp2 = _group addWaypoint [position _sector, 400];
+				_wp2 = _group addWaypoint [position _sector, 800];
 				_wp2 setWaypointType "SAD";
 			
-				_wp3 = _group addWaypoint [waypointPosition _wp1, 400];
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
 				_wp3 setWaypointType "CYCLE";
 			} forEach _airArray;
 		};
