@@ -80,7 +80,7 @@ class CfgWLRequisitionPresets
 			{
 				class B_Heli_Light_01_F						{cost = 1000;	requirements[]={"H"};	};	// "MH-9 Hummingbird"
 				class I_C_Heli_Light_01_civil_F				{cost = 1000;	requirements[]={"H"};	};	// "M-900"
-				//class I_Heli_Transport_02_F				{cost = 1200;	requirements[]={"H"};	};	// "Mohawk"
+				class I_Heli_Transport_02_F				{cost = 1200;	requirements[]={"H"};	};	// "Mohawk"
 				class B_Heli_Light_01_dynamicLoadout_F		{cost = 2500;	requirements[]={"H"};	};	// "AH-9 Pawnee"
 				class B_Heli_Transport_01_F					{cost = 1500;	requirements[]={"H"};	};	// "UH-80 Ghost Hawk"
 				class B_Heli_Transport_03_F					{cost = 1500;	requirements[]={"H"};	};	// "CH-67 Huron"
@@ -235,7 +235,7 @@ class CfgWLRequisitionPresets
 			{
 				class O_Heli_Light_02_unarmed_F				{cost = 1000;	requirements[]={"H"};	};	// "PO-30 Orca (Unarmed)"
 				class I_C_Heli_Light_01_civil_F				{cost = 1000;	requirements[]={"H"};	};	// "M-900"
-				//class I_Heli_Transport_02_F					{cost = 1200;	requirements[]={"H"};	};	// "Mohawk"
+				class I_Heli_Transport_02_F					{cost = 1200;	requirements[]={"H"};	};	// "Mohawk"
 				class O_Heli_Light_02_dynamicLoadout_F		{cost = 2500;	requirements[]={"H"};	};	// "PO-30 Orca"
 				class O_Heli_Transport_04_F					{cost = 1000;	requirements[]={"H"};	};	// "Mi-290 Taru"
 				class O_Heli_Transport_04_covered_F			{cost = 1000;	requirements[]={"H"};	};	// "Mi-290 Taru (Transport)"

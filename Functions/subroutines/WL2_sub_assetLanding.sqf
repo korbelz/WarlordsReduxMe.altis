@@ -39,6 +39,7 @@ _wpGetOut setWaypointStatements ["TRUE", "deleteVehicle this"];
 			
 		};
 	};
+	
 	// this code block waits for the hei to 'bounce' then repair and refuels it. Helis don't bounch after 2.10 patch but keeping this code.
 	sleep 2;
 	_asset setDamage 0;
