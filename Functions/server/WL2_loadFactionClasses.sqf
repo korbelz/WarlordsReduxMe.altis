@@ -155,7 +155,7 @@ BIS_WL_factionAircraftClasses = [
 		"B_Heli_Attack_01_F", 70, //blackfoot, deault 50
 		"B_Plane_Fighter_01_F", 50,  // F/A-181 Black Wasp II 
 		"B_Heli_Light_01_armed_F",	25, //AH9, default 100
-		"B_T_VTOL_01_armed_F",	15, //V-44 X Blackfish (Armed), default 15
+		"B_T_VTOL_01_armed_F",	5, //V-44 X Blackfish (Armed), default 15
 		"B_T_UAV_03_F", 15, //MQ-12 Falcon. default 5
 		"B_UAV_05_F", 15, //UCAV. default 5
 		"B_UAV_02_CAS_F", 10, //greyhawk LGB. default 5
