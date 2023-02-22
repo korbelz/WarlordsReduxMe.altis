@@ -157,8 +157,8 @@ if (isPlayer _owner) then {
 		};
 
 		if !(_assembled || _asset isKindOf "Thing") then {
-			_initialLock = if (_asset isKindOf "StaticWeapon") then {FALSE} else {TRUE};
-			_asset lock _initialLock;
+			//_initialLock = if (_asset isKindOf "StaticWeapon") then {FALSE} else {TRUE};
+			_asset lock TRUE;
 			_asset call BIS_fnc_WL2_sub_vehicleLockAction;
 		};
 		
