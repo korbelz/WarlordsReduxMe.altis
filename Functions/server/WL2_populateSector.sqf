@@ -49,9 +49,9 @@ if (_side == BIS_WL_localSide) then {
 
 		if (count _roads > 0) then {
 			{
-				_randomx = random 1000;
-				_randomy = random 1000;
-				_randomz = random [200, 400, 800];
+				_randomx = random 10000;
+				_randomy = random 10000;
+				_randomz = random [50, 100, 200];
 
 				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "I_Heli_Transport_02_F", _side] call BIS_fnc_spawnVehicle;
 				_vehicleArray params ["_vehicle", "_crew", "_group"];
@@ -209,8 +209,8 @@ if (_side == BIS_WL_localSide) then {
 
 		if (count _airArray > 0) then {
 			{
-				_randomx = random 500;
-				_randomy = random 500;
+				_randomx = random 800;
+				_randomy = random 800;
 				_randomz = random [200, 400, 800];
 							
 				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionAircraftClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
@@ -414,8 +414,8 @@ if (_side == BIS_WL_sidesArrayWest) then {
 
 		if (count _airArray > 0) then {
 			{
-				_randomx = random 500;
-				_randomy = random 500;
+				_randomx = random 800;
+				_randomy = random 800;
 				_randomz = random [200, 400, 800];
 							
 				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionAircraftClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
@@ -618,8 +618,8 @@ if (_side == BIS_WL_sidesArrayEast) then {
 
 		if (count _airArray > 0) then {
 			{
-				_randomx = random 500;
-				_randomy = random 500;
+				_randomx = random 800;
+				_randomy = random 800;
 				_randomz = random [200, 400, 800];
 							
 				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionAircraftClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
