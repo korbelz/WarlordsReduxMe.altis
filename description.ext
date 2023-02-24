@@ -7,7 +7,7 @@ dev = "Jezuro + Korbelz";
 author = "Jezuro + Korbelz";
 
 respawn = 3;
-respawnDelay = 30;
+respawnDelay = 40;
 respawnOnStart = -1;
 
 disabledAI = 1;
@@ -49,7 +49,7 @@ class Header
 
 onPauseScript[] = {BIS_fnc_WL2_onPause};
 
-//Disabled until needed #include "multiplayerSecurity.inc" 
+#include "multiplayerSecurity.inc" //no idea what this script is doing
 #include "requisitions.inc"
 
 corpseManagerMode = 1;
