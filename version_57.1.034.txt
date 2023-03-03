@@ -343,3 +343,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AI defenders will now spawn at least 1 armor/air/boat/diver per sector, also increased max of each by 1
   - godspeed to anyone that is unlucky enough(less than 0.0001%) to get 5 T-140s in a OPFOR sector :)
 - Sent AI back to armor school for training on proper situations to bail out of their tank
+- Due to a recent surge in grand theft armor across altus police recommend AI tank crew lock their tanks
+  - recent polls suggest only 70% of armor crews will listen to the police
+
