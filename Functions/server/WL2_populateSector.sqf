@@ -33,7 +33,10 @@ if (_side == BIS_WL_localSide) then {
 						
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
-			
+				
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle lock TRUE;
+
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "SAD";
 
