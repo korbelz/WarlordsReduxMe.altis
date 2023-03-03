@@ -348,3 +348,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AI finally went to the eye doctor and got a pair of glasses to fix their near sighted problem
 - Added Kuma, Mora, Hellcat(armed/unarmed) to buy lists
 - Airborne UAV/UCAVs will no longer auto report or datalink position of infantry; Added toogle for this system
+- GIGACHAD visual ID system added
+
