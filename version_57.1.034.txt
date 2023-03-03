@@ -334,3 +334,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Reduced fast travel costs.
 - AI can spawn in SAM sites(still testing functionality)
 - AI can spawn in a heliborne Quick Reaction Force to reinforce a sector under attack(WIP) 
+
+57.1.033
+- Less playing whack-a-mole while attacking while attacking bluefor/OPFOR sectors
+- 
