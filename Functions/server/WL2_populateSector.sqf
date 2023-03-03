@@ -35,8 +35,11 @@ if (_side == BIS_WL_localSide) then {
 				_group deleteGroupWhenEmpty TRUE;
 				
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
-				_vehicle lock TRUE;
 
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "SAD";
 
