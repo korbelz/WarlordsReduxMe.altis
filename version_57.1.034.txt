@@ -335,8 +335,8 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AI can spawn in SAM sites(still testing functionality)
 - AI can spawn in a heliborne Quick Reaction Force to reinforce a sector under attack(WIP) 
 
-57.1.033
-- Less playing whack-a-mole while attacking while attacking bluefor/OPFOR sectors
+57.1.034
+- Less playing whack-a-mole while attacking bluefor/OPFOR sectors
 - Removed old mine/UAV anti-spam code
 - Cleaned up old debugging code
 - Added toggle for global chat settings 
@@ -345,4 +345,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Sent AI back to armor school for training on proper situations to bail out of their tank
 - Due to a recent surge in grand theft armor across altus police recommend AI tank crew lock their tanks
   - recent polls suggest only 70% of armor crews will listen to the police
-
+- AI finally went to the eye doctor and got a pair of glasses to fix their near sighted problem

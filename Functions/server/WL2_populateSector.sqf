@@ -27,6 +27,7 @@ if (_side == BIS_WL_localSide) then {
 				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
 				{
 					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
 					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 				} forEach _crew;
 			
@@ -63,6 +64,7 @@ if (_side == BIS_WL_localSide) then {
 				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
 				{
 					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
 					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 				} forEach _crew;
 			
@@ -100,6 +102,7 @@ if (_side == BIS_WL_localSide) then {
                 	[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
                 	{
                     	_x setVariable ["BIS_WL_parentSector", _sector];
+						_x setSkill ["spotdistance", 1];
                     	[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
                 	} forEach _crew;
 
@@ -172,6 +175,7 @@ if (_side == BIS_WL_localSide) then {
 			
 			{
 				_x setVariable ["BIS_WL_parentSector", _sector];
+				_x setSkill ["spotdistance", 1];
 				[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 			} forEach _crew;
 			
@@ -210,6 +214,7 @@ if (_side == BIS_WL_localSide) then {
 			
 				{
 					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
 					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 				} forEach _crew;
 			
@@ -250,6 +255,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
 				{
 					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
 					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 				} forEach _crew;
 			
@@ -287,6 +293,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
                 	[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
                 	{
                     	_x setVariable ["BIS_WL_parentSector", _sector];
+						_x setSkill ["spotdistance", 1];
                     	[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
                 	} forEach _crew;
 
@@ -358,6 +365,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 			
 			{
 				_x setVariable ["BIS_WL_parentSector", _sector];
+				_x setSkill ["spotdistance", 1];
 				[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 			} forEach _crew;
 			
@@ -396,6 +404,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 			
 				{
 					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
 					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 				} forEach _crew;
 			
@@ -435,6 +444,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
 				{
 					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
 					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 				} forEach _crew;
 			
@@ -470,6 +480,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
                 	[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
                 	{
                     	_x setVariable ["BIS_WL_parentSector", _sector];
+						_x setSkill ["spotdistance", 1];
                     	[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
                 	} forEach _crew;
 
@@ -539,6 +550,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			
 			{
 				_x setVariable ["BIS_WL_parentSector", _sector];
+				_x setSkill ["spotdistance", 1];
 				[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 			} forEach _crew;
 			
@@ -577,6 +589,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			
 				{
 					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
 					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
 				} forEach _crew;
 			
@@ -614,12 +627,14 @@ while {_i < _garrisonSize} do {
 	for [{_i2 = 0}, {_i2 < _grpSize && _i < _garrisonSize}, {_i2 = _i2 + 1; _i = _i + 1}] do {
 		_newUnit = _newGrp createUnit [selectRandomWeighted _unitsPool, _pos, [], 5, "NONE"];
 		_newUnit setVariable ["BIS_WL_parentSector", _sector];
+		_newUnit setSkill ["spotdistance", 1];
 		[objNull, _newUnit] call BIS_fnc_WL2_newAssetHandle;
 		uiSleep WL_TIMEOUT_MIN;
 	};
 	
 	_newGrp setBehaviour "COMBAT";
 	_newGrp setSpeedMode "LIMITED";
+	
 	[_newGrp, 0] setWaypointPosition [_pos, 0];
 	_newGrp deleteGroupWhenEmpty TRUE;
 	
