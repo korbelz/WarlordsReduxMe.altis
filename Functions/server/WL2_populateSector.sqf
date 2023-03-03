@@ -71,6 +71,8 @@ if (_side == BIS_WL_localSide) then {
 						
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
+
+				
 			
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "MOVE";
@@ -109,6 +111,13 @@ if (_side == BIS_WL_localSide) then {
 
                 	[_group, 0] setWaypointPosition [position _vehicle, 500];
                 	_group deleteGroupWhenEmpty TRUE;
+
+					_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+					private _tanklock = random 10;
+					if (_tanklock > 3) then {
+						_vehicle lock TRUE;
+					};
 
                 	_wp = _group addWaypoint [position _sector, 2000];
                 	_wp setWaypointType "SAD";
@@ -223,6 +232,13 @@ if (_side == BIS_WL_localSide) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 300];
 				_group deleteGroupWhenEmpty TRUE;
 			
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
+
 				_wp1 = _group addWaypoint [position _sector, 800];
 				_wp1 setWaypointType "SAD";
 			
@@ -262,6 +278,13 @@ if (_side == BIS_WL_sidesArrayWest) then {
 						
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
+
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
 			
 				_wp = _group addWaypoint [position _sector, 600];
 				_wp setWaypointType "SAD";
@@ -300,6 +323,13 @@ if (_side == BIS_WL_sidesArrayWest) then {
 
                 	[_group, 0] setWaypointPosition [position _vehicle, 500];
                 	_group deleteGroupWhenEmpty TRUE;
+
+					_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+					private _tanklock = random 10;
+					if (_tanklock > 3) then {
+						_vehicle lock TRUE;
+					};
 
                 	_wp = _group addWaypoint [position _sector, 2000];
                 	_wp setWaypointType "SAD";
@@ -412,6 +442,13 @@ if (_side == BIS_WL_sidesArrayWest) then {
 
 				[_group, 0] setWaypointPosition [position _vehicle, 300];
 				_group deleteGroupWhenEmpty TRUE;
+
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
 			
 				_wp1 = _group addWaypoint [position _sector, 800];
 				_wp1 setWaypointType "SAD";
@@ -451,6 +488,13 @@ if (_side == BIS_WL_sidesArrayEast) then {
 						
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
+
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
 			
 				_wp = _group addWaypoint [position _sector, 600];
 				_wp setWaypointType "SAD";
@@ -487,6 +531,13 @@ if (_side == BIS_WL_sidesArrayEast) then {
 
                 	[_group, 0] setWaypointPosition [position _vehicle, 500];
                 	_group deleteGroupWhenEmpty TRUE;
+
+					_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+					private _tanklock = random 10;
+					if (_tanklock > 3) then {
+						_vehicle lock TRUE;
+					};
 
                 	_wp = _group addWaypoint [position _sector, 2000];
                 	_wp setWaypointType "SAD";
@@ -597,6 +648,13 @@ if (_side == BIS_WL_sidesArrayEast) then {
 
 				[_group, 0] setWaypointPosition [position _vehicle, 300];
 				_group deleteGroupWhenEmpty TRUE;
+
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
 			
 				_wp1 = _group addWaypoint [position _sector, 800];
 				_wp1 setWaypointType "SAD";
