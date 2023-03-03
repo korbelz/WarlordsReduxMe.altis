@@ -226,6 +226,19 @@ if !(isNull _sender) then {
 								"You must unlock UAV via the I menu to fly it" remoteExec ["systemChat"];			
 								
 						};
+
+						//AH-9 blue dynamic loadout loadout
+						if (_className == "B_Heli_Light_01_dynamicLoadout_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							
+							private _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F", "PylonRack_7Rnd_Rocket_04_HE_F"];
+							private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+							{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+							{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							 
+						};
 						
 					};
 				} else {
