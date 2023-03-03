@@ -6,19 +6,17 @@ private _spawnPosArr = _sector call BIS_fnc_WL2_findSpawnPositions;
 private _connectedToBase = count (WL_BASES arrayIntersect (_sector getVariable "BIS_WL_connectedSectors")) > 0;
 
 //adjusting nearroads value below should change spawn slots for non-hard coded towns.
-// Orginal if (_side == BIS_WL_localSide)
+
 if (_side == BIS_WL_localSide) then {
 	if (!_connectedToBase) then {
 		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
 		private _qrfArray = [];
-		//_text = format ["items in myArray: %1", count _tankArray];
-		//[_text] remoteExec ["systemChat"]; 
+		
 		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
 		_tankArray resize _randomsize; 
 		_qrfArray resize 1;
-		//_text = format ["items in myArray: %1", count _tankArray];
-		//[_text] remoteExec ["systemChat"]; 
+		
 		
 		if (count _roads > 0) then {
 			{
@@ -79,21 +77,17 @@ if (_side == BIS_WL_localSide) then {
 			} forEach _qrfArray;
 		};
 		
-		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
-        private _navyArray = [];
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+		private _navyArray = [];
         private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
         _navyArray resize _randomsize; 
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+        
 		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	_randomx = random 600;
                 	_randomy = random 600;
                 	_randomz = 0;
-                	//_road = selectRandom _roads;
+                	
                 	_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionBoatClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
                 	_vehicleArray params ["_vehicle", "_crew", "_group"];
                 	_vehicle setVariable ["BIS_WL_parentSector", _sector];
@@ -120,14 +114,11 @@ if (_side == BIS_WL_localSide) then {
 		};
 
 		
-		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+		
         private _diverArray = [];
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
         private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
         _diverArray resize _randomsize; 
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+        
 		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
 		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
@@ -195,18 +186,9 @@ if (_side == BIS_WL_localSide) then {
 	}; //below is heli/jet spawn code, molos AF never gets one because its not connected to any friendly towns when attacked 
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
-		//_text = format ["items in myArray: %1", count _myArray];
-		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
 		_airArray resize _randomsize; 
-		//_text = format ["items in airArray: %1", count _airArray];
-		//[_text] remoteExec ["systemChat"];
 		
-		//private _neighbors = (_sector getVariable "BIS_WL_connectedSectors") select {(_x getVariable "BIS_WL_owner") == _side};
-		//_randomx = random 500;
-		//_randomy = random 500;
-		//_randomz = random [200, 400, 600];
-
 		if (count _airArray > 0) then {
 			{
 				_randomx = random 800;
@@ -250,13 +232,9 @@ if (_side == BIS_WL_sidesArrayWest) then {
 	if (!_connectedToBase) then {
 		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
-		//_text = format ["items in myArray: %1", count _tankArray];
-		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
 		_tankArray resize _randomsize; 
-		//_text = format ["items in myArray: %1", count _tankArray];
-		//[_text] remoteExec ["systemChat"]; 
-		
+				
 		if (count _roads > 0) then {
 			{
 				_road = selectRandom _roads;
@@ -284,14 +262,12 @@ if (_side == BIS_WL_sidesArrayWest) then {
 			} forEach _tankArray;
 		};
 		
-		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+		
         private _navyArray = [];
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+         
         private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
         _navyArray resize _randomsize; 
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+         
 		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
@@ -325,15 +301,11 @@ if (_side == BIS_WL_sidesArrayWest) then {
 		};
 
 		
-		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
+		
         private _diverArray = [];
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
         private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
         _diverArray resize _randomsize; 
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
-		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
+        private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
 		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
 			if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
@@ -400,18 +372,9 @@ if (_side == BIS_WL_sidesArrayWest) then {
 	}; //below is heli/jet spawn code, molos AF never gets one because its not connected to any friendly towns when attacked 
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
-		//_text = format ["items in myArray: %1", count _myArray];
-		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
 		_airArray resize _randomsize; 
-		//_text = format ["items in airArray: %1", count _airArray];
-		//[_text] remoteExec ["systemChat"];
 		
-		//private _neighbors = (_sector getVariable "BIS_WL_connectedSectors") select {(_x getVariable "BIS_WL_owner") == _side};
-		//_randomx = random 500;
-		//_randomy = random 500;
-		//_randomz = random [200, 400, 600];
-
 		if (count _airArray > 0) then {
 			{
 				_randomx = random 800;
@@ -454,13 +417,9 @@ if (_side == BIS_WL_sidesArrayEast) then {
 	if (!_connectedToBase) then {
 		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
-		//_text = format ["items in myArray: %1", count _tankArray];
-		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
 		_tankArray resize _randomsize; 
-		//_text = format ["items in myArray: %1", count _tankArray];
-		//[_text] remoteExec ["systemChat"]; 
-		
+				
 		if (count _roads > 0) then {
 			{
 				_road = selectRandom _roads;
@@ -488,21 +447,17 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			} forEach _tankArray;
 		};
 		
-		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
-        private _navyArray = [];
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+		private _navyArray = [];
         private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
         _navyArray resize _randomsize; 
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+        
 		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
             	{
                 	_randomx = random 600;
                 	_randomy = random 600;
                 	_randomz = 0;
-                	//_road = selectRandom _roads;
+                	
                 	_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, selectRandomWeighted (BIS_WL_factionBoatClasses # (BIS_WL_sidesArray find _side)), _side] call BIS_fnc_spawnVehicle;
                 	_vehicleArray params ["_vehicle", "_crew", "_group"];
                 	_vehicle setVariable ["BIS_WL_parentSector", _sector];
@@ -527,17 +482,11 @@ if (_side == BIS_WL_sidesArrayEast) then {
             	} forEach _navyArray;
 			};
 		};
-
 		
-		//private _roads = ((_sector nearRoads 250) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
-        private _diverArray = [];
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
+		private _diverArray = [];
         private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
         _diverArray resize _randomsize; 
-        //_text = format ["items in myArray: %1", count _myArray];
-        //[_text] remoteExec ["systemChat"]; 
-		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
+        private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
 		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
 			if (count _diverArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
@@ -604,18 +553,9 @@ if (_side == BIS_WL_sidesArrayEast) then {
 	}; //below is heli/jet spawn code, molos AF never gets one because its not connected to any friendly towns when attacked 
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
-		//_text = format ["items in myArray: %1", count _myArray];
-		//[_text] remoteExec ["systemChat"]; 
 		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
 		_airArray resize _randomsize; 
-		//_text = format ["items in airArray: %1", count _airArray];
-		//[_text] remoteExec ["systemChat"];
 		
-		//private _neighbors = (_sector getVariable "BIS_WL_connectedSectors") select {(_x getVariable "BIS_WL_owner") == _side};
-		//_randomx = random 500;
-		//_randomy = random 500;
-		//_randomz = random [200, 400, 600];
-
 		if (count _airArray > 0) then {
 			{
 				_randomx = random 800;

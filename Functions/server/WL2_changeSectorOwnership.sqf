@@ -5,42 +5,10 @@ params ["_sector", "_owner"];
 _sector setVariable ["BIS_WL_owner", _owner, TRUE];
 
 private _previousOwners = _sector getVariable "BIS_WL_previousOwners";
-//player numbers added for use in writing CP cap reward system based on team balance 
-//add logic to function down at line 60
-private _bluenum = playersNumber west;
-private _rednum = playersNumber east;
-//following varibles might be able to be used to sector sector control ratios and mod CP cap rewards based on that 
-//count (BIS_WL_sectorsArray # 0) and count (BIS_WL_sectorsArrayEnemy # 0)
+
 
 if !(_owner in _previousOwners) then {
-	//Mine removal code
-
-	_minecount = count allMines;
-
-	//sleep WL_TIMEOUT_SHORT; 
-	//_minetext = format ["items that are mines: %1", count allMines];
-	//[_minetext] remoteExec ["systemChat"]; 
-
-	if (_minecount > RD_MINECOUNT_DELETE_THRESHOLD) then {
-		{ deleteVehicle _x } forEach allMines;
-		//sleep WL_TIMEOUT_SHORT;
-	};
-
-	
-	//UAV removal code
-	
-	_uavcount = count allUnitsUAV;
-
-	//sleep WL_TIMEOUT_SHORT;
-	
-	//_uavtext = format ["items that are UAVs: %1", count allUnitsUAV];
-	//[_uavtext] remoteExec ["systemChat"]; 
-
-	if (_uavcount > RD_UAVCOUNT_DELETE_THRESHOLD) then {
-		{ _x setDamage 1 } forEach (allUnitsUAV select {!(typeOf _x in ["B_SAM_System_03_F", "B_Radar_System_01_F", "O_SAM_System_04_F", "O_Radar_System_02_F", "B_SAM_System_02_F", "B_SAM_System_01_F", "B_Ship_MRLS_01_F", "B_Ship_Gun_01_F", "B_AAA_System_01_F" ])});
-		//better way to filter the ones u dont want to blow up.
-		//sleep WL_TIMEOUT_SHORT;
-	};
+		
 	
 	//AI buddy count system
 	

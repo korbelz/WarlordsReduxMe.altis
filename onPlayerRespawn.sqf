@@ -4,8 +4,7 @@
 _sender = player;
 
 _randomnum = random [1200, 1800, 2400];
-//_fuckSQF =  format ["randomly selected number is : %1 ", _randomnum];
-//[_fuckSQF] remoteExec ["systemChat", 0];
+
 sleep 5; 
 _startPos = getPosASL _sender;
 Sleep _randomnum;

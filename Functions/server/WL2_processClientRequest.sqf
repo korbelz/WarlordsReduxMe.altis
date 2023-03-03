@@ -170,7 +170,7 @@ if !(isNull _sender) then {
 								_spawnPos = _pos;
 							}
 						};
-						//"Air spawn code running" remoteExec ["systemChat"];
+						
 						if (count _spawnPos == 0) then {
 							_spawnPos = _targetPosFinal;
 						};
@@ -187,17 +187,17 @@ if !(isNull _sender) then {
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 							createVehicleCrew _asset;
 							
-							//"Bluefor air crew spawn code running" remoteExec ["systemChat"];
+							
 						};
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
 							createVehicleCrew _asset;
 							_assetUavGrp = createGroup EAST;
 							[driver _asset, gunner _asset] joinSilent _assetUavGrp;
 																	
-							//"OPFOR air crew spawn code running" remoteExec ["systemChat"];
+							
 						};
 					} else {
-						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; //heli spawn code, need anti-building check added. WARNING! messing with this code block breaks fast travel...I have no damn clue why.
+						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; 
 						_asset setVelocity [0, 0, 0];
 						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
 						if (KORB_HELI_IR_ACTIVE == 1) then {
@@ -210,18 +210,16 @@ if !(isNull _sender) then {
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 							createVehicleCrew _asset;
 							"You must unlock UAV via the I menu to fly it" remoteExec ["systemChat"];
-							//"Blufor heli crew spawn code running" remoteExec ["systemChat"];
+							
 						};
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
 								createVehicleCrew _asset;
 								_assetUavGrp = createGroup EAST;
 								[driver _asset, gunner _asset] joinSilent _assetUavGrp;
 								"You must unlock UAV via the I menu to fly it" remoteExec ["systemChat"];			
-								//"OPFOR heli crew spawn code running" remoteExec ["systemChat"];
+								
 						};
-						//_text = format ["thing I spawned is: %1 and bought by: %2", _asset, _sender];
-						//[_text] remoteExec ["systemChat"];
-						//"Heli spawn code running" remoteExec ["systemChat"];
+						
 					};
 				} else {
 					if (_isStatic) then {
@@ -237,7 +235,7 @@ if !(isNull _sender) then {
 								createVehicleCrew _asset;
 								(effectiveCommander _asset) setSkill 1;
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
-								//"Blufor static crew spawn code running" remoteExec ["systemChat"];
+								
 							};
 							if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
 								createVehicleCrew _asset;
@@ -246,10 +244,10 @@ if !(isNull _sender) then {
 										
 								(effectiveCommander _asset) setSkill 1;
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
-								//"OPFOR static crew spawn code running" remoteExec ["systemChat"];
+								
 							};
 						};
-						//"isStatic spawn code running" remoteExec ["systemChat"];
+						
 					};
 				};
 			};
@@ -327,7 +325,7 @@ if !(isNull _sender) then {
 								createVehicleCrew _asset;
 								(effectiveCommander _asset) setSkill 1;
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
-								//"Blufor static crew spawn code running" remoteExec ["systemChat"];
+								
 							};
 							if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
 								createVehicleCrew _asset;
@@ -336,133 +334,133 @@ if !(isNull _sender) then {
 										
 								(effectiveCommander _asset) setSkill 1;
 								(group effectiveCommander _asset) deleteGroupWhenEmpty TRUE;
-								//"OPFOR static crew spawn code running" remoteExec ["systemChat"];
+								
 							};
 					if (KORB_TANK_IR_ACTIVE == 1) then {
 						_asset disableTIEquipment true;
 					};
-					//"Vic spawn code running" remoteExec ["systemChat"];
+					
 
 					//custom box code
 					if (_className == _blueboxone && side _sender == WEST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsblueone; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksblueone; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsblueone;  
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksblueone; 
 					};
 
 					if (_className == _blueboxtwo && side _sender == WEST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsbluetwo; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluetwo; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluetwo;  
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluetwo; 
 					};
 
 					if (_className == _blueboxthree && side _sender == WEST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsbluethree; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluethree; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluethree;  
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluethree; 
 					};
 
 					if (_className == _blueboxfour && side _sender == WEST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsbluefour; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluefour; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluefour; 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluefour; 
 					};
 
 					if (_className == _blueboxfive && side _sender == WEST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsbluefive; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluefive; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsbluefive; 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksbluefive; 
 					};
 
 					//Red crates
 					if (_className == _redboxone && side _sender == EAST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsredone; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredone; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsredone; 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredone; 
 					};
 
 						if (_className == _redboxtwo && side _sender == EAST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsredtwo; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredtwo; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsredtwo;  
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredtwo; 
 					};
 
 						if (_className == _redboxthree && side _sender == EAST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsredthree; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredthree; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsredthree; 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredthree; 
 					};
 
 						if (_className == _redboxfour && side _sender == EAST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsredfour; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredfour; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsredfour; 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredfour; 
 					};
 
 						if (_className == _redboxfive && side _sender == EAST) then {
-						//clear inventory
+						
 						clearBackpackCargoGlobal _asset;
 						clearMagazineCargoGlobal _asset;
 						clearWeaponCargoGlobal _asset;
 						clearItemCargoGlobal _asset;
 
 						//create equipment arrays up at top of the script 
-						{ _asset addItemCargoGlobal _x } forEach _itemsredfive; //add items 
-						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredfive; //add backpacks
+						{ _asset addItemCargoGlobal _x } forEach _itemsredfive; 
+						{ _asset addBackpackCargoGlobal _x } forEach _backpacksredfive; 
 					};
 					[_parachute, _asset, _assetDummy] spawn {
 						params ["_parachute", "_asset", "_assetDummy"];
@@ -484,10 +482,10 @@ if !(isNull _sender) then {
 							_dropSoundClassArr = getArray (_itemConfig >> "soundBuildingCrash");
 							_dropSoundArr = [];
 							// this code block waits for the vic to 'land' then repair and refuels it.
-							sleep 2;
+							sleep WL_TIMEOUT_MEDIUM;
 							_asset setDamage 0;
 							_asset setFuel 1;
-							//"vic repair code running" remoteExec ["systemChat"];
+							
 							
 							{
 								if (_forEachIndex % 2 == 0) then {
