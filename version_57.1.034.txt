@@ -341,3 +341,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Cleaned up old debugging code
 - Added toggle for global chat settings 
 - AI defenders will now spawn at least 1 armor/air/boat/diver per sector, also increased max of each by 1
+  - godspeed to anyone that is unlucky enough(less than 0.0001%) to get 5 T-140s in a OPFOR sector :)
+- 
