@@ -216,7 +216,7 @@ class CfgWLRequisitionPresets
 				class O_MBT_02_cannon_F						{cost = 6000;	requirements[]={};	};	// "T-100 Varsuk"
 				class O_MBT_04_cannon_F						{cost = 8000;	requirements[]={};	};	// "T-140 Angara"
 				class O_MBT_04_command_F					{cost = 9000;	requirements[]={};	};	// "T-140K Angara"
-				lass I_MBT_03_cannon_F						{cost = 6000;	requirements[]={};	};	// "Kuma"
+				class I_MBT_03_cannon_F						{cost = 6000;	requirements[]={};	};	// "Kuma"
 				class B_MBT_01_TUSK_F						{cost = 6500;	requirements[]={};	};	// "M2A1 Slammer UP"
 				class O_MBT_02_arty_F						{cost = 20000;	requirements[]={"F"};	};	// "2S9 Sochor"
 				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={"F"};	};	// "Zamak MRL"

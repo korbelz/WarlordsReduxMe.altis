@@ -184,6 +184,10 @@ if !(isNull _sender) then {
 							_asset disableTIEquipment true;
 						}; 
 
+						if (KORB_UAV_MAN_SENSOR_ACTIVE == 1) then {
+							_asset enableVehicleSensor ["manSensorComponent", false];
+						};
+
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 							createVehicleCrew _asset;
 							
@@ -206,6 +210,9 @@ if !(isNull _sender) then {
 						if (KORB_HELI_RADAR_ACTIVE == 1) then {
 							_asset enableVehicleSensor ["ActiveRadarSensorComponent", false];
 							_asset enableVehicleSensor ["PassiveRadarSensorComponent", false];
+						};
+						if (KORB_UAV_MAN_SENSOR_ACTIVE == 1) then {
+							_asset enableVehicleSensor ["manSensorComponent", false];
 						};
 						if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
 							createVehicleCrew _asset;
