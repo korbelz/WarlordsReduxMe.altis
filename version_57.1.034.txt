@@ -346,4 +346,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Due to a recent surge in grand theft armor across altus police recommend AI tank crew lock their tanks
   - recent polls suggest only 70% of armor crews will listen to the police
 - AI finally went to the eye doctor and got a pair of glasses to fix their near sighted problem
-- 
+- Added Kuma, Mora, Hellcat(armed/unarmed) to buy lists
