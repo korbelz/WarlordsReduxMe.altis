@@ -14,8 +14,8 @@ if (_side == BIS_WL_localSide) then {
 		private _qrfArray = [];
 		
 		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
-		_tankArray resize _randomsize; 
-		_qrfArray resize 1;
+		private _tankArray resize (_randomsize + 1); 
+		private _qrfArray resize 1;
 		
 		
 		if (count _roads > 0) then {
@@ -79,7 +79,7 @@ if (_side == BIS_WL_localSide) then {
 		
 		private _navyArray = [];
         private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
-        _navyArray resize _randomsize; 
+        private _navyArray resize (_randomsize + 1); 
         
 		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
@@ -117,7 +117,7 @@ if (_side == BIS_WL_localSide) then {
 		
         private _diverArray = [];
         private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
-        _diverArray resize _randomsize; 
+        private _diverArray resize (_randomsize + 1); 
         
 		private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
@@ -187,7 +187,7 @@ if (_side == BIS_WL_localSide) then {
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
 		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
-		_airArray resize _randomsize; 
+		private _airArray resize (_randomsize + 1); 
 		
 		if (count _airArray > 0) then {
 			{
@@ -233,7 +233,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
 		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
-		_tankArray resize _randomsize; 
+		private _tankArray resize (_randomsize + 1); 
 				
 		if (count _roads > 0) then {
 			{
@@ -266,7 +266,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
         private _navyArray = [];
          
         private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
-        _navyArray resize _randomsize; 
+        private _navyArray resize (_randomsize + 1); 
          
 		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
@@ -304,7 +304,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 		
         private _diverArray = [];
         private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
-        _diverArray resize _randomsize; 
+        private _diverArray resize (_randomsize + 1); 
         private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
 		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
@@ -373,7 +373,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
 		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
-		_airArray resize _randomsize; 
+		private _airArray resize (_randomsize + 1); 
 		
 		if (count _airArray > 0) then {
 			{
@@ -418,7 +418,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 		private _roads = ((_sector nearRoads 300) select {count roadsConnectedTo _x > 0}) inAreaArray (_sector getVariable "objectAreaComplete");
 		private _tankArray = [];
 		private _randomsize = random KORB_VIC_RANDOM_AI_SPAWNS;
-		_tankArray resize _randomsize; 
+		private _tankArray resize (_randomsize + 1); 
 				
 		if (count _roads > 0) then {
 			{
@@ -449,7 +449,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 		
 		private _navyArray = [];
         private _randomsize = random KORB_NAVY_RANDOM_AI_SPAWNS;
-        _navyArray resize _randomsize; 
+        private _navyArray resize (_randomsize + 1); 
         
 		if(KORB_INDY_BOATS_ACTIVE == 1) then {
 		 	if (count _navyArray > 0  and "S" in (_sector getVariable "BIS_WL_services")) then {
@@ -485,7 +485,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 		
 		private _diverArray = [];
         private _randomsize = random KORB_DIVER_RANDOM_AI_SPAWNS;
-        _diverArray resize _randomsize; 
+        private _diverArray resize (_randomsize + 1); 
         private _diversPool = BIS_WL_factionDiverClasses # (BIS_WL_sidesArray find _side);
 
 		if(KORB_INDY_DIVERS_ACTIVE == 1) then {
@@ -554,7 +554,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
 		private _randomsize = random KORB_AIR_RANDOM_AI_SPAWNS;
-		_airArray resize _randomsize; 
+		private _airArray resize (_randomsize + 1); 
 		
 		if (count _airArray > 0) then {
 			{

@@ -49,7 +49,8 @@ class Header
 
 onPauseScript[] = {BIS_fnc_WL2_onPause};
 
-#include "multiplayerSecurity.inc" //no idea what this script is doing
+
+//#include "multiplayerSecurity.inc" //no idea what this script is doing but it totally bricks the mission in 2.12
 #include "requisitions.inc"
 
 corpseManagerMode = 1;

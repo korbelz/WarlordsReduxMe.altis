@@ -339,3 +339,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Less playing whack-a-mole while attacking while attacking bluefor/OPFOR sectors
 - Removed old mine/UAV anti-spam code
 - Cleaned up old debugging code
+- Added toggle for global chat settings 
+- AI defenders will now spawn at least 1 armor/air/boat/diver per sector, also increased max of each by 1

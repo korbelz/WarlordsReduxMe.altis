@@ -69,6 +69,7 @@ if (KORB_DISABLE_TEAM_SWITCHING == 1) then{
 		enableRadio TRUE;
 		enableSentences TRUE;
 		{_x enableChannel [TRUE, TRUE]} forEach [1,2,3,4,5];
+		{_x enableChannel [FALSE, FALSE]} forEach [0];
 		if (player distance _pos > 2) then {
 			_confirmReposition = TRUE;
 		};
