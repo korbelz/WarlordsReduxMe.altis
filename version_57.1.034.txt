@@ -336,8 +336,8 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AI can spawn in a heliborne Quick Reaction Force to reinforce a sector under attack(WIP) 
 
 57.1.034
-- Less playing whack-a-mole while attacking bluefor/OPFOR sectors
-- Removed old mine/UAV anti-spam code
+- Less playing whack-a-mole with respawning defenders while attacking Bluefor/OPFOR sectors
+- Removed old mine/UAV anti-spam code which was no longer needed
 - Cleaned up old debugging code
 - Added toggle for global chat settings 
 - AI defenders will now spawn at least 1 armor/air/boat/diver per sector, also increased max of each by 1
@@ -355,3 +355,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Added config option for datalink vehicles
 - More map work to reduce chance of both bases on one side of map
 - QRF heli will now landing in sector to unload troops
+- Added QRF heli to Bluefor(Huron) and OPFOR(Taru) sectors

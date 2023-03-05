@@ -297,6 +297,40 @@ if (_side == BIS_WL_sidesArrayWest) then {
 			} forEach _tankArray;
 		};
 		
+		if (count _roads > 0) then {
+			{
+				_randomx = random 10000;
+				_randomy = random 10000;
+				_randomz = random [50, 100, 200];
+
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "B_Heli_Transport_03_F", _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
+			
+						
+				[_group, 0] setWaypointPosition [position _vehicle, 0];
+				_group deleteGroupWhenEmpty TRUE;
+
+				
+			
+				_wp = _group addWaypoint [position _sector, 0];
+				_wp setWaypointType "TR UNLOAD";
+				_wp setWaypointBehaviour "CARELESS";
+				_wp setWaypointSpeed "LIMITED";
+
+				//_wp2 = _group addWaypoint [position _sector, 800];
+				//_wp2 setWaypointType "SAD";
+			
+				_wp = _group addWaypoint [position _sector, 600];
+				_wp setWaypointType "CYCLE";
+			} forEach _qrfArray;
+		};
 		
         private _navyArray = [];
          
@@ -507,6 +541,41 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			} forEach _tankArray;
 		};
 		
+		if (count _roads > 0) then {
+			{
+				_randomx = random 10000;
+				_randomy = random 10000;
+				_randomz = random [50, 100, 200];
+
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "O_Heli_Transport_04_covered_F", _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
+			
+						
+				[_group, 0] setWaypointPosition [position _vehicle, 0];
+				_group deleteGroupWhenEmpty TRUE;
+
+				
+			
+				_wp = _group addWaypoint [position _sector, 0];
+				_wp setWaypointType "TR UNLOAD";
+				_wp setWaypointBehaviour "CARELESS";
+				_wp setWaypointSpeed "LIMITED";
+
+				//_wp2 = _group addWaypoint [position _sector, 800];
+				//_wp2 setWaypointType "SAD";
+			
+				_wp = _group addWaypoint [position _sector, 600];
+				_wp setWaypointType "CYCLE";
+			} forEach _qrfArray;
+		};
+
 		private _navyArray = [];
         private _randomsize = (1 + random KORB_NAVY_RANDOM_AI_SPAWNS);
          _navyArray resize _randomsize; 
