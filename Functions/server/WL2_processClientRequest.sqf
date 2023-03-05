@@ -363,20 +363,22 @@ if !(isNull _sender) then {
 					//Tank GIGACHAD visual ID code
 					//blue mora 
 					if (_className == "I_APC_tracked_03_cannon_F" && side _sender == WEST) then {
-						[
-    					_asset,
-    					["EAF_01",1], 
-    					["showBags",1,"showBags2",1,"showCamonetHull",0,"showCamonetTurret",0,"showTools",1,"showSLATHull",1,"showSLATTurret",1]
-						] call BIS_fnc_initVehicle;
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["EAF_01",1], 
+    						["showBags",1,"showBags2",1,"showCamonetHull",0,"showCamonetTurret",0,"showTools",1,"showSLATHull",1,"showSLATTurret",1]
+							] call BIS_fnc_initVehicle;
+						};
 					};
 
 					//Red mora 
 					if (_className == "I_APC_tracked_03_cannon_F" && side _sender == EAST) then {
-						[
-    					_asset,
-    					["Indep_01",1], 
-    					["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
-						] call BIS_fnc_initVehicle;
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_01",1], 
+    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+							] call BIS_fnc_initVehicle;
+						}; 
 					};		
 					//custom box code
 					if (_className == _blueboxone && side _sender == WEST) then {
