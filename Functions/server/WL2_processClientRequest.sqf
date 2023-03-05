@@ -379,6 +379,86 @@ if !(isNull _sender) then {
     						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
 							] call BIS_fnc_initVehicle;
 						}; 
+					};
+
+					//blue T-140K
+					if (_className == "O_MBT_04_command_F" && side _sender == WEST) then {
+						/*if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_01",1], 
+    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+							] call BIS_fnc_initVehicle;
+						};*/
+
+						if (KORB_REMOVE_DATALINK_ACTIVE == 1) then {
+							_asset setVehicleReportRemoteTargets FALSE; //sending data
+							_asset setVehicleReceiveRemoteTargets FALSE; //receive data
+							_asset setVehicleReportOwnPosition FALSE;
+						}; 
+					};
+
+					//Red T-140K
+					if (_className == "O_MBT_04_command_F" && side _sender == EAST) then {
+						/*if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_01",1], 
+    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+							] call BIS_fnc_initVehicle;
+						};*/
+
+						if (KORB_REMOVE_DATALINK_ACTIVE == 1) then {
+							_asset setVehicleReportRemoteTargets FALSE; //sending data
+							_asset setVehicleReceiveRemoteTargets FALSE; //receive data
+							_asset setVehicleReportOwnPosition FALSE;
+						}; 
+					};
+
+					//blue Rhino
+					if (_className == "B_AFV_Wheeled_01_cannon_F" && side _sender == WEST) then {
+						/*if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_01",1], 
+    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+							] call BIS_fnc_initVehicle;
+						};*/
+
+						if (KORB_REMOVE_DATALINK_ACTIVE == 1) then {
+							_asset setVehicleReportRemoteTargets FALSE; //sending data
+							_asset setVehicleReceiveRemoteTargets FALSE; //receive data
+							_asset setVehicleReportOwnPosition FALSE;
+						}; 
+					};
+
+					//Blue Rhino UP
+					if (_className == "B_AFV_Wheeled_01_up_cannon_F" && side _sender == WEST) then {
+						/*if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_01",1], 
+    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+							] call BIS_fnc_initVehicle;
+						};*/
+
+						if (KORB_REMOVE_DATALINK_ACTIVE == 1) then {
+							_asset setVehicleReportRemoteTargets FALSE; //sending data
+							_asset setVehicleReceiveRemoteTargets FALSE; //receive data
+							_asset setVehicleReportOwnPosition FALSE;
+						}; 
+					};
+
+					//Red Rhino UP
+					if (_className == "B_AFV_Wheeled_01_up_cannon_F" && side _sender == EAST) then {
+						/*if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_01",1], 
+    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+							] call BIS_fnc_initVehicle;
+						};*/
+
+						if (KORB_REMOVE_DATALINK_ACTIVE == 1) then {
+							_asset setVehicleReportRemoteTargets FALSE; //sending data
+							_asset setVehicleReceiveRemoteTargets FALSE; //receive data
+							_asset setVehicleReportOwnPosition FALSE;
+						}; 
 					};		
 					//custom box code
 					if (_className == _blueboxone && side _sender == WEST) then {
