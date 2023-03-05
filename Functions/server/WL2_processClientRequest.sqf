@@ -232,11 +232,12 @@ if !(isNull _sender) then {
 							/*
 							GIGACHAD code goes here 
 							*/
-							
-							private _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F", "PylonRack_7Rnd_Rocket_04_HE_F"];
-							private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
-							{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
-							{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F", "PylonRack_7Rnd_Rocket_04_HE_F"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
 							 
 						};
 						

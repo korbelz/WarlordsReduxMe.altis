@@ -350,4 +350,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Airborne UAV/UCAVs will no longer auto report or datalink position of infantry; Added toogle for this system
 - GIGACHAD visual ID system added
 - Custom loadouts for aircraft added. Note: these are just "bonus" loadouts via the buy menu, default loadouts are still available
+- Added config option for custom loadouts.
 

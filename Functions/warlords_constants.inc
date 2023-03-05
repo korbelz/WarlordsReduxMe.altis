@@ -87,6 +87,7 @@
 #define KORB_LOW_AI_BUDDY_COUNT 1  //default 1; number of friendly AI player can have during high player count
 #define KORB_HIGH_AI_BUDDY_COUNT 2  //default 2; number of friendly AI player can have during low player count
 #define KORB_TRANSITION_ALT 4000  //default 4000; AGL altitude. Aircraft above this height will not be effected by zone restrictions around sectors
+#define KORB_BONUS_LOADOUT_ACTIVE 1  //default 1; 1 = Bonus loadouts on; 2 = No bonus loadouts
 
 #define WL_SYNCED_TIME (call BIS_fnc_WL2_syncedTime)
 #define WL_TARGET_FRIENDLY (missionNamespace getVariable format ["BIS_WL_currentTarget_%1", BIS_WL_playerSide])
