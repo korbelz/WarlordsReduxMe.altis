@@ -75,7 +75,7 @@ if (_side == BIS_WL_localSide) then {
 				
 			
 				_wp = _group addWaypoint [position _sector, 0];
-				_wp setWaypointType "MOVE";
+				_wp setWaypointType "TR UNLOAD";
 				_wp setWaypointBehaviour "CARELESS";
 				_wp setWaypointSpeed "LIMITED";
 

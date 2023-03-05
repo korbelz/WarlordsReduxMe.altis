@@ -353,3 +353,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Added config option for custom loadouts and added config option for GIGACHAD visual ID system
 - Removed following vehicles from datalink network: T-140, Rhino, and Rhino Up 
 - Added config option for datalink vehicles
+- More map work to reduce chance of both bases on one side of map
+- QRF heli will now landing in sector to unload troops
