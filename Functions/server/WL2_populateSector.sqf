@@ -389,6 +389,8 @@ if (_side == BIS_WL_sidesArrayWest) then {
 			} forEach _tankArray;
 		};
 		
+		private _qrfArray = [];
+		_qrfArray resize 1;
 		if (count _roads > 0) then {
 			{
 				_randomx = random 10000;
@@ -726,6 +728,8 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			} forEach _tankArray;
 		};
 		
+		private _qrfArray = [];
+		_qrfArray resize 1;
 		if (count _roads > 0) then {
 			{
 				_randomx = random 10000;
