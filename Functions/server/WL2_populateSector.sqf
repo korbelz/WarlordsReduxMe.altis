@@ -73,7 +73,8 @@ if (_side == BIS_WL_localSide) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
 
-				
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 			
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "TR UNLOAD";
@@ -85,6 +86,13 @@ if (_side == BIS_WL_localSide) then {
 			
 				_wp = _group addWaypoint [position _sector, 600];
 				_wp setWaypointType "CYCLE";
+
+				_aafqrf = [[15771.8,19754.2,0], INDEPENDENT, ["I_Soldier_AT_F","I_Soldier_AA_F","I_Soldier_M_F","I_Soldier_AR_F","I_Soldier_AT_F",
+				 "I_Soldier_AA_F","I_Soldier_M_F","I_Soldier_AR_F","I_Soldier_AT_F","I_Soldier_AA_F","I_Soldier_M_F","I_Soldier_AR_F"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+
+				sleep .5;
+       			_aafqrf = _aafqrf;
+        		{ _x assignAsCargo _vehicle; _x moveIncargo _vehicle;} foreach units _aafqrf;
 			} forEach _qrfArray;
 		};
 		
@@ -411,7 +419,8 @@ if (_side == BIS_WL_sidesArrayWest) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
 
-				
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 			
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "TR UNLOAD";
@@ -750,7 +759,8 @@ if (_side == BIS_WL_sidesArrayEast) then {
 				[_group, 0] setWaypointPosition [position _vehicle, 0];
 				_group deleteGroupWhenEmpty TRUE;
 
-				
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 			
 				_wp = _group addWaypoint [position _sector, 0];
 				_wp setWaypointType "TR UNLOAD";
