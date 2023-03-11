@@ -369,3 +369,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Quick reaction force working for Bluefor/OPFOR
 - Added blue blackfish to OPFOR buy list
 - Tech tree: Moved rhino and rhino UP to same node as mortar
+- Tech tree: Split long range(MLRS, arty) into two nodes making it more difficult to unlock both by one team.

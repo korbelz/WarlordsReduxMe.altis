@@ -59,7 +59,7 @@ class CfgWLRequisitionPresets
 				class B_AFV_Wheeled_01_cannon_F				{cost = 4500;	requirements[]={"M"};	};	// "Rhino MGS"
 				class B_AFV_Wheeled_01_up_cannon_F			{cost = 5500;	requirements[]={"M"};	};	// "Rhino MGS UP" 
 				class B_MBT_01_arty_F						{cost = 20000;	requirements[]={"F"};	};	// "M4 Scorcher" 
-				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={"F"};	};	// "Zamak MRL"
+				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={"E"};	};	// "Zamak MRL"
 				class I_LT_01_scout_F						{cost = 1000;	requirements[]={};	};	// "AWC 303 Nyx (Recon)"
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"C"}; offset[]={0, 6, 3};};	// "UCAV";
 				class B_Plane_Fighter_01_F					{cost = 14000;	requirements[]={"C"}; offset[]={0, 8, 3};	};	// "F/A-181 Black Wasp II";
@@ -220,7 +220,7 @@ class CfgWLRequisitionPresets
 				class I_MBT_03_cannon_F						{cost = 6000;	requirements[]={};	};	// "Kuma"
 				class B_MBT_01_TUSK_F						{cost = 6500;	requirements[]={};	};	// "M2A1 Slammer UP"
 				class O_MBT_02_arty_F						{cost = 20000;	requirements[]={"F"};	};	// "2S9 Sochor"
-				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={"F"};	};	// "Zamak MRL"
+				class I_Truck_02_MRL_F						{cost = 24000;	requirements[]={"E"};	};	// "Zamak MRL"
 				class I_LT_01_scout_F						{cost = 1000;	requirements[]={};	};	// "AWC 303 Nyx (Recon)"
 				class B_AFV_Wheeled_01_up_cannon_F			{cost = 5500;	requirements[]={"M"};	};	// "Rhino MGS UP"
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"C"}; offset[]={0, 6, 3};};	// "UCAV";
