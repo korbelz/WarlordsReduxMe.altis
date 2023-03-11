@@ -200,6 +200,118 @@ if !(isNull _sender) then {
 																	
 							
 						};
+
+						//Wipeout blue dynamic loadout
+						if (_className == "B_Plane_CAS_01_dynamicLoadout_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_1Rnd_Missile_AA_04_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_Missile_AGM_02_F","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_1Rnd_Missile_AA_04_F"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//MQ-4 blue dynamic loadout
+						if (_className == "B_UAV_02_dynamicLoadout_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+						
+						//Neo red dynamic loadout
+						if (_className == "O_Plane_CAS_02_dynamicLoadout_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_20Rnd_Rocket_03_AP_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_20Rnd_Rocket_03_AP_F","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_1Rnd_Missile_AA_03_F"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//K40 UCAV red dynamic loadout
+						if (_className == "O_UAV_02_dynamicLoadout_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_Bomb_03_F"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//Buzzard blue dynamic loadout
+						if (_className == "I_Plane_Fighter_03_dynamicLoadout_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_1Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_Missile_AGM_02_F","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_LG_scalpel"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//Buzzard red dynamic loadout
+						if (_className == "I_Plane_Fighter_03_dynamicLoadout_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_1Rnd_LG_scalpel","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_Missile_AGM_02_F","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_Missile_AGM_02_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_1Rnd_LG_scalpel"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//black wasp stealth blue dynamic loadout
+						if (_className == "B_Plane_Fighter_01_Stealth_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["","","","","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonMissile_Missile_AMRAAM_D_INT_x1"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//Shirka stealth red dynamic loadout
+						if (_className == "O_Plane_Fighter_02_Stealth_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["","","","","","","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R77_x1","PylonMissile_Missile_AA_R77_x1","PylonMissile_Missile_AA_R77_INT_x1","PylonMissile_Missile_AA_R77_INT_x1","PylonMissile_Missile_AA_R77_INT_x1"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
 					} else {
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; 
 						_asset setVelocity [0, 0, 0];
@@ -284,7 +396,7 @@ if !(isNull _sender) then {
 						};
 
 						//Hellcat blue dynamic loadout loadout
-						if (_className == "	I_Heli_light_03_dynamicLoadout_F" && side _sender == WEST) then {
+						if (_className == "I_Heli_light_03_dynamicLoadout_F" && side _sender == WEST) then {
 							/*
 							GIGACHAD code goes here 
 							*/
@@ -298,7 +410,7 @@ if !(isNull _sender) then {
 						};
 
 						//Hellcat red dynamic loadout loadout
-						if (_className == "	I_Heli_light_03_dynamicLoadout_F" && side _sender == EAST) then {
+						if (_className == "I_Heli_light_03_dynamicLoadout_F" && side _sender == EAST) then {
 							/*
 							GIGACHAD code goes here 
 							*/
