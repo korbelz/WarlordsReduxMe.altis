@@ -36,6 +36,7 @@ if (_side == BIS_WL_localSide) then {
 				_group deleteGroupWhenEmpty TRUE;
 				
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 
 				private _tanklock = random 10;
 				if (_tanklock > 3) then {
@@ -233,6 +234,7 @@ if (_side == BIS_WL_localSide) then {
 				_group deleteGroupWhenEmpty TRUE;
 			
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 
 				private _tanklock = random 10;
 				if (_tanklock > 3) then {
@@ -280,6 +282,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 				_group deleteGroupWhenEmpty TRUE;
 
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 
 				private _tanklock = random 10;
 				if (_tanklock > 3) then {
@@ -359,6 +362,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
                 	_group deleteGroupWhenEmpty TRUE;
 
 					_vehicle allowCrewInImmobile [TRUE, TRUE];
+					_vehicle setVehicleRadar 1;
 
 					private _tanklock = random 10;
 					if (_tanklock > 3) then {
@@ -478,6 +482,7 @@ if (_side == BIS_WL_sidesArrayWest) then {
 				_group deleteGroupWhenEmpty TRUE;
 
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 
 				private _tanklock = random 10;
 				if (_tanklock > 3) then {
@@ -524,6 +529,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 				_group deleteGroupWhenEmpty TRUE;
 
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 
 				private _tanklock = random 10;
 				if (_tanklock > 3) then {
@@ -602,6 +608,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
                 	_group deleteGroupWhenEmpty TRUE;
 
 					_vehicle allowCrewInImmobile [TRUE, TRUE];
+					_vehicle setVehicleRadar 1;
 
 					private _tanklock = random 10;
 					if (_tanklock > 3) then {
@@ -719,6 +726,7 @@ if (_side == BIS_WL_sidesArrayEast) then {
 				_group deleteGroupWhenEmpty TRUE;
 
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
 
 				private _tanklock = random 10;
 				if (_tanklock > 3) then {

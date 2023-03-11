@@ -356,3 +356,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 - More map work to reduce chance of both bases on one side of map
 - QRF heli will now landing in sector to unload troops
 - Added QRF heli to Bluefor(Huron) and OPFOR(Taru) sectors
+
+57.1.035
+- Added radar to spawn table for AAF
