@@ -115,6 +115,7 @@ BIS_WL_factionVehicleClasses = [
 		"B_MBT_01_cannon_F",			25, //Slammer, default 25
 		"B_MBT_01_TUSK_F",			25, //slammer up, default 25
 		"B_SAM_System_03_F",		5, //MIM-145 Defender, default 10
+		"B_Radar_System_01_F",			5, //Radar, default 5
 		"B_UGV_01_rcws_F",			20 //UGAV rcws, default 25
 	],
 	[
@@ -130,6 +131,7 @@ BIS_WL_factionVehicleClasses = [
 		"O_MBT_04_command_F",			15, //T-140, default 15
 		"O_APC_Tracked_02_AA_F",		51, //Tigris, default 50
 		"O_SAM_System_04_F",		5, //S-750 Rhea, default 10
+		"O_Radar_System_02_F",			5, //Radar, default 5
 		"O_UGV_01_rcws_F",			20 //UGAV rcws, default 25
 	],
 	[

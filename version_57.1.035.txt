@@ -361,4 +361,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Added radar to spawn table for AAF
 - AI can use radar + datalinks for targeting
 - Added AAF SAM site to zones that spawn AI aircraft
-- Improved land vehicle spawning at AAC, Salt flats, Molos AF 
+- Improved land vehicle spawning at AAC, Salt flats, Molos AF
+- Added radar to AI spawn table for bluefor/OPFOR 
