@@ -374,3 +374,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Updated AH-9 bonus loadout to AT loadout
 - Added bonus loadouts helis: AH-9 AT, AH-99 DARs, MQ-12 DAGRs, Orca DAR, Kajmen CAS, Hellcat AT.
 - Added bonus loadouts jets: Black wasp stealth - AA, Shirka stealth - AA, Buzzard - CAS, K40 - CAS, Neo - CAS, MQ-4 - CAS, Wipeout - CAS.
+- Added to GIGACHAD visual ID: Gorgan, Kuma, Nyx Recon, Nyx AA, Rhino UP, Slammer, T-140K

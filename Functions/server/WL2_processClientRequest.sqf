@@ -590,14 +590,93 @@ if !(isNull _sender) then {
 						}; 
 					};
 
+					//blue gorgan 
+					if (_className == "I_APC_Wheeled_03_cannon_F" && side _sender == WEST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	 ["Guerilla_03",1], 
+    						["showCamonetHull",0,"showBags",0,"showBags2",0,"showTools",0,"showSLATHull",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
+
+					//Red gorgan 
+					if (_className == "I_APC_Wheeled_03_cannon_F" && side _sender == EAST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	 ["Guerilla_02",1], 
+    						["showCamonetHull",1,"showBags",0,"showBags2",0,"showTools",0,"showSLATHull",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
+
+					//Blue Kuma 
+					if (_className == "I_MBT_03_cannon_F" && side _sender == WEST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	 ["Indep_02",1], 
+    						["HideTurret",0,"HideHull",0,"showCamonetHull",1,"showCamonetTurret",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
+
+					//Red Kuma 
+					if (_className == "I_MBT_03_cannon_F" && side _sender == EAST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	 ["Indep_03",1], 
+    						["HideTurret",0,"HideHull",0,"showCamonetHull",1,"showCamonetTurret",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
+
+					//blue nyx recon 
+					if (_className == "I_LT_01_scout_F" && side _sender == WEST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	 ["Indep_Olive",1], 
+    						["showTools",0,"showCamonetHull",0,"showBags",0,"showSLATHull",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
+
+					//Red nyx recon 
+					if (_className == "I_LT_01_scout_F" && side _sender == EAST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_03",1], 
+    						["showTools",0,"showCamonetHull",1,"showBags",0,"showSLATHull",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
+
+					//Blue nyx AA 
+					if (_className == "I_LT_01_AA_F" && side _sender == WEST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_Olive",1], 
+    						["showTools",0,"showCamonetHull",0,"showBags",0,"showSLATHull",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
+
+					//Red Nyx AA 
+					if (_className == "I_LT_01_AA_F" && side _sender == EAST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	["Indep_03",1], 
+    						["showTools",0,"showCamonetHull",1,"showBags",0,"showSLATHull",1]
+							] call BIS_fnc_initVehicle;
+						}; 
+					};
 					//blue T-140K
 					if (_className == "O_MBT_04_command_F" && side _sender == WEST) then {
-						/*if (KORB_VISUAL_ID_ACTIVE == 1) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
 							[
-    						_asset,	["Indep_01",1], 
-    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+    							_asset, ["Grey",1], 
+    							["showCamonetHull",0,"showCamonetTurret",0]
 							] call BIS_fnc_initVehicle;
-						};*/
+						};
 
 						if (KORB_REMOVE_DATALINK_ACTIVE == 1) then {
 							_asset setVehicleReportRemoteTargets FALSE; //sending data
@@ -656,18 +735,28 @@ if !(isNull _sender) then {
 
 					//Red Rhino UP
 					if (_className == "B_AFV_Wheeled_01_up_cannon_F" && side _sender == EAST) then {
-						/*if (KORB_VISUAL_ID_ACTIVE == 1) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
 							[
-    						_asset,	["Indep_01",1], 
-    						["showBags",0,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",0,"showSLATHull",0,"showSLATTurret",0]
+    						_asset,	 ["Green",1], 
+    						["showCamonetHull",1,"showCamonetTurret",1,"showSLATHull",0]
 							] call BIS_fnc_initVehicle;
-						};*/
+						};
 
 						if (KORB_REMOVE_DATALINK_ACTIVE == 1) then {
 							_asset setVehicleReportRemoteTargets FALSE; //sending data
 							_asset setVehicleReceiveRemoteTargets FALSE; //receive data
 							_asset setVehicleReportOwnPosition FALSE;
 						}; 
+					};
+
+					//Red Slammer
+					if (_className == "B_MBT_01_TUSK_F" && side _sender == EAST) then {
+						if (KORB_VISUAL_ID_ACTIVE == 1) then {
+							[
+    						_asset,	 ["Sand",1], 
+    						["showCamonetTurret",1,"showCamonetHull",1,"showBags",0]
+							] call BIS_fnc_initVehicle;
+						};
 					};		
 					//custom box code
 					if (_className == _blueboxone && side _sender == WEST) then {
