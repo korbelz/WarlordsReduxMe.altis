@@ -368,3 +368,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AAF quick reaction force fully working
 - Quick reaction force working for Bluefor/OPFOR
 - Added blue blackfish to OPFOR buy list
+- Tech tree: Moved rhino and rhino UP to same node as mortar
