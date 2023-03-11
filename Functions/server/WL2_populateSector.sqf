@@ -588,6 +588,96 @@ if (_side == BIS_WL_sidesArrayWest) then {
 				_wp3 setWaypointType "CYCLE";
 			} forEach _airArray;
 		};
+
+			//sam site code
+			private _samArray = [];
+			_samArray resize 1;
+		if (count _samArray > 0) then {
+			{
+				_randomx = random 200;
+				_randomy = random 200;
+				_randomz = 0;
+							
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "B_SAM_System_03_F", _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+		
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+			
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
+			
+			
+
+				[_group, 0] setWaypointPosition [position _vehicle, 300];
+				_group deleteGroupWhenEmpty TRUE;
+			
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
+
+				_wp1 = _group addWaypoint [position _sector, 800];
+				_wp1 setWaypointType "SAD";
+			
+				_wp2 = _group addWaypoint [position _sector, 800];
+				_wp2 setWaypointType "SAD";
+			
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
+				_wp3 setWaypointType "CYCLE";
+			} forEach _samArray;
+		};
+
+			//radar site code
+			private _radarArray = [];
+			_radarArray resize 1;
+		if (count _radarArray > 0) then {
+			{
+				_randomx = random 200;
+				_randomy = random 200;
+				_randomz = 0;
+														
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "B_Radar_System_01_F", _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+			
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+			
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
+			
+			
+
+				[_group, 0] setWaypointPosition [position _vehicle, 300];
+				_group deleteGroupWhenEmpty TRUE;
+			
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
+
+				_wp1 = _group addWaypoint [position _sector, 800];
+				_wp1 setWaypointType "SAD";
+			
+				_wp2 = _group addWaypoint [position _sector, 800];
+				_wp2 setWaypointType "SAD";
+			
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
+				_wp3 setWaypointType "CYCLE";
+			} forEach _radarArray;
+		};
 	};
 };
 
@@ -831,6 +921,96 @@ if (_side == BIS_WL_sidesArrayEast) then {
 				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
 				_wp3 setWaypointType "CYCLE";
 			} forEach _airArray;
+		};
+
+			//sam site code
+			private _samArray = [];
+			_samArray resize 1;
+		if (count _samArray > 0) then {
+			{
+				_randomx = random 200;
+				_randomy = random 200;
+				_randomz = 0;
+							
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "O_SAM_System_04_F", _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+		
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+			
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
+			
+			
+
+				[_group, 0] setWaypointPosition [position _vehicle, 300];
+				_group deleteGroupWhenEmpty TRUE;
+			
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
+
+				_wp1 = _group addWaypoint [position _sector, 800];
+				_wp1 setWaypointType "SAD";
+			
+				_wp2 = _group addWaypoint [position _sector, 800];
+				_wp2 setWaypointType "SAD";
+			
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
+				_wp3 setWaypointType "CYCLE";
+			} forEach _samArray;
+		};
+
+			//radar site code
+			private _radarArray = [];
+			_radarArray resize 1;
+		if (count _radarArray > 0) then {
+			{
+				_randomx = random 200;
+				_randomy = random 200;
+				_randomz = 0;
+														
+				_vehicleArray = [position _sector vectorAdd [_randomx, _randomy, _randomz], 0, "O_Radar_System_02_F", _side] call BIS_fnc_spawnVehicle;
+				_vehicleArray params ["_vehicle", "_crew", "_group"];
+			
+				_vehicle setVariable ["BIS_WL_parentSector", _sector];
+				[objNull, _vehicle] call BIS_fnc_WL2_newAssetHandle;
+			
+				{
+					_x setVariable ["BIS_WL_parentSector", _sector];
+					_x setSkill ["spotdistance", 1];
+					[objNull, _x] call BIS_fnc_WL2_newAssetHandle;
+				} forEach _crew;
+			
+			
+
+				[_group, 0] setWaypointPosition [position _vehicle, 300];
+				_group deleteGroupWhenEmpty TRUE;
+			
+				_vehicle allowCrewInImmobile [TRUE, TRUE];
+				_vehicle setVehicleRadar 1;
+
+				private _tanklock = random 10;
+				if (_tanklock > 3) then {
+					_vehicle lock TRUE;
+				};
+
+				_wp1 = _group addWaypoint [position _sector, 800];
+				_wp1 setWaypointType "SAD";
+			
+				_wp2 = _group addWaypoint [position _sector, 800];
+				_wp2 setWaypointType "SAD";
+			
+				_wp3 = _group addWaypoint [waypointPosition _wp1, 800];
+				_wp3 setWaypointType "CYCLE";
+			} forEach _radarArray;
 		};
 	};
 };
