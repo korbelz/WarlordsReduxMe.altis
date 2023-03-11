@@ -88,8 +88,10 @@ class CfgWLRequisitionPresets
 				class B_Heli_Light_01_dynamicLoadout_F		{cost = 2700;	requirements[]={"H"};	};	// "AH-9 Pawnee"
 				class B_Heli_Transport_01_F					{cost = 1500;	requirements[]={"H"};	};	// "UH-80 Ghost Hawk"
 				class B_Heli_Transport_03_F					{cost = 1500;	requirements[]={"H"};	};	// "CH-67 Huron"
+				class B_Heli_Attack_01_F					{cost = 9000;	requirements[]={"H"};	};	// "AH-99 Blackfoot"
 				class B_Heli_Attack_01_dynamicLoadout_F		{cost = 10000;	requirements[]={"H"};	};	// "AH-99 Blackfoot"
 				class I_Heli_light_03_F						{cost = 3500;	requirements[]={"H"};	};	// "Hellcat"
+				class I_Heli_light_03_dynamicLoadout_F		{cost = 3700;	requirements[]={"H"};	};	// "Hellcat"
 				class B_T_VTOL_01_infantry_F				{cost = 2500;	requirements[]={"H"};	};	// "V-44 X Blackfish(Inf)";
 				class B_T_VTOL_01_vehicle_F					{cost = 4500;	requirements[]={"H"};	};	// "V-44 X Blackfish(Vic)";
 				class B_T_VTOL_01_armed_F					{cost = 6500;	requirements[]={"H"};	};	// "V-44 X Blackfish (Armed)"
@@ -102,6 +104,7 @@ class CfgWLRequisitionPresets
 				class I_Plane_Fighter_03_CAS_F				{cost = 9000;	requirements[]={"A"};	};	// "A-143 Buzzard";
 				class I_C_Plane_Civil_01_F					{cost = 1000;	requirements[]={"A"};	};	// "Caesar BTT";
 				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
+				class B_T_UAV_03_dynamicLoadout_F			{cost = 8200;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class B_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk AT";
 				class B_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk LGB";
 				class B_UAV_05_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "UCAV";
@@ -244,12 +247,15 @@ class CfgWLRequisitionPresets
 				class I_C_Heli_Light_01_civil_F				{cost = 1000;	requirements[]={"H"};	};	// "M-900"
 				class I_Heli_Transport_02_F					{cost = 1200;	requirements[]={"H"};	};	// "Mohawk"
 				class I_Heli_light_03_unarmed_F				{cost = 1200;	requirements[]={"H"};	};	// "hellcat unarmed"
-				class O_Heli_Light_02_dynamicLoadout_F		{cost = 2500;	requirements[]={"H"};	};	// "PO-30 Orca"
+				class O_Heli_Light_02_F						{cost = 2500;	requirements[]={"H"};	};	// "PO-30 Orca"
+				class O_Heli_Light_02_dynamicLoadout_F		{cost = 2700;	requirements[]={"H"};	};	// "PO-30 Orca"
 				class O_Heli_Transport_04_F					{cost = 1000;	requirements[]={"H"};	};	// "Mi-290 Taru"
 				class O_Heli_Transport_04_covered_F			{cost = 1000;	requirements[]={"H"};	};	// "Mi-290 Taru (Transport)"
 				class O_Heli_Transport_04_medevac_F			{cost = 1000;	requirements[]={"H"};	};	// "Mi-290 Taru (Medical)"
+				class O_Heli_Attack_02_F					{cost = 11000;	requirements[]={"H"};	};	// "Mi-48 Kajman"
 				class O_Heli_Attack_02_dynamicLoadout_F		{cost = 12000;	requirements[]={"H"};	};	// "Mi-48 Kajman"
 				class I_Heli_light_03_F						{cost = 3500;	requirements[]={"H"};	};	// "Hellcat"
+				class I_Heli_light_03_dynamicLoadout_F		{cost = 3700;	requirements[]={"H"};	};	// "Hellcat"
 				class O_T_VTOL_02_infantry_dynamicLoadout_F	{cost = 9000;	requirements[]={"H"};	};	// "Y-32 Xi'an (Infantry Transport)"
 				class O_T_VTOL_02_vehicle_F					{cost = 4500;	requirements[]={"H"};	};	// "Y-32 Xi'an (vehicle Transport)"
 				class B_T_VTOL_01_vehicle_blue_F			{cost = 4500;	requirements[]={"H"};	};	// "V-44 X Blackfish(Vic)_blue";
@@ -263,6 +269,7 @@ class CfgWLRequisitionPresets
 				class I_Plane_Fighter_03_CAS_F				{cost = 9000;	requirements[]={"A"};	};	// "A-143 Buzzard";
 				class I_C_Plane_Civil_01_F					{cost = 1000;	requirements[]={"A"};	};	// "Caesar BTT";
 				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
+				class B_T_UAV_03_dynamicLoadout_F			{cost = 8200;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
 				class O_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 AT"
 				class O_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 LGB"
 				class O_T_UAV_04_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "KH-3A CAS"

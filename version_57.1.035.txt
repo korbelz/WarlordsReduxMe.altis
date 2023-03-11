@@ -372,3 +372,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Tech tree: Split long range(MLRS, arty) into two nodes making it more difficult to unlock both by one team.
 - Tech tree: Added Bluefor armor, OPFOR armor, AAF armor nodes to unlock respective units
 - Updated AH-9 bonus loadout to AT loadout
+- Added bonus loadouts helis: AH-9 AT, AH-99 DARs, MQ-12 DAGRs, Orca DAR, Kajmen CAS, Hellcat AT.

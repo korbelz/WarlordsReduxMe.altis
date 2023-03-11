@@ -241,6 +241,103 @@ if !(isNull _sender) then {
 							 
 						};
 						
+						//AH-99 blue dynamic loadout loadout
+						if (_className == "B_Heli_Attack_01_dynamicLoadout_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_12Rnd_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_missiles"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//Orca red dynamic loadout loadout
+						if (_className == "O_Heli_Light_02_dynamicLoadout_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//Kajmen red dynamic loadout loadout
+						if (_className == "O_Heli_Attack_02_dynamicLoadout_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_19Rnd_Rocket_Skyfire"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//Hellcat blue dynamic loadout loadout
+						if (_className == "	I_Heli_light_03_dynamicLoadout_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//Hellcat red dynamic loadout loadout
+						if (_className == "	I_Heli_light_03_dynamicLoadout_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//MQ-12 blue dynamic loadout loadout
+						if (_className == "B_T_UAV_03_dynamicLoadout_F" && side _sender == WEST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_12Rnd_PG_missiles","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
+
+						//MQ-12 red dynamic loadout loadout
+						if (_className == "B_T_UAV_03_dynamicLoadout_F" && side _sender == EAST) then {
+							/*
+							GIGACHAD code goes here 
+							*/
+							if (KORB_BONUS_LOADOUT_ACTIVE == 1) then {
+								private _pylons = ["PylonRack_12Rnd_PG_missiles","PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"];
+								private _pylonPaths = (configProperties [configFile >> "CfgVehicles" >> typeOf _asset >> "Components" >> "TransportPylonsComponent" >> "Pylons", "isClass _x"]) apply {getArray (_x >> "turret")};
+								{ _asset removeWeaponGlobal getText (configFile >> "CfgMagazines" >> _x >> "pylonWeapon") } forEach getPylonMagazines _asset;
+								{ _asset setPylonLoadout [_forEachIndex + 1, _x, true, _pylonPaths select _forEachIndex] } forEach _pylons;
+							};
+							 
+						};
 					};
 				} else {
 					if (_isStatic) then {
