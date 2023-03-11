@@ -432,6 +432,13 @@ if (_side == BIS_WL_sidesArrayWest) then {
 			
 				_wp = _group addWaypoint [position _sector, 600];
 				_wp setWaypointType "CYCLE";
+
+				_blueqrf = [[15771.8,19754.2,0], WEST, ["B_Soldier_AT_F","B_Soldier_AA_F","B_Soldier_M_F","B_Soldier_AR_F","B_Soldier_AT_F",
+				 "B_Soldier_AA_F","B_Soldier_M_F","B_Soldier_AR_F","B_Soldier_AT_F","B_Soldier_AA_F","B_Soldier_M_F","B_Soldier_AR_F"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+
+				sleep .5;
+       			_blueqrf = _blueqrf;
+        		{ _x assignAsCargo _vehicle; _x moveIncargo _vehicle;} foreach units _blueqrf;
 			} forEach _qrfArray;
 		};
 		
@@ -772,6 +779,13 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			
 				_wp = _group addWaypoint [position _sector, 600];
 				_wp setWaypointType "CYCLE";
+
+				_redqrf = [[15771.8,19754.2,0], EAST, ["O_Soldier_AT_F","O_Soldier_AA_F","O_Soldier_M_F","O_Soldier_AR_F","O_Soldier_AT_F",
+				 "O_Soldier_AA_F","O_Soldier_M_F","O_Soldier_AR_F","O_Soldier_AT_F","O_Soldier_AA_F","O_Soldier_M_F","O_Soldier_AR_F"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+
+				sleep .5;
+       			_redqrf = _redqrf;
+        		{ _x assignAsCargo _vehicle; _x moveIncargo _vehicle;} foreach units _redqrf;
 			} forEach _qrfArray;
 		};
 

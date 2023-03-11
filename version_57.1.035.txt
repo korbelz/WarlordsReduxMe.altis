@@ -366,3 +366,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AI controlled SAM sites can spawn at Bluefor/OPFOR sectors that spawn aircraft
 - Fixed spawning for Bluefor/OPFOR QRF heli
 - AAF quick reaction force fully working
+- Quick reaction force working for Bluefor/OPFOR
