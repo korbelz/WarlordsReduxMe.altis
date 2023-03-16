@@ -377,4 +377,5 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Added to GIGACHAD visual ID: Gorgan, Kuma, Nyx Recon, Nyx AA, Rhino UP, Slammer, T-140K
 
 57.1.036
-- 
+- Whitelist items/supply crates: Removed some mines, added more remotely activated explosive types
+- Whitelist items/supply crates: Added MAAWS to anti-armor box, added RPG to the random firepower box.
