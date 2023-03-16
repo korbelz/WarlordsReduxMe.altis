@@ -315,7 +315,7 @@ if !(isNull _sender) then {
 					} else {
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; 
 						_asset setVelocity [0, 0, 0];
-						[_asset, _sender] call BIS_fnc_WL2_sub_assetLanding;
+						[_asset, _sender, _classname] call BIS_fnc_WL2_sub_assetLanding;
 						if (KORB_HELI_IR_ACTIVE == 1) then {
 							_asset disableTIEquipment true;
 						};
