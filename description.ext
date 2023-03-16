@@ -5,6 +5,8 @@
 onLoadName = "Warlords Redux Miller Edition"; 
 dev = "Jezuro + Korbelz";
 author = "Jezuro + Korbelz";
+//made you look :)
+//GPT-4 = true
 
 respawn = 3;
 respawnDelay = 40;

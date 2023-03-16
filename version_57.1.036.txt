@@ -379,3 +379,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 57.1.036
 - Whitelist items/supply crates: Removed some mines, added more remotely activated explosive types
 - Whitelist items/supply crates: Added MAAWS to anti-armor box, added RPG to the random firepower box.
+- Integrated GPT-4 into Warlords because old AI wasn't good enough
