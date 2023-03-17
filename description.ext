@@ -86,6 +86,18 @@ class CfgDebriefing
 		pictureColor[] = {0,0.5,0,1};
 	};
 };
+//vehicle customization, use this section to fix naming and add paint jobs.
+class CfgVehicleTemplates
+{
+	class O_Plane_Fighter_02_F 
+	{
+		//tailhook = true;
+	};
+	class B_Plane_CAS_01_dynamicLoadout_F 
+	{
+		//tailhook = true;
+	};
+};
 
 class Params
 {

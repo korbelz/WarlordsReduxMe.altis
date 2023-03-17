@@ -388,3 +388,4 @@ Hotfix: reverted some changes that might have been hurting FPS
   - Korbville, power plant, Topolia, Kore factory, Ammolofi, Gatolia, power plant, Delfinaki
 - Fixed a whitelisted item bypass
 - AI can land carrier capable at ammolofi. Undamaged planes land correctly about 95% of the time, a damaged plane its 50/50.
+- 
