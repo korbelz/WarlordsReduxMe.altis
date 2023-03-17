@@ -387,5 +387,7 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Map: adjusted up CP for smaller sectors that are away from the map center to better balance CP weight across the map
   - Korbville, power plant, Topolia, Kore factory, Ammolofi, Gatolia, power plant, Delfinaki
 - Fixed a whitelisted item bypass
-- AI can land carrier capable at ammolofi. Undamaged planes land correctly about 95% of the time, a damaged plane its 50/50.
-- 
+- AI can land carrier capable aircraft at ammolofi. Undamaged planes land correctly about 95% of the time, a damaged plane its 50/50.
+- created KV-44 Blackfish tanker(thanks Hazer_AL for the idea) 
+  - To use fly within 25 m behind/below the tanker then look at the refueling pod to start refueling
+  - recommended to keep your refueling tracks out over the ocean or above 4,000 m to avoid skynet 

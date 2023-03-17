@@ -40,9 +40,9 @@ _wpGetOut setWaypointStatements ["TRUE", "deleteVehicle this"];
 	_asset setFuel 1;
 
 		//KV-44 blackfish test  B_Slingload_01_Fuel_F
-		if (_className == "B_T_VTOL_01_infantry_F") then {
+		if (_className == "B_T_VTOL_01_infantry_olive_F") then {
 			private _refuelbox = "B_Slingload_01_Fuel_F" createVehicle position player;
-			_refuelbox attachTo [_asset, [0, 0, 5]];					
+			_refuelbox attachTo [_asset, [0, -7.5, -4.5]];					
 							
 		};
 							 
