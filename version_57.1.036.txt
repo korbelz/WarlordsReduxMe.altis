@@ -383,3 +383,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Requisition list clean up and rebalanced due to higher attrition rates amongst players
 - Tech tree: removed carrier capable aircraft node; moved nyx AA to default armor tech
 - Full rebalancing of CP; ex: slightly higher kill rewards, and capture bonuses. 
+- Map: Fixed fast travel at pygros and faronaki. Adjusted power plant and neo to prevent any future fast travel problems.
+- Map: adjusted up CP for smaller sectors that are away from the map center to better balance CP weight across the map
+  - Korbville, power plant, Topolia, Kore factory, Ammolofi, Gatolia, power plant, Delfinaki
