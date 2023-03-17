@@ -43,7 +43,7 @@ BIS_WL_factionUnitClasses = [
 		"B_soldier_AAA_F",		5, //Asst AA, default 15
 		"B_Sharpshooter_F",		15, //762x51, default 15
 		"B_HeavyGunner_F",		15, //338, default 15
-		"B_soldier_exp_F",		5, //APERS, default 10
+		//"B_soldier_exp_F",		5, //APERS, default 10; removed due to mine duping and bypassing whitelist
 		"B_officer_F",			5, //officer, default 10
 		"B_spotter_F",			5, //spotter, default 10
 		"B_diver_F",			5, //spotter, default 10
@@ -69,7 +69,7 @@ BIS_WL_factionUnitClasses = [
 		"O_engineer_F",			5, //engineer, default 15
 		"O_medic_F",			15, //Medic, default 15
 		"O_soldier_repair_F",	5, //Repair, default 15
-		"O_soldier_exp_F",		5, //APERS, default 10
+		//"O_soldier_exp_F",		5, //APERS, default 10 removed due to mine duping and bypassing whitelist
 		"O_spotter_F",			5, //spotter, default 10
 		"O_diver_F",			5, //spotter, default 10
 		"O_sniper_F",			5 //sniper, default 10
@@ -92,7 +92,7 @@ BIS_WL_factionUnitClasses = [
 		"I_medic_F",			20, //Medic, default 15
 		"I_Soldier_repair_F",	5, //Repair, default 15
 		"I_engineer_F",			5, //engineer, default 15
-		"I_Soldier_exp_F",		5, //APERS, default 10
+		//"I_Soldier_exp_F",		5, //APERS, default 10 removed due to mine duping and bypassing whitelist
 		"I_officer_F",			5, //officer, default 10
 		"I_Spotter_F",			5, //spotter, default 10
 		"I_diver_F",			5, //spotter, default 10
