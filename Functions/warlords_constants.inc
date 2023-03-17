@@ -3,7 +3,7 @@
 #define WL_ZONE_RESTRICTION_KILL_TIMEOUT_VEHICLES 2
 #define WL_ZONE_RESTRICTION_KILL_TIMEOUT_AIRCRAFT 2
 #define WL_MAX_SEIZING_HEIGHT 38 //this is AGL, default value 150, actual cap height = this/2-ish. 50 gives a cap height of 35?
-#define WL_TIMEOUT_MIN 0.055 //25, 55 = 20 FPS + 3 MS + 2ms(for slop) to safely run scripts at 20 fps.
+#define WL_TIMEOUT_MIN 0.055 //25, 
 #define WL_TIMEOUT_SHORT 0.25
 #define WL_TIMEOUT_MEDIUM 0.5
 #define WL_TIMEOUT_STANDARD 1
@@ -16,8 +16,8 @@
 #define WL_MAP_PULSE_ICON_SIZE 1.5
 #define WL_BASE_ICON_SIZE 1.5
 #define WL_ANNOUNCER_PAUSE 0.5
-#define WL_SECTOR_CAPTURE_REWARD_MULTIPLIER 50 //default value 10; this reward only works for green sectors
-#define WL_SECTOR_PAYOFF_PERIOD 70 //time in seconds 
+#define WL_SECTOR_CAPTURE_REWARD_MULTIPLIER 60 //default value 10; this reward only works for green sectors
+#define WL_SECTOR_PAYOFF_PERIOD 80 //time in seconds 
 #define WL_SPAWN_GRID_SIZE 40 //default value 40
 #define WL_PLAYER_ICON_RANGE 75
 #define WL_BASE_DANGER_SPAWN_RANGE 200
@@ -50,7 +50,7 @@
 #define WL_FRIENDLY_FIRE_PENALTY_MAX 600
 #define WL_MAINTENANCE_RADIUS 50
 #define WL_MAINTENANCE_COOLDOWN_REPAIR 900  //300
-#define WL_MAINTENANCE_COOLDOWN_REARM 1080   // 300; standard setting 1080
+#define WL_MAINTENANCE_COOLDOWN_REARM 900   // 300; standard setting 1080
 #define WL_MAINTENANCE_COOLDOWN_REARM_Helicopter 600 //not in .57 
 #define WL_MAINTENANCE_COOLDOWN_REARM_Jets 1200  //not in .57
 #define WL_MAINTENANCE_COOLDOWN_REARM_Artillery 1800 //not in .57
@@ -60,7 +60,7 @@
 #define WL_GARRISON_GROUP_SIZE_MAX 5
 #define WL_ASSET_IRRELEVANT_RANGE 1000
 #define WL_TARGET_RESET_VOTING_TIME 60
-#define KORB_KILL_REWARD_MOD 4444  //Original value 10,000; lower value equals higher kill rewards
+#define KORB_KILL_REWARD_MOD 4000  //Original value 10,000; lower value equals higher kill rewards
 #define KORB_GARRISON_SIZE_MOD 3  //Original value 2; adjust this to increase total INF spawning in an AI sector. 
 #define KORB_MINECOUNT_DELETE_THRESHOLD 200 //Original value 400; Total # of mines allowed on server anymore will be delete when any sector is capped
 #define KORB_UAVCOUNT_DELETE_THRESHOLD 24 //Original value 50;

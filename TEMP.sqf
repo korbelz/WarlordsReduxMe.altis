@@ -20,7 +20,7 @@ BIS_WL_initModule setVariable ["BIS_WL_targetResetCost", 1200]; //default value 
 BIS_WL_initModule setVariable ["BIS_WL_scanEnabled", TRUE];
 BIS_WL_initModule setVariable ["BIS_WL_fastTravelEnabled", 1];
 BIS_WL_initModule setVariable ["BIS_WL_maxCP", 38069];
-BIS_WL_initModule setVariable ["BIS_WL_dropCost", 25];
+BIS_WL_initModule setVariable ["BIS_WL_dropCost", 2];
 BIS_WL_initModule setVariable ["BIS_WL_dropCost_far", 3000];
 BIS_WL_initModule setVariable ["BIS_WL_autonomous_limit", 2];
 BIS_WL_initModule setVariable ["BIS_WL_arsenalEnabled", FALSE];
@@ -32,10 +32,10 @@ BIS_WL_initModule setVariable ["BIS_WL_baseValue", 50]; //this changes money fro
 BIS_WL_initModule setVariable ["BIS_WL_baseDistanceMin", 13]; //default value 5; Use _tolerance value in combo with baseDistanceMin to add randomness to base distances
 BIS_WL_initModule setVariable ["BIS_WL_baseDistanceMax", -1]; //default value -1 
 BIS_WL_initModule setVariable ["BIS_WL_scanCooldown", 90];
-BIS_WL_initModule setVariable ["BIS_WL_lastLoadoutCost", 100];
+BIS_WL_initModule setVariable ["BIS_WL_lastLoadoutCost", 500];
 BIS_WL_initModule setVariable ["BIS_WL_wreckRemovalTimeout", 30];
 BIS_WL_initModule setVariable ["BIS_WL_corpseRemovalTimeout", 600];
-BIS_WL_initModule setVariable ["BIS_WL_savedLoadoutCost", 500];
+BIS_WL_initModule setVariable ["BIS_WL_savedLoadoutCost", 600];
 BIS_WL_initModule setVariable ["BIS_WL_timeMultiplier", 6];
 BIS_WL_initModule setVariable ["BIS_WL_zoneRestrictionSetting", 0]; //default value 0
 BIS_WL_initModule setVariable ["BIS_WL_savingEnabled", FALSE];
