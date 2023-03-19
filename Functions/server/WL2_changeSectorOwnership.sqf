@@ -32,6 +32,14 @@ if !(_owner in _previousOwners) then {
 	};
 };
 
+/* Still working on this code
+//garbage collection for crates
+{_x setDamage 1} forEach (allObjects select (typeOf _x in ["class O_CargoNet_01_ammo_F", "class I_CargoNet_01_ammo_F", "class B_CargoNet_01_ammo_F", "class CargoNet_01_box_F", "class I_supplyCrate_F"]));
+_cratetext = format ["crates removal run"];
+[_cratetext] remoteExec ["systemChat"];
+*/ 
+
+
 _previousOwners pushBackUnique _owner;
 _sector setVariable ["BIS_WL_previousOwners", _previousOwners, TRUE];
 
