@@ -103,7 +103,7 @@ class CfgWLRequisitionPresets
 				class B_UAV_01_F							{cost = 2000;	requirements[]={"H"};	};	// "AR-2 Darter";
 				class B_UAV_06_F							{cost = 2000;	requirements[]={"H"};	};	// "AL-6 Pelican";
 				class B_UAV_06_medical_F					{cost = 2000;	requirements[]={"H"};	};	// "AL-6 Pelican medical";
-				class B_T_VTOL_01_infantry_olive_F			{cost = 1400;	requirements[]={"H"};	};	// "V-44 X Blackfish(Inf)";
+				class B_T_VTOL_01_infantry_olive_F			{cost = 1400;	requirements[]={"H"};	};	// "KV-44 Blackfish tanker";
 				 
 				
 			};
@@ -264,7 +264,7 @@ class CfgWLRequisitionPresets
 				class O_UAV_01_F							{cost = 2000;	requirements[]={"H"};	};	// "AR-2 Darter";
 				class O_UAV_06_F							{cost = 2000;	requirements[]={"H"};	};	// "AL_6 Pelican"
 				class O_UAV_06_medical_F					{cost = 2000;	requirements[]={"H"};	};	// "AL_6 Pelican Medical"
-				class B_T_VTOL_01_infantry_olive_F			{cost = 1400;	requirements[]={"H"};	};	// "V-44 X Blackfish(Inf)";				
+				class B_T_VTOL_01_infantry_olive_F			{cost = 1400;	requirements[]={"H"};	};	// "KV-44 Blackfish tanker";				
 				
 			};
 			class Naval
