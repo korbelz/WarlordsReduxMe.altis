@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=834;
+		nextID=836;
 	};
 	class MarkerIDProvider
 	{
@@ -26,182 +26,96 @@ binarizationWanted=0;
 sourceName="WarlordsReduxMe";
 addons[]=
 {
-	"A3_Characters_F",
 	"A3_Modules_F",
-	"A3_Structures_F_Walls",
-	"A3_Props_F_Enoch_Military_Garbage",
-	"A3_Structures_F_Enoch_Industrial_Agriculture",
-	"A3_Props_F_Exp_Civilian_Garbage",
-	"A3_Structures_F_Civ_Garbage",
-	"A3_Structures_F_Ind_Tank",
-	"A3_Structures_F_Dominants_WIP",
-	"A3_Structures_F_Exp_Infrastructure_WaterSupply",
-	"A3_Structures_F_Heli_Civ_Garbage",
-	"A3_Structures_F_EPA_Mil_Scrapyard",
-	"A3_Structures_F_Mil_Fortification",
-	"A3_Structures_F_Mil_Cargo",
-	"A3_Structures_F_EPA_Civ_Constructions",
-	"A3_Structures_F_Civ_Camping",
-	"A3_Structures_F_Items_Vessels",
+	"A3_Characters_F",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Ui_F",
-	"A3_Missions_F_Oldman",
-	"A3_Armor_F_Gamma_APC_Wheeled_03",
-	"A3_Soft_F_MRAP_02",
-	"A3_Soft_F_MRAP_01",
+	"A3_Modules_F_Curator_Curator",
 	"A3_Boat_F_Jets_Carrier_01",
 	"A3_Structures_F_Naval_Piers",
 	"A3_Boat_F_EPC_Submarine_01",
 	"A3_Structures_F_Training",
-	"A3_Boat_F_Destroyer_Destroyer_01"
+	"A3_Boat_F_Destroyer_Destroyer_01",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=9;
 		class Item0
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item1
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 		class Item2
-		{
-			className="A3_Structures_F";
-			name="Arma 3 - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item3
-		{
-			className="A3_Props_F_Enoch";
-			name="Arma 3 Contact Platform - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item4
-		{
-			className="A3_Structures_F_Enoch_Industrial";
-			name="Arma 3 Contact Platform - Industrial Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item5
-		{
-			className="A3_Props_F_Exp";
-			name="Arma 3 Apex - Decorative and Mission Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item6
-		{
-			className="A3_Structures_F_Ind";
-			name="Arma 3 - Industrial Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item7
-		{
-			className="A3_Structures_F_Exp_Infrastructure";
-			name="Arma 3 Apex - Infrastructure Objects";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item8
-		{
-			className="A3_Structures_F_Heli";
-			name="Arma 3 Helicopters - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item9
-		{
-			className="A3_Structures_F_EPA";
-			name="Arma 3 Survive Episode - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item10
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item3
 		{
-			className="A3_Ui_F";
-			name="Arma 3 - User Interface";
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
-		{
-			className="A3_Missions_F_Oldman";
-			name="Arma 3 Old Man - Playable Content";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item13
-		{
-			className="A3_Armor_F_Gamma";
-			name="Arma 3 - Armored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item14
-		{
-			className="A3_Soft_F";
-			name="Arma 3 Alpha - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item15
+		class Item4
 		{
 			className="A3_Boat_F_Jets";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item5
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
 		{
 			className="A3_Boat_F_EPC";
 			name="Arma 3 Win Episode - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item7
 		{
 			className="A3_Boat_F_Destroyer";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item8
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
-dlcs[]=
-{
-	"Enoch",
-	"Expansion",
-	"Heli",
-	"Jets"
-};
-
 class DynamicSimulation
 {
 	enable=0;
 	saturateByObjectDistance=0;
 };
-
+dlcs[]=
+{
+	"Jets"
+};
 randomSeed=3694325;
 class ScenarioData
 {
@@ -234,7 +148,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=345;
+		items=347;
 		class Item0
 		{
 			dataType="Logic";
@@ -357,7 +271,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12290.265,123.93935,8893.293};
-				angles[]={-0,0,0.022662206};
+				angles[]={0,0,0.022662206};
 			};
 			init="this setVariable [""BIS_WL_services"", [""H""]];";
 			id=11;
@@ -649,6 +563,7 @@ class Mission
 			init="this setVariable [""BIS_WL_canBeBase"", false]";
 			id=35;
 			type="Logic";
+			atlOffset=9.5367432e-007;
 		};
 		class Item35
 		{
@@ -913,7 +828,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8221.8965,14.337236,10938.185};
-				angles[]={-0,0,6.2711854};
+				angles[]={0,0,6.2711854};
 			};
 			id=59;
 			type="Logic";
@@ -1175,6 +1090,7 @@ class Mission
 			};
 			id=81;
 			type="EmptyDetector";
+			atlOffset=2.0980835e-005;
 		};
 		class Item78
 		{
@@ -1578,7 +1494,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={17417.711,13.829673,13179.356};
-			angle=3.9814045;
+			angle=3.9814036;
 			class Attributes
 			{
 				sizeA=175;
@@ -10725,6 +10641,30 @@ class Mission
 			init="_dynamicAirport1 = ""DynamicAirport_01_F"" createVehicle position this;" \n "_dynamicAirport1 setdir 61.5;";
 			id=833;
 			type="Logic";
+		};
+		class Item345
+		{
+			dataType="Marker";
+			position[]={13932.58,10.094971,14620.999};
+			name="discord";
+			text="https://discord.gg/DQjYRMvv";
+			type="mil_box";
+			colorName="ColorOrange";
+			alpha=0.30308321;
+			id=834;
+			atlOffset=54.00351;
+		};
+		class Item346
+		{
+			dataType="Marker";
+			position[]={13936.123,-19.440001,13975.984};
+			name="github";
+			text="https://github.com/korbelz/WarlordsReduxMe.altis";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			alpha=0.30476618;
+			id=835;
+			atlOffset=25.788969;
 		};
 	};
 	class Connections
