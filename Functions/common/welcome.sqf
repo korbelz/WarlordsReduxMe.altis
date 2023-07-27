@@ -10,6 +10,7 @@ _markerone setMarkerColor "ColorOrange";
 _markerone setMarkerAlpha 0.30;
 _markerone setMarkerText missionName; 
 
+/*
 //add server discord to this list to have it auto populate
 _serverdiscord = serverName; 
 switch (_serverdiscord) do
@@ -60,6 +61,7 @@ _markerthree  setMarkerType "mil_triangle"; // Visible.
 _markerthree  setMarkerColor "ColorOrange";
 _markerthree  setMarkerAlpha 0.30;
 _markerthree  setMarkerText _buglink;
+*/
 
 private _lineone = parseText "<a href='https://github.com/korbelz/WarlordsReduxMe.altis'>Click HERE: To report bugs, and follow development</a>";
 private _linetwo = parseText "<a href='https://discord.gg/arma'>Official Arma Discord</a>";
