@@ -56,12 +56,12 @@
 #define WL_MAINTENANCE_COOLDOWN_REARM_Artillery 1800 //not in .57
 #define WL_LOSING_SECTOR_WARN_FREQ 30
 #define WL_MUSIC_VOLUME 0.1
-#define WL_GARRISON_GROUP_SIZE_MIN 4
-#define WL_GARRISON_GROUP_SIZE_MAX 5
+#define WL_GARRISON_GROUP_SIZE_MIN 3
+#define WL_GARRISON_GROUP_SIZE_MAX 4
 #define WL_ASSET_IRRELEVANT_RANGE 1000
 #define WL_TARGET_RESET_VOTING_TIME 60
 #define KORB_KILL_REWARD_MOD 4000  //Original value 10,000; lower value equals higher kill rewards
-#define KORB_GARRISON_SIZE_MOD 3  //Original value 2; adjust this to increase total INF spawning in an AI sector. 
+#define KORB_GARRISON_SIZE_MOD 2  //Original value 2; adjust this to increase total INF spawning in an AI sector. 
 #define KORB_MINECOUNT_DELETE_THRESHOLD 200 //Original value 400; Total # of mines allowed on server anymore will be delete when any sector is capped
 #define KORB_UAVCOUNT_DELETE_THRESHOLD 24 //Original value 50;
 #define KORB_VIC_MIN_HEIGHT -85  //default is roughly 100 AGL, -90 = roughly 10 meters AGL. 0 = roughly 100 AGL
