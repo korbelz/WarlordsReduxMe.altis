@@ -390,4 +390,9 @@ Hotfix: reverted some changes that might have been hurting FPS
 - AI can land carrier capable aircraft at ammolofi. Undamaged planes land correctly about 95% of the time, a damaged plane its 50/50.
 - created KV-44 Blackfish tanker(thanks Hazer_AL for the idea) 
   - To use fly within 25 m behind/below the tanker then look at the refueling pod to start refueling
-  - recommended to keep your refueling tracks out over the ocean or above 4,000 m to avoid skynet 
+  - recommended to keep your refueling tracks out over the ocean or above 4,000 m to avoid skynet
+
+57.1.037
+- Prep work for Dynamically scaling sectors based on team skill
+- Prep work for friendly AI strike teams that can fight along side the player at a sector
+  - This is basically inverting the already existing Quick Reaction Force code that spawns a team to help the AI defend 

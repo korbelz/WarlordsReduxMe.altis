@@ -53,6 +53,22 @@ if (_side == BIS_WL_localSide) then {
 			} forEach _tankArray;
 		};
 
+		//AAF QRF code 
+		/*
+			invert this code block to add Friendly AI strike teams 
+			Code block should be moved out of this script in order get attacking player side 
+
+			Use enemy QRF code and modify it to have a chance of spawning friendly AI strike teams to help the players attack a sector. 
+
+			maybe gate it towards lower player counts to help the map move along. 
+			FRIENDLY_QRF_MOD = 5
+
+			ex: 100% -  ((count players) * FRIENDLY_QRF_MOD)
+			that example 5 players on the server would have an 75% chance of getting an AI team to help them attack the sector.
+
+			Could also add code blocks for land units 
+
+		*/
 		if (count _roads > 0) then {
 			{
 				_randomx = random 10000;
@@ -332,7 +348,16 @@ if (_side == BIS_WL_localSide) then {
 			
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
 				_vehicle setVehicleRadar 1;
+				/*
+				_lookAtPositions = [0, 90, 180, 270] apply { _asset getRelPos [100, _x] };
+				_radarIter = 0;
 
+				while {alive _asset} do {
+						_vehicle lookAt (_lookAtPositions # _radarIter);
+						_radarIter = (_radarIter + 1) % 4;
+					};
+					sleep WL_TIMEOUT_LONG;
+				*/ 
 				private _tanklock = random 10;
 				if (_tanklock > 3) then {
 					_vehicle lock TRUE;
@@ -1044,9 +1069,18 @@ if (_side == BIS_WL_sidesArrayEast) then {
 };
 };
 if (count _spawnPosArr == 0) exitWith {};
+/*
+	dynamic AI numbers per sector code here 
+	time_1 = sector start timestamp
+	time_2 = sector end timestamp
+	AI_number_modifer = (time_2 - time_1) / BASELINE_MINUTES(ex: 20)
+
+	next sector spawn code:
+     	_garrisonSize / AI_number_modifer
+*/ 
 //adjust KORB_GARRISON_SIZE_MOD in warlords_constants for more AI INF per town(I think)
 // Adjust GROUP_SIZE_MIN up to help smaller sectors without turning telos in to 1 FPS hell
-private _garrisonSize = (_sector getVariable "BIS_WL_value") * KORB_GARRISON_SIZE_MOD;
+private _garrisonSize = (_sector getVariable "BIS_WL_value") * KORB_GARRISON_SIZE_MOD; //dynamic AI number scaling goes here
 private _unitsPool = BIS_WL_factionUnitClasses # (BIS_WL_sidesArray find _side);
 
 _i = 0;
