@@ -398,3 +398,4 @@ Hotfix: reverted some changes that might have been hurting FPS
   - This is basically inverting the already existing Quick Reaction Force code that spawns a team to help the AI defend
 - Prep work for AI SAM sites to do 360 scans instead of being static(inspired by rook) 
 - Added adpative MOTD style message to the mission(ported from Open Warlords)
+- Dynamic welcome screen prep

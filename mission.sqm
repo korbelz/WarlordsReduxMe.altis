@@ -34,14 +34,13 @@ addons[]=
 	"A3_Structures_F_Naval_Piers",
 	"A3_Boat_F_EPC_Submarine_01",
 	"A3_Structures_F_Training",
-	"A3_Boat_F_Destroyer_Destroyer_01",
-	"A3_Ui_F"
+	"A3_Boat_F_Destroyer_Destroyer_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=8;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -98,13 +97,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
-		{
-			className="A3_Ui_F";
-			name="Arma 3 - User Interface";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
 	};
 };
 class DynamicSimulation
@@ -148,7 +140,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=347;
+		items=345;
 		class Item0
 		{
 			dataType="Logic";
@@ -1494,7 +1486,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={17417.711,13.829673,13179.356};
-			angle=3.9814034;
+			angle=3.9814031;
 			class Attributes
 			{
 				sizeA=175;
@@ -10641,30 +10633,6 @@ class Mission
 			init="_dynamicAirport1 = ""DynamicAirport_01_F"" createVehicle position this;" \n "_dynamicAirport1 setdir 61.5;";
 			id=833;
 			type="Logic";
-		};
-		class Item345
-		{
-			dataType="Marker";
-			position[]={13932.58,10.094971,14620.999};
-			name="discord";
-			text="https://discord.gg/DQjYRMvv";
-			type="mil_box";
-			colorName="ColorOrange";
-			alpha=0.30308321;
-			id=834;
-			atlOffset=54.00351;
-		};
-		class Item346
-		{
-			dataType="Marker";
-			position[]={13936.123,-19.440001,13975.984};
-			name="github";
-			text="https://github.com/korbelz/WarlordsReduxMe.altis";
-			type="mil_triangle";
-			colorName="ColorOrange";
-			alpha=0.30476618;
-			id=835;
-			atlOffset=25.788969;
 		};
 	};
 	class Connections
