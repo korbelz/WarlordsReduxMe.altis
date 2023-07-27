@@ -395,4 +395,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 57.1.037
 - Prep work for Dynamically scaling sectors based on team skill
 - Prep work for friendly AI strike teams that can fight along side the player at a sector
-  - This is basically inverting the already existing Quick Reaction Force code that spawns a team to help the AI defend 
+  - This is basically inverting the already existing Quick Reaction Force code that spawns a team to help the AI defend
+- Prep work for AI SAM sites to do 360 scans instead of being static(inspired by rook) 
+- Added adpative MOTD style message to the mission(ported from Open Warlords)

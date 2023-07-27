@@ -2,6 +2,23 @@
 
 params ["_sector", "_side"];
 
+_serverdiscord = serverName; 
+switch (_serverdiscord) do
+{ 
+	case "Open Warlords":
+	{
+    	_serverdiscord = "https://discord.gg/DQjYRMvv"; 
+	};
+	case default 
+	{
+		_serverdiscord = "discord.gg/arma3";
+	};
+
+};
+systemChat format ["Current mission is %1 on server %2 ,  **Discord is %3**", missionName, serverName, _serverdiscord ];
+diag_log format ["Current mission is %1 on server %2", missionName, serverName];
+
+
 private _spawnPosArr = _sector call BIS_fnc_WL2_findSpawnPositions;
 private _connectedToBase = count (WL_BASES arrayIntersect (_sector getVariable "BIS_WL_connectedSectors")) > 0;
 
@@ -348,7 +365,7 @@ if (_side == BIS_WL_localSide) then {
 			
 				_vehicle allowCrewInImmobile [TRUE, TRUE];
 				_vehicle setVehicleRadar 1;
-				/*
+				/* Orginial code by Rook
 				_lookAtPositions = [0, 90, 180, 270] apply { _asset getRelPos [100, _x] };
 				_radarIter = 0;
 
