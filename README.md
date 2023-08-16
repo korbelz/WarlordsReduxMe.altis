@@ -4,10 +4,10 @@
 
 
 # WarlordsReduxMe.altis
- Bare metal Warlords Redux. Core gameplay features extended with added customization. 100% vanilla, no extra script, add-ons or mods needed. 
+ Bare metal Warlords Redux. Core gameplay features extended with added customization. 100% vanilla, no extra scripts, add-ons or mods needed. 
 
  # Warlords Redux Miller Edition(ME) 
-Bare metal Warlords Redux. Core gameplay features extended with added customization. 100% vanilla, no extra script, add-ons or mods needed. 
+Bare metal Warlords Redux. Core gameplay features extended with added customization. 100% vanilla, no extra scripts, add-ons or mods needed. 
 
 Original Warlords Redux by Bohemia Interactive and Jezuro can be found here:
 https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=Warlords+redux
