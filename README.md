@@ -4,7 +4,7 @@
 
 
 # WarlordsReduxMe.altis
- Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% vanilla, no extra script, add-ons or mods needed. 
+ Bare metal Warlords Redux. Core gameplay features extended with added customization. 100% vanilla, no extra script, add-ons or mods needed. 
 
  # Warlords Redux Miller Edition(ME) 
 Bare metal Warlords Redux with many bug fixes. Core gameplay features extended with added customization. 100% vanilla, no extra script, add-ons or mods needed. 
