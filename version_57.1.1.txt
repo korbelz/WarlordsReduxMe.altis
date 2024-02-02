@@ -400,3 +400,6 @@ Hotfix: reverted some changes that might have been hurting FPS
 - Added adpative MOTD style message to the mission(ported from Open Warlords)
 - Dynamic welcome screen prep
 - Decreased AI per town by roughly 50% to better fix current test server CPU
+
+57.1.1
+- Updated Dynamic map markers
