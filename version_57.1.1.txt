@@ -403,3 +403,4 @@ Hotfix: reverted some changes that might have been hurting FPS
 
 57.1.1
 - Updated Dynamic map markers
+- Added extra logging for admins
