@@ -120,7 +120,7 @@ switch (_worldname) do
 _markerone = createMarker ["markerone", _markeroneloc]; // Not visible yet.
 _markerone setMarkerType "mil_marker"; // Visible.
 _markerone setMarkerColor "ColorOrange";
-_markerone setMarkerAlpha 0.30;
+_markerone setMarkerAlpha 0.50;
 _markerone setMarkerText missionName; 
 
 //add server discord to this list to have it auto populate
@@ -140,7 +140,7 @@ switch (_serverdiscord) do
 _markertwo = createMarker ["markertwo", _markertwoloc]; // Not visible yet.
 _markertwo setMarkerType "mil_box"; // Visible.
 _markertwo setMarkerColor "ColorOrange";
-_markertwo setMarkerAlpha 0.30;
+_markertwo setMarkerAlpha 0.50;
 _markertwo setMarkerText _serverdiscord; 
 
 _buglink = missionName; 
@@ -171,5 +171,5 @@ switch (_buglink) do
 _markerthree = createMarker ["markerthree", _markerthreeloc]; // Not visible yet.
 _markerthree  setMarkerType "mil_triangle"; // Visible.
 _markerthree  setMarkerColor "ColorOrange";
-_markerthree  setMarkerAlpha 0.30;
+_markerthree  setMarkerAlpha 0.50;
 _markerthree  setMarkerText _buglink; 
