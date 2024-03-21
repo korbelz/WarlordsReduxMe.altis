@@ -1486,7 +1486,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={17417.711,13.829673,13179.356};
-			angle=3.9814022;
+			angle=3.9814019;
 			class Attributes
 			{
 				sizeA=175;
@@ -10630,7 +10630,7 @@ class Mission
 				position[]={9106.8389,17.174456,21476.928};
 				angles[]={6.2805324,0,6.2791882};
 			};
-			init="_dynamicAirport1 = ""DynamicAirport_01_F"" createVehicle position this;" \n "_dynamicAirport1 setdir 61.5;" \n "isCarrier = false;";
+			init="_dynamicAirport1 = ""DynamicAirport_01_F"" createVehicle position this;" \n "_dynamicAirport1 setdir 61.5;" \n "";
 			id=833;
 			type="Logic";
 		};
