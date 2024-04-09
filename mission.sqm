@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=836;
+		nextID=841;
 	};
 	class MarkerIDProvider
 	{
@@ -140,7 +140,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=345;
+		items=347;
 		class Item0
 		{
 			dataType="Logic";
@@ -10633,6 +10633,126 @@ class Mission
 			init="_dynamicAirport1 = ""DynamicAirport_01_F"" createVehicle position this;" \n "_dynamicAirport1 setdir 61.5;" \n "";
 			id=833;
 			type="Logic";
+		};
+		class Item345
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15670.781,29.090952,19821.863};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=837;
+					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=836;
+		};
+		class Item346
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15679.284,28.950096,19820.9};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=840;
+					type="I_soldier_F";
+					atlOffset=-1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=839;
+			atlOffset=-1.9073486e-006;
 		};
 	};
 	class Connections
