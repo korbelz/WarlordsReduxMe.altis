@@ -323,7 +323,7 @@ class CfgWLRequisitionPresets
 
 			};
 		};
-		class RESISTANCE
+		class GUER
 		{
 			class Infantry
 			{

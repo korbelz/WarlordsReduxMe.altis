@@ -10,8 +10,8 @@ params ["_locality"];
 
 switch (_locality) do {
 	case "common": {
-		BIS_WL_sidesArray = [WEST, EAST, RESISTANCE];
-		BIS_WL_competingSides = [[WEST, EAST], [WEST, RESISTANCE], [EAST, RESISTANCE]] # random 0; //set this is 2 for random starting factions
+		BIS_WL_sidesArray = [WEST, EAST, RESISTANCE]; //guerrila , RESISTANCE , independent
+		BIS_WL_competingSides = [[WEST, EAST], [WEST, RESISTANCE], [EAST, RESISTANCE]] # 1; //set this is random 2 for random starting factions, random 2, set to # 1 for testing
 		BIS_WL_targetVotingDuration = BIS_WL_initModule getVariable ["BIS_WL_targetVotingDuration", 15];
 		BIS_WL_startCP = BIS_WL_initModule getVariable ["BIS_WL_startCP", 500]; //This doesn't work, look in TEMP.sqf
 		BIS_WL_fogOfWar = BIS_WL_initModule getVariable ["BIS_WL_fogOfWar", 1];
@@ -103,8 +103,8 @@ switch (_locality) do {
 		BIS_WL_timeMultiplier = BIS_WL_initModule getVariable ["BIS_WL_timeMultiplier", 12];
 	};
 	case "client": {
-		BIS_WL_playerSide = side group player;
-		BIS_WL_enemySide = (BIS_WL_competingSides - [BIS_WL_playerSide]) # 0;
+		BIS_WL_playerSide = side group player; //guerrila, GUER
+		BIS_WL_enemySide = (BIS_WL_competingSides - [BIS_WL_playerSide]) # 0; //BIS_WL_localSide = (BIS_WL_sidesArray - BIS_WL_competingSides) # 0;
 		BIS_WL_playersAlpha = (BIS_WL_initModule getVariable ["BIS_WL_playersAlpha", 50]) / 100;
 		BIS_WL_markersAlpha = (BIS_WL_initModule getVariable ["BIS_WL_markersAlpha", 50]) / 100;
 		BIS_WL_autonomous_limit = BIS_WL_initModule getVariable ["BIS_WL_autonomous_limit", 2];
