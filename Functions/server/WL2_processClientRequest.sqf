@@ -153,6 +153,7 @@ if !(isNull _sender) then {
 				if (_className isKindOf "Air") then {
 					_isPlane = (toLower getText (configFile >> "CfgVehicles" >> _className >> "simulation")) in ["airplanex", "airplane"] && !(_className isKindOf "VTOL_Base_F");
 					if (_isPlane) then {
+						//spawning aircraft on airfields
 						private _sector = ((_targetPos nearObjects ["Logic", 10]) select {count (_x getVariable ["BIS_WL_runwaySpawnPosArr", []]) > 0}) # 0;
 						private _taxiNodes = _sector getVariable "BIS_WL_runwaySpawnPosArr";
 						private _taxiNodesCnt = count _taxiNodes;
@@ -313,6 +314,7 @@ if !(isNull _sender) then {
 							 
 						};
 					} else {
+						//Heli spawn code
 						_asset = createVehicle [_className, _targetPosFinal, [], 0, "FLY"]; 
 						_asset setVelocity [0, 0, 0];
 						[_asset, _sender, _classname] call BIS_fnc_WL2_sub_assetLanding;
