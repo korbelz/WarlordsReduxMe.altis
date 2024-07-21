@@ -13,7 +13,7 @@ switch (_locality) do {
 		BIS_WL_sidesArray = [WEST, EAST, RESISTANCE]; 
 		BIS_WL_competingSides = [[WEST, EAST], [WEST, RESISTANCE], [EAST, RESISTANCE]] # 1; //set this is random 2 for random starting factions, random 2, set to # 1 for testing
 		BIS_WL_targetVotingDuration = BIS_WL_initModule getVariable ["BIS_WL_targetVotingDuration", 15];
-		BIS_WL_startCP = BIS_WL_initModule getVariable ["BIS_WL_startCP", 500]; //This doesn't work, look in TEMP.sqf
+		BIS_WL_startCP = BIS_WL_initModule getVariable ["BIS_WL_startCP", 200]; //This doesn't work, look in TEMP.sqf, default 500
 		BIS_WL_fogOfWar = BIS_WL_initModule getVariable ["BIS_WL_fogOfWar", 1];
 		BIS_WL_localSide = (BIS_WL_sidesArray - BIS_WL_competingSides) # 0;
 		BIS_WL_localSide_all = (BIS_WL_sidesArray + BIS_WL_competingSides) # 0;
