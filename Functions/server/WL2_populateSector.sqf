@@ -257,7 +257,8 @@ if (_side == BIS_WL_localSide) then {
 			} forEach _waypoints;
 			uiSleep WL_TIMEOUT_MIN;
 		} forEach (_sector getVariable "BIS_WL_vehiclesToSpawn");
-	}; //below is heli/jet spawn code, molos AF never gets one because its not connected to any friendly towns when attacked 
+	}; 
+	//below is heli/jet spawn code 
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
 		private _randomsize = (1 + random KORB_AIR_RANDOM_AI_SPAWNS);
@@ -613,7 +614,8 @@ if (_side == BIS_WL_sidesArrayWest) then {
 			} forEach _waypoints;
 			uiSleep WL_TIMEOUT_MIN;
 		} forEach (_sector getVariable "BIS_WL_vehiclesToSpawn");
-	}; //below is heli/jet spawn code, molos AF never gets one because its not connected to any friendly towns when attacked 
+	}; 
+	//below is heli/jet spawn code
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
 		private _randomsize = (1 + random KORB_AIR_RANDOM_AI_SPAWNS);
@@ -957,7 +959,8 @@ if (_side == BIS_WL_sidesArrayEast) then {
 			} forEach _waypoints;
 			uiSleep WL_TIMEOUT_MIN;
 		} forEach (_sector getVariable "BIS_WL_vehiclesToSpawn");
-	}; //below is heli/jet spawn code, molos AF never gets one because its not connected to any friendly towns when attacked 
+	}; 
+	//below is heli/jet spawn code
 	if (!_connectedToBase && "H" in (_sector getVariable "BIS_WL_services")) then {
 		private _airArray = [];
 		private _randomsize = (1 + random KORB_AIR_RANDOM_AI_SPAWNS);
